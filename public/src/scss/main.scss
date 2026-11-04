@@ -1,0 +1,17 @@
+// Kiaalap stylesheet entry point.
+// Loaded once, via the <link> tag in src/partials/head.hbs. Do not also import
+// this from src/js/main.js — that compiles and ships the whole sheet twice.
+// `@use` (not `@import`) keeps this off Dart Sass 3's removal list. To
+// customise Bootstrap, add a `with (...)` configuration to the rule below
+// rather than redeclaring variables after it.
+
+// Resolved via the `loadPaths: ['node_modules']` Sass option in vite.config.js.
+@use 'theme' as *;
+@use 'bootstrap/scss/bootstrap' with (
+  $primary: $primary,
+  $font-family-sans-serif: $font-family-sans-serif,
+  $border-radius: $border-radius
+);
+@use 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Custom dashboard styles live in src/css/dashboard.css.

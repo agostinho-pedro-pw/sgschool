@@ -24,6 +24,11 @@ Route::post(
 Route::get('/', [UserController::class, 'login'])->name('login');
 /*-------Rota-dashboard--------*/
 Route::get('/dashboard', [UserController::class, 'index'])->name('dashboard');
+Route::get('/dashboard-1', [UserController::class, 'index_1'])->name('dashboard-1');
+Route::get('/dashboard-2', [UserController::class, 'index_2'])->name('dashboard-2');
+Route::get('/widgets', [UserController::class, 'widgets'])->name('widgets');
+Route::get('/analytics', [UserController::class, 'analytics'])->name('analytics');
+
 /*-------Rota-create------------*/
 Route::post('/create-user', [UserController::class, 'store'])->name('create-user');
 /*-------Rota-eventos-----------*/

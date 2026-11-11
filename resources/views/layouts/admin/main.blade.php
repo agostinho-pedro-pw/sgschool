@@ -241,12 +241,12 @@
 
 <body>
     <div class="shell">
-        @include('layouts.admin.sidebar')
-        @include('layouts.admin.header')
+        @include('layouts._include.dashboard.sidebar')
+        @include('layouts._include.dashboard.header')
         <main class="main">
             @yield('content')
         </main>
-        @include('layouts.admin.footer')
+        @include('layouts._include.dashboard.footer')
     </div>
     @stack('scripts')
 </body>

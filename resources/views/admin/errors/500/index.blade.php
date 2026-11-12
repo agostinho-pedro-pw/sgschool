@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>500 - Kiaalap Dashboard</title>
+    <title>500 - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -323,7 +323,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -342,47 +342,42 @@
             </div>
 
             <h1 class="error-code">500</h1>
-            <h2 class="error-title">Internal Server Error</h2>
+            <h2 class="error-title">Erro interno do servidor</h2>
             <p class="error-message">
-                We're sorry, but something went wrong on our server. Our team has been notified and is working to fix
-                the issue.
+                Lamentamos, mas ocorreu um erro no servidor. A nossa equipa foi notificada e está a resolver o problema.
             </p>
 
             <!-- Action Buttons -->
             <div class="error-actions">
                 <a href="javascript:location.reload()" class="error-btn btn-primary-error">
-                    <i class="bi bi-arrow-clockwise"></i>
-                    Try Again
-                </a>
+                    <i class="bi bi-arrow-clockwise"></i>Tentar novamente</a>
                 <a href="index.html" class="error-btn btn-secondary-error">
                     <i class="bi bi-house-door"></i>
-                    Go to Dashboard
+                    Ir para o painel
                 </a>
             </div>
 
             <!-- Error Details -->
             <div class="error-details">
-                <h4><i class="bi bi-info-circle"></i> What you can try:</h4>
+                <h4><i class="bi bi-info-circle"></i> O que pode tentar:</h4>
                 <ul>
                     <li>
                         <i class="bi bi-arrow-clockwise"></i>
-                        Refresh the page - the issue might be temporary
+                        Atualize a p?gina ? o problema pode ser tempor?rio.
                     </li>
                     <li>
                         <i class="bi bi-clock-history"></i>
-                        Wait a few minutes and try again
+                        Aguarde alguns minutos e tente novamente.
                     </li>
                     <li>
                         <i class="bi bi-trash3"></i>
-                        Clear your browser cache and cookies
+                        Limpe a cache e os cookies do navegador.
                     </li>
                     <li>
-                        <i class="bi bi-browser-chrome"></i>
-                        Try using a different browser
-                    </li>
+                        <i class="bi bi-browser-chrome"></i>Experimente utilizar outro navegador</li>
                     <li>
                         <i class="bi bi-headset"></i>
-                        Contact support if the problem persists
+                        Contacte o suporte se o problema persistir.
                     </li>
                 </ul>
             </div>
@@ -390,7 +385,7 @@
             <!-- Status Information -->
             <div class="status-info">
                 <div class="status-item">
-                    <h5>Error Code</h5>
+                    <h5>Código de erro</h5>
                     <p>500</p>
                 </div>
                 <div class="status-item">
@@ -398,7 +393,7 @@
                     <p id="currentTime">--:--</p>
                 </div>
                 <div class="status-item">
-                    <h5>Status</h5>
+                    <h5>Estado</h5>
                     <p>Investigating</p>
                 </div>
             </div>
@@ -445,7 +440,7 @@ document.addEventListener('click', () => {
 });
 
 // Log 500 error for analytics (in production)
-console.log('500 Error - Internal Server Error:', window.location.pathname);
+console.log('Erro 500 — Erro interno do servidor:', window.location.pathname);
     </script>
 
     <!-- Load JavaScript -->

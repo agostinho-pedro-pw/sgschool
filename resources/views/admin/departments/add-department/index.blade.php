@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Add department - Kiaalap Dashboard</title>
+    <title>Adicionar departamento - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -87,299 +87,35 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-
     <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <div class="sidebar-brand">
-                <h5>
-                    <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
-                </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-        </div>
-
-        <nav class="sidebar-nav" aria-label="Main navigation">
-            <div class="menu-section">
-                <div class="menu-section-title">Main</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#dashboardSubmenu" aria-expanded="false">
-                            <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
-                        </a>
-                        <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
-                            <li><a class="nav-link " href="widgets.html">Widgets</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="events.html">
-                            <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#professorsSubmenu" aria-expanded="false">
-                            <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
-                        </a>
-                        <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#studentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-people"></i>
-                            <span>Students</span>
-                        </a>
-                        <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#coursesSubmenu" aria-expanded="false">
-                            <i class="bi bi-book"></i>
-                            <span>Courses</span>
-                        </a>
-                        <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#librarySubmenu" aria-expanded="false">
-                            <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
-                        </a>
-                        <ul id="librarySubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu active" href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#departmentsSubmenu" aria-expanded="true">
-                            <i class="bi bi-building"></i>
-                            <span>Departments</span>
-                        </a>
-                        <ul id="departmentsSubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link active" href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link " href="edit-department.html">Edit Department</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#mailboxSubmenu" aria-expanded="false">
-                            <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
-                        </a>
-                        <ul id="mailboxSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Interface</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#componentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
-                        </a>
-                        <ul id="componentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link " href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#formsSubmenu" aria-expanded="false">
-                            <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
-                        </a>
-                        <ul id="formsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link " href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#chartsSubmenu" aria-expanded="false">
-                            <i class="bi bi-bar-chart"></i>
-                            <span>Charts</span>
-                        </a>
-                        <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#tablesSubmenu" aria-expanded="false">
-                            <i class="bi bi-table"></i>
-                            <span>Tables</span>
-                        </a>
-                        <ul id="tablesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link " href="code-editor.html">
-                            <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#uiToolsSubmenu" aria-expanded="false">
-                            <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
-                        </a>
-                        <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#viewersSubmenu" aria-expanded="false">
-                            <i class="bi bi-eye"></i>
-                            <span>Viewers</span>
-                        </a>
-                        <ul id="viewersSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="pdf-viewer.html">PDF Viewer</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#mapsSubmenu" aria-expanded="false">
-                            <i class="bi bi-map"></i>
-                            <span>Maps</span>
-                        </a>
-                        <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#authSubmenu" aria-expanded="false">
-                            <i class="bi bi-shield-lock"></i>
-                            <span>Authentication</span>
-                        </a>
-                        <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
-                            <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#errorsSubmenu" aria-expanded="false">
-                            <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
-                        </a>
-                        <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </aside>
+    @include('layouts._include.dashboard.sidebar')
     <!-- Main Content Wrapper -->
     <div class="main-wrapper" id="mainWrapper">
         <!-- Header -->
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
-                    aria-controls="sidebar">
+                <button type="button" class="hamburger-menu" id="sidebarToggle"
+                    aria-label="Mostrar/ocultar menu lateral" aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Add department</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Adicionar departamento</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -388,29 +124,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
-                            aria-controls="searchForm">
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle"
+                            aria-label="Abrir pesquisa" aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -418,7 +154,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -426,8 +162,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -440,9 +176,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -455,9 +191,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">John entregou o seu trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -471,7 +207,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída
+                                            </div>
                                             <div class="text-muted small">Yesterday</div>
                                         </div>
                                     </div>
@@ -482,7 +219,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -491,28 +228,27 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -520,14 +256,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar
+                                    sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -542,13 +278,13 @@
                 <div class="mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 font-bold">Add New Department</h1>
-                            <p class="text-muted text-sm">Create a new academic department with comprehensive
+                            <h1 class="h3 font-bold">Adicionar novo departamento</h1>
+                            <p class="text-muted text-sm">Criar a new academic department with comprehensive
                                 information and settings.</p>
                         </div>
                         <div class="d-flex gap-2">
                             <a href="departments.html" class="btn btn-outline-secondary">
-                                <i class="bi bi-arrow-left me-2"></i>Back to Departments
+                                <i class="bi bi-arrow-left me-2"></i>Voltar aos departamentos
                             </a>
                             <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
                                 data-bs-target="#templateModal">
@@ -563,7 +299,7 @@
                     <div class="dashboard-card mb-4">
                         <div class="dashboard-card-body py-3">
                             <div class="progress-header d-flex justify-content-between align-items-center mb-3">
-                                <h6 class="mb-0">Form Progress</h6>
+                                <h6 class="mb-0">Progresso do formulário</h6>
                                 <span class="badge bg-primary progress-badge">Step 1 of 3</span>
                             </div>
                             <div class="progress" style="height: 8px;">
@@ -587,59 +323,60 @@
                                         <i class="bi bi-building text-primary"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-0">Department Information</h5>
-                                        <p class="text-muted small mb-0">Basic department details and identification</p>
+                                        <h5 class="mb-0">Informações do departamento</h5>
+                                        <p class="text-muted small mb-0">Dados bàsicos e identifica??o do departamento
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="dashboard-grid grid-cols-2 gap-3">
                                     <div>
-                                        <label for="departmentName" class="form-label">Department Name *</label>
+                                        <label for="departmentName" class="form-label">Nome do departamento *</label>
                                         <input type="text" class="form-control" id="departmentName"
-                                            name="departmentName" placeholder="e.g., Computer Science" required>
+                                            name="departmentName" placeholder="ex.: Ci?ncias Inform?ticas" required>
                                         <div class="invalid-feedback">
-                                            Please provide a valid department name.
+                                            Introduza um nome de departamento válido.
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="departmentCode" class="form-label">Department Code *</label>
+                                        <label for="departmentCode" class="form-label">Departamento Code *</label>
                                         <input type="text" class="form-control" id="departmentCode"
-                                            name="departmentCode" placeholder="e.g., CS" pattern="[A-Z]{2,5}"
+                                            name="departmentCode" placeholder="ex.: CS" pattern="[A-Z]{2,5}"
                                             maxlength="5" style="text-transform: uppercase;" required>
-                                        <div class="form-text">2-5 uppercase letters (e.g., CS, MECH, BBA)</div>
+                                        <div class="form-text">2-5 uppercase letters (ex.: CS, MECH, BBA)</div>
                                         <div class="invalid-feedback">
-                                            Please provide a valid department code (2-5 uppercase letters).
+                                            Introduza um código de departamento válido (2 a 5 letras maiúsculas).
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="establishedYear" class="form-label">Established Year</label>
+                                        <label for="establishedYear" class="form-label">Established Ano</label>
                                         <input type="number" class="form-control" id="establishedYear"
-                                            name="establishedYear" min="1900" max="2025" placeholder="e.g., 1995">
+                                            name="establishedYear" min="1900" max="2025" placeholder="ex.: 1995">
                                         <div class="invalid-feedback">
-                                            Please provide a valid year between 1900 and 2025.
+                                            Introduza um ano válido entre 1900 e 2025.
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="departmentStatus" class="form-label">Status *</label>
+                                        <label for="departmentStatus" class="form-label">Estado *</label>
                                         <select class="form-select" id="departmentStatus" name="departmentStatus"
                                             required>
-                                            <option value="">Choose status...</option>
-                                            <option value="active">Active</option>
-                                            <option value="planning">Planning Phase</option>
-                                            <option value="paused">Temporarily Paused</option>
-                                            <option value="disabled">Disabled</option>
+                                            <option value="">Escolha o estado...</option>
+                                            <option value="active">Ativo</option>
+                                            <option value="planning">Em planeamento</option>
+                                                <option value="paused">Temporariamente suspenso</option>
+                                            <option value="disabled">Desativado</option>
                                         </select>
                                         <div class="invalid-feedback">
-                                            Please select a department status.
+                                            Selecione o estado do departamento.
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <label for="description" class="form-label">Department Description</label>
+                                        <label for="description" class="form-label">Departamento Descrição</label>
                                         <textarea class="form-control" id="description" name="description" rows="4"
-                                            placeholder="Provide a comprehensive description of the department, its mission, and objectives..."></textarea>
-                                        <div class="form-text">Optional: Describe the department's mission, vision, and
-                                            primary objectives.</div>
+                                            placeholder="Descreva em detalhe o departamento, a sua missão e os seus objetivos..."></textarea>
+                                        <div class="form-text">Opcional: descreva a missão, a visão e os principais
+                                            objetivos do departamento.</div>
                                     </div>
                                 </div>
                             </div>
@@ -656,49 +393,50 @@
                                         <i class="bi bi-person-badge text-success"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-0">Department Head Information</h5>
-                                        <p class="text-muted small mb-0">Contact and leadership details</p>
+                                        <h5 class="mb-0">Informações do respons?vel pelo departamento</h5>
+                                        <p class="text-muted small mb-0">Dados de contacto e de lideran?a</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="dashboard-grid grid-cols-2 gap-3">
                                     <div>
-                                        <label for="headName" class="form-label">Department Head Name *</label>
+                                        <label for="headName" class="form-label">Nome do respons?vel pelo departamento
+                                            *</label>
                                         <input type="text" class="form-control" id="headName" name="headName"
-                                            placeholder="e.g., Dr. John Smith" required>
+                                            placeholder="ex.: Dr. John Smith" required>
                                         <div class="invalid-feedback">
-                                            Please provide the department head's name.
+                                            Introduza o nome do responsável pelo departamento.
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="headTitle" class="form-label">Title/Position</label>
+                                        <label for="headTitle" class="form-label">Cargo/Função</label>
                                         <input type="text" class="form-control" id="headTitle" name="headTitle"
-                                            placeholder="e.g., Professor, Associate Professor" value="Professor">
+                                            placeholder="ex.: professor, professor associado" value="Professor">
                                     </div>
                                     <div>
-                                        <label for="headEmail" class="form-label">Email Address *</label>
+                                        <label for="headEmail" class="form-label">Endereço de e-mail *</label>
                                         <input type="email" class="form-control" id="headEmail" name="headEmail"
                                             placeholder="john.smith@kiaalap.edu" required>
                                         <div class="invalid-feedback">
-                                            Please provide a valid email address.
+                                            Introduza um endereço de e-mail válido.
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="headPhone" class="form-label">Phone Number</label>
+                                        <label for="headPhone" class="form-label">Número de telefone</label>
                                         <input type="tel" class="form-control" id="headPhone" name="headPhone"
                                             placeholder="+1-555-0123" pattern="[\+]?[0-9\-\s\(\)]+" maxlength="20">
                                         <div class="invalid-feedback">
-                                            Please provide a valid phone number.
+                                            Introduza um número de telefone válido.
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="officeLocation" class="form-label">Office Location</label>
+                                        <label for="officeLocation" class="form-label">Localização do gabinete</label>
                                         <input type="text" class="form-control" id="officeLocation"
-                                            name="officeLocation" placeholder="e.g., Building A, Room 301">
+                                            name="officeLocation" placeholder="ex.: edifício A, sala 301">
                                     </div>
                                     <div>
-                                        <label for="appointmentDate" class="form-label">Appointment Date</label>
+                                        <label for="appointmentDate" class="form-label">Data de nomeação</label>
                                         <input type="date" class="form-control" id="appointmentDate"
                                             name="appointmentDate">
                                     </div>
@@ -717,30 +455,30 @@
                                         <i class="bi bi-graph-up text-info"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-0">Department Metrics &amp; Budget</h5>
-                                        <p class="text-muted small mb-0">Financial and enrollment information</p>
+                                        <h5 class="mb-0">Indicadores e orçamento do departamento</h5>
+                                        <p class="text-muted small mb-0">Informações financeiras e de matrículas</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="dashboard-grid grid-cols-3 gap-3">
                                     <div>
-                                        <label for="currentStudents" class="form-label">Current Students</label>
+                                        <label for="currentStudents" class="form-label">Estudantes inscritos</label>
                                         <input type="number" class="form-control" id="currentStudents"
                                             name="currentStudents" min="0" placeholder="0" value="0">
                                     </div>
                                     <div>
-                                        <label for="maxCapacity" class="form-label">Maximum Capacity</label>
+                                        <label for="maxCapacity" class="form-label">Capacidade máxima</label>
                                         <input type="number" class="form-control" id="maxCapacity" name="maxCapacity"
-                                            min="1" placeholder="e.g., 2000">
+                                            min="1" placeholder="ex.: 2000">
                                     </div>
                                     <div>
-                                        <label for="facultyCount" class="form-label">Faculty Members</label>
+                                        <label for="facultyCount" class="form-label">Número de docentes</label>
                                         <input type="number" class="form-control" id="facultyCount" name="facultyCount"
                                             min="0" placeholder="0" value="0">
                                     </div>
                                     <div>
-                                        <label for="annualBudget" class="form-label">Annual Budget (USD)</label>
+                                        <label for="annualBudget" class="form-label">Orçamento anual (USD)</label>
                                         <div class="input-group">
                                             <span class="input-group-text">$</span>
                                             <input type="number" class="form-control" id="annualBudget"
@@ -749,9 +487,9 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="budgetYear" class="form-label">Budget Year</label>
+                                        <label for="budgetYear" class="form-label">Ano do orçamento</label>
                                         <select class="form-select" id="budgetYear" name="budgetYear">
-                                            <option value="">Select year...</option>
+                                            <option value="">Selecionar ano...</option>
                                             <option value="2024">2024</option>
                                             <option value="2025" selected>2025</option>
                                             <option value="2026">2026</option>
@@ -772,8 +510,8 @@
                                         <i class="bi bi-gear text-warning"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-0">Additional Settings</h5>
-                                        <p class="text-muted small mb-0">Optional configuration and features</p>
+                                        <h5 class="mb-0">Definições adicionais</h5>
+                                        <p class="text-muted small mb-0">Configurações e funcionalidades opcionais</p>
                                     </div>
                                 </div>
                             </div>
@@ -784,10 +522,10 @@
                                             <input class="form-check-input" type="checkbox" id="allowOnlineApplication"
                                                 name="allowOnlineApplication" checked>
                                             <label class="form-check-label" for="allowOnlineApplication">
-                                                Allow Online Applications
+                                                Permitir candidaturas online
                                             </label>
-                                            <div class="form-text">Students can apply to this department through the
-                                                online portal</div>
+                                            <div class="form-text">Os estudantes podem candidatar-se a este departamento
+                                                através do portal online.</div>
                                         </div>
                                     </div>
                                     <div>
@@ -795,10 +533,10 @@
                                             <input class="form-check-input" type="checkbox" id="enableNotifications"
                                                 name="enableNotifications" checked>
                                             <label class="form-check-label" for="enableNotifications">
-                                                Enable Email Notifications
+                                                Ativar notificações por e-mail
                                             </label>
-                                            <div class="form-text">Department head will receive email notifications for
-                                                important updates</div>
+                                            <div class="form-text">O responsável pelo departamento receberá notificações
+                                                por e-mail sobre atualizações importantes.</div>
                                         </div>
                                     </div>
                                     <div>
@@ -806,23 +544,24 @@
                                             <input class="form-check-input" type="checkbox" id="publiclyVisible"
                                                 name="publiclyVisible" checked>
                                             <label class="form-check-label" for="publiclyVisible">
-                                                Publicly Visible
+                                                Visível publicamente
                                             </label>
-                                            <div class="form-text">Department information will be visible on the public
-                                                website</div>
+                                            <div class="form-text">As informações do departamento estarão visíveis no
+                                                sítio Web público.</div>
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="departmentWebsite" class="form-label">Department Website</label>
+                                        <label for="departmentWebsite" class="form-label">Sítio Web do departamento</label>
                                         <input type="url" class="form-control" id="departmentWebsite"
                                             name="departmentWebsite" placeholder="https://cs.kiaalap.edu">
-                                        <div class="form-text">Optional: Department's dedicated website URL</div>
+                                        <div class="form-text">Opcional: endereço do sítio Web do departamento.</div>
                                     </div>
                                     <div>
-                                        <label for="socialMedia" class="form-label">Social Media</label>
+                                        <label for="socialMedia" class="form-label">Redes sociais</label>
                                         <input type="url" class="form-control" id="socialMedia" name="socialMedia"
                                             placeholder="https://linkedin.com/company/kiaalap-cs">
-                                        <div class="form-text">Optional: LinkedIn, Twitter, or Facebook page</div>
+                                        <div class="form-text">Opcional: página do LinkedIn, X (Twitter) ou Facebook
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -836,17 +575,18 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="form-text">
                                         <i class="bi bi-info-circle me-1"></i>
-                                        Fields marked with * are required. You can edit all information later.
+                                        Os campos assinalados com * são obrigatórios. Pode editar todas as informações
+                                        mais tarde.
                                     </div>
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-outline-secondary" id="saveDraft">
-                                            <i class="bi bi-file-earmark me-2"></i>Save as Draft
+                                            <i class="bi bi-file-earmark me-2"></i>Guardar como rascunho
                                         </button>
                                         <button type="button" class="btn btn-outline-info" id="previewDepartment">
-                                            <i class="bi bi-eye me-2"></i>Preview
+                                            <i class="bi bi-eye me-2"></i>Pré-visualizar
                                         </button>
                                         <button type="submit" class="btn btn-primary">
-                                            <i class="bi bi-check-circle me-2"></i>Create Department
+                                            <i class="bi bi-check-circle me-2"></i>Criar Departamento
                                         </button>
                                     </div>
                                 </div>
@@ -862,10 +602,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -876,24 +616,24 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="templateModalTitle">Choose a department template</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2 class="modal-title fs-5" id="templateModalTitle">Escolha um modelo de departamento</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-grid gap-2">
                         <button type="button" class="template-card btn btn-outline-primary text-start"
-                            data-template="engineering">Engineering</button>
+                            data-template="engineering">Engenharia</button>
                         <button type="button" class="template-card btn btn-outline-primary text-start"
-                            data-template="business">Business Administration</button>
+                            data-template="business">Gestão de Empresas</button>
                         <button type="button" class="template-card btn btn-outline-primary text-start"
                             data-template="science">Science</button>
                         <button type="button" class="template-card btn btn-outline-primary text-start"
-                            data-template="liberal-arts">Liberal Arts</button>
+                            data-template="liberal-arts">Humanidades</button>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="applyTemplate" disabled>Apply template</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="applyTemplate" disabled>Aplicar modelo</button>
                 </div>
             </div>
         </div>
@@ -903,14 +643,14 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="previewModalTitle">Department preview</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2 class="modal-title fs-5" id="previewModalTitle">Pré-visualização do departamento</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
                     <div id="previewContent"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
 
                 </div>
             </div>
@@ -921,15 +661,16 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="successModalTitle">Department created</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2 class="modal-title fs-5" id="successModalTitle">Departamento criado</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="mb-0">This demo has completed the form. Connect your backend to save the department.</p>
+                    <p class="mb-0">Este exemplo preencheu o formulário. Ligue o backend para guardar o departamento.
+                    </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="departments.html" class="btn btn-primary">View departments</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="departments.html" class="btn btn-primary">Ver departments</a>
                 </div>
             </div>
         </div>
@@ -966,7 +707,7 @@
             applyTemplateBtn.addEventListener('click', function() {
                 const templates = {
                     engineering: {
-                        name: 'Computer Science',
+                        name: 'Ci?ncias Inform?ticas',
                         code: 'CS',
                         head: 'Dr. John Smith',
                         email: 'john.smith@kiaalap.edu',
@@ -974,7 +715,7 @@
                         description: 'The Computer Science department focuses on software engineering, artificial intelligence, cybersecurity, and computer systems.'
                     },
                     business: {
-                        name: 'Business Administration',
+                        name: 'Gest?o de Empresas',
                         code: 'BBA',
                         head: 'Dr. Sarah Johnson',
                         email: 'sarah.johnson@kiaalap.edu',
@@ -982,7 +723,7 @@
                         description: 'The Business Administration department offers comprehensive programs in management, finance, marketing, and entrepreneurship.'
                     },
                     science: {
-                        name: 'Biology',
+                        name: 'Biologia',
                         code: 'BIO',
                         head: 'Dr. Michael Brown',
                         email: 'michael.brown@kiaalap.edu',
@@ -990,7 +731,7 @@
                         description: 'The Biology department provides cutting-edge education in life sciences, biotechnology, and medical research.'
                     },
                     'liberal-arts': {
-                        name: 'English Literature',
+                        name: 'Literatura Inglesa',
                         code: 'ENG',
                         head: 'Dr. Emma Davis',
                         email: 'emma.davis@kiaalap.edu',
@@ -1038,26 +779,26 @@
                 previewContent.innerHTML = `
                     <div class="row">
                         <div>
-                            <h6>Department Information</h6>
+                            <h6>Informações do departamento</h6>
                             <table class="table table-sm">
-                                <tr><th>Name:</th><td>${esc(formData.get('departmentName'), 'Not specified')}</td></tr>
-                                <tr><th>Code:</th><td>${esc(formData.get('departmentCode'), 'Not specified')}</td></tr>
-                                <tr><th>Status:</th><td><span class="badge bg-${formData.get('departmentStatus') === 'active' ? 'success' : 'warning'}">${esc(formData.get('departmentStatus'), 'Not specified')}</span></td></tr>
-                                <tr><th>Established:</th><td>${esc(formData.get('establishedYear'), 'Not specified')}</td></tr>
+                                <tr><th>Nome:</th><td>${esc(formData.get('departmentName'), 'Por especificar')}</td></tr>
+                                <tr><th>Código:</th><td>${esc(formData.get('departmentCode'), 'Por especificar')}</td></tr>
+                                <tr><th>Estado:</th><td><span class="badge bg-${formData.get('departmentStatus') === 'active' ? 'success' : 'warning'}">${esc(formData.get('departmentStatus'), 'Por especificar')}</span></td></tr>
+                                <tr><th>Ano de fundação:</th><td>${esc(formData.get('establishedYear'), 'Por especificar')}</td></tr>
                             </table>
                         </div>
                         <div>
-                            <h6>Department Head</h6>
+                            <h6>Responsável pelo departamento</h6>
                             <table class="table table-sm">
-                                <tr><th>Name:</th><td>${esc(formData.get('headName'), 'Not specified')}</td></tr>
-                                <tr><th>Email:</th><td>${esc(formData.get('headEmail'), 'Not specified')}</td></tr>
-                                <tr><th>Phone:</th><td>${esc(formData.get('headPhone'), 'Not specified')}</td></tr>
-                                <tr><th>Office:</th><td>${esc(formData.get('officeLocation'), 'Not specified')}</td></tr>
+                                <tr><th>Nome:</th><td>${esc(formData.get('headName'), 'Por especificar')}</td></tr>
+                                <tr><th>E-mail:</th><td>${esc(formData.get('headEmail'), 'Por especificar')}</td></tr>
+                                <tr><th>Telefone:</th><td>${esc(formData.get('headPhone'), 'Por especificar')}</td></tr>
+                                <tr><th>Gabinete:</th><td>${esc(formData.get('officeLocation'), 'Por especificar')}</td></tr>
                             </table>
                         </div>
                         <div class="col-12 mt-3">
-                            <h6>Description</h6>
-                            <p class="text-muted">${esc(formData.get('description'), 'No description provided')}</p>
+                            <h6>Descrição</h6>
+                            <p class="text-muted">${esc(formData.get('description'), 'Não foi fornecida uma descrição.')}</p>
                         </div>
                     </div>
                 `;
@@ -1077,7 +818,7 @@
                     const originalText = submitBtn.innerHTML;
 
                     submitBtn.disabled = true;
-                    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Creating...';
+                    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>A criar...';
 
                     setTimeout(() => {
                         submitBtn.disabled = false;

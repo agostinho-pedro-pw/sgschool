@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar - INFOSI-gest</title>
+    <title>Entrar - sgSchool</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 
     <!-- Bibliotecas base (Bootstrap e ícones) -->
@@ -150,7 +150,7 @@
 
         <div class="text-center mt-4">
             <p class="text-white-50 small">
-                &copy; 2026 INFOSI-gest. Todos os direitos reservados.
+                &copy; 2026 sgSchool. Todos os direitos reservados.
                 <a href="#" class="text-white-50">Privacidade</a> ·
                 <a href="#" class="text-white-50">Termos</a>
             </p>

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Edit department - Kiaalap Dashboard</title>
+    <title>Editar departamento - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -87,299 +87,35 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-
     <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <div class="sidebar-brand">
-                <h5>
-                    <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
-                </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-        </div>
-
-        <nav class="sidebar-nav" aria-label="Main navigation">
-            <div class="menu-section">
-                <div class="menu-section-title">Main</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#dashboardSubmenu" aria-expanded="false">
-                            <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
-                        </a>
-                        <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
-                            <li><a class="nav-link " href="widgets.html">Widgets</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="events.html">
-                            <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#professorsSubmenu" aria-expanded="false">
-                            <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
-                        </a>
-                        <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#studentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-people"></i>
-                            <span>Students</span>
-                        </a>
-                        <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#coursesSubmenu" aria-expanded="false">
-                            <i class="bi bi-book"></i>
-                            <span>Courses</span>
-                        </a>
-                        <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#librarySubmenu" aria-expanded="false">
-                            <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
-                        </a>
-                        <ul id="librarySubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu active" href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#departmentsSubmenu" aria-expanded="true">
-                            <i class="bi bi-building"></i>
-                            <span>Departments</span>
-                        </a>
-                        <ul id="departmentsSubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link " href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link active" href="edit-department.html">Edit Department</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#mailboxSubmenu" aria-expanded="false">
-                            <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
-                        </a>
-                        <ul id="mailboxSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Interface</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#componentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
-                        </a>
-                        <ul id="componentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link " href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#formsSubmenu" aria-expanded="false">
-                            <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
-                        </a>
-                        <ul id="formsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link " href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#chartsSubmenu" aria-expanded="false">
-                            <i class="bi bi-bar-chart"></i>
-                            <span>Charts</span>
-                        </a>
-                        <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#tablesSubmenu" aria-expanded="false">
-                            <i class="bi bi-table"></i>
-                            <span>Tables</span>
-                        </a>
-                        <ul id="tablesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link " href="code-editor.html">
-                            <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#uiToolsSubmenu" aria-expanded="false">
-                            <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
-                        </a>
-                        <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#viewersSubmenu" aria-expanded="false">
-                            <i class="bi bi-eye"></i>
-                            <span>Viewers</span>
-                        </a>
-                        <ul id="viewersSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="pdf-viewer.html">PDF Viewer</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#mapsSubmenu" aria-expanded="false">
-                            <i class="bi bi-map"></i>
-                            <span>Maps</span>
-                        </a>
-                        <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#authSubmenu" aria-expanded="false">
-                            <i class="bi bi-shield-lock"></i>
-                            <span>Authentication</span>
-                        </a>
-                        <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
-                            <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#errorsSubmenu" aria-expanded="false">
-                            <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
-                        </a>
-                        <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </aside>
+    @include('layouts._include.dashboard.sidebar')
     <!-- Main Content Wrapper -->
     <div class="main-wrapper" id="mainWrapper">
         <!-- Header -->
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
-                    aria-controls="sidebar">
+                <button type="button" class="hamburger-menu" id="sidebarToggle"
+                    aria-label="Mostrar/ocultar menu lateral" aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Edit department</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Editar departamento</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -388,29 +124,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
-                            aria-controls="searchForm">
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle"
+                            aria-label="Abrir pesquisa" aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -418,7 +154,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -426,8 +162,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -440,9 +176,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -455,9 +191,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">John entregou o seu trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -471,7 +207,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída
+                                            </div>
                                             <div class="text-muted small">Yesterday</div>
                                         </div>
                                     </div>
@@ -482,7 +219,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -491,28 +228,27 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -520,14 +256,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar
+                                    sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -542,13 +278,14 @@
                 <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-start">
                         <div>
-                            <h1 class="h3 font-bold">Edit Department</h1>
-                            <p class="text-muted text-sm">Update department information and manage settings for Computer
-                                Science Department.</p>
+                            <h1 class="h3 font-bold">Editar Departamento</h1>
+                            <p class="text-muted text-sm">Atualizar department information and manage settings for
+                                Computer
+                                Science Departamento.</p>
                         </div>
                         <div class="d-flex gap-2">
                             <a href="departments.html" class="btn btn-outline-secondary">
-                                <i class="bi bi-arrow-left me-2"></i>Back to Departments
+                                <i class="bi bi-arrow-left me-2"></i>Voltar aos departamentos
                             </a>
                         </div>
                     </div>
@@ -558,9 +295,9 @@
                 <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
                     <i class="bi bi-info-circle-fill me-2"></i>
                     <div>
-                        <strong>Department Status:</strong> This department is currently active with 1,542 enrolled
-                        students and 28 faculty members.
-                        <a href="#" class="alert-link ms-2">View detailed report</a>
+                        <strong>Departamento Estado:</strong> This department is currently active with 1,542 inscritos
+                        estudantes and 28 faculty members.
+                        <a href="#" class="alert-link ms-2">Ver relatório detalhado</a>
                     </div>
                 </div>
 
@@ -571,18 +308,18 @@
                         <div class="col-span-8">
                             <div class="dashboard-card">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title mb-0">Department Information</h5>
+                                    <h5 class="dashboard-card-title mb-0">Informações do departamento</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <form id="editDepartmentForm">
                                         <div class="dashboard-grid grid-cols-2 gap-3">
                                             <div>
-                                                <label for="deptName" class="form-label">Department Name</label>
+                                                <label for="deptName" class="form-label">Nome do departamento</label>
                                                 <input type="text" class="form-control" id="deptName"
-                                                    value="Computer Science" required>
+                                                    value="Ci?ncias Inform?ticas" required>
                                             </div>
                                             <div>
-                                                <label for="deptCode" class="form-label">Department Code</label>
+                                                <label for="deptCode" class="form-label">Código do departamento</label>
                                                 <input type="text" class="form-control" id="deptCode" value="CS"
                                                     required>
                                             </div>
@@ -590,9 +327,10 @@
 
                                         <div class="dashboard-grid grid-cols-2 gap-3">
                                             <div>
-                                                <label for="deptHead" class="form-label">Department Head</label>
+                                                <label for="deptHead" class="form-label">Responsável pelo
+                                                    departamento</label>
                                                 <select class="form-select" id="deptHead" required>
-                                                    <option value="">Select Department Head</option>
+                                                    <option value="">Selecionar responsável pelo departamento</option>
                                                     <option value="1" selected>Dr. John Smith</option>
                                                     <option value="2">Dr. Sarah Johnson</option>
                                                     <option value="3">Dr. Michael Brown</option>
@@ -600,53 +338,53 @@
                                                 </select>
                                             </div>
                                             <div>
-                                                <label for="deptStatus" class="form-label">Status</label>
+                                                <label for="deptStatus" class="form-label">Estado</label>
                                                 <select class="form-select" id="deptStatus" required>
-                                                    <option value="active" selected>Active</option>
-                                                    <option value="paused">Paused</option>
-                                                    <option value="disabled">Disabled</option>
+                                                    <option value="active" selected>Ativo</option>
+                                                    <option value="paused">Pausado</option>
+                                                    <option value="disabled">Desativado</option>
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div class="dashboard-grid grid-cols-2 gap-3">
                                             <div>
-                                                <label for="deptEmail" class="form-label">Department Email</label>
+                                                <label for="deptEmail" class="form-label">E-mail do departamento</label>
                                                 <input type="email" class="form-control" id="deptEmail"
                                                     value="cs@kiaalap.edu" required>
                                             </div>
                                             <div>
-                                                <label for="deptPhone" class="form-label">Phone Number</label>
+                                                <label for="deptPhone" class="form-label">Número de telefone</label>
                                                 <input type="tel" class="form-control" id="deptPhone"
                                                     value="+1-555-0123">
                                             </div>
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="deptLocation" class="form-label">Building/Location</label>
+                                            <label for="deptLocation" class="form-label">Edifício/Localização</label>
                                             <input type="text" class="form-control" id="deptLocation"
                                                 value="Science Building, Floor 3">
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="deptBudget" class="form-label">Annual Budget ($)</label>
+                                            <label for="deptBudget" class="form-label">Orçamento anual ($)</label>
                                             <input type="number" class="form-control" id="deptBudget" value="2800000"
                                                 min="0">
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="deptDesc" class="form-label">Description</label>
+                                            <label for="deptDesc" class="form-label">Descrição</label>
                                             <textarea class="form-control" id="deptDesc"
-                                                rows="4">The Computer Science Department offers undergraduate and graduate programs in computer science, software engineering, and related fields. With cutting-edge research facilities and industry partnerships, we prepare students for successful careers in technology.</textarea>
+                                                rows="4">O Departamento de Ciências Informáticas oferece cursos de licenciatura e pàs-gradua??o em ciências inform?ticas, engenharia de software e áreas afins. Com instalações de investiga??o de ponta e parcerias com a indàstria, preparamos os estudantes para carreiras de sucesso na área da tecnologia.</textarea>
                                         </div>
 
                                         <div class="d-flex justify-content-end gap-2">
                                             <button type="button" class="btn btn-outline-secondary"
                                                 onclick="window.location.href='departments.html'">
-                                                <i class="bi bi-x-circle me-1"></i> Cancel
+                                                <i class="bi bi-x-circle me-1"></i> Cancelar
                                             </button>
                                             <button type="submit" class="btn btn-primary">
-                                                <i class="bi bi-check-circle me-1"></i> Update Department
+                                                <i class="bi bi-check-circle me-1"></i> Atualizar Departamento
                                             </button>
                                         </div>
                                     </form>
@@ -658,7 +396,7 @@
                         <div class="col-span-4">
                             <div class="dashboard-card">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title mb-0">Department Statistics</h5>
+                                    <h5 class="dashboard-card-title mb-0">Departamento Statistics</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <!-- Statistics Grid -->
@@ -666,7 +404,7 @@
                                         <div>
                                             <div class="p-3 bg-light border rounded shadow-sm">
                                                 <h4 class="text-primary mb-1">1,542</h4>
-                                                <small class="text-muted">Students</small>
+                                                <small class="text-muted">Estudantes</small>
                                                 <div class="text-success small mt-1">
                                                     <i class="bi bi-arrow-up"></i> +5.2%
                                                 </div>
@@ -675,7 +413,7 @@
                                         <div>
                                             <div class="p-3 bg-light border rounded shadow-sm">
                                                 <h4 class="text-success mb-1">28</h4>
-                                                <small class="text-muted">Faculty</small>
+                                                <small class="text-muted">Corpo docente</small>
                                                 <div class="text-success small mt-1">
                                                     <i class="bi bi-arrow-up"></i> +2 new
                                                 </div>
@@ -691,7 +429,7 @@
                                         <div>
                                             <div class="p-3 bg-light border rounded shadow-sm">
                                                 <h4 class="text-warning mb-1">89%</h4>
-                                                <small class="text-muted">Capacity</small>
+                                                <small class="text-muted">Capacidade</small>
                                                 <div class="text-success small mt-1">Healthy</div>
                                             </div>
                                         </div>
@@ -711,7 +449,7 @@
 
                                     <!-- Contact Information -->
                                     <div class="mb-4">
-                                        <h6 class="text-muted mb-2">Contact Information</h6>
+                                        <h6 class="text-muted mb-2">Informações de contacto</h6>
                                         <div class="small">
                                             <div class="mb-1"><i class="bi bi-geo-alt me-2"></i> Science Building, Floor
                                                 3</div>
@@ -726,7 +464,7 @@
                                         <h6 class="text-muted mb-2">Recent Recognition</h6>
                                         <div class="d-flex flex-wrap gap-2">
                                             <span class="badge bg-primary">Excellence Award 2025</span>
-                                            <span class="badge bg-success">Top Research Dept</span>
+                                            <span class="badge bg-success">Parap Research Dept</span>
                                         </div>
                                     </div>
                                 </div>
@@ -742,10 +480,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -773,11 +511,11 @@
                             <div class="toast position-fixed top-0 end-0 m-3" role="alert">
                                 <div class="toast-header">
                                     <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                    <strong class="me-auto">Success</strong>
+                                    <strong class="me-auto">Sucesso</strong>
                                     <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                                 </div>
                                 <div class="toast-body">
-                                    Department updated successfully! Redirecting...
+                                    Departamento atualizado com sucesso! A redirecionar...
                                 </div>
                             </div>
                         `;

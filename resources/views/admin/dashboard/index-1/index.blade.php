@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Dashboard Variant 1 - Kiaalap Dashboard</title>
+    <title>Painel - Variante 1 - sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -73,7 +73,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -87,21 +87,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Painel</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -110,29 +110,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -148,8 +148,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -162,9 +162,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -177,9 +177,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -192,9 +192,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -204,7 +204,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -213,28 +213,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -242,14 +240,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -264,16 +262,16 @@
                 <div class="mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 font-bold">Advanced Analytics Dashboard</h1>
+                            <h1 class="h3 font-bold">Painel de Análise Avançada</h1>
                             <p class="text-muted text-sm">Comprehensive performance metrics and financial insights for
                                 your educational institution.</p>
                         </div>
                         <div class="d-flex gap-2">
                             <button type="button" class="btn btn-outline-secondary">
-                                <i class="bi bi-download me-2"></i>Export Report
+                                <i class="bi bi-download me-2"></i>Exportar Relatório
                             </button>
                             <button type="button" class="btn btn-primary">
-                                <i class="bi bi-graph-up me-2"></i>View Analytics
+                                <i class="bi bi-graph-up me-2"></i>Ver Análise
                             </button>
                         </div>
                     </div>
@@ -291,11 +289,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-primary fw-bold mb-1" style="font-size: 2rem;">$2.4M</div>
-                                <div class="stat-label text-muted mb-2">Total Revenue</div>
+                                <div class="stat-label text-muted mb-2">Receita Total</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +15.2%
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">from last month</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">face ao mês passado</div>
                             </div>
                         </div>
 
@@ -308,11 +306,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-success fw-bold mb-1" style="font-size: 2rem;">8,547</div>
-                                <div class="stat-label text-muted mb-2">Active Students</div>
+                                <div class="stat-label text-muted mb-2">Estudantes Ativos</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +324
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">this week</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">esta semana</div>
                             </div>
                         </div>
 
@@ -325,11 +323,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-info fw-bold mb-1" style="font-size: 2rem;">127</div>
-                                <div class="stat-label text-muted mb-2">Active Courses</div>
+                                <div class="stat-label text-muted mb-2">Cursos Ativos</div>
                                 <div class="stat-change text-secondary small fw-semibold">
-                                    <i class="bi bi-dash-lg" style="font-size: 12px;"></i> No change
+                                    <i class="bi bi-dash-lg" style="font-size: 12px;"></i> Sem alterações
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">from last month</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">face ao mês passado</div>
                             </div>
                         </div>
 
@@ -342,7 +340,7 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-warning fw-bold mb-1" style="font-size: 2rem;">94.2%</div>
-                                <div class="stat-label text-muted mb-2">Satisfaction Rate</div>
+                                <div class="stat-label text-muted mb-2">Taxa de Satisfação</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +2.1%
                                 </div>
@@ -357,16 +355,16 @@
                     <div class="dashboard-grid grid-cols-2">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Revenue Trends</h5>
+                                <h5 class="dashboard-card-title mb-0">Tendências das Receitas</h5>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle"
                                         data-bs-toggle="dropdown">
-                                        Last 6 months
+                                        Últimos 6 meses
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Last 3 months</a></li>
-                                        <li><a class="dropdown-item" href="#">Last 6 months</a></li>
-                                        <li><a class="dropdown-item" href="#">Last year</a></li>
+                                        <li><a class="dropdown-item" href="#">Últimos 3 meses</a></li>
+                                        <li><a class="dropdown-item" href="#">Últimos 6 meses</a></li>
+                                        <li><a class="dropdown-item" href="#">Último ano</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -379,16 +377,16 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Student Enrollment</h5>
+                                <h5 class="dashboard-card-title mb-0">Matrícula de Estudantes</h5>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle"
                                         data-bs-toggle="dropdown">
-                                        This year
+                                        Este ano
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">This month</a></li>
-                                        <li><a class="dropdown-item" href="#">This year</a></li>
-                                        <li><a class="dropdown-item" href="#">All time</a></li>
+                                        <li><a class="dropdown-item" href="#">Este mês</a></li>
+                                        <li><a class="dropdown-item" href="#">Este ano</a></li>
+                                        <li><a class="dropdown-item" href="#">Todo o período</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -406,25 +404,25 @@
                     <div class="dashboard-grid grid-cols-3">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title">Course Performance</h6>
+                                <h6 class="dashboard-card-title">Desempenho dos Cursos</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="row text-center">
                                     <div class="col-4">
                                         <div class="border-end">
                                             <div class="fw-bold text-success">98%</div>
-                                            <small class="text-muted">Completion</small>
+                                            <small class="text-muted">Conclusão</small>
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="border-end">
                                             <div class="fw-bold text-primary">4.6</div>
-                                            <small class="text-muted">Avg Rating</small>
+                                            <small class="text-muted">Classificação Média</small>
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="fw-bold text-info">92%</div>
-                                        <small class="text-muted">Pass Rate</small>
+                                        <small class="text-muted">Taxa de Aprovação</small>
                                     </div>
                                 </div>
                                 <hr class="my-3">
@@ -436,12 +434,12 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title">Financial Overview</h6>
+                                <h6 class="dashboard-card-title">Resumo Financeiro</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span>Tuition Revenue</span>
+                                        <span>Receita de Propinas</span>
                                         <strong class="text-success">$1.8M</strong>
                                     </div>
                                     <div class="progress progress-sm">
@@ -450,7 +448,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <span>Other Income</span>
+                                        <span>Outras Receitas</span>
                                         <strong class="text-primary">$600K</strong>
                                     </div>
                                     <div class="progress progress-sm">
@@ -458,28 +456,28 @@
                                     </div>
                                 </div>
                                 <div class="small text-muted">
-                                    <strong>Budget Utilization:</strong> 82% of annual budget
+                                    <strong>Execução do Orçamento:</strong> 82% of annual budget
                                 </div>
                             </div>
                         </div>
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title">Quick Actions</h6>
+                                <h6 class="dashboard-card-title">Ações Rápidas</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="d-grid gap-2">
                                     <button type="button" class="btn btn-outline-primary btn-sm">
-                                        <i class="bi bi-file-earmark-text me-2"></i>Generate Report
+                                        <i class="bi bi-file-earmark-text me-2"></i>Gerar Relatório
                                     </button>
                                     <button type="button" class="btn btn-outline-success btn-sm">
-                                        <i class="bi bi-person-plus me-2"></i>Add Student
+                                        <i class="bi bi-person-plus me-2"></i>Adicionar Estudante
                                     </button>
                                     <button type="button" class="btn btn-outline-info btn-sm">
-                                        <i class="bi bi-book-half me-2"></i>New Course
+                                        <i class="bi bi-book-half me-2"></i>Novo Curso
                                     </button>
                                     <button type="button" class="btn btn-outline-warning btn-sm">
-                                        <i class="bi bi-calendar-event me-2"></i>Schedule Event
+                                        <i class="bi bi-calendar-event me-2"></i>Agendar Evento
                                     </button>
                                 </div>
                             </div>
@@ -492,8 +490,8 @@
                     <div class="dashboard-grid grid-cols-2">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Top Performing Students</h5>
-                                <a href="all-students.html" class="btn btn-outline-primary btn-sm">View All</a>
+                                <h5 class="dashboard-card-title mb-0">Estudantes com Melhor Desempenho</h5>
+                                <a href="all-students.html" class="btn btn-outline-primary btn-sm">Ver Todos</a>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="list-group list-group-flush">
@@ -506,7 +504,7 @@
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">Sarah Chen</h6>
                                             <small class="text-muted">Computer Science - Senior</small>
-                                            <div class="small text-success">GPA: 3.98 | 15 courses completed</div>
+                                            <div class="small text-success">Média: 3,98 | 15 cursos concluídos</div>
                                         </div>
                                         <div class="text-warning">
                                             <i class="bi bi-trophy-fill" style="font-size: 1.2rem; color: #ffc107;"></i>
@@ -521,7 +519,7 @@
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">Marcus Rodriguez</h6>
                                             <small class="text-muted">Mathematics - Junior</small>
-                                            <div class="small text-success">GPA: 3.95 | 12 courses completed</div>
+                                            <div class="small text-success">Média: 3,95 | 12 cursos concluídos</div>
                                         </div>
                                         <div class="text-secondary">
                                             <i class="bi bi-award-fill" style="font-size: 1.2rem; color: #6c757d;"></i>
@@ -536,7 +534,7 @@
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">Emma Thompson</h6>
                                             <small class="text-muted">Biology - Senior</small>
-                                            <div class="small text-success">GPA: 3.92 | 14 courses completed</div>
+                                            <div class="small text-success">Média: 3,92 | 14 cursos concluídos</div>
                                         </div>
                                         <div class="text-info">
                                             <i class="bi bi-star-fill" style="font-size: 1.2rem; color: #0dcaf0;"></i>
@@ -548,8 +546,8 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Revenue Sources</h5>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Report</a>
+                                <h5 class="dashboard-card-title mb-0">Fontes de Receita</h5>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Relatório</a>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="list-group list-group-flush">
@@ -559,9 +557,9 @@
                                             <i class="bi bi-mortarboard" style="color: #198754;"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Tuition Fees</h6>
+                                            <h6 class="mb-1">Propinas</h6>
                                             <small class="text-muted">Undergraduate &amp; Graduate</small>
-                                            <div class="small text-muted">75% of total revenue</div>
+                                            <div class="small text-muted">75% do total das receitas</div>
                                         </div>
                                         <div class="text-end">
                                             <div class="fw-bold text-success">$1.8M</div>
@@ -576,7 +574,7 @@
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">Facility Rentals</h6>
                                             <small class="text-muted">Events &amp; Conferences</small>
-                                            <div class="small text-muted">15% of total revenue</div>
+                                            <div class="small text-muted">15% do total das receitas</div>
                                         </div>
                                         <div class="text-end">
                                             <div class="fw-bold text-primary">$360K</div>
@@ -591,7 +589,7 @@
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">Grants &amp; Donations</h6>
                                             <small class="text-muted">Research &amp; Scholarships</small>
-                                            <div class="small text-muted">10% of total revenue</div>
+                                            <div class="small text-muted">10% do total das receitas</div>
                                         </div>
                                         <div class="text-end">
                                             <div class="fw-bold text-info">$240K</div>
@@ -611,10 +609,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

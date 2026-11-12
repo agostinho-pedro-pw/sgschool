@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para instituições de ensino">
+    <meta name="keywords" content="educação, painel, ensino, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Tabs - Kiaalap Dashboard</title>
+    <title>Separadores - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -314,7 +314,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -327,124 +327,124 @@
             <div class="sidebar-brand">
                 <h5>
                     <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
+                    sgSchool
                 </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Fechar barra lateral">
                     <i class="bi bi-x-lg"></i>
                 </button>
             </div>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Main navigation">
+        <nav class="sidebar-nav" aria-label="Navegação principal">
             <div class="menu-section">
-                <div class="menu-section-title">Main</div>
+                <div class="menu-section-title">Principal</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#dashboardSubmenu" aria-expanded="false">
                             <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
+                            <span>Painel</span>
                         </a>
                         <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
-                            <li><a class="nav-link " href="widgets.html">Widgets</a></li>
+                            <li><a class="nav-link " href="index.html">Painel v.1</a></li>
+                            <li><a class="nav-link " href="index-1.html">Painel v.2</a></li>
+                            <li><a class="nav-link " href="index-2.html">Painel v.3</a></li>
+                            <li><a class="nav-link " href="widgets.html">Elementos</a></li>
+                            <li><a class="nav-link " href="analytics.html">Análise de dados</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="events.html">
                             <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
+                            <span>Eventos</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
+                <div class="menu-section-title">Académico</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#professorsSubmenu" aria-expanded="false">
                             <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
+                            <span>Professores</span>
                         </a>
                         <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
+                            <li><a class="nav-link " href="all-professors.html">Todos os professores</a></li>
+                            <li><a class="nav-link " href="add-professor.html">Adicionar professor</a></li>
+                            <li><a class="nav-link " href="edit-professor.html">Editar professor</a></li>
+                            <li><a class="nav-link " href="professor-profile.html">Perfil do professor</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#studentsSubmenu" aria-expanded="false">
                             <i class="bi bi-people"></i>
-                            <span>Students</span>
+                            <span>Estudantes</span>
                         </a>
                         <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
+                            <li><a class="nav-link " href="all-students.html">Todos os estudantes</a></li>
+                            <li><a class="nav-link " href="add-student.html">Adicionar estudante</a></li>
+                            <li><a class="nav-link " href="edit-student.html">Editar estudante</a></li>
+                            <li><a class="nav-link " href="student-profile.html">Perfil do estudante</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#coursesSubmenu" aria-expanded="false">
                             <i class="bi bi-book"></i>
-                            <span>Courses</span>
+                            <span>Cursos</span>
                         </a>
                         <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
+                            <li><a class="nav-link " href="all-courses.html">Todos os cursos</a></li>
+                            <li><a class="nav-link " href="add-course.html">Adicionar curso</a></li>
+                            <li><a class="nav-link " href="edit-course.html">Editar curso</a></li>
+                            <li><a class="nav-link " href="course-info.html">Informações do curso</a></li>
+                            <li><a class="nav-link " href="course-payment.html">Pagamento do curso</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#librarySubmenu" aria-expanded="false">
                             <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
+                            <span>Biblioteca</span>
                         </a>
                         <ul id="librarySubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
+                            <li><a class="nav-link " href="library-assets.html">Recursos da biblioteca</a></li>
+                            <li><a class="nav-link " href="add-library-assets.html">Adicionar recurso da biblioteca</a></li>
+                            <li><a class="nav-link " href="edit-library-assets.html">Editar recurso da biblioteca</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#departmentsSubmenu" aria-expanded="false">
                             <i class="bi bi-building"></i>
-                            <span>Departments</span>
+                            <span>Departamentos</span>
                         </a>
                         <ul id="departmentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link " href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link " href="edit-department.html">Edit Department</a></li>
+                            <li><a class="nav-link " href="departments.html">Lista de departamentos</a></li>
+                            <li><a class="nav-link " href="add-department.html">Adicionar departamento</a></li>
+                            <li><a class="nav-link " href="edit-department.html">Editar departamento</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
+                <div class="menu-section-title">Comunicação</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#mailboxSubmenu" aria-expanded="false">
                             <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
+                            <span>Correio</span>
                         </a>
                         <ul id="mailboxSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
+                            <li><a class="nav-link " href="mailbox.html">Caixa de entrada</a></li>
+                            <li><a class="nav-link " href="mailbox-compose.html">Redigir</a></li>
+                            <li><a class="nav-link " href="mailbox-view.html">Ver mensagem</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -457,129 +457,129 @@
                         <a class="nav-link has-submenu active" href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#componentsSubmenu" aria-expanded="true">
                             <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
+                            <span>Componentes</span>
                         </a>
                         <ul id="componentsSubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link active" href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
+                            <li><a class="nav-link " href="buttons.html">Botões</a></li>
+                            <li><a class="nav-link " href="alerts.html">Alertas</a></li>
+                            <li><a class="nav-link " href="modals.html">Modais</a></li>
+                            <li><a class="nav-link active" href="tabs.html">Separadores</a></li>
+                            <li><a class="nav-link " href="accordion.html">Acordeão</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#formsSubmenu" aria-expanded="false">
                             <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
+                            <span>Formulários</span>
                         </a>
                         <ul id="formsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link " href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
+                            <li><a class="nav-link " href="basic-form-element.html">Formulários básicos</a></li>
+                            <li><a class="nav-link " href="advance-form-element.html">Formulários avançados</a></li>
+                            <li><a class="nav-link " href="password-meter.html">Indicador de segurança da palavra-passe</a></li>
+                            <li><a class="nav-link " href="multi-upload.html">Carregamento de ficheiros</a></li>
+                            <li><a class="nav-link " href="images-cropper.html">Recortador de imagens</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#chartsSubmenu" aria-expanded="false">
                             <i class="bi bi-bar-chart"></i>
-                            <span>Charts</span>
+                            <span>Gráficos</span>
                         </a>
                         <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
+                            <li><a class="nav-link " href="line-charts.html">Gráficos de linhas</a></li>
+                            <li><a class="nav-link " href="area-charts.html">Gráficos de área</a></li>
+                            <li><a class="nav-link " href="bar-charts.html">Gráficos de barras</a></li>
+                            <li><a class="nav-link " href="c3.html">Gráficos C3</a></li>
+                            <li><a class="nav-link " href="peity.html">Gráficos Peity</a></li>
+                            <li><a class="nav-link " href="rounded-chart.html">Gráficos arredondados</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#tablesSubmenu" aria-expanded="false">
                             <i class="bi bi-table"></i>
-                            <span>Tables</span>
+                            <span>Tabelas</span>
                         </a>
                         <ul id="tablesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
+                            <li><a class="nav-link " href="static-table.html">Tabelas estáticas</a></li>
+                            <li><a class="nav-link " href="data-table.html">Tabelas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
+                <div class="menu-section-title">Ferramentas de desenvolvimento</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link " href="code-editor.html">
                             <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
+                            <span>Editor de código</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#uiToolsSubmenu" aria-expanded="false">
                             <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
+                            <span>Componentes da interface</span>
                         </a>
                         <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
+                            <li><a class="nav-link " href="preloader.html">Indicadores de carregamento</a></li>
+                            <li><a class="nav-link " href="notifications.html">Notificações</a></li>
+                            <li><a class="nav-link " href="tree-view.html">Vista em árvore</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#viewersSubmenu" aria-expanded="false">
                             <i class="bi bi-eye"></i>
-                            <span>Viewers</span>
+                            <span>Visualizadores</span>
                         </a>
                         <ul id="viewersSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="pdf-viewer.html">PDF Viewer</a></li>
+                            <li><a class="nav-link " href="pdf-viewer.html">Visualizador de PDF</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#mapsSubmenu" aria-expanded="false">
                             <i class="bi bi-map"></i>
-                            <span>Maps</span>
+                            <span>Mapas</span>
                         </a>
                         <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
+                            <li><a class="nav-link " href="google-map.html">Mapas interativos</a></li>
+                            <li><a class="nav-link " href="data-maps.html">Mapas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
+                <div class="menu-section-title">Páginas</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#authSubmenu" aria-expanded="false">
                             <i class="bi bi-shield-lock"></i>
-                            <span>Authentication</span>
+                            <span>Autenticação</span>
                         </a>
                         <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
+                            <li><a class="nav-link " href="login.html">Iniciar sessão</a></li>
+                            <li><a class="nav-link " href="register.html">Registar</a></li>
                             <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
+                            <li><a class="nav-link " href="password-recovery.html">Recuperar palavra-passe</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#errorsSubmenu" aria-expanded="false">
                             <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
+                            <span>Páginas de erro</span>
                         </a>
                         <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
+                            <li><a class="nav-link " href="404.html">Erro 404</a></li>
+                            <li><a class="nav-link " href="500.html">Erro 500</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -592,21 +592,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Migalhas de pão do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Tabs</li>
+                        <li class="breadcrumb-item"><a href="index.html">Página inicial</a></li>
+                        <li class="breadcrumb-item active">Separadores</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -615,29 +615,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
                                 <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório do corpo docente</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -645,7 +645,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -653,8 +653,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -667,9 +667,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciência a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -682,9 +682,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">O John submeteu o trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -697,9 +697,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -709,7 +709,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -718,28 +718,28 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar
+                                    evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -747,14 +747,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de
+                                    ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -769,7 +769,7 @@
                 <div class="mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 mb-0 text-gray-800">Tabs Components</h1>
+                            <h1 class="h3 mb-0 text-gray-800">Componentes de separadores</h1>
                             <p class="text-muted mb-0">Bootstrap 5 tab components for organizing academic content and
                                 navigation</p>
                         </div>
@@ -779,32 +779,32 @@
                 <!-- Basic Tabs -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Basic Navigation Tabs</h5>
+                        <h5 class="mb-0">Separadores de navegação básicos</h5>
                     </div>
                     <div class="dashboard-card-body px-4 py-4">
                         <ul class="nav nav-tabs" id="basicTabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
                                     data-bs-target="#overview" type="button" role="tab">
-                                    <i class="bi bi-graph-up me-2"></i>Overview
+                                    <i class="bi bi-graph-up me-2"></i>Visão geral
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="students-tab" data-bs-toggle="tab"
                                     data-bs-target="#students" type="button" role="tab">
-                                    <i class="bi bi-people me-2"></i>Students
+                                    <i class="bi bi-people me-2"></i>Estudantes
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses"
                                     type="button" role="tab">
-                                    <i class="bi bi-book me-2"></i>Courses
+                                    <i class="bi bi-book me-2"></i>Cursos
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="reports-tab" data-bs-toggle="tab" data-bs-target="#reports"
                                     type="button" role="tab">
-                                    <i class="bi bi-bar-chart me-2"></i>Reports
+                                    <i class="bi bi-bar-chart me-2"></i>Relatórios
                                 </button>
                             </li>
                         </ul>
@@ -814,38 +814,38 @@
                                     <div>
                                         <div class="stat-card">
                                             <div class="stat-number">1,245</div>
-                                            <div class="stat-label">Total Students</div>
+                                            <div class="stat-label">Total de estudantes</div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="stat-card"
                                             style="background: linear-gradient(135deg, #198754, #10b981);">
                                             <div class="stat-number">98</div>
-                                            <div class="stat-label">Active Courses</div>
+                                            <div class="stat-label">Cursos ativos</div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="stat-card"
                                             style="background: linear-gradient(135deg, #ffc107, #f59e0b);">
                                             <div class="stat-number">67</div>
-                                            <div class="stat-label">Professors</div>
+                                            <div class="stat-label">Professores</div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="stat-card"
                                             style="background: linear-gradient(135deg, #0dcaf0, #06b6d4);">
                                             <div class="stat-number">12</div>
-                                            <div class="stat-label">Departments</div>
+                                            <div class="stat-label">Departamentos</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-4">
-                                    <h6>Academic Year Progress</h6>
+                                    <h6>Progresso do ano letivo</h6>
                                     <div class="progress-custom">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 65%">65%
                                         </div>
                                     </div>
-                                    <small class="text-muted mt-2 d-block">Fall 2025 semester is 65% complete</small>
+                                    <small class="text-muted mt-2 d-block">O semestre de outono de 2025 está 65% concluído</small>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="students" role="tabpanel">
@@ -855,14 +855,14 @@
                                             <div class="d-flex justify-content-between align-items-start">
                                                 <div>
                                                     <h6 class="course-title">Sarah Johnson</h6>
-                                                    <p class="course-code">Student ID: 2025001</p>
+                                                    <p class="course-code">N.º de estudante: 2025001</p>
                                                 </div>
-                                                <span class="badge-custom bg-success text-white">Active</span>
+                                                <span class="badge-custom bg-success text-white">Ativo</span>
                                             </div>
                                             <div class="course-meta">
-                                                <span><i class="bi bi-book me-1"></i>Computer Science</span>
-                                                <span><i class="bi bi-star me-1"></i>GPA: 3.85</span>
-                                                <span><i class="bi bi-calendar me-1"></i>Sophomore</span>
+                                                <span><i class="bi bi-book me-1"></i>Ciência Informática</span>
+                                                <span><i class="bi bi-star me-1"></i>Média: 3,85</span>
+                                                <span><i class="bi bi-calendar me-1"></i>Segundo ano</span>
                                             </div>
                                         </div>
                                     </div>
@@ -871,21 +871,21 @@
                                             <div class="d-flex justify-content-between align-items-start">
                                                 <div>
                                                     <h6 class="course-title">Michael Brown</h6>
-                                                    <p class="course-code">Student ID: 2025002</p>
+                                                    <p class="course-code">N.º de estudante: 2025002</p>
                                                 </div>
-                                                <span class="badge-custom bg-warning text-dark">Pending</span>
+                                                <span class="badge-custom bg-warning text-dark">Pendente</span>
                                             </div>
                                             <div class="course-meta">
-                                                <span><i class="bi bi-book me-1"></i>Mathematics</span>
-                                                <span><i class="bi bi-star me-1"></i>GPA: 3.92</span>
-                                                <span><i class="bi bi-calendar me-1"></i>Junior</span>
+                                                <span><i class="bi bi-book me-1"></i>Matemática</span>
+                                                <span><i class="bi bi-star me-1"></i>Média: 3,92</span>
+                                                <span><i class="bi bi-calendar me-1"></i>Penúltimo ano</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="text-center mt-3">
                                     <button type="button" class="btn btn-primary">
-                                        <i class="bi bi-plus me-2"></i>Add New Student
+                                        <i class="bi bi-plus me-2"></i>Adicionar novo estudante
                                     </button>
                                 </div>
                             </div>
@@ -895,25 +895,25 @@
                                         <div class="course-card">
                                             <div class="course-header d-flex justify-content-between align-items-start">
                                                 <div>
-                                                    <h6 class="course-title">Advanced Computer Science</h6>
-                                                    <p class="course-code">CS-401 • Fall 2025</p>
+                                                    <h6 class="course-title">Ciência Informática Avançada</h6>
+                                                    <p class="course-code">CS-401 • Outono de 2025</p>
                                                 </div>
-                                                <span class="badge-custom bg-success text-white">Active</span>
+                                                <span class="badge-custom bg-success text-white">Ativo</span>
                                             </div>
-                                            <p class="text-muted">Machine learning, AI, and distributed systems
-                                                fundamentals</p>
+                                            <p class="text-muted">Fundamentos de aprendizagem automática, IA e sistemas
+                                                distribuídos</p>
                                             <div class="course-meta">
                                                 <span><i class="bi bi-person me-1"></i>Dr. Jane Smith</span>
-                                                <span><i class="bi bi-people me-1"></i>28/30 Students</span>
+                                                <span><i class="bi bi-people me-1"></i>28/30 estudantes</span>
                                                 <span><i class="bi bi-clock me-1"></i>MWF 10:00-11:30</span>
-                                                <span><i class="bi bi-credit-card me-1"></i>3 Credits</span>
+                                                <span><i class="bi bi-credit-card me-1"></i>3 créditos</span>
                                             </div>
                                             <div class="mt-3">
                                                 <div class="progress-custom">
                                                     <div class="progress-bar bg-info" role="progressbar"
                                                         style="width: 75%">75%</div>
                                                 </div>
-                                                <small class="text-muted mt-1 d-block">Course completion: 75%</small>
+                                                <small class="text-muted mt-1 d-block">Conclusão do curso: 75%</small>
                                             </div>
                                         </div>
                                     </div>
@@ -922,19 +922,19 @@
                             <div class="tab-pane fade" id="reports" role="tabpanel">
                                 <div class="dashboard-grid grid-cols-3-1 mt-3">
                                     <div>
-                                        <h6>Academic Performance Trends</h6>
+                                        <h6>Tendências do desempenho académico</h6>
                                         <div class="alert alert-info">
                                             <i class="bi bi-graph-up me-2"></i>
-                                            Student performance has improved by 12% this semester compared to last year.
+                                            O desempenho dos estudantes melhorou 12% neste semestre em comparação com o ano passado.
                                         </div>
                                     </div>
                                     <div>
                                         <div class="d-grid gap-2">
                                             <button type="button" class="btn btn-primary">
-                                                <i class="bi bi-download me-2"></i>Export PDF
+                                                <i class="bi bi-download me-2"></i>Exportar PDF
                                             </button>
                                             <button type="button" class="btn btn-outline-secondary">
-                                                <i class="bi bi-share me-2"></i>Share Report
+                                                <i class="bi bi-share me-2"></i>Partilhar relatório
                                             </button>
                                         </div>
                                     </div>
@@ -947,14 +947,14 @@
                 <!-- Pills Navigation -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Pills Navigation</h5>
+                        <h5 class="mb-0">Navegação em pílulas</h5>
                     </div>
                     <div class="dashboard-card-body px-4 py-4">
                         <ul class="nav nav-pills mb-3" id="pillsTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="assignments-tab" data-bs-toggle="pill"
                                     data-bs-target="#assignments" type="button" role="tab">
-                                    <i class="bi bi-list-task me-2"></i>Assignments
+                                    <i class="bi bi-list-task me-2"></i>Trabalhos
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -966,13 +966,13 @@
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="attendance-tab" data-bs-toggle="pill"
                                     data-bs-target="#attendance" type="button" role="tab">
-                                    <i class="bi bi-person-check me-2"></i>Attendance
+                                    <i class="bi bi-person-check me-2"></i>Assiduidade
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="grades-tab" data-bs-toggle="pill" data-bs-target="#grades"
                                     type="button" role="tab">
-                                    <i class="bi bi-award me-2"></i>Grades
+                                    <i class="bi bi-award me-2"></i>Notas
                                 </button>
                             </li>
                         </ul>
@@ -981,20 +981,20 @@
                                 <div class="list-group">
                                     <div class="list-group-item d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h6 class="mb-1">Machine Learning Project</h6>
-                                            <p class="mb-1 text-muted">Implement a neural network classifier</p>
+                                            <h6 class="mb-1">Projeto de aprendizagem automática</h6>
+                                            <p class="mb-1 text-muted">Implemente um classificador de redes neuronais</p>
                                             <small class="text-danger">Due: Oct 15, 2025</small>
                                         </div>
-                                        <span class="badge bg-danger rounded-pill">2 days left</span>
+                                        <span class="badge bg-danger rounded-pill">Faltam 2 dias</span>
                                     </div>
                                     <div class="list-group-item d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h6 class="mb-1">AI Research Paper</h6>
-                                            <p class="mb-1 text-muted">Write a 10-page research paper on deep learning
+                                            <h6 class="mb-1">Artigo de investigação sobre IA</h6>
+                                            <p class="mb-1 text-muted">Escreva um artigo de investigação de 10 páginas sobre aprendizagem profunda
                                             </p>
                                             <small class="text-warning">Due: Oct 22, 2025</small>
                                         </div>
-                                        <span class="badge bg-warning rounded-pill">1 week left</span>
+                                        <span class="badge bg-warning rounded-pill">Falta 1 semana</span>
                                     </div>
                                 </div>
                             </div>
@@ -1004,10 +1004,10 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <h6 class="card-title">Midterm Examination</h6>
-                                                <p class="card-text">Comprehensive exam covering weeks 1-8</p>
-                                                <p class="text-muted"><strong>Date:</strong> October 20, 2025</p>
-                                                <p class="text-muted"><strong>Duration:</strong> 2 hours</p>
-                                                <p class="text-muted"><strong>Format:</strong> In-person</p>
+                                                <p class="card-text">Exame abrangente sobre as semanas 1 a 8</p>
+                                                <p class="text-muted"><strong>Data:</strong> 20 de outubro de 2025</p>
+                                                <p class="text-muted"><strong>Duração:</strong> 2 hours</p>
+                                                <p class="text-muted"><strong>Formato:</strong> Presencial</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1015,10 +1015,10 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <h6 class="card-title">Final Examination</h6>
-                                                <p class="card-text">Cumulative final exam</p>
-                                                <p class="text-muted"><strong>Date:</strong> December 15, 2025</p>
-                                                <p class="text-muted"><strong>Duration:</strong> 3 hours</p>
-                                                <p class="text-muted"><strong>Format:</strong> In-person</p>
+                                                <p class="card-text">Exame final cumulativo</p>
+                                                <p class="text-muted"><strong>Data:</strong> December 15, 2025</p>
+                                                <p class="text-muted"><strong>Duração:</strong> 3 hours</p>
+                                                <p class="text-muted"><strong>Formato:</strong> Presencial</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1029,19 +1029,19 @@
                                     <div>
                                         <div class="text-center">
                                             <div class="stat-number text-success">92%</div>
-                                            <div class="stat-label text-muted">Attendance Rate</div>
+                                            <div class="stat-label text-muted">Taxa de assiduidade</div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="text-center">
                                             <div class="stat-number text-primary">23</div>
-                                            <div class="stat-label text-muted">Classes Attended</div>
+                                            <div class="stat-label text-muted">Aulas frequentadas</div>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="text-center">
                                             <div class="stat-number text-warning">2</div>
-                                            <div class="stat-label text-muted">Classes Missed</div>
+                                            <div class="stat-label text-muted">Aulas não frequentadas</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1050,7 +1050,7 @@
                                         <div class="progress-bar bg-success" role="progressbar" style="width: 92%">92%
                                         </div>
                                     </div>
-                                    <small class="text-muted mt-2 d-block">Excellent attendance record!</small>
+                                    <small class="text-muted mt-2 d-block">Excelente registo de assiduidade!</small>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="grades" role="tabpanel">
@@ -1058,11 +1058,11 @@
                                     <table class="table table-hover">
                                         <thead class="table-light">
                                             <tr>
-                                                <th>Assignment</th>
-                                                <th>Score</th>
-                                                <th>Grade</th>
-                                                <th>Weight</th>
-                                                <th>Date</th>
+                                                <th>Trabalho</th>
+                                                <th>Pontuação</th>
+                                                <th>Nota</th>
+                                                <th>Peso</th>
+                                                <th>Data</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1078,14 +1078,14 @@
                                                 <td>92/100</td>
                                                 <td><span class="badge bg-success">A-</span></td>
                                                 <td>25%</td>
-                                                <td>Oct 1, 2025</td>
+                                                <td>1 de outubro de 2025</td>
                                             </tr>
                                             <tr>
                                                 <td>Midterm</td>
                                                 <td>88/100</td>
                                                 <td><span class="badge bg-success">B+</span></td>
                                                 <td>30%</td>
-                                                <td>Oct 10, 2025</td>
+                                                <td>10 de outubro de 2025</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1098,7 +1098,7 @@
                 <!-- Vertical Tabs -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Vertical Tabs Layout</h5>
+                        <h5 class="mb-0">Disposição vertical dos separadores</h5>
                     </div>
                     <div class="dashboard-card-body px-4 py-4">
                         <div class="dashboard-grid grid-cols-1-3">
@@ -1106,19 +1106,19 @@
                                 <div class="nav flex-column nav-tabs nav-tabs-vertical" id="verticalTab" role="tablist">
                                     <button class="nav-link active" id="profile-tab" data-bs-toggle="tab"
                                         data-bs-target="#profile" type="button" role="tab">
-                                        <i class="bi bi-person me-2"></i>Profile
+                                        <i class="bi bi-person me-2"></i>Perfil
                                     </button>
                                     <button class="nav-link" id="academic-tab" data-bs-toggle="tab"
                                         data-bs-target="#academic" type="button" role="tab">
-                                        <i class="bi bi-mortarboard me-2"></i>Academic Info
+                                        <i class="bi bi-mortarboard me-2"></i>Informações académicas
                                     </button>
                                     <button class="nav-link" id="enrollment-tab" data-bs-toggle="tab"
                                         data-bs-target="#enrollment" type="button" role="tab">
-                                        <i class="bi bi-list-ul me-2"></i>Enrollment
+                                        <i class="bi bi-list-ul me-2"></i>Inscrições
                                     </button>
                                     <button class="nav-link" id="settings-tab" data-bs-toggle="tab"
                                         data-bs-target="#settings" type="button" role="tab">
-                                        <i class="bi bi-gear me-2"></i>Settings
+                                        <i class="bi bi-gear me-2"></i>Configurações
                                     </button>
                                 </div>
                             </div>
@@ -1127,93 +1127,92 @@
                                     <div class="tab-pane fade show active" id="profile" role="tabpanel">
                                         <div class="text-center mb-4">
                                             <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=4361ee&color=fff&size=100"
-                                                alt="Student" class="rounded-circle mb-3" loading="lazy"
+                                                alt="Estudante" class="rounded-circle mb-3" loading="lazy"
                                                 decoding="async">
                                             <h5>Sarah Johnson</h5>
-                                            <p class="text-muted">Student ID: 2025001</p>
+                                            <p class="text-muted">N.º de estudante: 2025001</p>
                                         </div>
                                         <div class="dashboard-grid grid-cols-2">
                                             <div>
-                                                <p><strong>Email:</strong> sarah.johnson@university.edu</p>
-                                                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                                                <p><strong>Date of Birth:</strong> March 15, 2004</p>
+                                                <p><strong>E-mail:</strong> sarah.johnson@university.edu</p>
+                                                <p><strong>Telefone:</strong> +1 (555) 123-4567</p>
+                                                <p><strong>Data de nascimento:</strong> March 15, 2004</p>
                                             </div>
                                             <div>
-                                                <p><strong>Address:</strong> 123 Campus Drive</p>
-                                                <p><strong>City:</strong> University City, UC 12345</p>
-                                                <p><strong>Emergency Contact:</strong> +1 (555) 987-6543</p>
+                                                <p><strong>Morada:</strong> 123 Campus Drive</p>
+                                                <p><strong>Localidade:</strong> Cidade Universitária, UC 12345</p>
+                                                <p><strong>Contacto de emergência:</strong> +1 (555) 987-6543</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="academic" role="tabpanel">
                                         <div class="dashboard-grid grid-cols-2">
                                             <div>
-                                                <h6>Academic Standing</h6>
-                                                <p><strong>Major:</strong> Computer Science</p>
-                                                <p><strong>Minor:</strong> Mathematics</p>
-                                                <p><strong>GPA:</strong> 3.85</p>
-                                                <p><strong>Class Rank:</strong> 15/120</p>
+                                                <h6>Situação académica</h6>
+                                                <p><strong>Curso:</strong> Ciência Informática</p>
+                                                <p><strong>Área secundária:</strong> Matemática</p>
+                                                <p><strong>Média:</strong> 3.85</p>
+                                                <p><strong>Classificação na turma:</strong> 15/120</p>
                                             </div>
                                             <div>
-                                                <h6>Academic Progress</h6>
-                                                <p><strong>Credits Completed:</strong> 45/120</p>
-                                                <p><strong>Current Year:</strong> Sophomore</p>
-                                                <p><strong>Expected Graduation:</strong> May 2027</p>
-                                                <p><strong>Academic Status:</strong> <span class="badge bg-success">Good
-                                                        Standing</span></p>
+                                                <h6>Progresso académico</h6>
+                                                <p><strong>Créditos concluídos:</strong> 45/120</p>
+                                                <p><strong>Ano atual:</strong> Segundo ano</p>
+                                                <p><strong>Conclusão prevista:</strong> May 2027</p>
+                                                <p><strong>Situação académica:</strong> <span class="badge bg-success">                                                Bom desempenho</span></p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="enrollment" role="tabpanel">
-                                        <h6>Current Semester Enrollment</h6>
+                                        <h6>Inscrições no semestre atual</h6>
                                         <div class="list-group">
                                             <div class="list-group-item">
                                                 <div class="d-flex w-100 justify-content-between">
-                                                    <h6 class="mb-1">Advanced Computer Science</h6>
-                                                    <small>3 Credits</small>
+                                                    <h6 class="mb-1">Ciência Informática Avançada</h6>
+                                                    <small>3 créditos</small>
                                                 </div>
                                                 <p class="mb-1">CS-401 • Dr. Jane Smith • MWF 10:00-11:30</p>
                                             </div>
                                             <div class="list-group-item">
                                                 <div class="d-flex w-100 justify-content-between">
-                                                    <h6 class="mb-1">Data Structures</h6>
-                                                    <small>4 Credits</small>
+                                                    <h6 class="mb-1">Estruturas de Dados</h6>
+                                                    <small>4 créditos</small>
                                                 </div>
                                                 <p class="mb-1">CS-302 • Dr. Robert Brown • TTH 2:00-3:30</p>
                                             </div>
                                             <div class="list-group-item">
                                                 <div class="d-flex w-100 justify-content-between">
-                                                    <h6 class="mb-1">Linear Algebra</h6>
-                                                    <small>3 Credits</small>
+                                                    <h6 class="mb-1">Álgebra Linear</h6>
+                                                    <small>3 créditos</small>
                                                 </div>
                                                 <p class="mb-1">MATH-301 • Dr. Emily Davis • MWF 1:00-2:00</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="settings" role="tabpanel">
-                                        <h6>Account Settings</h6>
+                                        <h6>Configurações da conta</h6>
                                         <div class="form-check form-switch mb-3">
                                             <input class="form-check-input" type="checkbox" id="emailNotifications"
                                                 checked>
                                             <label class="form-check-label" for="emailNotifications">
-                                                Email Notifications
+                                                Notificações por e-mail
                                             </label>
                                         </div>
                                         <div class="form-check form-switch mb-3">
                                             <input class="form-check-input" type="checkbox" id="smsAlerts">
                                             <label class="form-check-label" for="smsAlerts">
-                                                SMS Alerts
+                                                Alertas por SMS
                                             </label>
                                         </div>
                                         <div class="form-check form-switch mb-3">
                                             <input class="form-check-input" type="checkbox" id="publicProfile" checked>
                                             <label class="form-check-label" for="publicProfile">
-                                                Public Profile
+                                                Perfil público
                                             </label>
                                         </div>
                                         <hr>
                                         <div class="d-grid gap-2">
-                                            <button type="button" class="btn btn-primary">Update Settings</button>
+                                            <button type="button" class="btn btn-primary">Atualizar configurações</button>
                                             <button type="button" class="btn btn-outline-secondary">Reset to
                                                 Default</button>
                                         </div>
@@ -1227,50 +1226,50 @@
                 <!-- Custom Academic Tabs -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Custom Academic Tabs</h5>
+                        <h5 class="mb-0">Separadores académicos personalizados</h5>
                     </div>
                     <div class="dashboard-card-body px-4 py-4">
                         <ul class="nav academic-tabs" id="academicTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="semester-tab" data-bs-toggle="tab"
                                     data-bs-target="#semester" type="button" role="tab">
-                                    <i class="bi bi-calendar-date me-2"></i>Fall 2025
+                                    <i class="bi bi-calendar-date me-2"></i>Outono de 2025
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="summer-tab" data-bs-toggle="tab" data-bs-target="#summer"
                                     type="button" role="tab">
-                                    <i class="bi bi-sun me-2"></i>Summer 2025
+                                    <i class="bi bi-sun me-2"></i>Verão de 2025
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="spring-tab" data-bs-toggle="tab" data-bs-target="#spring"
                                     type="button" role="tab">
-                                    <i class="bi bi-flower1 me-2"></i>Spring 2025
+                                    <i class="bi bi-flower1 me-2"></i>Primavera de 2025
                                 </button>
                             </li>
                         </ul>
                         <div class="tab-content academic-content" id="academicTabContent">
                             <div class="tab-pane fade show active" id="semester" role="tabpanel">
-                                <h6>Fall 2025 Semester</h6>
-                                <p class="text-muted mb-4">Current semester with 5 enrolled courses</p>
+                                <h6>Semestre de outono de 2025</h6>
+                                <p class="text-muted mb-4">Semestre atual com 5 cursos inscritos</p>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="card mb-3">
                                             <div class="card-body">
-                                                <h6 class="card-title">Course Load</h6>
+                                                <h6 class="card-title">Carga horária</h6>
                                                 <div class="progress-custom mb-2">
                                                     <div class="progress-bar bg-primary" role="progressbar"
-                                                        style="width: 80%">16 Credits</div>
+                                                        style="width: 80%">16 créditos</div>
                                                 </div>
-                                                <small class="text-muted">16/20 Maximum credits</small>
+                                                <small class="text-muted">16/20 créditos máximos</small>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="card mb-3">
                                             <div class="card-body">
-                                                <h6 class="card-title">Current GPA</h6>
+                                                <h6 class="card-title">Média atual</h6>
                                                 <div class="progress-custom mb-2">
                                                     <div class="progress-bar bg-success" role="progressbar"
                                                         style="width: 96%">3.85</div>
@@ -1282,31 +1281,31 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="summer" role="tabpanel">
-                                <h6>Summer 2025 Session</h6>
-                                <p class="text-muted mb-4">Intensive summer courses completed</p>
+                                <h6>Período de verão de 2025</h6>
+                                <p class="text-muted mb-4">Cursos intensivos de verão concluídos</p>
                                 <div class="alert alert-success">
                                     <i class="bi bi-check-circle me-2"></i>
-                                    Successfully completed 2 summer courses with a 3.92 GPA
+                                    Concluiu com sucesso dois cursos de verão com uma média de 3,92.
                                 </div>
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Statistics for Computer Science
+                                        Estatística para Ciência Informática
                                         <span class="badge bg-success rounded-pill">A</span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Web Development Fundamentals
+                                        Fundamentos de desenvolvimento Web
                                         <span class="badge bg-success rounded-pill">A-</span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="spring" role="tabpanel">
-                                <h6>Spring 2025 Semester</h6>
-                                <p class="text-muted mb-4">Previous semester performance and achievements</p>
+                                <h6>Semestre da primavera de 2025</h6>
+                                <p class="text-muted mb-4">Desempenho e conquistas do semestre anterior</p>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="alert alert-info">
                                             <i class="bi bi-award me-2"></i>
-                                            Made Dean's List for Spring 2025 with a 3.91 semester GPA
+                                            Integra o quadro de honra do semestre da primavera de 2025, com média de 3,91
                                         </div>
                                     </div>
                                 </div>
@@ -1318,54 +1317,54 @@
                 <!-- Interactive Tab Builder -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Interactive Tab Builder</h5>
+                        <h5 class="mb-0">Criador interativo de separadores</h5>
                     </div>
                     <div class="dashboard-card-body px-4 py-4">
                         <div class="tab-builder">
-                            <h6>Create Custom Tab Navigation</h6>
-                            <p class="text-muted mb-4">Build your own tabs with custom titles and content</p>
+                            <h6>Criar navegação personalizada por separadores</h6>
+                            <p class="text-muted mb-4">Crie separadores com títulos e conteúdos personalizados</p>
                             <div class="dashboard-grid grid-cols-4 mb-3">
                                 <div>
-                                    <input type="text" class="form-control" id="tabTitle" placeholder="Tab Title">
+                                    <input type="text" class="form-control" id="tabTitle" placeholder="Título do separador">
                                 </div>
                                 <div>
                                     <select class="form-select" id="tabIcon">
-                                        <option value="bi bi-info-circle">Info</option>
-                                        <option value="bi bi-person">User</option>
-                                        <option value="bi bi-book">Book</option>
-                                        <option value="bi bi-bar-chart">Chart</option>
-                                        <option value="bi bi-gear">Settings</option>
+                                        <option value="bi bi-info-circle">Informação</option>
+                                        <option value="bi bi-person">Utilizador</option>
+                                        <option value="bi bi-book">Livro</option>
+                                        <option value="bi bi-bar-chart">Gráfico</option>
+                                        <option value="bi bi-gear">Configurações</option>
                                     </select>
                                 </div>
                                 <div>
                                     <select class="form-select" id="tabStyle">
-                                        <option value="tabs">Tabs</option>
-                                        <option value="pills">Pills</option>
+                                        <option value="tabs">Separadores</option>
+                                        <option value="pills">Pílulas</option>
                                     </select>
                                 </div>
                                 <div>
                                     <button type="button" class="btn btn-primary w-100" onclick="addTab()">
-                                        <i class="bi bi-plus me-2"></i>Add Tab
+                                        <i class="bi bi-plus me-2"></i>Adicionar separador
                                     </button>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control" id="tabContent" rows="3"
-                                    placeholder="Enter tab content..."></textarea>
+                                    placeholder="Introduza o conteúdo do separador..."></textarea>
                             </div>
                             <div class="d-flex gap-2">
                                 <button type="button" class="btn btn-success" onclick="generateTabs()">
-                                    <i class="bi bi-magic me-2"></i>Generate Tabs
+                                    <i class="bi bi-magic me-2"></i>Gerar separadores
                                 </button>
                                 <button type="button" class="btn btn-outline-secondary" onclick="clearTabs()">
-                                    <i class="bi bi-eraser me-2"></i>Clear All
+                                    <i class="bi bi-eraser me-2"></i>Limpar tudo
                                 </button>
                             </div>
                         </div>
 
                         <!-- Dynamic Tab Container -->
                         <div id="dynamicTabContainer" class="mt-4" style="display: none;">
-                            <h6>Generated Tabs:</h6>
+                            <h6>Separadores gerados:</h6>
                             <div id="generatedTabs"></div>
                             <div id="generatedTabContent" class="tab-content mt-3"></div>
                         </div>
@@ -1379,10 +1378,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -1400,7 +1399,7 @@ function addTab() {
     const content = document.getElementById('tabContent').value;
 
     if (!title.trim()) {
-        alert('Please enter a tab title');
+        alert('Introduza o título do separador');
         return;
     }
 
@@ -1408,7 +1407,7 @@ function addTab() {
         id: `tab-${++tabCounter}`,
         title: title,
         icon: icon,
-        content: content || 'This is the content for ' + title
+        content: content || 'Este é o conteúdo de ' + title
     });
 
     // Clear inputs
@@ -1423,7 +1422,7 @@ function updateTabPreview() {
     if (tabsData.length > 0) {
         container.style.display = 'block';
         container.innerHTML = `
-            <h6>Tabs to Generate (${tabsData.length}):</h6>
+            <h6>Separadores a gerar (${tabsData.length}):</h6>
             <div class="d-flex flex-wrap gap-2 mb-3">
                 ${tabsData.map(tab => `
                     <span class="badge bg-primary">
@@ -1447,7 +1446,7 @@ function removeTab(tabId) {
 
 function generateTabs() {
     if (tabsData.length === 0) {
-        alert('Please add at least one tab');
+        alert('Adicione pelo menos um separador');
         return;
     }
 

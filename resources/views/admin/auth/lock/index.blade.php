@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lock Screen - Kiaalap</title>
+    <title>Ecrã Bloqueado - sgSchool</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 
     <style>
@@ -76,14 +76,14 @@
             <div class="lock-header">
                 <div class="position-relative d-inline-block">
                     <img src="https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff&size=100"
-                        alt="User Avatar" class="user-avatar-large" loading="lazy">
+                        alt="Avatar do utilizador" class="user-avatar-large" loading="lazy">
                     <div class="lock-icon">
                         <i class="bi bi-lock-fill"></i>
                     </div>
                 </div>
 
                 <h1 class="h4 mb-2 fw-bold mt-3">John Doe</h1>
-                <p class="text-muted mb-1">john.doe@kiaalap.edu</p>
+                <p class="text-muted mb-1">john.doe@sgschool.edu</p>
 
                 <div class="text-center my-3">
                     <div class="badge bg-secondary">
@@ -91,42 +91,42 @@
                         <span id="currentTime">3:43:15 PM</span>
                     </div>
                     <div class="text-muted small mt-2">
-                        <span id="currentDate">Friday, February 27, 2025</span>
+                        <span id="currentDate">sexta-feira, 27 de fevereiro de 2025</span>
                     </div>
                 </div>
 
                 <p class="text-muted small">
-                    Your session is locked. Enter your password to continue.
+                    A sua sessão está bloqueada. Introduza a palavra-passe para continuar.
                 </p>
             </div>
 
             <form id="unlockForm" novalidate>
                 <div class="mb-3">
-                    <label for="password" class="form-label visually-hidden">Password</label>
+                    <label for="password" class="form-label visually-hidden">Palavra-passe</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="bi bi-key"></i>
                         </span>
                         <input type="password" autocomplete="current-password" class="form-control" id="password"
-                            name="password" placeholder="Enter your password" required autofocus
+                            name="password" placeholder="Introduza a sua palavra-passe" required autofocus
                             aria-describedby="passwordHelp">
                         <button class="btn btn-outline-secondary" type="button" id="togglePassword"
-                            aria-label="Toggle password visibility">
+                            aria-label="Alternar a visibilidade da palavra-passe">
                             <i class="bi bi-eye"></i>
                         </button>
                     </div>
                     <div class="invalid-feedback">
-                        Password is required to unlock.
+                        A palavra-passe é obrigatória para desbloquear.
                     </div>
                     <small id="passwordHelp" class="form-text text-muted">
-                        Enter your password to unlock the screen
+                        Introduza a sua palavra-passe para desbloquear o ecrã
                     </small>
                 </div>
 
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary btn-lg" type="submit">
                         <i class="bi bi-unlock me-2"></i>
-                        Unlock Screen
+                        Desbloquear Ecrã
                     </button>
                 </div>
 
@@ -136,13 +136,13 @@
                     <p class="mb-2">
                         <a href="#" class="text-decoration-none">
                             <i class="bi bi-person-switch me-1"></i>
-                            Switch User
+                            Mudar de Utilizador
                         </a>
                     </p>
                     <p>
                         <a href="login.html" class="text-decoration-none text-danger">
                             <i class="bi bi-box-arrow-right me-1"></i>
-                            Sign Out Completely
+                            Terminar Sessão Completamente
                         </a>
                     </p>
                 </div>
@@ -151,9 +151,9 @@
 
         <div class="text-center mt-4">
             <p class="text-white-50 small">
-                &copy; 2025 Kiaalap. All rights reserved.
-                <a href="#" class="text-white-50">Privacy</a> ·
-                <a href="#" class="text-white-50">Terms</a>
+                &copy; 2025 sgSchool. Todos os direitos reservados.
+                <a href="#" class="text-white-50">Privacidade</a> ·
+                <a href="#" class="text-white-50">Termos</a>
             </p>
         </div>
     </div>
@@ -171,7 +171,7 @@
                 second: '2-digit',
                 hour12: true
             };
-            const timeString = now.toLocaleTimeString('en-US', timeOptions);
+            const timeString = now.toLocaleTimeString('pt-PT', timeOptions);
 
             // Format date
             const dateOptions = {
@@ -180,7 +180,7 @@
                 month: 'long',
                 day: 'numeric'
             };
-            const dateString = now.toLocaleDateString('en-US', dateOptions);
+            const dateString = now.toLocaleDateString('pt-PT', dateOptions);
 
             // Update elements
             const timeElement = document.getElementById('currentTime');

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para escolas e universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Mailbox - Kiaalap Dashboard</title>
+    <title>Correio - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -48,298 +48,35 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conte?do principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <div class="sidebar-brand">
-                <h5>
-                    <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
-                </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
-        </div>
-
-        <nav class="sidebar-nav" aria-label="Main navigation">
-            <div class="menu-section">
-                <div class="menu-section-title">Main</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#dashboardSubmenu" aria-expanded="false">
-                            <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
-                        </a>
-                        <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
-                            <li><a class="nav-link " href="widgets.html">Widgets</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="events.html">
-                            <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#professorsSubmenu" aria-expanded="false">
-                            <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
-                        </a>
-                        <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#studentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-people"></i>
-                            <span>Students</span>
-                        </a>
-                        <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#coursesSubmenu" aria-expanded="false">
-                            <i class="bi bi-book"></i>
-                            <span>Courses</span>
-                        </a>
-                        <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#librarySubmenu" aria-expanded="false">
-                            <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
-                        </a>
-                        <ul id="librarySubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#departmentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-building"></i>
-                            <span>Departments</span>
-                        </a>
-                        <ul id="departmentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link " href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link " href="edit-department.html">Edit Department</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu active" href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#mailboxSubmenu" aria-expanded="true">
-                            <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
-                        </a>
-                        <ul id="mailboxSubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link active" href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Interface</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#componentsSubmenu" aria-expanded="false">
-                            <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
-                        </a>
-                        <ul id="componentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link " href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#formsSubmenu" aria-expanded="false">
-                            <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
-                        </a>
-                        <ul id="formsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link " href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#chartsSubmenu" aria-expanded="false">
-                            <i class="bi bi-bar-chart"></i>
-                            <span>Charts</span>
-                        </a>
-                        <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#tablesSubmenu" aria-expanded="false">
-                            <i class="bi bi-table"></i>
-                            <span>Tables</span>
-                        </a>
-                        <ul id="tablesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link " href="code-editor.html">
-                            <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#uiToolsSubmenu" aria-expanded="false">
-                            <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
-                        </a>
-                        <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#viewersSubmenu" aria-expanded="false">
-                            <i class="bi bi-eye"></i>
-                            <span>Viewers</span>
-                        </a>
-                        <ul id="viewersSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="pdf-viewer.html">PDF Viewer</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#mapsSubmenu" aria-expanded="false">
-                            <i class="bi bi-map"></i>
-                            <span>Maps</span>
-                        </a>
-                        <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#authSubmenu" aria-expanded="false">
-                            <i class="bi bi-shield-lock"></i>
-                            <span>Authentication</span>
-                        </a>
-                        <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
-                            <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#errorsSubmenu" aria-expanded="false">
-                            <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
-                        </a>
-                        <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </aside>
+    @include('layouts._include.dashboard.sidebar')
     <!-- Main Content Wrapper -->
     <div class="main-wrapper" id="mainWrapper">
         <!-- Header -->
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Mostrar/ocultar menu lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Communication</a></li>
-                        <li class="breadcrumb-item active">Mailbox</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="#">Comunicação</a></li>
+                        <li class="breadcrumb-item active">Correio</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -348,29 +85,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gest?o de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Advanced Pesquisar</a></li>
                             </ul>
                         </div>
                     </div>
@@ -378,7 +115,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -386,8 +123,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -400,9 +137,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -415,9 +152,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">O John entregou o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -430,9 +167,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -442,7 +179,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -451,20 +188,20 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Horário
                                     Event</a></li>
                         </ul>
                     </div>
@@ -472,7 +209,7 @@
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -480,14 +217,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Ajuda
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -500,8 +237,8 @@
             <div class="container-fluid">
                 <!-- Page Header -->
                 <div class="mb-4">
-                    <h1 class="h3 font-bold">Mailbox</h1>
-                    <p class="text-muted text-sm">Manage your messages and communications</p>
+                    <h1 class="h3 font-bold">Correio</h1>
+                    <p class="text-muted text-sm">Faça a gestão das suas mensagens e comunica??es</p>
                 </div>
 
                 <!-- Mailbox Layout -->
@@ -511,7 +248,7 @@
                         <div class="card shadow-sm">
                             <div class="card-body p-4">
                                 <a href="mailbox-compose.html" class="btn btn-primary w-100 mb-3">
-                                    <i class="bi bi-pencil-square me-2"></i>Compose
+                                    <i class="bi bi-pencil-square me-2"></i>Compor
                                 </a>
 
                                 <div class="mailbox-sidebar">
@@ -520,7 +257,7 @@
                                             <a href="mailbox.html"
                                                 class="d-flex align-items-center text-decoration-none text-dark active">
                                                 <i class="bi bi-inbox-fill me-2"></i>
-                                                <span>Inbox</span>
+                                                <span>Caixa de entrada</span>
                                                 <span class="badge bg-primary ms-auto">12</span>
                                             </a>
                                         </li>
@@ -528,14 +265,14 @@
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-send me-2"></i>
-                                                <span>Sent</span>
+                                                <span>Enviados</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-file-earmark-text me-2"></i>
-                                                <span>Drafts</span>
+                                                <span>Rascunhos</span>
                                                 <span class="badge bg-secondary ms-auto">3</span>
                                             </a>
                                         </li>
@@ -543,28 +280,28 @@
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-star me-2"></i>
-                                                <span>Important</span>
+                                                <span>Importantee</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-trash me-2"></i>
-                                                <span>Trash</span>
+                                                <span>Lixo</span>
                                             </a>
                                         </li>
                                     </ul>
 
                                     <hr>
 
-                                    <h6 class="text-muted text-uppercase small mb-3">Labels</h6>
+                                    <h6 class="text-muted text-uppercase small mb-3">Etiquetas</h6>
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-success me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Academic</span>
+                                                <span>Académico</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
@@ -572,7 +309,7 @@
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-warning me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Administrative</span>
+                                                <span>Administrativo</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
@@ -580,7 +317,7 @@
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-info me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Students</span>
+                                                <span>Estudantes</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
@@ -588,7 +325,7 @@
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-danger me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Urgent</span>
+                                                <span>Urgente</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -608,33 +345,33 @@
                                         </div>
                                         <div class="btn-group" role="group">
                                             <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                aria-label="Archive">
+                                                aria-label="Arquivo">
                                                 <i aria-hidden="true" class="bi bi-archive"></i>
                                             </button>
                                             <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                aria-label="Exclamation octagon">
+                                                aria-label="Alerta">
                                                 <i aria-hidden="true" class="bi bi-exclamation-octagon"></i>
                                             </button>
                                             <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                aria-label="Delete">
+                                                aria-label="Excluir">
                                                 <i aria-hidden="true" class="bi bi-trash"></i>
                                             </button>
                                         </div>
                                         <div class="dropdown ms-2">
                                             <button class="btn btn-sm btn-outline-secondary dropdown-toggle"
                                                 type="button" data-bs-toggle="dropdown">
-                                                More
+                                                Mais
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Mark as read</a></li>
-                                                <li><a class="dropdown-item" href="#">Mark as unread</a></li>
-                                                <li><a class="dropdown-item" href="#">Add star</a></li>
+                                                <li><a class="dropdown-item" href="#">Marcar como lida</a></li>
+                                                <li><a class="dropdown-item" href="#">Marcar como não lida</a></li>
+                                                <li><a class="dropdown-item" href="#">Marcar com estrela</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <button type="button" class="btn btn-sm btn-outline-secondary"
-                                            aria-label="Refresh">
+                                            aria-label="Atualizar">
                                             <i aria-hidden="true" class="bi bi-arrow-clockwise"></i>
                                         </button>
                                     </div>
@@ -647,7 +384,7 @@
                                     <!-- Mail Item 1 -->
                                     <div class="list-group-item d-flex align-items-center">
                                         <div class="form-check me-3">
-                                            <input class="form-check-input" type="checkbox" aria-label="Select message">
+                                            <input class="form-check-input" type="checkbox" aria-label="Selecionar mensagem">
                                         </div>
                                         <a href="mailbox-view.html"
                                             class="list-group-item-action d-flex align-items-center flex-grow-1 text-decoration-none text-reset">
@@ -660,11 +397,11 @@
                                                 <div class="d-flex justify-content-between align-items-start">
                                                     <div>
                                                         <h6 class="mb-1">Sarah Johnson <span
-                                                                class="badge bg-success ms-2">Academic</span></h6>
-                                                        <p class="mb-1 text-dark">Course Schedule Update - Fall Semester
+                                                                class="badge bg-success ms-2">Académico</span></h6>
+                                                        <p class="mb-1 text-dark">Curso Horário Atualizar - Fall Semestre
                                                             2024</p>
-                                                        <p class="mb-0 text-muted small">Dear Faculty, Please note the
-                                                            updated course schedule for the upcoming fall semester...
+                                                        <p class="mb-0 text-muted small">Dear Corpo docente, Please note o
+                                                            updated curso schedule para o upcoming fall semester...
                                                         </p>
                                                     </div>
                                                     <div class="text-end">
@@ -681,7 +418,7 @@
                                     <!-- Mail Item 2 -->
                                     <div class="list-group-item d-flex align-items-center">
                                         <div class="form-check me-3">
-                                            <input class="form-check-input" type="checkbox" aria-label="Select message">
+                                            <input class="form-check-input" type="checkbox" aria-label="Selecionar mensagem">
                                         </div>
                                         <a href="mailbox-view.html"
                                             class="list-group-item-action d-flex align-items-center flex-grow-1 text-decoration-none text-reset">
@@ -694,11 +431,11 @@
                                                 <div class="d-flex justify-content-between align-items-start">
                                                     <div>
                                                         <h6 class="mb-1 fw-bold">Mike Chen <span
-                                                                class="badge bg-danger ms-2">Urgent</span></h6>
-                                                        <p class="mb-1 text-dark fw-bold">Faculty Meeting - Urgent
-                                                            Update</p>
-                                                        <p class="mb-0 text-muted small">All faculty members are
-                                                            requested to attend the emergency meeting scheduled for...
+                                                                class="badge bg-danger ms-2">Urgente</span></h6>
+                                                        <p class="mb-1 text-dark fw-bold">Corpo docente Meeting - Urgentee
+                                                            Atualizar</p>
+                                                        <p class="mb-0 text-muted small">Parados faculty members are
+                                                            requested to attend o emergency meeting scheduled para...
                                                         </p>
                                                     </div>
                                                     <div class="text-end">
@@ -716,7 +453,7 @@
                                     <!-- Mail Item 3 -->
                                     <div class="list-group-item d-flex align-items-center">
                                         <div class="form-check me-3">
-                                            <input class="form-check-input" type="checkbox" aria-label="Select message">
+                                            <input class="form-check-input" type="checkbox" aria-label="Selecionar mensagem">
                                         </div>
                                         <a href="mailbox-view.html"
                                             class="list-group-item-action d-flex align-items-center flex-grow-1 text-decoration-none text-reset">
@@ -729,14 +466,14 @@
                                                 <div class="d-flex justify-content-between align-items-start">
                                                     <div>
                                                         <h6 class="mb-1">Emily Davis <span
-                                                                class="badge bg-warning ms-2">Administrative</span></h6>
-                                                        <p class="mb-1 text-dark">Budget Allocation for Research
-                                                            Department</p>
-                                                        <p class="mb-0 text-muted small">Please review the attached
-                                                            budget proposal for the upcoming fiscal year...</p>
+                                                                class="badge bg-warning ms-2">Administrativo</span></h6>
+                                                        <p class="mb-1 text-dark">Budget Allocation para Research
+                                                            Departamento</p>
+                                                        <p class="mb-0 text-muted small">Analise o attached
+                                                            budget proposal para o upcoming fiscal year...</p>
                                                     </div>
                                                     <div class="text-end">
-                                                        <small class="text-muted">Yesterday</small>
+                                                        <small class="text-muted">Ontem</small>
                                                         <div class="mt-1">
                                                             <i class="bi bi-paperclip"></i>
                                                         </div>
@@ -749,7 +486,7 @@
                                     <!-- Mail Item 4 -->
                                     <div class="list-group-item d-flex align-items-center">
                                         <div class="form-check me-3">
-                                            <input class="form-check-input" type="checkbox" aria-label="Select message">
+                                            <input class="form-check-input" type="checkbox" aria-label="Selecionar mensagem">
                                         </div>
                                         <a href="mailbox-view.html"
                                             class="list-group-item-action d-flex align-items-center flex-grow-1 text-decoration-none text-reset">
@@ -762,13 +499,13 @@
                                                 <div class="d-flex justify-content-between align-items-start">
                                                     <div>
                                                         <h6 class="mb-1">John Smith <span
-                                                                class="badge bg-info ms-2">Students</span></h6>
-                                                        <p class="mb-1 text-dark">Student Council Meeting Minutes</p>
-                                                        <p class="mb-0 text-muted small">Attached are the minutes from
-                                                            yesterday's student council meeting...</p>
+                                                                class="badge bg-info ms-2">Estudantes</span></h6>
+                                                        <p class="mb-1 text-dark">Ata da reuni?o do conselho de estudantes</p>
+                                                        <p class="mb-0 text-muted small">Anexared are o minutes de
+                                                            yesterday's estudante council meeting...</p>
                                                     </div>
                                                     <div class="text-end">
-                                                        <small class="text-muted">2 days ago</small>
+                                                        <small class="text-muted">Há 2 dias</small>
                                                         <div class="mt-1">
                                                             <i class="bi bi-paperclip"></i>
                                                         </div>
@@ -781,7 +518,7 @@
                                     <!-- Mail Item 5 -->
                                     <div class="list-group-item d-flex align-items-center">
                                         <div class="form-check me-3">
-                                            <input class="form-check-input" type="checkbox" aria-label="Select message">
+                                            <input class="form-check-input" type="checkbox" aria-label="Selecionar mensagem">
                                         </div>
                                         <a href="mailbox-view.html"
                                             class="list-group-item-action d-flex align-items-center flex-grow-1 text-decoration-none text-reset">
@@ -794,12 +531,12 @@
                                                 <div class="d-flex justify-content-between align-items-start">
                                                     <div>
                                                         <h6 class="mb-1">Lisa Anderson</h6>
-                                                        <p class="mb-1 text-dark">Library Resources Update</p>
+                                                        <p class="mb-1 text-dark">Atualiza??o dos recursos da biblioteca</p>
                                                         <p class="mb-0 text-muted small">New digital resources are now
-                                                            available in the library database...</p>
+                                                            available in o biblioteca database...</p>
                                                     </div>
                                                     <div class="text-end">
-                                                        <small class="text-muted">3 days ago</small>
+                                                        <small class="text-muted">Há 3 dias</small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -811,18 +548,18 @@
                             <!-- Pagination -->
                             <div class="card-footer bg-white border-top p-3">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="text-muted">Showing 1-5 of 12 messages</span>
-                                    <nav aria-label="Mailbox pagination">
+                                    <span class="text-muted">A mostrar 1–5 de 12 mensagens</span>
+                                    <nav aria-label="Paginação do correio">
                                         <ul class="pagination pagination-sm mb-0">
                                             <li class="page-item disabled">
-                                                <a class="page-link" href="#" aria-label="Previous"><i
+                                                <a class="page-link" href="#" aria-label="Anterior"><i
                                                         aria-hidden="true" class="bi bi-chevron-left"></i></a>
                                             </li>
                                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                                             <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next"><i aria-hidden="true"
+                                                <a class="page-link" href="#" aria-label="Seguinte"><i aria-hidden="true"
                                                         class="bi bi-chevron-right"></i></a>
                                             </li>
                                         </ul>
@@ -840,10 +577,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Desenvolvido <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

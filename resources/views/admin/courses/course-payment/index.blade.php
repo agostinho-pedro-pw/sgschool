@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Course payment - Kiaalap Dashboard</title>
+    <title>Pagamento do Curso - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -157,7 +157,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -173,21 +173,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Course payment</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Pagamento do Curso</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -196,29 +196,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -234,8 +234,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -248,9 +248,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -263,9 +263,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -278,9 +278,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -290,7 +290,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -299,28 +299,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -328,14 +326,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -350,16 +348,16 @@
                 <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 fw-bold mb-2">Course Payment</h1>
-                            <p class="text-muted mb-0">Process course enrollment payments securely</p>
+                            <h1 class="h3 fw-bold mb-2">Pagamento do Curso</h1>
+                            <p class="text-muted mb-0">Processe pagamentos de inscrição nos cursos em segurança</p>
                         </div>
                         <div class="d-none d-md-flex gap-2">
                             <button type="button" class="btn btn-outline-secondary">
-                                <i class="bi bi-shield-check me-2"></i>Security Info
+                                <i class="bi bi-shield-check me-2"></i>Informações de Segurança
                             </button>
                             <button type="button" class="btn btn-light"
                                 onclick="window.location.href='all-courses.html'">
-                                <i class="bi bi-arrow-left me-2"></i>Back to Courses
+                                <i class="bi bi-arrow-left me-2"></i>Voltar aos Cursos
                             </button>
                         </div>
                     </div>
@@ -375,13 +373,13 @@
                                 <i class="bi bi-shield-check text-success" style="font-size: 1.5rem;"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h6 class="mb-1 fw-semibold text-gray-900">🔒 Bank-Level Security</h6>
+                                <h6 class="mb-1 fw-semibold text-gray-900">🔒 Segurança ao Nível Bancário</h6>
                                 <p class="mb-0 small text-muted">All payments are encrypted with 256-bit SSL and PCI DSS
                                     compliant. Your data is never stored on our servers.</p>
                             </div>
                             <div class="d-none d-md-flex align-items-center gap-2 text-success small">
                                 <i class="bi bi-patch-check"></i>
-                                <span class="fw-medium">Verified Secure</span>
+                                <span class="fw-medium">Segurança Verificada</span>
                             </div>
                         </div>
                     </div>
@@ -394,27 +392,27 @@
                             <!-- Student Information -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Student Information</h5>
+                                    <h5 class="dashboard-card-title">Informações do Estudante</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="dashboard-grid grid-cols-2 mb-3">
                                         <div>
-                                            <label for="studentId" class="form-label">Student ID <span
+                                            <label for="studentId" class="form-label">N.º de Estudante <span
                                                     class="text-danger">*</span></label>
                                             <div class="input-group">
                                                 <input type="text" class="form-control" id="studentId"
                                                     placeholder="Enter Student ID" required autocomplete="off">
                                                 <button class="btn btn-outline-secondary" type="button"
-                                                    id="searchStudent" aria-label="Search">
+                                                    id="searchStudent" aria-label="Pesquisar">
                                                     <i aria-hidden="true" class="bi bi-search"></i>
                                                 </button>
                                             </div>
                                             <div class="invalid-feedback">
-                                                Please provide a valid student ID.
+                                                Introduza um número de estudante válido.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="studentName" class="form-label">Student Name</label>
+                                            <label for="studentName" class="form-label">Nome do Estudante</label>
                                             <input type="text" class="form-control" id="studentName" readonly
                                                 style="background-color: #f8f9fa;">
                                         </div>
@@ -427,7 +425,7 @@
                                                 style="background-color: #f8f9fa;">
                                         </div>
                                         <div>
-                                            <label for="studentPhone" class="form-label">Phone</label>
+                                            <label for="studentPhone" class="form-label">Telefone</label>
                                             <input type="tel" class="form-control" id="studentPhone" readonly
                                                 style="background-color: #f8f9fa;">
                                         </div>
@@ -438,14 +436,14 @@
                             <!-- Course Selection -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Course Selection</h5>
+                                    <h5 class="dashboard-card-title">Seleção do Curso</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="mb-3">
-                                        <label for="courseSelect" class="form-label">Select Course <span
+                                        <label for="courseSelect" class="form-label">Selecionar Curso <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select" id="courseSelect" required>
-                                            <option value="">Choose a course...</option>
+                                            <option value="">Escolha um curso...</option>
                                             <option value="cs101" data-fee="1200.00" data-lab="150.00"
                                                 data-material="50.00">CS101 - Introduction to Computer Science</option>
                                             <option value="math201" data-fee="1100.00" data-lab="0.00"
@@ -456,7 +454,7 @@
                                                 data-material="25.00">ENG101 - English Composition</option>
                                         </select>
                                         <div class="invalid-feedback">
-                                            Please select a course.
+                                            Selecione um curso.
                                         </div>
                                     </div>
 
@@ -493,27 +491,27 @@
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
                                     <div class="d-flex align-items-center">
-                                        <h5 class="dashboard-card-title mb-0">Payment Information</h5>
-                                        <i class="bi bi-lock-fill text-success ms-2" title="Secure Payment"></i>
+                                        <h5 class="dashboard-card-title mb-0">Informações de Pagamento</h5>
+                                        <i class="bi bi-lock-fill text-success ms-2" title="Pagamento Seguro"></i>
                                     </div>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Payment Method <span
+                                        <label class="form-label">Método de Pagamento <span
                                                 class="text-danger">*</span></label>
                                         <div class="d-flex gap-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="paymentMethod"
                                                     id="creditCard" value="credit" checked>
                                                 <label class="form-check-label" for="creditCard">
-                                                    <i class="bi bi-credit-card me-1"></i>Credit Card
+                                                    <i class="bi bi-credit-card me-1"></i>Cartão de Crédito
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="paymentMethod"
                                                     id="bankTransfer" value="bank">
                                                 <label class="form-check-label" for="bankTransfer">
-                                                    <i class="bi bi-bank me-1"></i>Bank Transfer
+                                                    <i class="bi bi-bank me-1"></i>Transferência Bancária
                                                 </label>
                                             </div>
                                             <div class="form-check">
@@ -530,13 +528,13 @@
                                     <div id="creditCardForm">
                                         <div class="dashboard-grid mb-3" style="grid-template-columns: 2fr 1fr;">
                                             <div>
-                                                <label for="cardNumber" class="form-label">Card Number <span
+                                                <label for="cardNumber" class="form-label">Número do Cartão <span
                                                         class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" id="cardNumber"
                                                     placeholder="1234 5678 9012 3456" maxlength="19"
                                                     autocomplete="new-password">
                                                 <div class="invalid-feedback">
-                                                    Please provide a valid card number.
+                                                    Introduza um número de cartão válido.
                                                 </div>
                                             </div>
                                             <div>
@@ -545,17 +543,17 @@
                                                 <input type="password" class="form-control" id="cvv" placeholder="123"
                                                     maxlength="4" autocomplete="new-password">
                                                 <div class="invalid-feedback">
-                                                    Please provide CVV.
+                                                    Introduza o CVV.
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="dashboard-grid grid-cols-3 mb-3">
                                             <div>
-                                                <label for="expiryMonth" class="form-label">Expiry Month <span
+                                                <label for="expiryMonth" class="form-label">Mês de Validade <span
                                                         class="text-danger">*</span></label>
                                                 <select class="form-select" id="expiryMonth">
-                                                    <option value="">Month</option>
+                                                    <option value="">Mês</option>
                                                     <option value="01">01 - January</option>
                                                     <option value="02">02 - February</option>
                                                     <option value="03">03 - March</option>
@@ -570,14 +568,14 @@
                                                     <option value="12">12 - December</option>
                                                 </select>
                                                 <div class="invalid-feedback">
-                                                    Please select expiry month.
+                                                    Selecione o mês de validade.
                                                 </div>
                                             </div>
                                             <div>
-                                                <label for="expiryYear" class="form-label">Expiry Year <span
+                                                <label for="expiryYear" class="form-label">Ano de Validade <span
                                                         class="text-danger">*</span></label>
                                                 <select class="form-select" id="expiryYear">
-                                                    <option value="">Year</option>
+                                                    <option value="">Ano</option>
                                                     <option value="2025">2025</option>
                                                     <option value="2026">2026</option>
                                                     <option value="2027">2027</option>
@@ -586,16 +584,16 @@
                                                     <option value="2030">2030</option>
                                                 </select>
                                                 <div class="invalid-feedback">
-                                                    Please select expiry year.
+                                                    Selecione o ano de validade.
                                                 </div>
                                             </div>
                                             <div>
-                                                <label for="cardholderName" class="form-label">Cardholder Name <span
+                                                <label for="cardholderName" class="form-label">Nome do Titular do Cartão <span
                                                         class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" id="cardholderName"
                                                     placeholder="John Doe" autocomplete="new-password">
                                                 <div class="invalid-feedback">
-                                                    Please provide cardholder name.
+                                                    Introduza o nome do titular do cartão.
                                                 </div>
                                             </div>
                                         </div>
@@ -614,7 +612,7 @@
                                     <div id="paypalForm" style="display: none;">
                                         <div class="alert alert-info" role="alert">
                                             <i class="bi bi-info-circle me-2"></i>
-                                            You will be redirected to PayPal to complete your payment securely.
+                                            Será redirecionado para o PayPal para concluir o pagamento em segurança.
                                         </div>
                                     </div>
                                 </div>
@@ -623,55 +621,55 @@
                             <!-- Billing Address -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Billing Address</h5>
+                                    <h5 class="dashboard-card-title">Morada de Faturação</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="dashboard-grid grid-cols-2 mb-3">
                                         <div>
-                                            <label for="firstName" class="form-label">First Name <span
+                                            <label for="firstName" class="form-label">Nome Próprio <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="firstName" required
                                                 autocomplete="new-password">
                                             <div class="invalid-feedback">
-                                                Please provide first name.
+                                                Introduza o nome próprio.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="lastName" class="form-label">Last Name <span
+                                            <label for="lastName" class="form-label">Apelido <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="lastName" required
                                                 autocomplete="new-password">
                                             <div class="invalid-feedback">
-                                                Please provide last name.
+                                                Introduza o apelido.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="address" class="form-label">Address <span
+                                        <label for="address" class="form-label">Morada <span
                                                 class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="address"
                                             placeholder="123 Main Street" required autocomplete="new-password">
                                         <div class="invalid-feedback">
-                                            Please provide address.
+                                            Introduza a morada.
                                         </div>
                                     </div>
 
                                     <div class="dashboard-grid mb-3" style="grid-template-columns: 2fr 1fr 1fr;">
                                         <div>
-                                            <label for="city" class="form-label">City <span
+                                            <label for="city" class="form-label">Localidade <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="city" required
                                                 autocomplete="new-password">
                                             <div class="invalid-feedback">
-                                                Please provide city.
+                                                Introduza a localidade.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="state" class="form-label">State <span
+                                            <label for="state" class="form-label">Estado <span
                                                     class="text-danger">*</span></label>
                                             <select class="form-select" id="state" required>
-                                                <option value="">Choose...</option>
+                                                <option value="">Escolha...</option>
                                                 <option value="AL">Alabama</option>
                                                 <option value="CA">California</option>
                                                 <option value="FL">Florida</option>
@@ -680,16 +678,16 @@
                                                 <!-- Add more states as needed -->
                                             </select>
                                             <div class="invalid-feedback">
-                                                Please select state.
+                                                Selecione um estado.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="zipCode" class="form-label">ZIP Code <span
+                                            <label for="zipCode" class="form-label">Código Postal <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="zipCode" required
                                                 autocomplete="new-password">
                                             <div class="invalid-feedback">
-                                                Please provide ZIP code.
+                                                Introduza o código postal.
                                             </div>
                                         </div>
                                     </div>
@@ -701,11 +699,11 @@
                             <!-- Payment Summary -->
                             <div class="dashboard-card mb-3 sticky-top" style="top: 24px;">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Payment Summary</h5>
+                                    <h5 class="dashboard-card-title">Resumo do Pagamento</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span>Course Fee:</span>
+                                        <span>Taxa do Curso:</span>
                                         <span id="summaryCourseFee">$0.00</span>
                                     </div>
                                     <div class="d-flex justify-content-between mb-2">
@@ -717,12 +715,12 @@
                                         <span id="summaryMaterialFee">$0.00</span>
                                     </div>
                                     <div class="d-flex justify-content-between mb-2">
-                                        <span>Processing Fee:</span>
+                                        <span>Taxa de Processamento:</span>
                                         <span id="summaryProcessingFee">$2.50</span>
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between mb-3">
-                                        <strong>Total Amount:</strong>
+                                        <strong>Montante Total:</strong>
                                         <strong class="text-primary" id="totalAmount">$0.00</strong>
                                     </div>
 
@@ -735,14 +733,14 @@
                                                     Policy</a>
                                             </label>
                                             <div class="invalid-feedback">
-                                                You must agree to the terms.
+                                                Tem de aceitar os termos e condições.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="d-grid">
                                         <button type="submit" class="btn btn-primary btn-lg" id="processPayment">
-                                            <i class="bi bi-lock me-2"></i>Process Secure Payment
+                                            <i class="bi bi-lock me-2"></i>Processar Pagamento Seguro
                                         </button>
                                     </div>
 
@@ -758,27 +756,27 @@
                             <!-- Security Features -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Security Features</h5>
+                                    <h5 class="dashboard-card-title">Funcionalidades de Segurança</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="d-flex align-items-center mb-3">
                                         <i class="bi bi-shield-check text-success me-3"></i>
                                         <div>
-                                            <h6 class="mb-1">SSL Encryption</h6>
+                                            <h6 class="mb-1">Encriptação SSL</h6>
                                             <small class="text-muted">256-bit SSL security</small>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center mb-3">
                                         <i class="bi bi-credit-card-2-back text-success me-3"></i>
                                         <div>
-                                            <h6 class="mb-1">PCI Compliant</h6>
+                                            <h6 class="mb-1">Em Conformidade com PCI</h6>
                                             <small class="text-muted">Industry standard security</small>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center mb-3">
                                         <i class="bi bi-eye-slash text-success me-3"></i>
                                         <div>
-                                            <h6 class="mb-1">Privacy Protected</h6>
+                                            <h6 class="mb-1">Privacidade Protegida</h6>
                                             <small class="text-muted">No data stored on servers</small>
                                         </div>
                                     </div>
@@ -795,7 +793,7 @@
                             <!-- Recent Transactions -->
                             <div class="dashboard-card">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Recent Transactions</h5>
+                                    <h5 class="dashboard-card-title">Transações Recentes</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="d-flex align-items-center mb-3">
@@ -803,30 +801,30 @@
                                             <i class="bi bi-check-circle"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">CS101 Payment</h6>
+                                            <h6 class="mb-1">Pagamento de CS101</h6>
                                             <small class="text-muted">Alex Johnson - $1,400.00</small>
                                         </div>
-                                        <span class="badge bg-success">Paid</span>
+                                        <span class="badge bg-success">Pago</span>
                                     </div>
                                     <div class="d-flex align-items-center mb-3">
                                         <div class="bg-warning text-white rounded p-2 me-3">
                                             <i class="bi bi-clock"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">MATH201 Payment</h6>
+                                            <h6 class="mb-1">Pagamento de MATH201</h6>
                                             <small class="text-muted">Sarah Wilson - $1,175.00</small>
                                         </div>
-                                        <span class="badge bg-warning text-dark">Pending</span>
+                                        <span class="badge bg-warning text-dark">Pendente</span>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <div class="bg-info text-white rounded p-2 me-3">
                                             <i class="bi bi-credit-card"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">PHYS101 Payment</h6>
+                                            <h6 class="mb-1">Pagamento de PHYS101</h6>
                                             <small class="text-muted">Mike Chen - $1,600.00</small>
                                         </div>
-                                        <span class="badge bg-info text-dark">Processing</span>
+                                        <span class="badge bg-info text-dark">Em Processamento</span>
                                     </div>
                                 </div>
                             </div>

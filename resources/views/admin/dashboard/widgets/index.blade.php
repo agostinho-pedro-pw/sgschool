@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Widgets - Kiaalap Dashboard</title>
+    <title>Elementos do Painel - sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -132,7 +132,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -148,21 +148,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
                         <li class="breadcrumb-item active">Widgets</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -171,29 +171,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -209,8 +209,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -223,9 +223,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -238,9 +238,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -253,9 +253,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -265,7 +265,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -274,28 +274,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -303,14 +301,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -323,13 +321,13 @@
             <div class="container-fluid">
                 <!-- Page Header -->
                 <div class="mb-4">
-                    <h1 class="h3 fw-bold">Widget Collection</h1>
-                    <p class="text-muted">A comprehensive collection of widgets for educational dashboard interfaces</p>
+                    <h1 class="h3 fw-bold">Coleção de Widgets</h1>
+                    <p class="text-muted">Coleção abrangente de widgets para painéis de gestão escolar</p>
                 </div>
 
                 <!-- Statistics Widgets -->
                 <section aria-labelledby="stats-widgets-heading">
-                    <h2 id="stats-widgets-heading" class="h5 fw-semibold mb-4">Statistics Widgets</h2>
+                    <h2 id="stats-widgets-heading" class="h5 fw-semibold mb-4">Widgets Estatísticos</h2>
                     <div class="widget-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
                         <!-- Students Widget -->
                         <div class="widget-card">
@@ -338,7 +336,7 @@
                                     <i class="bi bi-people-fill"></i>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <div class="widget-title">Total Students</div>
+                                    <div class="widget-title">Total de Estudantes</div>
                                     <div class="h4 fw-bold mb-0">2,847</div>
                                     <small class="text-success"><i class="bi bi-arrow-up"></i> +12% from last
                                         month</small>
@@ -353,7 +351,7 @@
                                     <i class="bi bi-person-badge-fill"></i>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <div class="widget-title">Active Professors</div>
+                                    <div class="widget-title">Professores Ativos</div>
                                     <div class="h4 fw-bold mb-0">185</div>
                                     <small class="text-success"><i class="bi bi-arrow-up"></i> +3% from last
                                         month</small>
@@ -370,7 +368,7 @@
                                 <div class="flex-grow-1">
                                     <div class="widget-title">Available Courses</div>
                                     <div class="h4 fw-bold mb-0">127</div>
-                                    <small class="text-warning"><i class="bi bi-dash"></i> No change</small>
+                                    <small class="text-warning"><i class="bi bi-dash"></i> Sem alterações</small>
                                 </div>
                             </div>
                         </div>
@@ -382,7 +380,7 @@
                                     <i class="bi bi-currency-dollar"></i>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <div class="widget-title">Monthly Revenue</div>
+                                    <div class="widget-title">Receita Mensal</div>
                                     <div class="h4 fw-bold mb-0">$89,245</div>
                                     <small class="text-success"><i class="bi bi-arrow-up"></i> +8% from last
                                         month</small>
@@ -394,21 +392,21 @@
 
                 <!-- Progress Widgets -->
                 <section aria-labelledby="progress-widgets-heading">
-                    <h2 id="progress-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Progress Widgets</h2>
+                    <h2 id="progress-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Widgets de Progresso</h2>
                     <div class="widget-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                         <!-- Course Completion Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Course Completion Rates</h3>
+                                <h3 class="widget-title">Taxas de Conclusão dos Cursos</h3>
                                 <div class="dropdown">
                                     <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        This Month
+                                        Este Mês
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">This Week</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                        <li><a class="dropdown-item" href="#">Esta Semana</a></li>
+                                        <li><a class="dropdown-item" href="#">Este Mês</a></li>
+                                        <li><a class="dropdown-item" href="#">Este Ano</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -457,8 +455,8 @@
                         <!-- Assignment Progress Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Assignment Submissions</h3>
-                                <span class="badge bg-primary">24 Due Today</span>
+                                <h3 class="widget-title">Submissão de Trabalhos</h3>
+                                <span class="badge bg-primary">24 vencem hoje</span>
                             </div>
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between mb-1">
@@ -472,7 +470,7 @@
                             </div>
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between mb-1">
-                                    <span class="text-sm">Pending Review</span>
+                                    <span class="text-sm">Aguardam Revisão</span>
                                     <span class="text-sm fw-medium">28/200</span>
                                 </div>
                                 <div class="progress" style="height: 10px;">
@@ -482,7 +480,7 @@
                             </div>
                             <div>
                                 <div class="d-flex justify-content-between mb-1">
-                                    <span class="text-sm">Overdue</span>
+                                    <span class="text-sm">Atrasados</span>
                                     <span class="text-sm fw-medium">16/200</span>
                                 </div>
                                 <div class="progress" style="height: 10px;">
@@ -496,7 +494,7 @@
 
                 <!-- User Profile Widgets -->
                 <section aria-labelledby="profile-widgets-heading">
-                    <h2 id="profile-widgets-heading" class="h5 fw-semibold mb-4 mt-5">User Profile Widgets</h2>
+                    <h2 id="profile-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Widgets de Perfil de Utilizador</h2>
                     <div class="widget-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                         <!-- Student Profile Widget -->
                         <div class="widget-card text-center">
@@ -510,14 +508,14 @@
                                 </span>
                             </div>
                             <h4 class="fw-semibold mb-1">Alex Thompson</h4>
-                            <p class="text-muted mb-2">Computer Science Student</p>
+                            <p class="text-muted mb-2">Estudante de Informática</p>
                             <p class="text-muted small mb-3">Class of 2025 • GPA: 3.8</p>
                             <div class="d-flex justify-content-center gap-2 mb-3">
                                 <button type="button" class="btn btn-primary btn-sm">
-                                    <i class="bi bi-envelope me-1"></i> Message
+                                    <i class="bi bi-envelope me-1"></i> Mensagem
                                 </button>
                                 <button type="button" class="btn btn-outline-secondary btn-sm">
-                                    <i class="bi bi-person-plus me-1"></i> Follow
+                                    <i class="bi bi-person-plus me-1"></i> Seguir
                                 </button>
                             </div>
                             <div class="row text-center">
@@ -548,7 +546,7 @@
                                 </span>
                             </div>
                             <h4 class="fw-semibold mb-1">Dr. Sarah Williams</h4>
-                            <p class="text-muted mb-2">Computer Science Professor</p>
+                            <p class="text-muted mb-2">Professor de Informática</p>
                             <p class="text-muted small mb-3">Ph.D. MIT • 8 years experience</p>
                             <div class="d-flex justify-content-center gap-2 mb-3">
                                 <button type="button" class="btn btn-primary btn-sm">
@@ -565,7 +563,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="fw-bold text-success">4.7</div>
-                                    <div class="small text-muted">Rating</div>
+                                    <div class="small text-muted">Classificação</div>
                                 </div>
                                 <div class="col-4">
                                     <div class="fw-bold text-warning">340</div>
@@ -578,7 +576,7 @@
 
                 <!-- Calendar & Events Widget -->
                 <section aria-labelledby="calendar-widgets-heading">
-                    <h2 id="calendar-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Calendar &amp; Events Widgets
+                    <h2 id="calendar-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Widgets de Calendário e Eventos
                     </h2>
                     <div class="widget-grid" style="grid-template-columns: 1fr 1fr;">
                         <!-- Mini Calendar Widget -->
@@ -673,7 +671,7 @@
                         <!-- Upcoming Events Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Upcoming Events</h3>
+                                <h3 class="widget-title">Próximos Eventos</h3>
                                 <button type="button" class="btn btn-sm btn-primary">
                                     <i class="bi bi-plus"></i> Add Event
                                 </button>
@@ -696,7 +694,7 @@
                                         <div class="h5 fw-bold text-success mb-0">18</div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="fw-semibold mb-1">Student Orientation</h6>
+                                        <h6 class="fw-semibold mb-1">Integração dos Estudantes</h6>
                                         <p class="text-muted small mb-1">Main Auditorium</p>
                                         <small class="text-muted"><i class="bi bi-clock"></i> 9:00 AM - 12:00 PM</small>
                                     </div>
@@ -709,7 +707,7 @@
                                     <div class="flex-grow-1">
                                         <h6 class="fw-semibold mb-1">Science Fair</h6>
                                         <p class="text-muted small mb-1">Laboratory Building</p>
-                                        <small class="text-muted"><i class="bi bi-clock"></i> All Day</small>
+                                        <small class="text-muted"><i class="bi bi-clock"></i> Todo o dia</small>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start">
@@ -719,7 +717,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <h6 class="fw-semibold mb-1">Final Exams Begin</h6>
-                                        <p class="text-muted small mb-1">All Classrooms</p>
+                                        <p class="text-muted small mb-1">Todas as salas de aula</p>
                                         <small class="text-muted"><i class="bi bi-clock"></i> 8:00 AM onwards</small>
                                     </div>
                                 </div>
@@ -730,13 +728,13 @@
 
                 <!-- Todo & Weather Row -->
                 <section aria-labelledby="utility-widgets-heading">
-                    <h2 id="utility-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Utility Widgets</h2>
+                    <h2 id="utility-widgets-heading" class="h5 fw-semibold mb-4 mt-5">Widgets de Utilidade</h2>
                     <div class="widget-grid" style="grid-template-columns: 1fr 1fr;">
                         <!-- Todo List Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Today's Tasks</h3>
-                                <span class="badge bg-primary">5 pending</span>
+                                <h3 class="widget-title">Tarefas de Hoje</h3>
+                                <span class="badge bg-primary">5 pendentes</span>
                             </div>
                             <div style="max-height: 250px; overflow-y: auto;">
                                 <div class="form-check mb-2">
@@ -778,7 +776,7 @@
                             </div>
                             <div class="mt-3">
                                 <button type="button" class="btn btn-outline-primary btn-sm w-100">
-                                    <i class="bi bi-plus"></i> Add New Task
+                                    <i class="bi bi-plus"></i> Adicionar Nova Tarefa
                                 </button>
                             </div>
                         </div>
@@ -786,7 +784,7 @@
                         <!-- Weather Widget -->
                         <div class="widget-card text-center">
                             <div class="widget-header">
-                                <h3 class="widget-title">Today's Weather</h3>
+                                <h3 class="widget-title">Meteorologia de Hoje</h3>
                                 <small class="text-muted">New York, NY</small>
                             </div>
                             <div class="mb-3">
@@ -796,7 +794,7 @@
                             <p class="text-muted mb-3">Sunny</p>
                             <div class="row text-center">
                                 <div class="col-4">
-                                    <div class="small text-muted">Humidity</div>
+                                    <div class="small text-muted">Humidade</div>
                                     <div class="fw-semibold">45%</div>
                                 </div>
                                 <div class="col-4">
@@ -804,7 +802,7 @@
                                     <div class="fw-semibold">8 mph</div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="small text-muted">UV Index</div>
+                                    <div class="small text-muted">Índice UV</div>
                                     <div class="fw-semibold">6</div>
                                 </div>
                             </div>
@@ -838,11 +836,11 @@
                         <!-- Social Media Feed Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Social Media Activity</h3>
+                                <h3 class="widget-title">Atividade nas Redes Sociais</h3>
                                 <div class="dropdown">
                                     <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        All Platforms
+                                        Todas as Plataformas
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Facebook</a></li>
@@ -859,9 +857,9 @@
                                         <i class="bi bi-facebook"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-semibold">New follower on Facebook</div>
-                                        <div class="small text-muted">University page gained 25 new followers</div>
-                                        <div class="small text-muted">2 hours ago</div>
+                                        <div class="small fw-semibold">Novo seguidor no Facebook</div>
+                                        <div class="small text-muted">A página da universidade ganhou 25 novos seguidores</div>
+                                        <div class="small text-muted">há 2 horas</div>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -872,7 +870,7 @@
                                     <div class="flex-grow-1">
                                         <div class="small fw-semibold">Tweet about upcoming events</div>
                                         <div class="small text-muted">Science Fair announcement got 45 retweets</div>
-                                        <div class="small text-muted">4 hours ago</div>
+                                        <div class="small text-muted">H? 4 horas</div>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -881,9 +879,9 @@
                                         <i class="bi bi-linkedin"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-semibold">LinkedIn article published</div>
+                                        <div class="small fw-semibold">Artigo publicado no LinkedIn</div>
                                         <div class="small text-muted">"Future of Education" article got 120 views</div>
-                                        <div class="small text-muted">6 hours ago</div>
+                                        <div class="small text-muted">H? 6 horas</div>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start">
@@ -903,7 +901,7 @@
                         <!-- Quick Actions Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Quick Actions</h3>
+                                <h3 class="widget-title">Ações Rápidas</h3>
                                 <small class="text-muted">Common tasks</small>
                             </div>
                             <div class="row g-2">
@@ -911,42 +909,42 @@
                                     <button type="button"
                                         class="btn btn-outline-primary w-100 d-flex flex-column align-items-center py-3">
                                         <i class="bi bi-person-plus" style="font-size: 1.5rem;"></i>
-                                        <span class="mt-2 small">Add Student</span>
+                                        <span class="mt-2 small">Adicionar Estudante</span>
                                     </button>
                                 </div>
                                 <div class="col-6">
                                     <button type="button"
                                         class="btn btn-outline-success w-100 d-flex flex-column align-items-center py-3">
                                         <i class="bi bi-book" style="font-size: 1.5rem;"></i>
-                                        <span class="mt-2 small">New Course</span>
+                                        <span class="mt-2 small">Novo Curso</span>
                                     </button>
                                 </div>
                                 <div class="col-6">
                                     <button type="button"
                                         class="btn btn-outline-warning w-100 d-flex flex-column align-items-center py-3">
                                         <i class="bi bi-calendar-event" style="font-size: 1.5rem;"></i>
-                                        <span class="mt-2 small">Schedule Event</span>
+                                        <span class="mt-2 small">Agendar Evento</span>
                                     </button>
                                 </div>
                                 <div class="col-6">
                                     <button type="button"
                                         class="btn btn-outline-info w-100 d-flex flex-column align-items-center py-3">
                                         <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
-                                        <span class="mt-2 small">Send Email</span>
+                                        <span class="mt-2 small">Enviar email</span>
                                     </button>
                                 </div>
                                 <div class="col-6">
                                     <button type="button"
                                         class="btn btn-outline-danger w-100 d-flex flex-column align-items-center py-3">
                                         <i class="bi bi-file-earmark-text" style="font-size: 1.5rem;"></i>
-                                        <span class="mt-2 small">Generate Report</span>
+                                        <span class="mt-2 small">Gerar Relatório</span>
                                     </button>
                                 </div>
                                 <div class="col-6">
                                     <button type="button"
                                         class="btn btn-outline-secondary w-100 d-flex flex-column align-items-center py-3">
                                         <i class="bi bi-gear" style="font-size: 1.5rem;"></i>
-                                        <span class="mt-2 small">Settings</span>
+                                        <span class="mt-2 small">Configurações</span>
                                     </button>
                                 </div>
                             </div>
@@ -961,21 +959,21 @@
                         <!-- Mini Line Chart Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Enrollment Trend</h3>
+                                <h3 class="widget-title">Tendência de Inscrições</h3>
                                 <span class="badge bg-success">+15%</span>
                             </div>
                             <div style="height: 120px;">
                                 <canvas id="enrollmentChart"></canvas>
                             </div>
                             <div class="text-center mt-2">
-                                <small class="text-muted">Last 7 days</small>
+                                <small class="text-muted">Últimos 7 dias</small>
                             </div>
                         </div>
 
                         <!-- Mini Doughnut Chart Widget -->
                         <div class="widget-card text-center">
                             <div class="widget-header">
-                                <h3 class="widget-title">Grade Distribution</h3>
+                                <h3 class="widget-title">Distribuição das Notas</h3>
                                 <div class="dropdown">
                                     <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -1014,7 +1012,7 @@
                         <!-- Mini Bar Chart Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Department Revenue</h3>
+                                <h3 class="widget-title">Receita por Departamento</h3>
                                 <span class="text-success small">
                                     <i class="bi bi-arrow-up"></i> 8.3%
                                 </span>
@@ -1023,7 +1021,7 @@
                                 <canvas id="revenueChart"></canvas>
                             </div>
                             <div class="text-center mt-2">
-                                <small class="text-muted">This month vs last month</small>
+                                <small class="text-muted">Este mês vs. mês passado</small>
                             </div>
                         </div>
                     </div>
@@ -1037,9 +1035,9 @@
                         <!-- Recent Notifications Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Recent Notifications</h3>
+                                <h3 class="widget-title">Notificações Recentes</h3>
                                 <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    <i class="bi bi-bell-slash"></i> Mark All Read
+                                    <i class="bi bi-bell-slash"></i> Marcar Tudo como Lido
                                 </button>
                             </div>
                             <div style="max-height: 280px; overflow-y: auto;">
@@ -1048,9 +1046,9 @@
                                         <i class="bi bi-person-plus"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-semibold">New Student Registration</div>
+                                        <div class="small fw-semibold">Nova Matrícula de Estudantes</div>
                                         <div class="small text-muted">John Doe registered for Computer Science</div>
-                                        <div class="small text-muted">5 minutes ago</div>
+                                        <div class="small text-muted">há 5 minutos</div>
                                     </div>
                                     <div class="notification-dot bg-primary"></div>
                                 </div>
@@ -1059,7 +1057,7 @@
                                         <i class="bi bi-check-circle"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-semibold">Assignment Submitted</div>
+                                        <div class="small fw-semibold">Trabalho Submetido</div>
                                         <div class="small text-muted">Sarah submitted Machine Learning project</div>
                                         <div class="small text-muted">15 minutes ago</div>
                                     </div>
@@ -1069,9 +1067,9 @@
                                         <i class="bi bi-exclamation-triangle"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-semibold">Payment Reminder</div>
-                                        <div class="small text-muted">5 students have pending tuition payments</div>
-                                        <div class="small text-muted">1 hour ago</div>
+                                        <div class="small fw-semibold">Lembrete de Pagamento</div>
+                                        <div class="small text-muted">5 estudantes têm propinas por pagar</div>
+                                        <div class="small text-muted">Há 1 hora</div>
                                     </div>
                                     <div class="notification-dot bg-warning"></div>
                                 </div>
@@ -1080,9 +1078,9 @@
                                         <i class="bi bi-calendar-event"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-semibold">Event Reminder</div>
+                                        <div class="small fw-semibold">Lembrete de Evento</div>
                                         <div class="small text-muted">Faculty meeting starts in 2 hours</div>
-                                        <div class="small text-muted">2 hours ago</div>
+                                        <div class="small text-muted">há 2 horas</div>
                                     </div>
                                 </div>
                             </div>
@@ -1091,15 +1089,15 @@
                         <!-- Activity Timeline Widget -->
                         <div class="widget-card">
                             <div class="widget-header">
-                                <h3 class="widget-title">Activity Timeline</h3>
-                                <small class="text-muted">Today's activity</small>
+                                <h3 class="widget-title">Linha do Tempo de Atividades</h3>
+                                <small class="text-muted">Atividade de hoje</small>
                             </div>
                             <div style="max-height: 280px; overflow-y: auto;">
                                 <div class="timeline">
                                     <div class="timeline-item">
                                         <div class="timeline-marker bg-primary"></div>
                                         <div class="timeline-content">
-                                            <div class="small fw-semibold">Course Created</div>
+                                            <div class="small fw-semibold">Curso Criado</div>
                                             <div class="small text-muted">Advanced Database Systems course was created
                                             </div>
                                             <div class="small text-muted">09:30 AM</div>
@@ -1108,7 +1106,7 @@
                                     <div class="timeline-item">
                                         <div class="timeline-marker bg-success"></div>
                                         <div class="timeline-content">
-                                            <div class="small fw-semibold">Student Enrolled</div>
+                                            <div class="small fw-semibold">Estudante Inscrito</div>
                                             <div class="small text-muted">5 students enrolled in Data Structures</div>
                                             <div class="small text-muted">11:15 AM</div>
                                         </div>
@@ -1116,23 +1114,23 @@
                                     <div class="timeline-item">
                                         <div class="timeline-marker bg-warning"></div>
                                         <div class="timeline-content">
-                                            <div class="small fw-semibold">System Maintenance</div>
-                                            <div class="small text-muted">Database backup completed successfully</div>
+                                            <div class="small fw-semibold">Manutenção do Sistema</div>
+                                            <div class="small text-muted">Cópia de segurança da base de dados concluída com êxito</div>
                                             <div class="small text-muted">02:00 PM</div>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-marker bg-info"></div>
                                         <div class="timeline-content">
-                                            <div class="small fw-semibold">Grade Updated</div>
-                                            <div class="small text-muted">Midterm grades published for CS301</div>
+                                            <div class="small fw-semibold">Nota Atualizada</div>
+                                            <div class="small text-muted">Notas intercalares publicadas para CS301</div>
                                             <div class="small text-muted">03:45 PM</div>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-marker bg-danger"></div>
                                         <div class="timeline-content">
-                                            <div class="small fw-semibold">Alert Generated</div>
+                                            <div class="small fw-semibold">Alerta Gerado</div>
                                             <div class="small text-muted">3 students exceeded absence limit</div>
                                             <div class="small text-muted">04:20 PM</div>
                                         </div>
@@ -1150,10 +1148,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>404 - Kiaalap Dashboard</title>
+    <title>404 - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -264,7 +264,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -280,29 +280,29 @@
         <!-- Error Content -->
         <div class="error-container">
             <h1 class="error-code">404</h1>
-            <h2 class="error-title">Oops! Page Not Found</h2>
+            <h2 class="error-title">Ups! Página não encontrada</h2>
             <p class="error-message">
-                The page you're looking for seems to have wandered off.
-                It might have been removed, renamed, or perhaps it never existed.
+                A página que procura parece ter desaparecido. Pode ter sido removida, mudado de nome ou talvez nunca
+                tenha existido.
             </p>
 
             <!-- Action Buttons -->
             <div class="error-actions">
                 <a href="index.html" class="error-btn btn-home">
                     <i class="bi bi-house-door"></i>
-                    Go to Homepage
+                    Ir para a página inicial
                 </a>
                 <a href="javascript:history.back()" class="error-btn btn-back">
                     <i class="bi bi-arrow-left"></i>
-                    Go Back
+                    Voltar
                 </a>
             </div>
 
             <!-- Search Box -->
             <div class="error-search">
                 <form action="/search" method="get" class="search-group">
-                    <input type="text" class="search-input" placeholder="Search for a page..." name="q">
-                    <button type="submit" class="search-btn" aria-label="Search">
+                    <input type="text" class="search-input" placeholder="Pesquisar uma p?gina..." name="q">
+                    <button type="submit" class="search-btn" aria-label="Pesquisar">
                         <i aria-hidden="true" class="bi bi-search"></i>
                     </button>
                 </form>
@@ -310,15 +310,15 @@
 
             <!-- Helpful Links -->
             <div style="margin-top: 3rem;">
-                <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Popular pages:</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Páginas populares:</p>
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                     <a href="analytics.html"
-                        style="color: white; text-decoration: underline; opacity: 0.8; hover: opacity: 1;">Dashboard</a>
+                        style="color: white; text-decoration: underline; opacity: 0.8; hover: opacity: 1;">Painel</a>
                     <a href="all-students.html"
-                        style="color: white; text-decoration: underline; opacity: 0.8;">Students</a>
+                        style="color: white; text-decoration: underline; opacity: 0.8;">Estudantes</a>
                     <a href="all-courses.html"
-                        style="color: white; text-decoration: underline; opacity: 0.8;">Courses</a>
-                    <a href="events.html" style="color: white; text-decoration: underline; opacity: 0.8;">Events</a>
+                        style="color: white; text-decoration: underline; opacity: 0.8;">Cursos</a>
+                    <a href="events.html" style="color: white; text-decoration: underline; opacity: 0.8;">Eventos</a>
                 </div>
             </div>
         </div>
@@ -347,13 +347,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const query = this.querySelector('input').value;
             if (query) {
                 // In a real application, this would perform a search
-                alert('Search functionality would search for: ' + query);
+                alert('A pesquisa procuraria por: ' + query);
             }
         });
     }
 
     // Log 404 error for analytics (in production)
-    console.log('404 Error - Page not found:', window.location.pathname);
+    console.log('Erro 404 — Página não encontrada:', window.location.pathname);
 });
     </script>
 

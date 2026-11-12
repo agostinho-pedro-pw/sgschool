@@ -94,7 +94,7 @@
                         <li><a class="nav-link " href="add-library-assets.html">Adicionar Item ao Acervo</a></li>
                         <li><a class="nav-link " href="edit-library-assets.html">Editar Item do Acervo</a></li>
                     </ul>
-                </li>
+                </li>--}}
                 <li class="nav-item">
                     <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                         data-bs-target="#departmentsSubmenu" aria-expanded="false">
@@ -102,13 +102,13 @@
                         <span>Departamentos</span>
                     </a>
                     <ul id="departmentsSubmenu" class="submenu collapse  list-unstyled">
-                        <li><a class="nav-link " href="departments.html">Lista de Departamentos</a></li>
-                        <li><a class="nav-link " href="add-department.html">Adicionar Departamento</a></li>
-                        <li><a class="nav-link " href="edit-department.html">Editar Departamento</a></li>
+                        <li><a class="nav-link " href="{{ route('department') }}">Lista de Departamentos</a></li>
+                        <li><a class="nav-link " href="{{ route('add-department') }}">Adicionar Departamento</a></li>
+                        <li><a class="nav-link " href="{{ route('edit-department') }}">Editar Departamento</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>--}}
+        </div>
         <div class="menu-section">
             <div class="menu-section-title">Comunicação</div>
             <ul class="nav flex-column">

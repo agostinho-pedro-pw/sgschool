@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Course Info - Kiaalap Dashboard</title>
+    <title>Informações do Curso - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -219,7 +219,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -235,23 +235,23 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Academic</a></li>
-                        <li class="breadcrumb-item"><a href="all-courses.html">All Courses</a></li>
-                        <li class="breadcrumb-item active">Course Info</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="#">Académico</a></li>
+                        <li class="breadcrumb-item"><a href="all-courses.html">Todos os Cursos</a></li>
+                        <li class="breadcrumb-item active">Informações do Curso</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -260,29 +260,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -290,7 +290,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -298,8 +298,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -312,9 +312,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -327,9 +327,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -342,9 +342,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -354,7 +354,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -363,28 +363,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -392,14 +390,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -416,7 +414,7 @@
                         <div class="dashboard-card-body">
                             <div class="d-flex align-items-start gap-3">
                                 <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=200&h=120&fit=crop"
-                                    alt="Course Image" class="rounded flex-shrink-0" width="200" height="120"
+                                    alt="Imagem do Curso" class="rounded flex-shrink-0" width="200" height="120"
                                     loading="lazy">
                                 <div class="flex-grow-1">
                                     <div class="d-flex justify-content-between align-items-start">
@@ -424,16 +422,16 @@
                                             <h1 class="h3 fw-bold mb-1">CS101 - Introduction to Computer Science</h1>
                                             <p class="text-muted mb-2">Computer Science Department</p>
                                             <div class="d-flex flex-wrap gap-2 mb-2">
-                                                <span class="badge bg-success">Active</span>
-                                                <span class="badge bg-info text-dark">3 Credits</span>
-                                                <span class="badge bg-warning text-dark">Fall 2025</span>
-                                                <span class="badge bg-primary">Core Course</span>
+                                                <span class="badge bg-success">Ativo</span>
+                                                <span class="badge bg-info text-dark">3 Créditos</span>
+                                                <span class="badge bg-warning text-dark">Outono de 2025</span>
+                                                <span class="badge bg-primary">Curso Obrigatório</span>
                                             </div>
                                             <div class="d-flex align-items-center text-muted small">
                                                 <i class="bi bi-person me-1"></i>
                                                 <span class="me-3">Dr. Robert Smith</span>
                                                 <i class="bi bi-people me-1"></i>
-                                                <span class="me-3">42/45 Students</span>
+                                                <span class="me-3">42/45 Estudantes</span>
                                                 <i class="bi bi-clock me-1"></i>
                                                 <span>MWF 10:00-11:30 AM</span>
                                             </div>
@@ -441,20 +439,20 @@
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-outline-primary dropdown-toggle"
                                                 data-bs-toggle="dropdown">
-                                                Actions
+                                                Ações
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i>Edit Course</a></li>
+                                                            class="bi bi-pencil me-2"></i>Editar Curso</a></li>
                                                 <li><a class="dropdown-item" href="#"><i
-                                                            class="bi bi-people me-2"></i>Manage Students</a></li>
+                                                            class="bi bi-people me-2"></i>Gerir Estudantes</a></li>
                                                 <li><a class="dropdown-item" href="#"><i
-                                                            class="bi bi-file-text me-2"></i>View Syllabus</a></li>
+                                                            class="bi bi-file-text me-2"></i>Ver Programa</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item" href="#"><i
-                                                            class="bi bi-download me-2"></i>Export Data</a></li>
+                                                            class="bi bi-download me-2"></i>Exportar Dados</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -471,31 +469,31 @@
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
                                     data-bs-target="#overview" type="button" role="tab">
-                                    <i class="bi bi-info-circle me-2"></i>Overview
+                                    <i class="bi bi-info-circle me-2"></i>Visão Geral
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="students-tab" data-bs-toggle="tab"
                                     data-bs-target="#students" type="button" role="tab">
-                                    <i class="bi bi-people me-2"></i>Students
+                                    <i class="bi bi-people me-2"></i>Estudantes
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="schedule-tab" data-bs-toggle="tab"
                                     data-bs-target="#schedule" type="button" role="tab">
-                                    <i class="bi bi-calendar me-2"></i>Schedule
+                                    <i class="bi bi-calendar me-2"></i>Horário
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="materials-tab" data-bs-toggle="tab"
                                     data-bs-target="#materials" type="button" role="tab">
-                                    <i class="bi bi-book me-2"></i>Materials
+                                    <i class="bi bi-book me-2"></i>Materiais
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="analytics-tab" data-bs-toggle="tab"
                                     data-bs-target="#analytics" type="button" role="tab">
-                                    <i class="bi bi-graph-up me-2"></i>Analytics
+                                    <i class="bi bi-graph-up me-2"></i>Análise
                                 </button>
                             </li>
                         </ul>
@@ -507,13 +505,13 @@
                             <div class="tab-pane fade show active" id="overview" role="tabpanel">
                                 <div class="dashboard-grid grid-cols-3-1">
                                     <div>
-                                        <h5 class="mb-3">Course Description</h5>
+                                        <h5 class="mb-3">Descrição do Curso</h5>
                                         <p class="mb-3">This course provides a comprehensive introduction to computer
                                             science principles, programming fundamentals, and computational thinking.
                                             Students will learn basic programming concepts, data structures, and
                                             problem-solving techniques using modern programming languages.</p>
 
-                                        <h5 class="mb-3">Learning Objectives</h5>
+                                        <h5 class="mb-3">Objetivos de Aprendizagem</h5>
                                         <ul class="list-unstyled">
                                             <li class="mb-2"><i
                                                     class="bi bi-check-circle text-success me-2"></i>Understand
@@ -526,23 +524,23 @@
                                                 algorithmic thinking</li>
                                         </ul>
 
-                                        <h5 class="mb-3">Prerequisites</h5>
+                                        <h5 class="mb-3">Pré-requisitos</h5>
                                         <div class="alert alert-info" role="alert">
                                             <i class="bi bi-info-circle me-2"></i>
-                                            <strong>Required:</strong> MATH101 - College Algebra
+                                            <strong>Obrigatório:</strong> MATH101 - College Algebra
                                         </div>
                                     </div>
                                     <div>
                                         <div class="dashboard-card">
                                             <div class="dashboard-card-header">
-                                                <h5 class="dashboard-card-title">Quick Stats</h5>
+                                                <h5 class="dashboard-card-title">Estatísticas Rápidas</h5>
                                             </div>
                                             <div class="dashboard-card-body">
                                                 <!-- Enrollment -->
                                                 <div class="mb-4">
                                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                                         <span class="text-muted"
-                                                            style="font-size: 0.875rem;">Enrollment</span>
+                                                            style="font-size: 0.875rem;">Inscrições</span>
                                                         <span class="fw-semibold">42/45</span>
                                                     </div>
                                                     <div class="progress" style="height: 6px;">
@@ -553,8 +551,7 @@
                                                 <!-- Attendance -->
                                                 <div class="mb-4">
                                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                                        <span class="text-muted" style="font-size: 0.875rem;">Avg.
-                                                            Attendance</span>
+                                                        <span class="text-muted" style="font-size: 0.875rem;">Presen?as m?dias</span>
                                                         <span class="fw-semibold">89%</span>
                                                     </div>
                                                     <div class="progress" style="height: 6px;">
@@ -565,8 +562,7 @@
                                                 <!-- Course Progress -->
                                                 <div class="mb-4">
                                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                                        <span class="text-muted" style="font-size: 0.875rem;">Course
-                                                            Progress</span>
+                                                        <span class="text-muted" style="font-size: 0.875rem;">Progresso do Curso</span>
                                                         <span class="fw-semibold">35%</span>
                                                     </div>
                                                     <div class="progress" style="height: 6px;">
@@ -586,7 +582,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 ms-2">
-                                                            <div class="text-muted" style="font-size: 0.75rem;">Created
+                                                            <div class="text-muted" style="font-size: 0.75rem;">Criado em
                                                             </div>
                                                             <div class="small fw-semibold">Sept 15, 2025</div>
                                                         </div>
@@ -601,7 +597,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 ms-2">
-                                                            <div class="text-muted" style="font-size: 0.75rem;">Duration
+                                                            <div class="text-muted" style="font-size: 0.75rem;">Dura??o
                                                             </div>
                                                             <div class="small fw-semibold">16 weeks</div>
                                                         </div>
@@ -616,7 +612,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 ms-2">
-                                                            <div class="text-muted" style="font-size: 0.75rem;">Location
+                                                            <div class="text-muted" style="font-size: 0.75rem;">Localiza??o
                                                             </div>
                                                             <div class="small fw-semibold">Building A, Room 101</div>
                                                         </div>
@@ -631,16 +627,16 @@
                             <!-- Students Tab -->
                             <div class="tab-pane fade" id="students" role="tabpanel">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h5 class="mb-0">Enrolled Students (42)</h5>
+                                    <h5 class="mb-0">Estudantes Inscritos (42)</h5>
                                     <div class="d-flex gap-2">
                                         <div class="input-group" style="width: 300px;">
-                                            <input type="text" class="form-control" placeholder="Search students...">
-                                            <button class="btn btn-outline-secondary" type="button" aria-label="Search">
+                                            <input type="text" class="form-control" placeholder="Pesquisar estudantes...">
+                                            <button class="btn btn-outline-secondary" type="button" aria-label="Pesquisar">
                                                 <i aria-hidden="true" class="bi bi-search"></i>
                                             </button>
                                         </div>
                                         <button type="button" class="btn btn-primary">
-                                            <i class="bi bi-plus-circle me-2"></i>Add Student
+                                            <i class="bi bi-plus-circle me-2"></i>Adicionar Estudante
                                         </button>
                                     </div>
                                 </div>
@@ -649,13 +645,13 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th>Student</th>
+                                                <th>Estudante</th>
                                                 <th>ID</th>
                                                 <th>Email</th>
-                                                <th>Attendance</th>
-                                                <th>Grade</th>
-                                                <th>Status</th>
-                                                <th>Actions</th>
+                                                <th>Assiduidade</th>
+                                                <th>Nota</th>
+                                                <th>Estado</th>
+                                                <th>Ações</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -663,7 +659,7 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <img src="https://ui-avatars.com/api/?name=Alex+Johnson&background=6366f1&color=fff"
-                                                            alt="Student" class="rounded-circle me-2" width="32"
+                                                            alt="Estudante" class="rounded-circle me-2" width="32"
                                                             height="32" loading="lazy" decoding="async">
                                                         <span>Alex Johnson</span>
                                                     </div>
@@ -680,21 +676,21 @@
                                                     </div>
                                                 </td>
                                                 <td><span class="badge bg-success">A-</span></td>
-                                                <td><span class="badge bg-success">Active</span></td>
+                                                <td><span class="badge bg-success">Ativo</span></td>
                                                 <td>
                                                     <div class="dropdown">
                                                         <button type="button" class="btn btn-sm btn-light"
-                                                            data-bs-toggle="dropdown" aria-label="More options">
+                                                            data-bs-toggle="dropdown" aria-label="Mais opções">
                                                             <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                         </button>
                                                         <ul class="dropdown-menu">
                                                             <li><a class="dropdown-item" href="#"><i
-                                                                        class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                        class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                             <li><a class="dropdown-item" href="#"><i
-                                                                        class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                        class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                             </li>
                                                             <li><a class="dropdown-item" href="#"><i
-                                                                        class="bi bi-graph-up me-2"></i>View Grades</a>
+                                                                        class="bi bi-graph-up me-2"></i>Ver Notas</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -704,7 +700,7 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <img src="https://ui-avatars.com/api/?name=Sarah+Wilson&background=10b981&color=fff"
-                                                            alt="Student" class="rounded-circle me-2" width="32"
+                                                            alt="Estudante" class="rounded-circle me-2" width="32"
                                                             height="32" loading="lazy" decoding="async">
                                                         <span>Sarah Wilson</span>
                                                     </div>
@@ -721,21 +717,21 @@
                                                     </div>
                                                 </td>
                                                 <td><span class="badge bg-info text-dark">B+</span></td>
-                                                <td><span class="badge bg-success">Active</span></td>
+                                                <td><span class="badge bg-success">Ativo</span></td>
                                                 <td>
                                                     <div class="dropdown">
                                                         <button type="button" class="btn btn-sm btn-light"
-                                                            data-bs-toggle="dropdown" aria-label="More options">
+                                                            data-bs-toggle="dropdown" aria-label="Mais opções">
                                                             <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                         </button>
                                                         <ul class="dropdown-menu">
                                                             <li><a class="dropdown-item" href="#"><i
-                                                                        class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                        class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                             <li><a class="dropdown-item" href="#"><i
-                                                                        class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                        class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                             </li>
                                                             <li><a class="dropdown-item" href="#"><i
-                                                                        class="bi bi-graph-up me-2"></i>View Grades</a>
+                                                                        class="bi bi-graph-up me-2"></i>Ver Notas</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -750,35 +746,35 @@
                             <div class="tab-pane fade" id="schedule" role="tabpanel">
                                 <div class="dashboard-grid grid-cols-3-1">
                                     <div>
-                                        <h5 class="mb-3">Class Schedule</h5>
+                                        <h5 class="mb-3">Horário das Aulas</h5>
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <thead>
                                                     <tr>
-                                                        <th>Day</th>
-                                                        <th>Time</th>
-                                                        <th>Topic</th>
-                                                        <th>Room</th>
-                                                        <th>Status</th>
+                                                        <th>Dia</th>
+                                                        <th>Hora</th>
+                                                        <th>Tópico</th>
+                                                        <th>Sala</th>
+                                                        <th>Estado</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Monday</td>
+                                                        <td>Segunda-feira</td>
                                                         <td>10:00 - 11:30 AM</td>
                                                         <td>Introduction to Programming</td>
                                                         <td>Building A, Room 101</td>
-                                                        <td><span class="badge bg-success">Completed</span></td>
+                                                        <td><span class="badge bg-success">Concluído</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Wednesday</td>
+                                                        <td>Quarta-feira</td>
                                                         <td>10:00 - 11:30 AM</td>
                                                         <td>Variables and Data Types</td>
                                                         <td>Building A, Room 101</td>
                                                         <td><span class="badge bg-primary">Upcoming</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Friday</td>
+                                                        <td>Sexta-feira</td>
                                                         <td>10:00 - 11:30 AM</td>
                                                         <td>Control Structures</td>
                                                         <td>Building A, Room 101</td>
@@ -791,7 +787,7 @@
                                     <div>
                                         <div class="dashboard-card">
                                             <div class="dashboard-card-header">
-                                                <h5 class="dashboard-card-title">Upcoming Events</h5>
+                                                <h5 class="dashboard-card-title">Próximos Eventos</h5>
                                             </div>
                                             <div class="dashboard-card-body">
                                                 <div class="d-flex align-items-start mb-4">
@@ -815,7 +811,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1 ms-3">
-                                                        <h6 class="mb-1 fw-semibold">Assignment Due</h6>
+                                                        <h6 class="mb-1 fw-semibold">Prazo de Entrega do Trabalho</h6>
                                                         <p class="text-muted mb-0" style="font-size: 0.875rem;">March
                                                             10, 2025 • 11:59 PM</p>
                                                     </div>
@@ -842,9 +838,9 @@
                             <!-- Materials Tab -->
                             <div class="tab-pane fade" id="materials" role="tabpanel">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <h5 class="mb-0">Course Materials</h5>
+                                    <h5 class="mb-0">Materiais do Curso</h5>
                                     <button type="button" class="btn btn-primary">
-                                        <i class="bi bi-cloud-upload me-2"></i>Upload Material
+                                        <i class="bi bi-cloud-upload me-2"></i>Carregar Material
                                     </button>
                                 </div>
 
@@ -858,7 +854,7 @@
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1 ms-3">
-                                                <h6 class="mb-1">Course Syllabus</h6>
+                                                <h6 class="mb-1">Programa do Curso</h6>
                                                 <p class="text-muted small mb-2">Complete course outline and
                                                     requirements</p>
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -929,8 +925,8 @@
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1 ms-3">
-                                                <h6 class="mb-1">Assignment Guidelines</h6>
-                                                <p class="text-muted small mb-2">Homework and project instructions</p>
+                                                <h6 class="mb-1">Orientações para os Trabalhos</h6>
+                                                <p class="text-muted small mb-2">Instruções para trabalhos de casa e projetos</p>
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <span class="text-muted" style="font-size: 0.75rem;">Sep 25, 2025 •
                                                         156 KB</span>
@@ -950,14 +946,14 @@
                                 <!-- Stats Cards -->
                                 <div class="dashboard-grid grid-cols-4 mb-4">
                                     <div class="stats-card">
-                                        <div class="stats-card-label">Total Students</div>
+                                        <div class="stats-card-label">Total de Estudantes</div>
                                         <div class="stats-card-value">42</div>
-                                        <span class="stats-card-change positive">+3 this week</span>
+                                        <span class="stats-card-change positive">+3 esta semana</span>
                                     </div>
                                     <div class="stats-card">
-                                        <div class="stats-card-label">Avg. Attendance</div>
+                                        <div class="stats-card-label">Média de Assiduidade</div>
                                         <div class="stats-card-value">89%</div>
-                                        <span class="stats-card-change positive">+2% from last month</span>
+                                        <span class="stats-card-change positive">+2% face ao mês passado</span>
                                     </div>
                                     <div class="stats-card">
                                         <div class="stats-card-label">Avg. GPA</div>
@@ -983,7 +979,7 @@
                                     </div>
                                     <div class="chart-wrapper">
                                         <div class="dashboard-card-header">
-                                            <h5 class="dashboard-card-title">Grade Distribution</h5>
+                                            <h5 class="dashboard-card-title">Distribuição das Notas</h5>
                                         </div>
                                         <div class="chart-container-main">
                                             <canvas id="gradeChart"></canvas>
@@ -1025,7 +1021,7 @@
                                         <h6 class="mb-3">Assignment Performance</h6>
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between mb-1">
-                                                <span class="text-muted small">Submitted on time</span>
+                                                <span class="text-muted small">Entregue dentro do prazo</span>
                                                 <span class="small fw-semibold">85%</span>
                                             </div>
                                             <div class="progress" style="height: 6px;">
@@ -1120,10 +1116,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

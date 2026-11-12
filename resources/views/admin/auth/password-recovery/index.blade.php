@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Recovery - Kiaalap</title>
+    <title>Recuperação da Palavra-passe - sgSchool</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 
     <style>
@@ -84,32 +84,32 @@
                 <div class="brand-logo">
                     <i class="bi bi-key"></i>
                 </div>
-                <h1 class="h3 mb-2 fw-bold">Forgot Password?</h1>
-                <p class="text-muted">No worries! Enter your email and we'll send you reset instructions.</p>
+                <h1 class="h3 mb-2 fw-bold">Esqueceu-se da palavra-passe?</h1>
+                <p class="text-muted">Não se preocupe! Introduza o seu endereço de email e enviar-lhe-emos instruções para a reposição.</p>
             </div>
 
             <form id="passwordRecoveryForm" novalidate>
                 <div class="mb-4">
-                    <label for="email" class="form-label">Email Address</label>
+                    <label for="email" class="form-label">Endereço de Email</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="bi bi-envelope"></i>
                         </span>
                         <input type="email" class="form-control" id="email" name="email"
-                            placeholder="example@kiaalap.edu" required autofocus aria-describedby="emailHelp">
+                            placeholder="exemplo@sgschool.edu" required autofocus aria-describedby="emailHelp">
                     </div>
                     <div class="invalid-feedback">
-                        Please enter a valid email address.
+                        Introduza um endereço de email válido.
                     </div>
                     <small id="emailHelp" class="form-text text-muted">
-                        Enter the email address associated with your account.
+                        Introduza o endereço de email associado à sua conta.
                     </small>
                 </div>
 
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary btn-lg" type="submit">
                         <i class="bi bi-send me-2"></i>
-                        Send Reset Instructions
+                        Enviar Instruções de Reposição
                     </button>
                 </div>
 
@@ -119,13 +119,13 @@
                     <p class="mb-2">
                         <a href="login.html" class="text-decoration-none">
                             <i class="bi bi-arrow-left me-1"></i>
-                            Back to Login
+                            Voltar ao Início de Sessão
                         </a>
                     </p>
                     <p>
-                        Don't have an account?
+                        Ainda não tem uma conta?
                         <a href="register.html" class="text-decoration-none fw-bold">
-                            Sign up
+                            Registar-se
                         </a>
                     </p>
                 </div>
@@ -138,26 +138,26 @@
                 <div class="success-icon">
                     <i class="bi bi-check-lg"></i>
                 </div>
-                <h1 class="h3 mb-2 fw-bold">Check Your Email</h1>
+                <h1 class="h3 mb-2 fw-bold">Verifique o Seu Email</h1>
                 <p class="text-muted">
-                    We've sent password reset instructions to
+                    Enviámos as instruções de reposição da palavra-passe para
                     <strong id="emailDisplay"></strong>
                 </p>
             </div>
 
             <div class="alert alert-info" role="alert">
                 <i class="bi bi-info-circle me-2"></i>
-                If you don't receive an email within 5 minutes, check your spam folder.
+                Se não receber um email nos próximos 5 minutos, verifique a pasta de spam.
             </div>
 
             <div class="d-grid gap-2">
                 <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='login.html'">
                     <i class="bi bi-arrow-left me-2"></i>
-                    Back to Login
+                    Voltar ao Início de Sessão
                 </button>
 
                 <button type="button" class="btn btn-outline-secondary" onclick="resetForm()">
-                    Didn't receive email? Try again
+                    Não recebeu o email? Tente novamente
                 </button>
             </div>
         </div>
@@ -168,56 +168,56 @@
                 <div class="brand-logo">
                     <i class="bi bi-shield-lock"></i>
                 </div>
-                <h1 class="h3 mb-2 fw-bold">Reset Password</h1>
-                <p class="text-muted">Enter your new password below</p>
+                <h1 class="h3 mb-2 fw-bold">Repor Palavra-passe</h1>
+                <p class="text-muted">Introduza abaixo a sua nova palavra-passe</p>
             </div>
 
             <form id="newPasswordForm" novalidate>
                 <div class="mb-3">
-                    <label for="newPassword" class="form-label">New Password</label>
+                    <label for="newPassword" class="form-label">Nova Palavra-passe</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="bi bi-lock"></i>
                         </span>
                         <input type="password" autocomplete="new-password" class="form-control" id="newPassword"
-                            name="newPassword" placeholder="Min 8 characters" required minlength="8"
+                            name="newPassword" placeholder="Mínimo de 8 caracteres" required minlength="8"
                             aria-describedby="newPasswordHelp">
                         <button class="btn btn-outline-secondary" type="button" id="toggleNewPassword"
-                            aria-label="Toggle password visibility">
+                            aria-label="Alternar a visibilidade da palavra-passe">
                             <i class="bi bi-eye"></i>
                         </button>
                     </div>
                     <div class="invalid-feedback">
-                        Password must be at least 8 characters.
+                        A palavra-passe deve ter pelo menos 8 caracteres.
                     </div>
                     <small id="newPasswordHelp" class="form-text text-muted">
-                        Use a strong password with letters, numbers, and symbols.
+                        Utilize uma palavra-passe forte, com letras, números e símbolos.
                     </small>
                 </div>
 
                 <div class="mb-4">
-                    <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                    <label for="confirmNewPassword" class="form-label">Confirmar Nova Palavra-passe</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="bi bi-lock-fill"></i>
                         </span>
                         <input type="password" autocomplete="new-password" class="form-control" id="confirmNewPassword"
-                            name="confirmNewPassword" placeholder="Repeat password" required
-                            aria-label="Confirm Password">
+                            name="confirmNewPassword" placeholder="Repetir palavra-passe" required
+                            aria-label="Confirmar Palavra-passe">
                         <button class="btn btn-outline-secondary" type="button" id="toggleConfirmNewPassword"
-                            aria-label="Toggle confirm password visibility">
+                            aria-label="Mostrar ou ocultar confirmação da palavra-passe">
                             <i class="bi bi-eye"></i>
                         </button>
                     </div>
                     <div class="invalid-feedback">
-                        Passwords do not match.
+                        As palavras-passe não coincidem.
                     </div>
                 </div>
 
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary btn-lg" type="submit">
                         <i class="bi bi-check-lg me-2"></i>
-                        Reset Password
+                        Repor Palavra-passe
                     </button>
                 </div>
 
@@ -227,7 +227,7 @@
                     <p>
                         <a href="login.html" class="text-decoration-none">
                             <i class="bi bi-arrow-left me-1"></i>
-                            Back to Login
+                            Voltar ao Início de Sessão
                         </a>
                     </p>
                 </div>
@@ -236,9 +236,9 @@
 
         <div class="text-center mt-4">
             <p class="text-white-50 small">
-                &copy; 2025 Kiaalap. All rights reserved.
-                <a href="#" class="text-white-50">Privacy</a> ·
-                <a href="#" class="text-white-50">Terms</a>
+                &copy; 2025 sgSchool. Todos os direitos reservados.
+                <a href="#" class="text-white-50">Privacidade</a> ·
+                <a href="#" class="text-white-50">Termos</a>
             </p>
         </div>
     </div>

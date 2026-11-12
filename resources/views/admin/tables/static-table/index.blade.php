@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Static table - Kiaalap Dashboard</title>
+    <title>Tabela estática - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -246,7 +246,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -259,124 +259,124 @@
             <div class="sidebar-brand">
                 <h5>
                     <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
+                    sgSchool
                 </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Fechar menu lateral">
                     <i class="bi bi-x-lg"></i>
                 </button>
             </div>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Main navigation">
+        <nav class="sidebar-nav" aria-label="Navegação principal">
             <div class="menu-section">
-                <div class="menu-section-title">Main</div>
+                <div class="menu-section-title">Início</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#dashboardSubmenu" aria-expanded="false">
                             <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
+                            <span>Painel</span>
                         </a>
                         <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
+                            <li><a class="nav-link " href="index.html">Painel v.1</a></li>
+                            <li><a class="nav-link " href="index-1.html">Painel v.2</a></li>
+                            <li><a class="nav-link " href="index-2.html">Painel v.3</a></li>
+                            <li><a class="nav-link " href="analytics.html">Análises</a></li>
                             <li><a class="nav-link " href="widgets.html">Widgets</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="events.html">
                             <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
+                            <span>Eventos</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
+                <div class="menu-section-title">Académico</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#professorsSubmenu" aria-expanded="false">
                             <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
+                            <span>Professores</span>
                         </a>
                         <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
+                            <li><a class="nav-link " href="all-professors.html">Todos os professores</a></li>
+                            <li><a class="nav-link " href="add-professor.html">Adicionar professor</a></li>
+                            <li><a class="nav-link " href="edit-professor.html">Editar professor</a></li>
+                            <li><a class="nav-link " href="professor-profile.html">Perfil do professor</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#studentsSubmenu" aria-expanded="false">
                             <i class="bi bi-people"></i>
-                            <span>Students</span>
+                            <span>Estudantes</span>
                         </a>
                         <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
+                            <li><a class="nav-link " href="all-students.html">Todos os estudantes</a></li>
+                            <li><a class="nav-link " href="add-student.html">Adicionar Estudante</a></li>
+                            <li><a class="nav-link " href="edit-student.html">Editar estudante</a></li>
+                            <li><a class="nav-link " href="student-profile.html">Perfil do estudante</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#coursesSubmenu" aria-expanded="false">
                             <i class="bi bi-book"></i>
-                            <span>Courses</span>
+                            <span>Cursos</span>
                         </a>
                         <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
+                            <li><a class="nav-link " href="all-courses.html">Todos os cursos</a></li>
+                            <li><a class="nav-link " href="add-course.html">Adicionar Curso</a></li>
+                            <li><a class="nav-link " href="edit-course.html">Editar curso</a></li>
+                            <li><a class="nav-link " href="course-info.html">Informações do curso</a></li>
+                            <li><a class="nav-link " href="course-payment.html">Pagamento de cursos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#librarySubmenu" aria-expanded="false">
                             <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
+                            <span>Biblioteca</span>
                         </a>
                         <ul id="librarySubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
+                            <li><a class="nav-link " href="library-assets.html">Recursos da biblioteca</a></li>
+                            <li><a class="nav-link " href="add-library-assets.html">Adicionar recurso da biblioteca</a></li>
+                            <li><a class="nav-link " href="edit-library-assets.html">Editar recurso da biblioteca</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#departmentsSubmenu" aria-expanded="false">
                             <i class="bi bi-building"></i>
-                            <span>Departments</span>
+                            <span>Departamentos</span>
                         </a>
                         <ul id="departmentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link " href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link " href="edit-department.html">Edit Department</a></li>
+                            <li><a class="nav-link " href="departments.html">Lista de departamentos</a></li>
+                            <li><a class="nav-link " href="add-department.html">Adicionar Departamento</a></li>
+                            <li><a class="nav-link " href="edit-department.html">Editar Departamento</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
+                <div class="menu-section-title">Comunicação</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#mailboxSubmenu" aria-expanded="false">
                             <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
+                            <span>Correio</span>
                         </a>
                         <ul id="mailboxSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
+                            <li><a class="nav-link " href="mailbox.html">Caixa de entrada</a></li>
+                            <li><a class="nav-link " href="mailbox-compose.html">Compor</a></li>
+                            <li><a class="nav-link " href="mailbox-view.html">Ver mensagem</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -389,28 +389,28 @@
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#componentsSubmenu" aria-expanded="false">
                             <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
+                            <span>Componentes</span>
                         </a>
                         <ul id="componentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link " href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
+                            <li><a class="nav-link " href="buttons.html">Botões</a></li>
+                            <li><a class="nav-link " href="alerts.html">Alertas</a></li>
+                            <li><a class="nav-link " href="modals.html">Janelas modais</a></li>
+                            <li><a class="nav-link " href="tabs.html">Separadores</a></li>
+                            <li><a class="nav-link " href="accordion.html">Acordeão</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#formsSubmenu" aria-expanded="false">
                             <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
+                            <span>Formulários</span>
                         </a>
                         <ul id="formsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link " href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
+                            <li><a class="nav-link " href="basic-form-element.html">Formulários básicos</a></li>
+                            <li><a class="nav-link " href="advance-form-element.html">Formulários avançados</a></li>
+                            <li><a class="nav-link " href="password-meter.html">Indicador de segurança da palavra-passe</a></li>
+                            <li><a class="nav-link " href="multi-upload.html">Carregamento de ficheiros</a></li>
+                            <li><a class="nav-link " href="images-cropper.html">Recorte de imagem</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -421,11 +421,11 @@
                         </a>
                         <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
                             <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
+                            <li><a class="nav-link " href="area-charts.html">Gráficos de áreas</a></li>
+                            <li><a class="nav-link " href="bar-charts.html">Gráficos de barras</a></li>
+                            <li><a class="nav-link " href="c3.html">Gráficos C3</a></li>
+                            <li><a class="nav-link " href="peity.html">Gráficos Peity</a></li>
+                            <li><a class="nav-link " href="rounded-chart.html">Gráficos circulares</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -435,32 +435,32 @@
                             <span>Tables</span>
                         </a>
                         <ul id="tablesSubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link active" href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
+                            <li><a class="nav-link active" href="static-table.html">Tabelas estáticas</a></li>
+                            <li><a class="nav-link " href="data-table.html">Tabelas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
+                <div class="menu-section-title">Developer Paraols</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link " href="code-editor.html">
                             <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
+                            <span>Editor de código</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#uiToolsSubmenu" aria-expanded="false">
                             <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
+                            <span>Componentes de interface</span>
                         </a>
                         <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
                             <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
+                            <li><a class="nav-link " href="notifications.html">Notificações</a></li>
+                            <li><a class="nav-link " href="tree-view.html">Vista em árvore</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -481,14 +481,14 @@
                         </a>
                         <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
                             <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
+                            <li><a class="nav-link " href="data-maps.html">Mapas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
+                <div class="menu-section-title">Páginas</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
@@ -497,21 +497,21 @@
                             <span>Authentication</span>
                         </a>
                         <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
-                            <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
+                            <li><a class="nav-link " href="login.html">Iniciar sessão</a></li>
+                            <li><a class="nav-link " href="register.html">Registar</a></li>
+                            <li><a class="nav-link " href="lock.html">Bloquear ecrã</a></li>
+                            <li><a class="nav-link " href="password-recovery.html">Recuperar palavra-passe</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#errorsSubmenu" aria-expanded="false">
                             <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
+                            <span>Páginas de erro</span>
                         </a>
                         <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
+                            <li><a class="nav-link " href="404.html">Erro 404</a></li>
+                            <li><a class="nav-link " href="500.html">Erro 500</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -524,21 +524,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Mostrar/ocultar menu lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Static table</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Tabela estática</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -547,29 +547,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -577,7 +577,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -585,8 +585,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -599,9 +599,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -614,9 +614,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">John entregou o seu trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -630,7 +630,7 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
                                             <div class="text-muted small">Yesterday</div>
                                         </div>
                                     </div>
@@ -641,7 +641,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -650,28 +650,27 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -679,14 +678,13 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -701,12 +699,12 @@
                 <div class="mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 mb-0 text-gray-800">Static Tables</h1>
-                            <p class="text-muted mb-0">Comprehensive data tables for academic management</p>
+                            <h1 class="h3 mb-0 text-gray-800">Tabelas estáticas</h1>
+                            <p class="text-muted mb-0">Tabelas de dados abrangentes para a gestão académica.</p>
                         </div>
                         <div>
                             <button type="button" class="btn btn-primary">
-                                <i class="bi bi-download me-2"></i>Export Data
+                                <i class="bi bi-download me-2"></i>Exportarar dados
                             </button>
                         </div>
                     </div>
@@ -716,12 +714,12 @@
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Student Information</h5>
+                            <h5 class="mb-0">Informações do estudante</h5>
                             <div class="d-flex gap-2">
-                                <input type="text" class="form-control form-control-sm" placeholder="Search students..."
+                                <input type="text" class="form-control form-control-sm" placeholder="Pesquisar estudantes..."
                                     style="width: 200px;">
                                 <button type="button" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-plus me-1"></i>Add Student
+                                    <i class="bi bi-plus me-1"></i>Adicionar Estudante
                                 </button>
                             </div>
                         </div>
@@ -731,14 +729,14 @@
                             <table class="table table-custom mb-0">
                                 <thead>
                                     <tr>
-                                        <th>Student</th>
+                                        <th>Estudante</th>
                                         <th>ID Number</th>
-                                        <th>Department</th>
-                                        <th>Year</th>
+                                        <th>Departamento</th>
+                                        <th>Ano</th>
                                         <th>GPA</th>
-                                        <th>Status</th>
-                                        <th>Enrolled</th>
-                                        <th>Actions</th>
+                                        <th>Estado</th>
+                                        <th>Inscritos</th>
+                                        <th>Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -755,22 +753,22 @@
                                             </div>
                                         </td>
                                         <td class="fw-semibold">2025001</td>
-                                        <td>Computer Science</td>
-                                        <td>3rd Year</td>
+                                        <td>Ci?ncias Inform?ticas</td>
+                                        <td>3.? ano</td>
                                         <td><span class="badge bg-success">3.85</span></td>
-                                        <td><span class="status-badge status-active">Active</span></td>
+                                        <td><span class="status-badge status-active">Ativo</span></td>
                                         <td>Sep 2022</td>
                                         <td>
-                                            <button type="button" class="btn-action btn-view" title="View"
-                                                aria-label="View">
+                                            <button type="button" class="btn-action btn-view" title="Ver"
+                                                aria-label="Ver">
                                                 <i aria-hidden="true" class="bi bi-eye"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-edit" title="Edit"
-                                                aria-label="Edit">
+                                            <button type="button" class="btn-action btn-edit" title="Editar"
+                                                aria-label="Editar">
                                                 <i aria-hidden="true" class="bi bi-pencil"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-delete" title="Delete"
-                                                aria-label="Delete">
+                                            <button type="button" class="btn-action btn-delete" title="Excluir"
+                                                aria-label="Excluir">
                                                 <i aria-hidden="true" class="bi bi-trash"></i>
                                             </button>
                                         </td>
@@ -788,22 +786,22 @@
                                             </div>
                                         </td>
                                         <td class="fw-semibold">2025002</td>
-                                        <td>Mathematics</td>
-                                        <td>2nd Year</td>
+                                        <td>Matem?tica</td>
+                                        <td>2nd Ano</td>
                                         <td><span class="badge bg-success">3.92</span></td>
-                                        <td><span class="status-badge status-active">Active</span></td>
+                                        <td><span class="status-badge status-active">Ativo</span></td>
                                         <td>Sep 2023</td>
                                         <td>
-                                            <button type="button" class="btn-action btn-view" title="View"
-                                                aria-label="View">
+                                            <button type="button" class="btn-action btn-view" title="Ver"
+                                                aria-label="Ver">
                                                 <i aria-hidden="true" class="bi bi-eye"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-edit" title="Edit"
-                                                aria-label="Edit">
+                                            <button type="button" class="btn-action btn-edit" title="Editar"
+                                                aria-label="Editar">
                                                 <i aria-hidden="true" class="bi bi-pencil"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-delete" title="Delete"
-                                                aria-label="Delete">
+                                            <button type="button" class="btn-action btn-delete" title="Excluir"
+                                                aria-label="Excluir">
                                                 <i aria-hidden="true" class="bi bi-trash"></i>
                                             </button>
                                         </td>
@@ -822,21 +820,21 @@
                                         </td>
                                         <td class="fw-semibold">2025003</td>
                                         <td>Physics</td>
-                                        <td>4th Year</td>
+                                        <td>4.º Ano</td>
                                         <td><span class="badge bg-warning">3.45</span></td>
-                                        <td><span class="status-badge status-active">Active</span></td>
+                                        <td><span class="status-badge status-active">Ativo</span></td>
                                         <td>Sep 2021</td>
                                         <td>
-                                            <button type="button" class="btn-action btn-view" title="View"
-                                                aria-label="View">
+                                            <button type="button" class="btn-action btn-view" title="Ver"
+                                                aria-label="Ver">
                                                 <i aria-hidden="true" class="bi bi-eye"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-edit" title="Edit"
-                                                aria-label="Edit">
+                                            <button type="button" class="btn-action btn-edit" title="Editar"
+                                                aria-label="Editar">
                                                 <i aria-hidden="true" class="bi bi-pencil"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-delete" title="Delete"
-                                                aria-label="Delete">
+                                            <button type="button" class="btn-action btn-delete" title="Excluir"
+                                                aria-label="Excluir">
                                                 <i aria-hidden="true" class="bi bi-trash"></i>
                                             </button>
                                         </td>
@@ -854,22 +852,22 @@
                                             </div>
                                         </td>
                                         <td class="fw-semibold">2025004</td>
-                                        <td>Engineering</td>
-                                        <td>1st Year</td>
+                                        <td>Engenharia</td>
+                                        <td>1.? ano</td>
                                         <td><span class="badge bg-info">3.65</span></td>
-                                        <td><span class="status-badge status-pending">Pending</span></td>
+                                        <td><span class="status-badge status-pending">Pendente</span></td>
                                         <td>Sep 2024</td>
                                         <td>
-                                            <button type="button" class="btn-action btn-view" title="View"
-                                                aria-label="View">
+                                            <button type="button" class="btn-action btn-view" title="Ver"
+                                                aria-label="Ver">
                                                 <i aria-hidden="true" class="bi bi-eye"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-edit" title="Edit"
-                                                aria-label="Edit">
+                                            <button type="button" class="btn-action btn-edit" title="Editar"
+                                                aria-label="Editar">
                                                 <i aria-hidden="true" class="bi bi-pencil"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-delete" title="Delete"
-                                                aria-label="Delete">
+                                            <button type="button" class="btn-action btn-delete" title="Excluir"
+                                                aria-label="Excluir">
                                                 <i aria-hidden="true" class="bi bi-trash"></i>
                                             </button>
                                         </td>
@@ -887,22 +885,22 @@
                                             </div>
                                         </td>
                                         <td class="fw-semibold">2025005</td>
-                                        <td>Biology</td>
-                                        <td>3rd Year</td>
+                                        <td>Biologia</td>
+                                        <td>3.? ano</td>
                                         <td><span class="badge bg-success">3.78</span></td>
-                                        <td><span class="status-badge status-active">Active</span></td>
+                                        <td><span class="status-badge status-active">Ativo</span></td>
                                         <td>Sep 2022</td>
                                         <td>
-                                            <button type="button" class="btn-action btn-view" title="View"
-                                                aria-label="View">
+                                            <button type="button" class="btn-action btn-view" title="Ver"
+                                                aria-label="Ver">
                                                 <i aria-hidden="true" class="bi bi-eye"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-edit" title="Edit"
-                                                aria-label="Edit">
+                                            <button type="button" class="btn-action btn-edit" title="Editar"
+                                                aria-label="Editar">
                                                 <i aria-hidden="true" class="bi bi-pencil"></i>
                                             </button>
-                                            <button type="button" class="btn-action btn-delete" title="Delete"
-                                                aria-label="Delete">
+                                            <button type="button" class="btn-action btn-delete" title="Excluir"
+                                                aria-label="Excluir">
                                                 <i aria-hidden="true" class="bi bi-trash"></i>
                                             </button>
                                         </td>
@@ -916,40 +914,40 @@
                 <!-- Course Schedule Table -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Spring 2025 Course Schedule</h5>
+                        <h5 class="mb-0">Horário do curso - primavera de 2025</h5>
                     </div>
                     <div class="dashboard-card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-hover mb-0">
                                 <thead class="table-light">
                                     <tr>
-                                        <th>Course Code</th>
-                                        <th>Course Name</th>
-                                        <th>Instructor</th>
+                                        <th>C?digo do curso</th>
+                                        <th>Nome do curso</th>
+                                        <th>Docente</th>
                                         <th>Time</th>
-                                        <th>Room</th>
-                                        <th>Credits</th>
-                                        <th>Students</th>
-                                        <th>Status</th>
+                                        <th>Sala</th>
+                                        <th>Cr?ditos</th>
+                                        <th>Estudantes</th>
+                                        <th>Estado</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="fw-bold text-primary">CS-401</td>
-                                        <td>Advanced Computer Science</td>
+                                        <td>Ci?ncias Inform?ticas Avan?adas</td>
                                         <td>Dr. Jane Smith</td>
                                         <td>MWF 10:00-11:30</td>
-                                        <td>Room 301</td>
+                                        <td>Sala 301</td>
                                         <td><span class="badge bg-secondary">3</span></td>
                                         <td>28/30</td>
-                                        <td><span class="status-badge status-active">Open</span></td>
+                                        <td><span class="status-badge status-active">Aberto</span></td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-primary">MATH-301</td>
-                                        <td>Linear Algebra</td>
+                                        <td>?lgebra Linear</td>
                                         <td>Dr. Emily Davis</td>
                                         <td>MWF 1:00-2:00</td>
-                                        <td>Room 205</td>
+                                        <td>Sala 205</td>
                                         <td><span class="badge bg-secondary">3</span></td>
                                         <td>35/35</td>
                                         <td><span class="status-badge status-inactive">Full</span></td>
@@ -959,30 +957,30 @@
                                         <td>Physics Laboratory</td>
                                         <td>Prof. Michael Brown</td>
                                         <td>M 3:00-5:00</td>
-                                        <td>Lab 102</td>
+                                        <td>Laborat?rio 102</td>
                                         <td><span class="badge bg-secondary">2</span></td>
                                         <td>18/20</td>
-                                        <td><span class="status-badge status-active">Open</span></td>
+                                        <td><span class="status-badge status-active">Aberto</span></td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-primary">CS-302</td>
-                                        <td>Data Structures</td>
+                                        <td>Estruturas de dados</td>
                                         <td>Dr. Robert Brown</td>
                                         <td>TTH 2:00-3:30</td>
-                                        <td>Room 401</td>
+                                        <td>Sala 401</td>
                                         <td><span class="badge bg-secondary">4</span></td>
                                         <td>32/40</td>
-                                        <td><span class="status-badge status-active">Open</span></td>
+                                        <td><span class="status-badge status-active">Aberto</span></td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-primary">BIO-310</td>
-                                        <td>Molecular Biology</td>
+                                        <td>Molecular Biologia</td>
                                         <td>Dr. Lisa Anderson</td>
                                         <td>TTH 10:00-11:30</td>
-                                        <td>Room 215</td>
+                                        <td>Sala 215</td>
                                         <td><span class="badge bg-secondary">3</span></td>
                                         <td>22/25</td>
-                                        <td><span class="status-badge status-active">Open</span></td>
+                                        <td><span class="status-badge status-active">Aberto</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -994,9 +992,9 @@
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Grade Report - Fall 2024</h5>
+                            <h5 class="mb-0">Relatório de notas - outono de 2024</h5>
                             <select class="form-select form-select-sm" style="width: auto;">
-                                <option>All Courses</option>
+                                <option>Todos os cursos</option>
                                 <option>CS-401</option>
                                 <option>MATH-301</option>
                                 <option>PHY-201L</option>
@@ -1008,13 +1006,13 @@
                             <table class="table table-striped mb-0">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th>Student Name</th>
-                                        <th>Course</th>
+                                        <th>Nome do estudante</th>
+                                        <th>Curso</th>
                                         <th class="text-center">Midterm</th>
                                         <th class="text-center">Final</th>
-                                        <th class="text-center">Project</th>
-                                        <th class="text-center">Attendance</th>
-                                        <th class="text-center">Final Grade</th>
+                                        <th class="text-center">Trabalho</th>
+                                        <th class="text-center">Presenças</th>
+                                        <th class="text-center">Final Nota</th>
                                         <th class="text-center">Letter</th>
                                     </tr>
                                 </thead>
@@ -1078,19 +1076,19 @@
                 <!-- Faculty Directory Table -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Faculty Directory</h5>
+                        <h5 class="mb-0">Diretório de professores</h5>
                     </div>
                     <div class="dashboard-card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-bordered mb-0">
                                 <thead>
                                     <tr class="table-primary">
-                                        <th>Faculty Member</th>
-                                        <th>Department</th>
+                                        <th>Corpo docente Member</th>
+                                        <th>Departamento</th>
                                         <th>Position</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Office Hours</th>
+                                        <th>E-mail</th>
+                                        <th>Telefone</th>
+                                        <th>Horário de atendimento</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1103,7 +1101,7 @@
                                                 <span class="fw-semibold">Dr. Jane Smith</span>
                                             </div>
                                         </td>
-                                        <td>Computer Science</td>
+                                        <td>Ci?ncias Inform?ticas</td>
                                         <td>Professor</td>
                                         <td><a href="mailto:j.smith@university.edu">j.smith@university.edu</a></td>
                                         <td>+1 (555) 123-4567</td>
@@ -1118,7 +1116,7 @@
                                                 <span class="fw-semibold">Dr. Emily Davis</span>
                                             </div>
                                         </td>
-                                        <td>Mathematics</td>
+                                        <td>Matem?tica</td>
                                         <td>Associate Professor</td>
                                         <td><a href="mailto:e.davis@university.edu">e.davis@university.edu</a></td>
                                         <td>+1 (555) 123-4568</td>
@@ -1148,8 +1146,8 @@
                                                 <span class="fw-semibold">Dr. Lisa Anderson</span>
                                             </div>
                                         </td>
-                                        <td>Biology</td>
-                                        <td>Department Head</td>
+                                        <td>Biologia</td>
+                                        <td>Responsável pelo departamento</td>
                                         <td><a href="mailto:l.anderson@university.edu">l.anderson@university.edu</a>
                                         </td>
                                         <td>+1 (555) 123-4570</td>
@@ -1164,19 +1162,19 @@
                 <!-- Attendance Summary Table -->
                 <div class="dashboard-card">
                     <div class="dashboard-card-header py-4 px-4">
-                        <h5 class="mb-0">Attendance Summary - March 2025</h5>
+                        <h5 class="mb-0">Presenças Summary - March 2025</h5>
                     </div>
                     <div class="dashboard-card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-sm mb-0">
                                 <thead class="table-secondary">
                                     <tr>
-                                        <th>Student</th>
+                                        <th>Estudante</th>
                                         <th class="text-center">Week 1</th>
                                         <th class="text-center">Week 2</th>
                                         <th class="text-center">Week 3</th>
                                         <th class="text-center">Week 4</th>
-                                        <th class="text-center">Total Classes</th>
+                                        <th class="text-center">Aulas em regime parcial</th>
                                         <th class="text-center">Present</th>
                                         <th class="text-center">Absent</th>
                                         <th class="text-center">Percentage</th>
@@ -1240,10 +1238,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -1260,20 +1258,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     viewButtons.forEach(btn => {
         btn.addEventListener('click', function() {
-            alert('View functionality would open student/course details');
+            alert('A opção de visualização abriria os detalhes do estudante/curso');
         });
     });
 
     editButtons.forEach(btn => {
         btn.addEventListener('click', function() {
-            alert('Edit functionality would open edit form');
+            alert('A edi??o abriria o formul?rio de edi??o.');
         });
     });
 
     deleteButtons.forEach(btn => {
         btn.addEventListener('click', function() {
-            if (confirm('Are you sure you want to delete this record?')) {
-                alert('Delete functionality would remove the record');
+            if (confirm('Tem a certeza de que pretende excluir este registo?')) {
+                alert('A elimina??o removeria este registo.');
             }
         });
     });
@@ -1294,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Search functionality
-    const searchInput = document.querySelector('input[placeholder="Search students..."]');
+    const searchInput = document.querySelector('input[placeholder="Pesquisar estudantes..."]');
     if (searchInput) {
         searchInput.addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();

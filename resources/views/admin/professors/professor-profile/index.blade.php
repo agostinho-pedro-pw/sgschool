@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Professor Profile - Kiaalap Dashboard</title>
+    <title>Perfil do Professor - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -143,7 +143,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -158,23 +158,23 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Academic</a></li>
-                        <li class="breadcrumb-item"><a href="all-professors.html">All Professors</a></li>
-                        <li class="breadcrumb-item active">Professor Profile</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="#">Académico</a></li>
+                        <li class="breadcrumb-item"><a href="all-professors.html">Todos os Professores</a></li>
+                        <li class="breadcrumb-item active">Perfil do Professor</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -183,29 +183,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -221,8 +221,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -235,9 +235,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -250,9 +250,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -265,9 +265,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -277,7 +277,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -286,28 +286,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -315,14 +313,13 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de Ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -337,16 +334,15 @@
                 <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 font-bold">Professor Profile</h1>
-                            <p class="text-muted text-sm">Comprehensive faculty member information and performance
-                                overview.</p>
+                            <h1 class="h3 font-bold">Perfil do Professor</h1>
+                            <p class="text-muted text-sm">Informação abrangente sobre os docentes e uma visão geral do seu desempenho.</p>
                         </div>
                         <div class="d-flex gap-2">
                             <a href="edit-professor.html" class="btn btn-primary">
-                                <i class="bi bi-pencil me-2"></i>Edit Profile
+                                <i class="bi bi-pencil me-2"></i>Editar Perfil
                             </a>
                             <a href="all-professors.html" class="btn btn-outline-secondary">
-                                <i class="bi bi-arrow-left me-2"></i>Back to Professors
+                                <i class="bi bi-arrow-left me-2"></i>Voltar aos Professores
                             </a>
                         </div>
                     </div>
@@ -362,33 +358,33 @@
                                         alt="Dr. Sarah Johnson" class="rounded-circle mb-3"
                                         style="width: 150px; height: 150px;" loading="lazy">
                                     <div class="mb-3">
-                                        <span class="badge bg-success mb-1">Active</span>
+                                        <span class="badge bg-success mb-1">Ativo</span>
                                         <br>
-                                        <small class="text-muted">Last seen: Today at 9:30 AM</small>
+                                        <small class="text-muted">Visto pela última vez: hoje às 9:30</small>
                                     </div>
                                 </div>
                                 <div class="col-span-6">
                                     <h2 class="h3 mb-1">Dr. Sarah Johnson</h2>
-                                    <p class="text-muted mb-2">Professor of Computer Science</p>
+                                    <p class="text-muted mb-2">Professor de Ciências da Computação</p>
                                     <div class="dashboard-grid grid-cols-2 gap-3 mb-3">
                                         <div>
-                                            <strong>Employee ID:</strong> EMP001<br>
-                                            <strong>Department:</strong> Computer Science<br>
-                                            <strong>Email:</strong> s.johnson@kiaalap.edu<br>
-                                            <strong>Phone:</strong> +1 (555) 123-4567
+                                            <strong>N.º de Funcionário:</strong> EMP001<br>
+                                            <strong>Departamento:</strong> Ciências da Computação<br>
+                                            <strong>Endereço de email:</strong> s.johnson@sgschool.edu<br>
+                                            <strong>Telefone:</strong> +1 (555) 123-4567
                                         </div>
                                         <div>
-                                            <strong>Office:</strong> Room 301, CS Building<br>
-                                            <strong>Joining Date:</strong> August 15, 2018<br>
-                                            <strong>Experience:</strong> 12 years<br>
-                                            <strong>Employment:</strong> Full-Time
+                                            <strong>Gabinete:</strong> Sala 301, edifício de Ciências da Computação<br>
+                                            <strong>Data de Início:</strong> 15 de agosto de 2018<br>
+                                            <strong>Experiência:</strong> 12 anos<br>
+                                            <strong>Vínculo:</strong> Tempo Inteiro
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <strong>Office Hours:</strong> Mon-Wed 2-4 PM, Fri 10-12 PM
+                                        <strong>Horário de Atendimento:</strong> Segunda a quarta, das 14h às 16h; sexta, das 10h às 12h
                                     </div>
                                     <div class="d-flex align-items-center mb-2">
-                                        <span class="me-2"><strong>Rating:</strong></span>
+                                        <span class="me-2"><strong>Classificação:</strong></span>
                                         <div class="text-warning me-2">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -396,22 +392,22 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <span class="text-muted">4.8/5.0 (124 reviews)</span>
+                                        <span class="text-muted">4,8/5,0 (124 avaliações)</span>
                                     </div>
                                 </div>
                                 <div class="col-span-3">
                                     <div class="text-center">
                                         <div class="d-flex justify-content-center gap-2 mb-3">
                                             <button type="button" class="btn btn-outline-primary btn-sm"
-                                                aria-label="Messages">
+                                                aria-label="Mensagens">
                                                 <i aria-hidden="true" class="bi bi-envelope"></i>
                                             </button>
                                             <button type="button" class="btn btn-outline-secondary btn-sm"
-                                                aria-label="Call">
+                                                aria-label="Telefonar">
                                                 <i aria-hidden="true" class="bi bi-telephone"></i>
                                             </button>
                                             <button type="button" class="btn btn-outline-info btn-sm"
-                                                aria-label="Calendar">
+                                                aria-label="Calendário">
                                                 <i aria-hidden="true" class="bi bi-calendar"></i>
                                             </button>
                                         </div>
@@ -419,19 +415,19 @@
                                             <div class="col-4">
                                                 <div class="border-end">
                                                     <h4 class="mb-1 text-primary fw-bold">5</h4>
-                                                    <small class="text-muted">Courses</small>
+                                                    <small class="text-muted">Cursos</small>
                                                 </div>
                                             </div>
                                             <div class="col-4">
                                                 <div class="border-end">
                                                     <h4 class="mb-1 text-success fw-bold">156</h4>
-                                                    <small class="text-muted">Students</small>
+                                                    <small class="text-muted">Estudantes</small>
                                                 </div>
                                             </div>
                                             <div class="col-4">
                                                 <div>
                                                     <h4 class="mb-1 text-info fw-bold">52</h4>
-                                                    <small class="text-muted">Publications</small>
+                                                    <small class="text-muted">Publicações</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -451,35 +447,35 @@
                                     <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
                                         data-bs-target="#overview" type="button" role="tab" aria-controls="overview"
                                         aria-selected="true">
-                                        <i class="bi bi-info-circle me-2"></i>Overview
+                                        <i class="bi bi-info-circle me-2"></i>Visão Geral
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="courses-tab" data-bs-toggle="tab"
                                         data-bs-target="#courses" type="button" role="tab" aria-controls="courses"
                                         aria-selected="false">
-                                        <i class="bi bi-book me-2"></i>Courses
+                                        <i class="bi bi-book me-2"></i>Cursos
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="research-tab" data-bs-toggle="tab"
                                         data-bs-target="#research" type="button" role="tab" aria-controls="research"
                                         aria-selected="false">
-                                        <i class="bi bi-journal-text me-2"></i>Research
+                                        <i class="bi bi-journal-text me-2"></i>Investigação
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="performance-tab" data-bs-toggle="tab"
                                         data-bs-target="#performance" type="button" role="tab"
                                         aria-controls="performance" aria-selected="false">
-                                        <i class="bi bi-graph-up me-2"></i>Performance
+                                        <i class="bi bi-graph-up me-2"></i>Desempenho
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="activity-tab" data-bs-toggle="tab"
                                         data-bs-target="#activity" type="button" role="tab" aria-controls="activity"
                                         aria-selected="false">
-                                        <i class="bi bi-clock-history me-2"></i>Activity
+                                        <i class="bi bi-clock-history me-2"></i>Atividade
                                     </button>
                                 </li>
                             </ul>
@@ -491,65 +487,47 @@
                                     aria-labelledby="overview-tab">
                                     <div class="dashboard-grid grid-cols-12 gap-4">
                                         <div class="col-span-8">
-                                            <h6 class="fw-semibold mb-3">Biography</h6>
-                                            <p class="mb-3">Dr. Sarah Johnson is a distinguished professor and leading
-                                                researcher in artificial intelligence and machine learning. With over 12
-                                                years of academic experience, she has authored 52 peer-reviewed
-                                                publications and holds 8 patents in AI technologies.</p>
-                                            <p class="mb-3">Her current research focuses on <strong>ethical AI
-                                                    systems</strong> and <strong>explainable machine learning</strong>,
-                                                addressing critical challenges in AI transparency and responsible
-                                                development.</p>
-                                            <p class="mb-3">Prior to joining Kiaalap University, Dr. Johnson served as a
-                                                Senior Research Scientist at Stanford Research Institute, where she led
-                                                groundbreaking projects in natural language processing and computer
-                                                vision. Her work has been presented at premier conferences including
-                                                NIPS, ICML, and AAAI.</p>
+                                            <h6 class="fw-semibold mb-3">Biografia</h6>
+                                            <p class="mb-3">A Dra. Sarah Johnson é uma professora distinta e investigadora de referência em inteligência artificial e aprendizagem automática. Com mais de 12 anos de experiência académica, publicou 52 artigos revistos por pares e detém 8 patentes em tecnologias de IA.</p>
+                                            <p class="mb-3">A sua investigação atual centra-se em sistemas de IA ética e aprendizagem automática explicável, abordando desafios fundamentais da transparência da IA e do desenvolvimento responsável.</p>
+                                            <p class="mb-3">Antes de ingressar na Universidade sgSchool, a Dra. Johnson foi investigadora sénior no Stanford Research Institute, onde liderou projetos inovadores de processamento de linguagem natural e visão por computador. O seu trabalho foi apresentado em conferências de referência, incluindo NIPS, ICML e AAAI.</p>
 
-                                            <h6 class="fw-semibold mb-3 mt-4">Educational Background</h6>
+                                            <h6 class="fw-semibold mb-3 mt-4">Formação Académica</h6>
                                             <div class="timeline">
                                                 <div class="timeline-item">
                                                     <div class="timeline-marker"></div>
                                                     <div class="timeline-content">
-                                                        <h6 class="mb-1">Ph.D. in Computer Science</h6>
-                                                        <p class="text-muted mb-1">Stanford University • 2015</p>
-                                                        <small class="text-muted">Specialization: Artificial
-                                                            Intelligence &amp; Machine Learning</small>
+                                                        <h6 class="mb-1">Doutoramento em Ciências da Computação</h6>
+                                                        <p class="text-muted mb-1">Universidade de Stanford • 2015</p>
+                                                        <small class="text-muted">Especialização: Inteligência Artificial e Aprendizagem Automática</small>
                                                     </div>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="timeline-marker"></div>
                                                     <div class="timeline-content">
-                                                        <h6 class="mb-1">M.S. in Computer Science</h6>
+                                                        <h6 class="mb-1">Mestrado em Ciências da Computação</h6>
                                                         <p class="text-muted mb-1">MIT • 2010</p>
-                                                        <small class="text-muted">Specialization: Machine
-                                                            Learning</small>
+                                                        <small class="text-muted">Especialização: Aprendizagem Automática</small>
                                                     </div>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="timeline-marker"></div>
                                                     <div class="timeline-content">
-                                                        <h6 class="mb-1">B.S. in Computer Science</h6>
+                                                        <h6 class="mb-1">Licenciatura em Ciências da Computação</h6>
                                                         <p class="text-muted mb-1">UC Berkeley • 2008</p>
                                                         <small class="text-muted">Magna Cum Laude</small>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <h6 class="fw-semibold mb-3 mt-4">Research Interests</h6>
+                                            <h6 class="fw-semibold mb-3 mt-4">Áreas de Investigação</h6>
                                             <div class="d-flex flex-wrap gap-2">
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Artificial
-                                                    Intelligence</span>
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Machine
-                                                    Learning</span>
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Natural
-                                                    Language Processing</span>
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Computer
-                                                    Vision</span>
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Ethical
-                                                    AI</span>
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Deep
-                                                    Learning</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Inteligência Artificial</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Aprendizagem Automática</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Processamento de Linguagem Natural</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Visão por Computador</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">IA Ética</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Aprendizagem Profunda</span>
                                             </div>
                                         </div>
                                     </div>
@@ -558,20 +536,20 @@
                                     <div class="dashboard-grid grid-cols-2 gap-4 mt-4">
                                         <div class="dashboard-card">
                                             <div class="dashboard-card-header">
-                                                <h6 class="dashboard-card-title mb-0">Quick Stats</h6>
+                                                <h6 class="dashboard-card-title mb-0">Estatísticas Rápidas</h6>
                                             </div>
                                             <div class="dashboard-card-body">
                                                 <div class="dashboard-grid grid-cols-2 gap-3">
                                                     <div>
-                                                        <div class="text-muted small">Experience</div>
-                                                        <div class="fw-bold">12 years</div>
+                                                        <div class="text-muted small">Experiência</div>
+                                                        <div class="fw-bold">12 anos</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Publications</div>
-                                                        <div class="fw-bold">52 papers</div>
+                                                        <div class="text-muted small">Publicações</div>
+                                                        <div class="fw-bold">52 artigos científicos</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Citations</div>
+                                                        <div class="text-muted small">Citações</div>
                                                         <div class="fw-bold">2,847</div>
                                                     </div>
                                                     <div>
@@ -579,11 +557,11 @@
                                                         <div class="fw-bold">28</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Grant Funding</div>
+                                                        <div class="text-muted small">Financiamento de Investigação</div>
                                                         <div class="fw-bold">$2.3M</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Awards</div>
+                                                        <div class="text-muted small">Prémios</div>
                                                         <div class="fw-bold">5</div>
                                                     </div>
                                                 </div>
@@ -592,14 +570,14 @@
 
                                         <div class="dashboard-card">
                                             <div class="dashboard-card-header">
-                                                <h6 class="dashboard-card-title mb-0">Contact Information</h6>
+                                                <h6 class="dashboard-card-title mb-0">Informações de Contacto</h6>
                                             </div>
                                             <div class="dashboard-card-body">
                                                 <div class="dashboard-grid grid-cols-1 gap-2">
                                                     <div class="d-flex align-items-center">
                                                         <i class="bi bi-envelope me-2 text-primary"></i>
-                                                        <a href="mailto:s.johnson@kiaalap.edu"
-                                                            class="text-sm">s.johnson@kiaalap.edu</a>
+                                                        <a href="mailto:s.johnson@sgschool.edu"
+                                                            class="text-sm">s.johnson@sgschool.edu</a>
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <i class="bi bi-telephone me-2 text-primary"></i>
@@ -608,15 +586,15 @@
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <i class="bi bi-geo-alt me-2 text-primary"></i>
-                                                        <span class="text-sm">Room 301, CS Building</span>
+                                                        <span class="text-sm">Sala 301, edifício de Ciências da Computação</span>
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <i class="bi bi-clock me-2 text-primary"></i>
-                                                        <span class="text-sm">Mon-Wed 2-4 PM, Fri 10-12 PM</span>
+                                                        <span class="text-sm">Segunda a quarta, das 14h às 16h; sexta, das 10h às 12h</span>
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <i class="bi bi-globe me-2 text-primary"></i>
-                                                        <a href="#" class="text-sm">Personal Website</a>
+                                                        <a href="#" class="text-sm">Página Pessoal</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -628,12 +606,12 @@
                                 <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <div>
-                                            <h5 class="mb-1">Current Teaching Load</h5>
-                                            <p class="text-muted mb-0 text-sm">Fall 2024 Semester • 156 Total Students
+                                            <h5 class="mb-1">Carga Letiva Atual</h5>
+                                            <p class="text-muted mb-0 text-sm">Semestre de outono de 2024 • 156 estudantes no total
                                             </p>
                                         </div>
                                         <button type="button" class="btn btn-sm btn-outline-primary">
-                                            <i class="bi bi-download me-1"></i>Export Schedule
+                                            <i class="bi bi-download me-1"></i>Exportar Horário
                                         </button>
                                     </div>
 
@@ -644,28 +622,28 @@
                                                 <div class="text-center">
                                                     <canvas id="courseDistributionChart"
                                                         style="max-height: 150px;"></canvas>
-                                                    <h6 class="mt-2 mb-0">Course Distribution</h6>
+                                                    <h6 class="mt-2 mb-0">Distribuição de Cursos</h6>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="dashboard-card">
                                             <div class="dashboard-card-body">
-                                                <h6 class="mb-3">Teaching Summary</h6>
+                                                <h6 class="mb-3">Resumo da Atividade Letiva</h6>
                                                 <div class="dashboard-grid grid-cols-2 gap-2">
                                                     <div>
-                                                        <div class="text-muted small">Active Courses</div>
+                                                        <div class="text-muted small">Cursos Ativos</div>
                                                         <div class="fw-bold">4</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Office Hours</div>
-                                                        <div class="fw-bold">12/week</div>
+                                                        <div class="text-muted small">Horário de Atendimento</div>
+                                                        <div class="fw-bold">12/semana</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Undergraduate</div>
+                                                        <div class="text-muted small">Licenciatura</div>
                                                         <div class="fw-bold">86</div>
                                                     </div>
                                                     <div>
-                                                        <div class="text-muted small">Graduate</div>
+                                                        <div class="text-muted small">Pós-graduação</div>
                                                         <div class="fw-bold">70</div>
                                                     </div>
                                                 </div>
@@ -673,19 +651,19 @@
                                         </div>
                                         <div class="dashboard-card">
                                             <div class="dashboard-card-body">
-                                                <h6 class="mb-3">Quick Actions</h6>
+                                                <h6 class="mb-3">Ações Rápidas</h6>
                                                 <div class="d-grid gap-2">
                                                     <button type="button"
                                                         class="btn btn-sm btn-outline-primary text-start">
-                                                        <i class="bi bi-calendar-plus me-2"></i>Office Hours
+                                                        <i class="bi bi-calendar-plus me-2"></i>Horário de Atendimento
                                                     </button>
                                                     <button type="button"
                                                         class="btn btn-sm btn-outline-secondary text-start">
-                                                        <i class="bi bi-file-earmark-text me-2"></i>Syllabi
+                                                        <i class="bi bi-file-earmark-text me-2"></i>Programas das Disciplinas
                                                     </button>
                                                     <button type="button"
                                                         class="btn btn-sm btn-outline-info text-start">
-                                                        <i class="bi bi-people me-2"></i>Roster
+                                                        <i class="bi bi-people me-2"></i>Lista de Estudantes
                                                     </button>
                                                 </div>
                                             </div>
@@ -693,35 +671,35 @@
                                     </div>
 
                                     <!-- Course Cards -->
-                                    <h6 class="fw-semibold mb-3">Active Courses</h6>
+                                    <h6 class="fw-semibold mb-3">Cursos Ativos</h6>
                                     <div class="dashboard-grid grid-cols-2 gap-3">
                                         <div class="mb-3">
                                             <div class="dashboard-card">
                                                 <div class="dashboard-card-body">
                                                     <div class="d-flex justify-content-between align-items-start mb-3">
                                                         <div>
-                                                            <h6 class="mb-1 text-primary">CS 401 - Machine Learning</h6>
+                                                            <h6 class="mb-1 text-primary">CS 401 - Aprendizagem Automática</h6>
                                                             <small class="text-muted"><i
-                                                                    class="bi bi-clock me-1"></i>Mon, Wed, Fri
-                                                                10:00-11:00 AM</small>
+                                                                    class="bi bi-clock me-1"></i>Seg., qua. e sex.,
+                                                                10:00–11:00</small>
                                                             <br><small class="text-muted"><i
-                                                                    class="bi bi-geo-alt me-1"></i>Room 205, CS
-                                                                Building</small>
+                                                                    class="bi bi-geo-alt me-1"></i>Sala 205, edifício de
+                                                                Ciências da Computação</small>
                                                         </div>
-                                                        <span class="badge bg-success">Graduate Level</span>
+                                                        <span class="badge bg-success">Pós-graduação</span>
                                                     </div>
                                                     <div class="dashboard-grid grid-cols-3 gap-2 text-center">
                                                         <div class="col-4">
                                                             <div class="fw-bold text-primary">45/50</div>
-                                                            <small class="text-muted">Enrolled</small>
+                                                            <small class="text-muted">Inscritos</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-success">B+</div>
-                                                            <small class="text-muted">Avg Grade</small>
+                                                            <small class="text-muted">Nota Média</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-info">94%</div>
-                                                            <small class="text-muted">Completion</small>
+                                                            <small class="text-muted">Conclusão</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -732,28 +710,28 @@
                                                 <div class="dashboard-card-body">
                                                     <div class="d-flex justify-content-between align-items-start mb-3">
                                                         <div>
-                                                            <h6 class="mb-1 text-primary">CS 301 - Data Structures</h6>
+                                                            <h6 class="mb-1 text-primary">CS 301 - Estruturas de Dados</h6>
                                                             <small class="text-muted"><i
-                                                                    class="bi bi-clock me-1"></i>Tue, Thu 2:00-3:30
-                                                                PM</small>
+                                                                    class="bi bi-clock me-1"></i>Ter. e qui.,
+                                                                14:00–15:30</small>
                                                             <br><small class="text-muted"><i
-                                                                    class="bi bi-geo-alt me-1"></i>Room 102, CS
-                                                                Building</small>
+                                                                    class="bi bi-geo-alt me-1"></i>Sala 102, edifício de
+                                                                Ciências da Computação</small>
                                                         </div>
-                                                        <span class="badge bg-primary">Undergraduate</span>
+                                                        <span class="badge bg-primary">Licenciatura</span>
                                                     </div>
                                                     <div class="dashboard-grid grid-cols-3 gap-2 text-center">
                                                         <div class="col-4">
                                                             <div class="fw-bold text-primary">38/40</div>
-                                                            <small class="text-muted">Enrolled</small>
+                                                            <small class="text-muted">Inscritos</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-success">A-</div>
-                                                            <small class="text-muted">Avg Grade</small>
+                                                            <small class="text-muted">Nota Média</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-info">97%</div>
-                                                            <small class="text-muted">Completion</small>
+                                                            <small class="text-muted">Conclusão</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -764,28 +742,26 @@
                                                 <div class="dashboard-card-body">
                                                     <div class="d-flex justify-content-between align-items-start mb-3">
                                                         <div>
-                                                            <h6 class="mb-1 text-primary">CS 501 - AI Ethics</h6>
+                                                            <h6 class="mb-1 text-primary">CS 501 - Ética da IA</h6>
                                                             <small class="text-muted"><i
-                                                                    class="bi bi-clock me-1"></i>Wed 6:00-9:00
-                                                                PM</small>
+                                                                    class="bi bi-clock me-1"></i>Qua., 18:00–21:00</small>
                                                             <br><small class="text-muted"><i
-                                                                    class="bi bi-geo-alt me-1"></i>Seminar Room
-                                                                A</small>
+                                                                    class="bi bi-geo-alt me-1"></i>Sala de Seminários A</small>
                                                         </div>
-                                                        <span class="badge bg-warning text-dark">Graduate Seminar</span>
+                                                        <span class="badge bg-warning text-dark">Seminário de pós-graduação</span>
                                                     </div>
                                                     <div class="dashboard-grid grid-cols-3 gap-2 text-center">
                                                         <div class="col-4">
                                                             <div class="fw-bold text-primary">25/30</div>
-                                                            <small class="text-muted">Enrolled</small>
+                                                            <small class="text-muted">Inscritos</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-success">A</div>
-                                                            <small class="text-muted">Avg Grade</small>
+                                                            <small class="text-muted">Nota Média</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-success">100%</div>
-                                                            <small class="text-muted">Completion</small>
+                                                            <small class="text-muted">Conclusão</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -796,29 +772,27 @@
                                                 <div class="dashboard-card-body">
                                                     <div class="d-flex justify-content-between align-items-start mb-3">
                                                         <div>
-                                                            <h6 class="mb-1 text-primary">CS 101 - Introduction to
-                                                                Programming</h6>
+                                                            <h6 class="mb-1 text-primary">CS 101 - Introdução à Programação</h6>
                                                             <small class="text-muted"><i
-                                                                    class="bi bi-clock me-1"></i>Mon, Wed 1:00-2:30
-                                                                PM</small>
+                                                                    class="bi bi-clock me-1"></i>Seg. e qua., 13:00–14:30</small>
                                                             <br><small class="text-muted"><i
-                                                                    class="bi bi-geo-alt me-1"></i>Lab 301, CS
-                                                                Building</small>
+                                                                    class="bi bi-geo-alt me-1"></i>Laboratório 301, edifício de
+                                                                Ciências da Computação</small>
                                                         </div>
-                                                        <span class="badge bg-info">Introductory</span>
+                                                        <span class="badge bg-info">Introdução</span>
                                                     </div>
                                                     <div class="dashboard-grid grid-cols-3 gap-2 text-center">
                                                         <div class="col-4">
                                                             <div class="fw-bold text-primary">48/50</div>
-                                                            <small class="text-muted">Enrolled</small>
+                                                            <small class="text-muted">Inscritos</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-success">B</div>
-                                                            <small class="text-muted">Avg Grade</small>
+                                                            <small class="text-muted">Nota Média</small>
                                                         </div>
                                                         <div class="col-4">
                                                             <div class="fw-bold text-info">92%</div>
-                                                            <small class="text-muted">Completion</small>
+                                                            <small class="text-muted">Conclusão</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -829,43 +803,43 @@
                             </div>
 
                             <div class="mt-4">
-                                <h6 class="fw-semibold mb-3">Teaching History</h6>
+                                <h6 class="fw-semibold mb-3">Histórico Letivo</h6>
                                 <div class="table-responsive">
                                     <table class="table table-sm">
                                         <thead>
                                             <tr>
-                                                <th>Course</th>
-                                                <th>Semester</th>
-                                                <th>Students</th>
-                                                <th>Avg Grade</th>
-                                                <th>Rating</th>
+                                                <th>Curso</th>
+                                                <th>Semestre</th>
+                                                <th>Estudantes</th>
+                                                <th>Nota Média</th>
+                                                <th>Classificação</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>CS 401 - Machine Learning</td>
-                                                <td>Spring 2024</td>
+                                                <td>CS 401 - Aprendizagem Automática</td>
+                                                <td>Primavera de 2024</td>
                                                 <td>42</td>
                                                 <td>B+</td>
                                                 <td>4.8/5.0</td>
                                             </tr>
                                             <tr>
-                                                <td>CS 301 - Data Structures</td>
-                                                <td>Fall 2023</td>
+                                                <td>CS 301 - Estruturas de Dados</td>
+                                                <td>Outono de 2023</td>
                                                 <td>45</td>
                                                 <td>A-</td>
                                                 <td>4.9/5.0</td>
                                             </tr>
                                             <tr>
-                                                <td>CS 501 - AI Ethics</td>
-                                                <td>Spring 2023</td>
+                                                <td>CS 501 - Ética da IA</td>
+                                                <td>Primavera de 2023</td>
                                                 <td>28</td>
                                                 <td>A</td>
                                                 <td>4.7/5.0</td>
                                             </tr>
                                             <tr>
-                                                <td>CS 101 - Intro Programming</td>
-                                                <td>Fall 2022</td>
+                                                <td>CS 101 - Introdução à Programação</td>
+                                                <td>Outono de 2022</td>
                                                 <td>50</td>
                                                 <td>B</td>
                                                 <td>4.6/5.0</td>
@@ -880,14 +854,13 @@
                         <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div>
-                                    <h5 class="mb-1">Research Portfolio</h5>
-                                    <p class="text-muted mb-0 text-sm">AI, Machine Learning &amp; Ethics • 52
-                                        Publications • 2,847 Citations</p>
+                                    <h5 class="mb-1">Portefólio de Investigação</h5>
+                                    <p class="text-muted mb-0 text-sm">IA, Aprendizagem Automática e Ética • 52 publicações • 2.847 citações</p>
                                 </div>
                                 <div class="btn-group btn-group-sm" role="group">
-                                    <button type="button" class="btn btn-outline-primary active">Publications</button>
-                                    <button type="button" class="btn btn-outline-primary">Projects</button>
-                                    <button type="button" class="btn btn-outline-primary">Grants</button>
+                                    <button type="button" class="btn btn-outline-primary active">Publicações</button>
+                                    <button type="button" class="btn btn-outline-primary">Projetos</button>
+                                    <button type="button" class="btn btn-outline-primary">Financiamentos</button>
                                 </div>
                             </div>
 
@@ -896,7 +869,7 @@
                                 <div class="dashboard-card">
                                     <div class="dashboard-card-body text-center">
                                         <h4 class="text-primary mb-0">2,847</h4>
-                                        <small class="text-muted">Total Citations</small>
+                                        <small class="text-muted">Total de Citações</small>
                                         <div class="dashboard-grid grid-cols-2 gap-2 mt-2">
                                             <div>
                                                 <div class="fw-bold">28</div>
@@ -904,14 +877,14 @@
                                             </div>
                                             <div>
                                                 <div class="fw-bold">52</div>
-                                                <small class="text-muted">Papers</small>
+                                                <small class="text-muted">Artigos científicos</small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="dashboard-card">
                                     <div class="dashboard-card-body">
-                                        <h6 class="mb-2">Active Grants</h6>
+                                        <h6 class="mb-2">Financiamentos Ativos</h6>
                                         <div class="small">
                                             <div class="d-flex justify-content-between mb-1">
                                                 <span>NSF</span>
@@ -922,7 +895,7 @@
                                                 <strong>$650K</strong>
                                             </div>
                                             <div class="d-flex justify-content-between">
-                                                <span>Industry</span>
+                                                <span>Setor privado</span>
                                                 <strong>$450K</strong>
                                             </div>
                                         </div>
@@ -930,12 +903,10 @@
                                 </div>
                                 <div class="dashboard-card">
                                     <div class="dashboard-card-body">
-                                        <h6 class="mb-2">Research Areas</h6>
+                                        <h6 class="mb-2">Áreas de Investigação</h6>
                                         <div class="d-flex flex-wrap gap-1">
-                                            <span class="badge bg-primary bg-opacity-10 text-primary small">AI
-                                                Ethics</span>
-                                            <span class="badge bg-info bg-opacity-10 text-info small">Machine
-                                                Learning</span>
+                                            <span class="badge bg-primary bg-opacity-10 text-primary small">Ética da IA</span>
+                                            <span class="badge bg-info bg-opacity-10 text-info small">Aprendizagem Automática</span>
                                             <span class="badge bg-success bg-opacity-10 text-success small">NLP</span>
                                             <span class="badge bg-warning bg-opacity-10 text-warning small">XAI</span>
                                         </div>
@@ -944,19 +915,18 @@
                             </div>
 
                             <!-- Publications Grid -->
-                            <h6 class="fw-semibold mb-3">Recent Publications (2022-2024)</h6>
+                            <h6 class="fw-semibold mb-3">Publicações Recentes (2022–2024)</h6>
                             <div class="dashboard-grid grid-cols-3 gap-3 mb-4">
                                 <div class="publication-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <h6 class="mb-0 text-primary">"Ethical AI Systems"</h6>
+                                        <h6 class="mb-0 text-primary">"Sistemas de IA ética"</h6>
                                         <span class="badge bg-success">2023</span>
                                     </div>
                                     <p class="text-muted mb-1 small">Nature AI</p>
-                                    <p class="text-sm mb-2">Framework for responsible AI development addressing ethical
-                                        challenges.</p>
+                                    <p class="text-sm mb-2">Estrutura para o desenvolvimento responsável de IA, que aborda desafios éticos.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex gap-1">
-                                            <span class="badge bg-info bg-opacity-10 text-info small">AI Ethics</span>
+                                            <span class="badge bg-info bg-opacity-10 text-info small">Ética da IA</span>
                                         </div>
                                         <small class="text-muted"><i class="bi bi-quote"></i> 47</small>
                                     </div>
@@ -964,12 +934,11 @@
 
                                 <div class="publication-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <h6 class="mb-0 text-primary">"ML Algorithms for NLP"</h6>
+                                        <h6 class="mb-0 text-primary">"Algoritmos de Aprendizagem Automática para Processamento de Linguagem Natural"</h6>
                                         <span class="badge bg-primary">2022</span>
                                     </div>
                                     <p class="text-muted mb-1 small">ACM Computing Surveys</p>
-                                    <p class="text-sm mb-2">Survey of state-of-the-art ML algorithms for language
-                                        processing.</p>
+                                    <p class="text-sm mb-2">Análise dos algoritmos mais avançados de aprendizagem automática para o processamento da linguagem.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex gap-1">
                                             <span class="badge bg-info bg-opacity-10 text-info small">NLP</span>
@@ -980,12 +949,11 @@
 
                                 <div class="publication-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <h6 class="mb-0 text-primary">"Explainable AI"</h6>
+                                        <h6 class="mb-0 text-primary">"Inteligência Artificial Explicável"</h6>
                                         <span class="badge bg-primary">2022</span>
                                     </div>
                                     <p class="text-muted mb-1 small">AAAI Conference</p>
-                                    <p class="text-sm mb-2">Novel approaches for interpretable and transparent AI
-                                        decisions.</p>
+                                    <p class="text-sm mb-2">Novas abordagens para decisões de IA interpretáveis e transparentes.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex gap-1">
                                             <span class="badge bg-info bg-opacity-10 text-info small">XAI</span>
@@ -996,15 +964,14 @@
 
                                 <div class="publication-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <h6 class="mb-0 text-primary">"Deep Learning Security"</h6>
+                                        <h6 class="mb-0 text-primary">"Segurança da Aprendizagem Profunda"</h6>
                                         <span class="badge bg-warning text-dark">2024</span>
                                     </div>
                                     <p class="text-muted mb-1 small">IEEE Security &amp; Privacy</p>
-                                    <p class="text-sm mb-2">Adversarial attacks and defense mechanisms in deep neural
-                                        networks.</p>
+                                    <p class="text-sm mb-2">Ataques adversariais e mecanismos de defesa em redes neuronais profundas.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex gap-1">
-                                            <span class="badge bg-info bg-opacity-10 text-info small">Security</span>
+                                            <span class="badge bg-info bg-opacity-10 text-info small">Segurança</span>
                                         </div>
                                         <small class="text-muted"><i class="bi bi-quote"></i> 23</small>
                                     </div>
@@ -1012,19 +979,18 @@
                             </div>
 
                             <!-- Active Research Projects -->
-                            <h6 class="fw-semibold mb-3">Active Research Projects</h6>
+                            <h6 class="fw-semibold mb-3">Projetos de Investigação Ativos</h6>
                             <div class="dashboard-grid grid-cols-2 gap-3">
                                 <div class="research-project-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
                                         <div>
-                                            <h6 class="mb-1">Ethical AI Framework Development</h6>
-                                            <p class="text-sm text-muted mb-0">NSF Grant #12345 • $850,000 • 2023-2026
+                                            <h6 class="mb-1">Desenvolvimento de uma estrutura de IA ética</h6>
+                                                            <p class="text-sm text-muted mb-0">Bolsa da NSF n.º 12345 • $850,000 • 2023–2026
                                             </p>
                                         </div>
-                                        <span class="badge bg-success">Active</span>
+                                        <span class="badge bg-success">Ativo</span>
                                     </div>
-                                    <p class="text-sm">Developing comprehensive frameworks for ethical AI development in
-                                        healthcare.</p>
+                                    <p class="text-sm">Desenvolvimento de estruturas abrangentes para a criação de IA ética na área da saúde.</p>
                                     <div class="progress mt-2" style="height: 6px;">
                                         <div class="progress-bar bg-success" style="width: 35%"></div>
                                     </div>
@@ -1033,13 +999,12 @@
                                 <div class="research-project-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
                                         <div>
-                                            <h6 class="mb-1">Explainable ML Systems</h6>
-                                            <p class="text-sm text-muted mb-0">NIH Grant • $1,200,000 • 2024-2027</p>
+                                            <h6 class="mb-1">Sistemas de Aprendizagem Automática Explicável</h6>
+                                            <p class="text-sm text-muted mb-0">Bolsa do NIH • $1,200,000 • 2024–2027</p>
                                         </div>
-                                        <span class="badge bg-warning">Pending</span>
+                                        <span class="badge bg-warning">Pendente</span>
                                     </div>
-                                    <p class="text-sm">Creating interpretable ML models for medical diagnosis with
-                                        human-readable explanations.</p>
+                                    <p class="text-sm">Criação de modelos interpretáveis de aprendizagem automática para diagnóstico médico, com explicações compreensíveis.</p>
                                     <div class="progress mt-2" style="height: 6px;">
                                         <div class="progress-bar bg-warning" style="width: 15%"></div>
                                     </div>
@@ -1048,13 +1013,12 @@
                                 <div class="research-project-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
                                         <div>
-                                            <h6 class="mb-1">ML Security Research</h6>
-                                            <p class="text-sm text-muted mb-0">DARPA Grant • $650,000 • 2023-2025</p>
+                                            <h6 class="mb-1">Investigação sobre segurança da aprendizagem automática</h6>
+                                            <p class="text-sm text-muted mb-0">Bolsa da DARPA • $650,000 • 2023–2025</p>
                                         </div>
-                                        <span class="badge bg-success">Active</span>
+                                        <span class="badge bg-success">Ativo</span>
                                     </div>
-                                    <p class="text-sm">Developing robust defenses against adversarial attacks in deep
-                                        learning systems.</p>
+                                    <p class="text-sm">Desenvolvimento de defesas robustas contra ataques adversariais em sistemas de aprendizagem profunda.</p>
                                     <div class="progress mt-2" style="height: 6px;">
                                         <div class="progress-bar bg-success" style="width: 60%"></div>
                                     </div>
@@ -1063,14 +1027,12 @@
                                 <div class="research-project-item">
                                     <div class="d-flex justify-content-between align-items-start mb-2">
                                         <div>
-                                            <h6 class="mb-1">Applied AI Solutions</h6>
-                                            <p class="text-sm text-muted mb-0">Industry Partnership • $450,000 •
-                                                2024-2026</p>
+                                            <h6 class="mb-1">Soluções de IA aplicada</h6>
+                                            <p class="text-sm text-muted mb-0">Parceria com o setor privado • $450,000 • 2024–2026</p>
                                         </div>
-                                        <span class="badge bg-info">Planning</span>
+                                        <span class="badge bg-info">Em Planeamento</span>
                                     </div>
-                                    <p class="text-sm">Collaborative research on practical AI applications for
-                                        enterprise automation.</p>
+                                    <p class="text-sm">Investigação colaborativa sobre aplicações práticas de IA para automatização empresarial.</p>
                                     <div class="progress mt-2" style="height: 6px;">
                                         <div class="progress-bar bg-info" style="width: 10%"></div>
                                     </div>
@@ -1082,23 +1044,22 @@
                         <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div>
-                                    <h5 class="mb-1">Teaching Performance Analytics</h5>
-                                    <p class="text-muted mb-0 text-sm">8 Years of Data • 124 Student Reviews • 4.8/5.0
-                                        Overall Rating</p>
+                                    <h5 class="mb-1">Análise do Desempenho Letivo</h5>
+                                    <p class="text-muted mb-0 text-sm">8 anos de dados • 124 avaliações de estudantes • Classificação geral: 4,8/5,0</p>
                                 </div>
                             </div>
 
                             <!-- Performance Charts Row -->
                             <div class="dashboard-grid grid-cols-2 gap-4 mb-4">
                                 <div>
-                                    <h6 class="fw-semibold mb-3">Teaching Performance Trends</h6>
+                                    <h6 class="fw-semibold mb-3">Tendências do Desempenho Letivo</h6>
                                     <div class="chart-container"
                                         style="height: 350px; position: relative; background: #f8f9fa; border-radius: 8px; padding: 20px;">
                                         <canvas id="performanceChart"></canvas>
                                     </div>
                                 </div>
                                 <div>
-                                    <h6 class="fw-semibold mb-3">Course Rating Distribution</h6>
+                                    <h6 class="fw-semibold mb-3">Distribuição das Classificações dos Cursos</h6>
                                     <div class="chart-container"
                                         style="height: 350px; position: relative; background: #f8f9fa; border-radius: 8px; padding: 20px;">
                                         <canvas id="ratingDistributionChart"></canvas>
@@ -1107,14 +1068,13 @@
                             </div>
 
                             <!-- Student Evaluation Metrics -->
-                            <h6 class="fw-semibold mb-3">Student Evaluation Metrics</h6>
-                            <p class="text-muted mb-3 text-sm">Based on 124 student reviews from the past 2 academic
-                                years</p>
+                            <h6 class="fw-semibold mb-3">Indicadores de Avaliação dos Estudantes</h6>
+                            <p class="text-muted mb-3 text-sm">Com base em 124 avaliações de estudantes dos últimos 2 anos letivos</p>
                             <div class="dashboard-grid grid-cols-4 gap-3 mb-4">
                                 <div>
                                     <div class="performance-metric">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span>Course Organization</span>
+                                            <span>Organização do Curso</span>
                                             <span class="fw-semibold">4.9/5.0</span>
                                         </div>
                                         <div class="progress progress-sm">
@@ -1125,7 +1085,7 @@
                                 <div>
                                     <div class="performance-metric">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span>Teaching Clarity</span>
+                                            <span>Clareza do Ensino</span>
                                             <span class="fw-semibold">4.8/5.0</span>
                                         </div>
                                         <div class="progress progress-sm">
@@ -1163,18 +1123,18 @@
                     <div class="dashboard-grid grid-cols-2 gap-4 mt-4">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title mb-0">Performance Summary</h6>
+                                <h6 class="dashboard-card-title mb-0">Resumo do Desempenho</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="performance-score">
                                     <div class="score-circle">
                                         <h3 class="text-success">4.8</h3>
-                                        <small>Overall Rating</small>
+                                        <small>Classificação Geral</small>
                                     </div>
                                     <div class="score-details text-center">
                                         <div class="score-item">
-                                            <span>Excellent</span>
-                                            <strong class="d-block">124 reviews</strong>
+                                            <span>Excelente</span>
+                                            <strong class="d-block">124 avaliações</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -1183,27 +1143,27 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title mb-0">Recent Recognition</h6>
+                                <h6 class="dashboard-card-title mb-0">Reconhecimentos Recentes</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="award-item mb-2">
                                     <i class="bi bi-trophy text-warning me-2"></i>
                                     <div>
-                                        <div class="fw-semibold small">Teacher of the Year</div>
+                                        <div class="fw-semibold small">Professor do Ano</div>
                                         <small class="text-muted">2023</small>
                                     </div>
                                 </div>
                                 <div class="award-item mb-2">
                                     <i class="bi bi-award text-primary me-2"></i>
                                     <div>
-                                        <div class="fw-semibold small">Research Excellence</div>
+                                        <div class="fw-semibold small">Excelência na Investigação</div>
                                         <small class="text-muted">2022</small>
                                     </div>
                                 </div>
                                 <div class="award-item">
                                     <i class="bi bi-star text-info me-2"></i>
                                     <div>
-                                        <div class="fw-semibold small">Innovation Award</div>
+                                        <div class="fw-semibold small">Prémio de Inovação</div>
                                         <small class="text-muted">2021</small>
                                     </div>
                                 </div>
@@ -1216,20 +1176,19 @@
                 <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div>
-                            <h5 class="mb-1">Faculty Activity Timeline</h5>
-                            <p class="text-muted mb-0 text-sm">Recent achievements, publications, and academic
-                                activities</p>
+                            <h5 class="mb-1">Linha do Tempo de Atividades Docentes</h5>
+                            <p class="text-muted mb-0 text-sm">Conquistas recentes, publicações e atividades académicas</p>
                         </div>
                         <div class="dropdown">
                             <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
                                 data-bs-toggle="dropdown">
-                                <i class="bi bi-filter me-1"></i>Filter
+                                <i class="bi bi-filter me-1"></i>Filtrar
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item active" href="#">All Activities</a></li>
-                                <li><a class="dropdown-item" href="#">Publications</a></li>
-                                <li><a class="dropdown-item" href="#">Teaching</a></li>
-                                <li><a class="dropdown-item" href="#">Conferences</a></li>
+                                <li><a class="dropdown-item active" href="#">Todas as Atividades</a></li>
+                                <li><a class="dropdown-item" href="#">Publicações</a></li>
+                                <li><a class="dropdown-item" href="#">Ensino</a></li>
+                                <li><a class="dropdown-item" href="#">Conferências</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1240,34 +1199,34 @@
                             <div class="dashboard-card-body text-center">
                                 <i class="bi bi-journal-plus text-success mb-2" style="font-size: 1.5rem;"></i>
                                 <div class="fw-bold">3</div>
-                                <small class="text-muted">Publications This Year</small>
+                                <small class="text-muted">Publicações deste Ano</small>
                             </div>
                         </div>
                         <div class="dashboard-card">
                             <div class="dashboard-card-body text-center">
                                 <i class="bi bi-calendar-event text-warning mb-2" style="font-size: 1.5rem;"></i>
                                 <div class="fw-bold">5</div>
-                                <small class="text-muted">Keynote Speeches</small>
+                                <small class="text-muted">Palestras principais</small>
                             </div>
                         </div>
                         <div class="dashboard-card">
                             <div class="dashboard-card-body text-center">
                                 <i class="bi bi-cash-coin text-info mb-2" style="font-size: 1.5rem;"></i>
                                 <div class="fw-bold">$2.1M</div>
-                                <small class="text-muted">Grants Received</small>
+                                <small class="text-muted">Financiamentos recebidos</small>
                             </div>
                         </div>
                         <div class="dashboard-card">
                             <div class="dashboard-card-body text-center">
                                 <i class="bi bi-people text-primary mb-2" style="font-size: 1.5rem;"></i>
                                 <div class="fw-bold">6</div>
-                                <small class="text-muted">PhD Students</small>
+                                <small class="text-muted">Doutorandos</small>
                             </div>
                         </div>
                     </div>
 
                     <!-- Activity Timeline -->
-                    <h6 class="fw-semibold mb-3">Recent Activities</h6>
+                    <h6 class="fw-semibold mb-3">Atividades Recentes</h6>
                     <div class="dashboard-grid grid-cols-2 gap-4">
                         <div>
                             <div class="activity-timeline">
@@ -1280,15 +1239,14 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">Published New Research Paper</h6>
+                                                <h6 class="mb-0 fw-semibold">Novo artigo de investigação publicado</h6>
                                                 <small class="text-muted">Jan 15, 2025</small>
                                             </div>
-                                            <p class="mb-1 text-muted">"Ethical AI Systems" accepted for publication in
-                                                Nature AI journal</p>
+                                            <p class="mb-1 text-muted">"Sistemas de IA ética" aceite para publicação na revista Nature AI</p>
                                             <div class="d-flex gap-2">
                                                 <span
-                                                    class="badge bg-success bg-opacity-10 text-success">Publication</span>
-                                                <span class="badge bg-info bg-opacity-10 text-info">High Impact</span>
+                                                    class="badge bg-success bg-opacity-10 text-success">Publicação</span>
+                                                <span class="badge bg-info bg-opacity-10 text-info">Elevado impacto</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1303,14 +1261,13 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">New Course Enrollment</h6>
+                                                <h6 class="mb-0 fw-semibold">Nova inscrição num curso</h6>
                                                 <small class="text-muted">Jan 12, 2025</small>
                                             </div>
-                                            <p class="mb-1 text-muted">3 new students enrolled in AI Ethics graduate
-                                                seminar</p>
+                                            <p class="mb-1 text-muted">3 novos estudantes inscritos no seminário de pós-graduação em ética da IA</p>
                                             <div class="d-flex gap-2">
                                                 <span
-                                                    class="badge bg-primary bg-opacity-10 text-primary">Teaching</span>
+                                                    class="badge bg-primary bg-opacity-10 text-primary">Ensino</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1325,16 +1282,15 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">Keynote Presentation</h6>
-                                                <small class="text-muted">Jan 8, 2025</small>
+                                                <h6 class="mb-0 fw-semibold">Palestra principal</h6>
+                                                <small class="text-muted">8 de janeiro de 2025</small>
                                             </div>
-                                            <p class="mb-1 text-muted">Delivered keynote address at AI Ethics Summit
-                                                2024 in San Francisco</p>
+                                            <p class="mb-1 text-muted">Proferiu uma palestra principal na Cimeira de Ética da IA de 2024, em São Francisco</p>
                                             <div class="d-flex gap-2">
                                                 <span
-                                                    class="badge bg-warning bg-opacity-10 text-warning">Conference</span>
+                                                    class="badge bg-warning bg-opacity-10 text-warning">Conferência</span>
                                                 <span
-                                                    class="badge bg-secondary bg-opacity-10 text-secondary">Keynote</span>
+                                                    class="badge bg-secondary bg-opacity-10 text-secondary">Palestra principal</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1349,13 +1305,12 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">Grant Funding Received</h6>
+                                                <h6 class="mb-0 fw-semibold">Financiamento recebido</h6>
                                                 <small class="text-muted">Jan 3, 2025</small>
                                             </div>
-                                            <p class="mb-1 text-muted">NSF approved $850,000 funding for ethical AI
-                                                framework research</p>
+                                            <p class="mb-1 text-muted">A NSF aprovou um financiamento de $850,000 para investigação sobre uma estrutura de IA ética</p>
                                             <div class="d-flex gap-2">
-                                                <span class="badge bg-info bg-opacity-10 text-info">Grant</span>
+                                                <span class="badge bg-info bg-opacity-10 text-info">Financiamento</span>
                                                 <span class="badge bg-success bg-opacity-10 text-success">$850K</span>
                                             </div>
                                         </div>
@@ -1371,14 +1326,13 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">Course Materials Updated</h6>
-                                                <small class="text-muted">Dec 28, 2024</small>
+                                                <h6 class="mb-0 fw-semibold">Materiais do curso atualizados</h6>
+                                                <small class="text-muted">28 de dezembro de 2024</small>
                                             </div>
-                                            <p class="mb-1 text-muted">Machine Learning course syllabus revised for
-                                                Spring 2025 semester</p>
+                                            <p class="mb-1 text-muted">Programa do curso de Aprendizagem Automática revisto para o semestre da primavera de 2025</p>
                                             <div class="d-flex gap-2">
                                                 <span
-                                                    class="badge bg-secondary bg-opacity-10 text-secondary">Curriculum</span>
+                                                    class="badge bg-secondary bg-opacity-10 text-secondary">Programa curricular</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1393,16 +1347,14 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">New PhD Mentorship</h6>
-                                                <small class="text-muted">Dec 20, 2024</small>
+                                                <h6 class="mb-0 fw-semibold">Nova orientação de doutoramento</h6>
+                                                <small class="text-muted">20 de dezembro de 2024</small>
                                             </div>
-                                            <p class="mb-1 text-muted">Started mentoring 2 new PhD students specializing
-                                                in AI research</p>
+                                            <p class="mb-1 text-muted">Começou a orientar 2 novos doutorandos especializados em investigação em IA</p>
                                             <div class="d-flex gap-2">
                                                 <span
-                                                    class="badge bg-success bg-opacity-10 text-success">Mentorship</span>
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">PhD
-                                                    Students</span>
+                                                    class="badge bg-success bg-opacity-10 text-success">Orientação</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Doutorandos</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1421,13 +1373,12 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">Research Milestone</h6>
-                                                <small class="text-muted">Dec 15, 2024</small>
+                                                <h6 class="mb-0 fw-semibold">Marco da investigação</h6>
+                                                <small class="text-muted">15 de dezembro de 2024</small>
                                             </div>
-                                            <p class="mb-1 text-muted">Reached 2,847 total citations across all
-                                                publications</p>
+                                            <p class="mb-1 text-muted">Atingiu 2.847 citações em todas as publicações</p>
                                             <div class="d-flex gap-2">
-                                                <span class="badge bg-info bg-opacity-10 text-info">Achievement</span>
+                                                <span class="badge bg-info bg-opacity-10 text-info">Conquista</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1442,13 +1393,12 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h6 class="mb-0 fw-semibold">Grant Approved</h6>
-                                                <small class="text-muted">Dec 10, 2024</small>
+                                                <h6 class="mb-0 fw-semibold">Financiamento aprovado</h6>
+                                                <small class="text-muted">10 de dezembro de 2024</small>
                                             </div>
-                                            <p class="mb-1 text-muted">NSF Grant for Ethical AI Framework research
-                                                approved</p>
+                                            <p class="mb-1 text-muted">Aprovada a bolsa da NSF para investigação de uma estrutura de IA ética</p>
                                             <div class="d-flex gap-2">
-                                                <span class="badge bg-primary bg-opacity-10 text-primary">Funding</span>
+                                                <span class="badge bg-primary bg-opacity-10 text-primary">Financiamento</span>
                                                 <span class="badge bg-success bg-opacity-10 text-success">$850K</span>
                                             </div>
                                         </div>
@@ -1466,10 +1416,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -1484,9 +1434,9 @@
                 new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: ['Fall 2020', 'Spring 2021', 'Fall 2021', 'Spring 2022', 'Fall 2022', 'Spring 2023', 'Fall 2023', 'Spring 2024'],
+                        labels: ['Outono de 2020', 'Primavera de 2021', 'Outono de 2021', 'Primavera de 2022', 'Outono de 2022', 'Primavera de 2023', 'Outono de 2023', 'Primavera de 2024'],
                         datasets: [{
-                            label: 'Teaching Rating',
+                            label: 'Classificação do Ensino',
                             data: [4.2, 4.4, 4.5, 4.6, 4.7, 4.8, 4.8, 4.8],
                             borderColor: 'rgb(75, 192, 192)',
                             backgroundColor: 'rgba(75, 192, 192, 0.1)',
@@ -1518,7 +1468,7 @@
                                 },
                                 title: {
                                     display: true,
-                                    text: 'Teaching Rating (out of 5.0)',
+                                    text: 'Classificação do Ensino (de 5,0)',
                                     font: {
                                         size: 13,
                                         weight: 'bold'
@@ -1536,7 +1486,7 @@
                                 },
                                 title: {
                                     display: true,
-                                    text: 'Academic Semester',
+                                    text: 'Semestre Académico',
                                     font: {
                                         size: 13,
                                         weight: 'bold'
@@ -1553,7 +1503,7 @@
                             },
                             title: {
                                 display: true,
-                                text: 'Student Evaluation Trends Over Time',
+                                text: 'Evolução das Avaliações dos Estudantes',
                                 font: {
                                     size: 16,
                                     weight: 'bold'
@@ -1585,9 +1535,9 @@
                     new Chart(ctx2, {
                         type: 'bar',
                         data: {
-                            labels: ['5 Stars', '4 Stars', '3 Stars', '2 Stars', '1 Star'],
+                            labels: ['5 estrelas', '4 estrelas', '3 estrelas', '2 estrelas', '1 estrela'],
                             datasets: [{
-                                label: 'Number of Ratings',
+                                label: 'Número de Classificações',
                                 data: [89, 28, 5, 2, 0],
                                 backgroundColor: [
                                     'rgba(40, 167, 69, 0.8)',
@@ -1620,7 +1570,7 @@
                                     },
                                     title: {
                                         display: true,
-                                        text: 'Number of Students',
+                                        text: 'Número de Estudantes',
                                         font: {
                                             size: 13,
                                             weight: 'bold'
@@ -1647,7 +1597,7 @@
                                 },
                                 title: {
                                     display: true,
-                                    text: 'Student Rating Distribution (Last 2 Years)',
+                                    text: 'Distribuição das Classificações dos Estudantes (2 últimos anos)',
                                     font: {
                                         size: 16,
                                         weight: 'bold'
@@ -1662,7 +1612,7 @@
                                         label: function(context) {
                                             const total = 124;
                                             const percentage = ((context.raw / total) * 100).toFixed(1);
-                                            return context.raw + ' students (' + percentage + '%)';
+                                            return context.raw + ' estudantes (' + percentage + '%)';
                                         }
                                     }
                                 }
@@ -1677,7 +1627,7 @@
                     new Chart(ctx3, {
                         type: 'doughnut',
                         data: {
-                            labels: ['Undergraduate', 'Graduate', 'PhD Seminar'],
+                            labels: ['Licenciatura', 'Pós-graduação', 'Seminário de doutoramento'],
                             datasets: [{
                                 data: [86, 45, 25],
                                 backgroundColor: [

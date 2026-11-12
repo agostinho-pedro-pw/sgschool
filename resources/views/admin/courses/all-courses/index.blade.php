@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>All courses - Kiaalap Dashboard</title>
+    <title>Todos os Cursos - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -152,7 +152,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -167,21 +167,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">All courses</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Todos os Cursos</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -190,29 +190,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -228,8 +228,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -242,9 +242,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -257,9 +257,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -272,9 +272,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -284,7 +284,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -293,28 +293,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -322,14 +320,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -344,16 +342,16 @@
                 <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 font-bold mb-1">All Courses</h1>
-                            <p class="text-muted">Manage your institution's course catalog</p>
+                            <h1 class="h3 font-bold mb-1">Todos os Cursos</h1>
+                            <p class="text-muted">Gira o catálogo de cursos da sua instituição</p>
                         </div>
                         <div>
                             <button type="button" class="btn btn-primary"
                                 onclick="window.location.href='add-course.html'">
-                                <i class="bi bi-plus-circle me-2"></i> Add New Course
+                                <i class="bi bi-plus-circle me-2"></i> Adicionar Novo Curso
                             </button>
                             <button type="button" class="btn btn-outline-secondary ms-2">
-                                <i class="bi bi-download me-2"></i> Export
+                                <i class="bi bi-download me-2"></i> Exportar
                             </button>
                         </div>
                     </div>
@@ -362,22 +360,22 @@
                 <!-- Stats Row -->
                 <div class="dashboard-grid grid-cols-4 mb-3">
                     <div class="stats-card">
-                        <div class="stats-card-label">Total Courses</div>
+                        <div class="stats-card-label">Total de Cursos</div>
                         <div class="stats-card-value">156</div>
-                        <span class="stats-card-change positive">+12% from last month</span>
+                        <span class="stats-card-change positive">+12% face ao mês passado</span>
                     </div>
                     <div class="stats-card">
-                        <div class="stats-card-label">Active Courses</div>
+                        <div class="stats-card-label">Cursos Ativos</div>
                         <div class="stats-card-value">142</div>
-                        <span class="stats-card-change positive">+8 new</span>
+                        <span class="stats-card-change positive">+8 novos</span>
                     </div>
                     <div class="stats-card">
-                        <div class="stats-card-label">Total Students</div>
+                        <div class="stats-card-label">Total de Estudantes</div>
                         <div class="stats-card-value">3,245</div>
                         <span class="stats-card-change positive">+18%</span>
                     </div>
                     <div class="stats-card">
-                        <div class="stats-card-label">Avg. Enrollment</div>
+                        <div class="stats-card-label">Média de Inscrições</div>
                         <div class="stats-card-value">21</div>
                         <span class="stats-card-change negative">-2</span>
                     </div>
@@ -387,37 +385,37 @@
                 <div class="dashboard-card mb-3">
                     <div class="dashboard-grid grid-cols-4 mb-3">
                         <div>
-                            <label for="departmentFilter" class="form-label small">Department</label>
+                            <label for="departmentFilter" class="form-label small">Departamento</label>
                             <select class="form-select" id="departmentFilter">
-                                <option selected>All Departments</option>
-                                <option value="1">Computer Science</option>
-                                <option value="2">Mathematics</option>
-                                <option value="3">Physics</option>
-                                <option value="4">Chemistry</option>
-                                <option value="5">Biology</option>
+                                <option selected>Todos os Departamentos</option>
+                                <option value="1">Ciências da Computação</option>
+                                <option value="2">Matemática</option>
+                                <option value="3">Física</option>
+                                <option value="4">Química</option>
+                                <option value="5">Biologia</option>
                             </select>
                         </div>
                         <div>
-                            <label for="semesterFilter" class="form-label small">Semester</label>
+                            <label for="semesterFilter" class="form-label small">Semestre</label>
                             <select class="form-select" id="semesterFilter">
-                                <option selected>All Semesters</option>
-                                <option value="1">Fall 2025</option>
-                                <option value="2">Spring 2025</option>
-                                <option value="3">Summer 2025</option>
+                                <option selected>Todos os Semestres</option>
+                                <option value="1">Outono de 2025</option>
+                                <option value="2">Primavera de 2025</option>
+                                <option value="3">Verão de 2025</option>
                             </select>
                         </div>
                         <div>
-                            <label for="statusFilter" class="form-label small">Status</label>
+                            <label for="statusFilter" class="form-label small">Estado</label>
                             <select class="form-select" id="statusFilter">
-                                <option selected>All Status</option>
-                                <option value="1">Active</option>
-                                <option value="2">Inactive</option>
-                                <option value="3">Completed</option>
+                                <option selected>Todos os Estados</option>
+                                <option value="1">Ativo</option>
+                                <option value="2">Inativo</option>
+                                <option value="3">Concluído</option>
                             </select>
                         </div>
                         <div>
-                            <label for="searchFilter" class="form-label small">Search</label>
-                            <input type="text" class="form-control" id="searchFilter" placeholder="Search courses...">
+                            <label for="searchFilter" class="form-label small">Pesquisar</label>
+                            <input type="text" class="form-control" id="searchFilter" placeholder="Pesquisar cursos...">
                         </div>
                     </div>
                 </div>
@@ -431,14 +429,14 @@
                                     <th scope="col">
                                         <input class="form-check-input" type="checkbox" id="selectAll">
                                     </th>
-                                    <th scope="col">Course Code</th>
-                                    <th scope="col">Course Name</th>
-                                    <th scope="col">Department</th>
+                                    <th scope="col">Código do Curso</th>
+                                    <th scope="col">Nome do Curso</th>
+                                    <th scope="col">Departamento</th>
                                     <th scope="col">Professor</th>
-                                    <th scope="col">Credits</th>
-                                    <th scope="col">Students</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col">Créditos</th>
+                                    <th scope="col">Estudantes</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -452,12 +450,12 @@
                                             <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=50&h=50&fit=crop"
                                                 alt="Course" class="rounded me-3" width="40" height="40" loading="lazy">
                                             <div>
-                                                <div class="fw-semibold">Introduction to Computer Science</div>
+                                                <div class="fw-semibold">Introdução à Informática</div>
                                                 <small class="text-muted">Mon, Wed, Fri - 10:00 AM</small>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Computer Science</td>
+                                    <td>Ciências da Computação</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="https://ui-avatars.com/api/?name=John+Smith&background=6366f1&color=fff"
@@ -477,25 +475,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>
-                                                        Students</a></li>
+                                                        Estudantes</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -515,7 +513,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Mathematics</td>
+                                    <td>Matemática</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="https://ui-avatars.com/api/?name=Emily+Chen&background=10b981&color=fff"
@@ -535,25 +533,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>
-                                                        Students</a></li>
+                                                        Estudantes</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -573,7 +571,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Physics</td>
+                                    <td>Física</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="https://ui-avatars.com/api/?name=Robert+Wilson&background=f59e0b&color=fff"
@@ -593,25 +591,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>
-                                                        Students</a></li>
+                                                        Estudantes</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -631,7 +629,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Biology</td>
+                                    <td>Biologia</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="https://ui-avatars.com/api/?name=Maria+Garcia&background=ec4899&color=fff"
@@ -655,21 +653,21 @@
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>
-                                                        Students</a></li>
+                                                        Estudantes</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -689,7 +687,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Chemistry</td>
+                                    <td>Química</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <img src="https://ui-avatars.com/api/?name=David+Lee&background=8b5cf6&color=fff"
@@ -709,25 +707,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>
-                                                        Students</a></li>
+                                                        Estudantes</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -742,7 +740,7 @@
                                             <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=50&h=50&fit=crop"
                                                 alt="Course" class="rounded me-3" width="40" height="40" loading="lazy">
                                             <div>
-                                                <div class="fw-semibold">English Literature</div>
+                                                <div class="fw-semibold">Literatura Inglesa</div>
                                                 <small class="text-muted">Tue, Thu - 11:00 AM</small>
                                             </div>
                                         </div>
@@ -766,25 +764,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="badge bg-success">Active</span></td>
+                                    <td><span class="badge bg-success">Ativo</span></td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>
-                                                        Students</a></li>
+                                                        Estudantes</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -824,25 +822,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="badge bg-secondary">Inactive</span></td>
+                                    <td><span class="badge bg-secondary">Inativo</span></td>
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                                aria-label="More options">
+                                                aria-label="Mais opções">
                                                 <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="course-info.html"><i
-                                                            class="bi bi-eye me-2"></i> View</a></li>
+                                                            class="bi bi-eye me-2"></i> Ver</a></li>
                                                 <li><a class="dropdown-item" href="edit-course.html"><i
-                                                            class="bi bi-pencil me-2"></i> Edit</a></li>
+                                                            class="bi bi-pencil me-2"></i> Editar</a></li>
                                                 <li><a class="dropdown-item" href="#"><i
                                                             class="bi bi-check-circle me-2"></i> Activate</a></li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
                                                 <li><a class="dropdown-item text-danger" href="#"><i
-                                                            class="bi bi-trash me-2"></i> Delete</a></li>
+                                                            class="bi bi-trash me-2"></i> Excluir</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -854,12 +852,12 @@
                     <!-- Pagination -->
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <div>
-                            <p class="text-muted mb-0">Showing 1 to 7 of 156 entries</p>
+                            <p class="text-muted mb-0">A mostrar 1 a 7 de 156 registos</p>
                         </div>
-                        <nav aria-label="Page navigation">
+                        <nav aria-label="Navegação de páginas">
                             <ul class="pagination mb-0">
                                 <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
                                 </li>
                                 <li class="page-item active" aria-current="page">
                                     <a class="page-link" href="#">1</a>
@@ -869,7 +867,7 @@
                                 <li class="page-item"><a class="page-link" href="#">4</a></li>
                                 <li class="page-item"><a class="page-link" href="#">5</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
+                                    <a class="page-link" href="#">Seguinte</a>
                                 </li>
                             </ul>
                         </nav>
@@ -883,10 +881,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Library Assets - Kiaalap Dashboard</title>
+    <title>Recursos da biblioteca - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -119,7 +119,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -132,124 +132,124 @@
             <div class="sidebar-brand">
                 <h5>
                     <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
+                    sgSchool
                 </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Fechar menu lateral">
                     <i class="bi bi-x-lg"></i>
                 </button>
             </div>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Main navigation">
+        <nav class="sidebar-nav" aria-label="Navegação principal">
             <div class="menu-section">
-                <div class="menu-section-title">Main</div>
+                <div class="menu-section-title">Início</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#dashboardSubmenu" aria-expanded="false">
                             <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
+                            <span>Painel</span>
                         </a>
                         <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
+                            <li><a class="nav-link " href="index.html">Painel v.1</a></li>
+                            <li><a class="nav-link " href="index-1.html">Painel v.2</a></li>
+                            <li><a class="nav-link " href="index-2.html">Painel v.3</a></li>
+                            <li><a class="nav-link " href="analytics.html">Análises</a></li>
                             <li><a class="nav-link " href="widgets.html">Widgets</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="events.html">
                             <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
+                            <span>Eventos</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
+                <div class="menu-section-title">Académico</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#professorsSubmenu" aria-expanded="false">
                             <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
+                            <span>Professores</span>
                         </a>
                         <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
+                            <li><a class="nav-link " href="all-professors.html">Todos os professores</a></li>
+                            <li><a class="nav-link " href="add-professor.html">Adicionar professor</a></li>
+                            <li><a class="nav-link " href="edit-professor.html">Editar professor</a></li>
+                            <li><a class="nav-link " href="professor-profile.html">Perfil do professor</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#studentsSubmenu" aria-expanded="false">
                             <i class="bi bi-people"></i>
-                            <span>Students</span>
+                            <span>Estudantes</span>
                         </a>
                         <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
+                            <li><a class="nav-link " href="all-students.html">Todos os estudantes</a></li>
+                            <li><a class="nav-link " href="add-student.html">Adicionar Estudante</a></li>
+                            <li><a class="nav-link " href="edit-student.html">Editar estudante</a></li>
+                            <li><a class="nav-link " href="student-profile.html">Perfil do estudante</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#coursesSubmenu" aria-expanded="false">
                             <i class="bi bi-book"></i>
-                            <span>Courses</span>
+                            <span>Cursos</span>
                         </a>
                         <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
+                            <li><a class="nav-link " href="all-courses.html">Todos os cursos</a></li>
+                            <li><a class="nav-link " href="add-course.html">Adicionar Curso</a></li>
+                            <li><a class="nav-link " href="edit-course.html">Editar curso</a></li>
+                            <li><a class="nav-link " href="course-info.html">Informações do curso</a></li>
+                            <li><a class="nav-link " href="course-payment.html">Pagamento de cursos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu active" href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#librarySubmenu" aria-expanded="true">
                             <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
+                            <span>Biblioteca</span>
                         </a>
                         <ul id="librarySubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link active" href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
+                            <li><a class="nav-link active" href="library-assets.html">Recursos da biblioteca</a></li>
+                            <li><a class="nav-link " href="add-library-assets.html">Adicionar recurso da biblioteca</a></li>
+                            <li><a class="nav-link " href="edit-library-assets.html">Editar recurso da biblioteca</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#departmentsSubmenu" aria-expanded="false">
                             <i class="bi bi-building"></i>
-                            <span>Departments</span>
+                            <span>Departamentos</span>
                         </a>
                         <ul id="departmentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link " href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link " href="edit-department.html">Edit Department</a></li>
+                            <li><a class="nav-link " href="departments.html">Lista de departamentos</a></li>
+                            <li><a class="nav-link " href="add-department.html">Adicionar Departamento</a></li>
+                            <li><a class="nav-link " href="edit-department.html">Editar Departamento</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
+                <div class="menu-section-title">Comunicação</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#mailboxSubmenu" aria-expanded="false">
                             <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
+                            <span>Correio</span>
                         </a>
                         <ul id="mailboxSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
+                            <li><a class="nav-link " href="mailbox.html">Caixa de entrada</a></li>
+                            <li><a class="nav-link " href="mailbox-compose.html">Compor</a></li>
+                            <li><a class="nav-link " href="mailbox-view.html">Ver mensagem</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -262,28 +262,28 @@
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#componentsSubmenu" aria-expanded="false">
                             <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
+                            <span>Componentes</span>
                         </a>
                         <ul id="componentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link " href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
+                            <li><a class="nav-link " href="buttons.html">Botões</a></li>
+                            <li><a class="nav-link " href="alerts.html">Alertas</a></li>
+                            <li><a class="nav-link " href="modals.html">Janelas modais</a></li>
+                            <li><a class="nav-link " href="tabs.html">Separadores</a></li>
+                            <li><a class="nav-link " href="accordion.html">Acordeão</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#formsSubmenu" aria-expanded="false">
                             <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
+                            <span>Formul?rios</span>
                         </a>
                         <ul id="formsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link " href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
+                            <li><a class="nav-link " href="basic-form-element.html">Formul?rios b?sicos</a></li>
+                            <li><a class="nav-link " href="advance-form-element.html">Formulários avançados</a></li>
+                            <li><a class="nav-link " href="password-meter.html">Indicador de segurança da palavra-passe</a></li>
+                            <li><a class="nav-link " href="multi-upload.html">Carregamento de ficheiros</a></li>
+                            <li><a class="nav-link " href="images-cropper.html">Recorte de imagem</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -294,11 +294,11 @@
                         </a>
                         <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
                             <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
+                            <li><a class="nav-link " href="area-charts.html">Gráficos de áreas</a></li>
+                            <li><a class="nav-link " href="bar-charts.html">Gráficos de barras</a></li>
+                            <li><a class="nav-link " href="c3.html">Gráficos C3</a></li>
+                            <li><a class="nav-link " href="peity.html">Gráficos Peity</a></li>
+                            <li><a class="nav-link " href="rounded-chart.html">Gráficos circulares</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -308,32 +308,32 @@
                             <span>Tables</span>
                         </a>
                         <ul id="tablesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
+                            <li><a class="nav-link " href="static-table.html">Tabelas estáticas</a></li>
+                            <li><a class="nav-link " href="data-table.html">Tabelas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
+                <div class="menu-section-title">Developer Paraols</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link " href="code-editor.html">
                             <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
+                            <span>Editor de código</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#uiToolsSubmenu" aria-expanded="false">
                             <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
+                            <span>Componentes de interface</span>
                         </a>
                         <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
                             <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
+                            <li><a class="nav-link " href="notifications.html">Notificações</a></li>
+                            <li><a class="nav-link " href="tree-view.html">Vista em árvore</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -354,14 +354,14 @@
                         </a>
                         <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
                             <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
+                            <li><a class="nav-link " href="data-maps.html">Mapas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
+                <div class="menu-section-title">P?ginas</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
@@ -370,21 +370,21 @@
                             <span>Authentication</span>
                         </a>
                         <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
-                            <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
+                            <li><a class="nav-link " href="login.html">Iniciar sessão</a></li>
+                            <li><a class="nav-link " href="register.html">Registar</a></li>
+                            <li><a class="nav-link " href="lock.html">Bloquear ecrã</a></li>
+                            <li><a class="nav-link " href="password-recovery.html">Recuperar palavra-passe</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#errorsSubmenu" aria-expanded="false">
                             <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
+                            <span>Páginas de erro</span>
                         </a>
                         <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
+                            <li><a class="nav-link " href="404.html">Erro 404</a></li>
+                            <li><a class="nav-link " href="500.html">Erro 500</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -397,22 +397,22 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Mostrar/ocultar menu lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Academic</a></li>
-                        <li class="breadcrumb-item active">Library Assets</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="#">Académico</a></li>
+                        <li class="breadcrumb-item active">Recursos da biblioteca</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -421,29 +421,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -451,7 +451,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -459,8 +459,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -473,9 +473,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -488,9 +488,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">John entregou o seu trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -504,7 +504,7 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
                                             <div class="text-muted small">Yesterday</div>
                                         </div>
                                     </div>
@@ -515,7 +515,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -524,28 +524,27 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -553,14 +552,13 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -575,18 +573,17 @@
                 <div class="dashboard-row">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="page-title">Library Assets</h1>
-                            <p class="page-description">Manage and organize your library's digital and physical
-                                resources</p>
+                            <h1 class="page-title">Recursos da biblioteca</h1>
+                            <p class="page-description">Faça a gestão e organize os recursos digitais e físicos da biblioteca.</p>
                         </div>
                         <div class="d-flex gap-2">
                             <button type="button" class="btn btn-outline-primary">
                                 <i class="bi bi-download me-1"></i>
-                                Export
+                                Exportarar
                             </button>
                             <a href="add-library-assets.html" class="btn btn-primary">
                                 <i class="bi bi-plus-lg me-1"></i>
-                                Add Asset
+                                Adicionar recurso
                             </a>
                         </div>
                     </div>
@@ -596,49 +593,49 @@
                 <div class="dashboard-row">
                     <div class="dashboard-card">
                         <div class="dashboard-card-header">
-                            <h5 class="dashboard-card-title">Filter Assets</h5>
+                            <h5 class="dashboard-card-title">Filtrar recursos</h5>
                         </div>
                         <div class="dashboard-card-body">
                             <div class="row g-3">
                                 <div class="col-md-3">
-                                    <label for="categoryFilter" class="form-label">Category</label>
+                                    <label for="categoryFilter" class="form-label">Categoria</label>
                                     <select class="form-select" id="categoryFilter">
-                                        <option value="">All Categories</option>
-                                        <option value="books">Books</option>
-                                        <option value="journals">Journals</option>
-                                        <option value="digital">Digital Media</option>
-                                        <option value="reference">Reference Materials</option>
-                                        <option value="periodicals">Periodicals</option>
+                                        <option value="">Todos Categories</option>
+                                        <option value="books">Livros</option>
+                                        <option value="journals">Revistas</option>
+                                        <option value="digital">Conteúdos digitais</option>
+                                        <option value="reference">Obras de refer?ncia</option>
+                                        <option value="periodicals">Publicações periódicas</option>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="statusFilter" class="form-label">Status</label>
+                                    <label for="statusFilter" class="form-label">Estado</label>
                                     <select class="form-select" id="statusFilter">
-                                        <option value="">All Status</option>
-                                        <option value="available">Available</option>
-                                        <option value="checked-out">Checked Out</option>
-                                        <option value="reserved">Reserved</option>
-                                        <option value="maintenance">Under Maintenance</option>
-                                        <option value="missing">Missing</option>
+                                        <option value="">Todos os estados</option>
+                                        <option value="available">Disponível</option>
+                                        <option value="checked-out">Emprestado</option>
+                                        <option value="reserved">Reservado</option>
+                                        <option value="maintenance">Em manutenção</option>
+                                        <option value="missing">Em falta</option>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="locationFilter" class="form-label">Location</label>
+                                    <label for="locationFilter" class="form-label">Localização</label>
                                     <select class="form-select" id="locationFilter">
-                                        <option value="">All Locations</option>
-                                        <option value="main-library">Main Library</option>
-                                        <option value="science-library">Science Library</option>
-                                        <option value="medical-library">Medical Library</option>
-                                        <option value="digital-archive">Digital Archive</option>
+                                        <option value="">Todas as localiza??es</option>
+                                        <option value="main-library">Biblioteca principal</option>
+                                        <option value="science-library">Biblioteca de ciências</option>
+                                        <option value="medical-library">Biblioteca médica</option>
+                                        <option value="digital-archive">Arquivo digital</option>
                                     </select>
                                 </div>
                                 <div class="col-md-3 d-flex align-items-end">
                                     <div class="d-flex gap-2 w-100">
                                         <button type="button" class="btn btn-primary flex-grow-1">
                                             <i class="bi bi-funnel me-1"></i>
-                                            Filter
+                                            Filtrar
                                         </button>
-                                        <button type="button" class="btn btn-outline-secondary" aria-label="Refresh">
+                                        <button type="button" class="btn btn-outline-secondary" aria-label="Atualizar">
                                             <i aria-hidden="true" class="bi bi-arrow-clockwise"></i>
                                         </button>
                                     </div>
@@ -647,9 +644,9 @@
                             <div class="row mt-3">
                                 <div class="col-12 d-flex justify-content-between align-items-center">
                                     <div class="text-muted small">
-                                        Showing 8 of 156 assets
+                                        A mostrar 8 de 156 recursos
                                     </div>
-                                    <div class="view-toggle btn-group" role="group" aria-label="View options">
+                                    <div class="view-toggle btn-group" role="group" aria-label="Ver options">
                                         <input type="radio" class="btn-check" name="viewMode" id="gridView" checked>
                                         <label class="btn btn-outline-secondary btn-sm" for="gridView">
                                             <i class="bi bi-grid-3x2"></i>
@@ -671,30 +668,30 @@
                         <!-- Asset Card 1 -->
                         <div class="asset-card h-100">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=face"
-                                class="card-img-top asset-image" alt="Introduction to Computer Science" loading="lazy">
+                                class="card-img-top asset-image" alt="Introduction to Ci?ncias Inform?ticas" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">Introduction to Computer Science</h6>
+                                <h6 class="card-title mb-2">Introduction to Ci?ncias Inform?ticas</h6>
                                 <p class="card-text text-muted small mb-2">by Thomas H. Cormen</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-success-subtle text-success">Available</span>
+                                    <span class="asset-status bg-success-subtle text-success">Disponível</span>
                                     <small class="text-muted">ISBN: 978-0262033848</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Main Library
+                                        Biblioteca principal
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-success btn-sm"
-                                            data-bs-toggle="tooltip" title="Check Out" aria-label="Check Out">
+                                            data-bs-toggle="tooltip" title="Emprestar" aria-label="Emprestar">
                                             <i aria-hidden="true" class="bi bi-bookmark-check"></i>
                                         </button>
                                     </div>
@@ -705,30 +702,30 @@
                         <!-- Asset Card 2 -->
                         <div class="asset-card h-100">
                             <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop"
-                                class="card-img-top asset-image" alt="Advanced Mathematics" loading="lazy">
+                                class="card-img-top asset-image" alt="Matem?tica Avan?ada" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">Advanced Mathematics</h6>
-                                <p class="card-text text-muted small mb-2">by James Stewart</p>
+                                <h6 class="card-title mb-2">Matem?tica Avan?ada</h6>
+                                <p class="card-text text-muted small mb-2">por James Stewart</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-warning-subtle text-warning">Checked Out</span>
+                                    <span class="asset-status bg-warning-subtle text-warning">Emprestado</span>
                                     <small class="text-muted">ISBN: 978-1285741550</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Main Library
+                                        Biblioteca principal
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-info btn-sm"
-                                            data-bs-toggle="tooltip" title="Reserve" aria-label="Reserve">
+                                            data-bs-toggle="tooltip" title="Reservar" aria-label="Reservar">
                                             <i aria-hidden="true" class="bi bi-bookmark-plus"></i>
                                         </button>
                                     </div>
@@ -739,30 +736,30 @@
                         <!-- Asset Card 3 -->
                         <div class="asset-card h-100">
                             <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=300&h=200&fit=crop"
-                                class="card-img-top asset-image" alt="Physics Fundamentals" loading="lazy">
+                                class="card-img-top asset-image" alt="Fundamentos de F?sica" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">Physics Fundamentals</h6>
-                                <p class="card-text text-muted small mb-2">by David Halliday</p>
+                                <h6 class="card-title mb-2">Fundamentos de F?sica</h6>
+                                <p class="card-text text-muted small mb-2">por David Halliday</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-success-subtle text-success">Available</span>
+                                    <span class="asset-status bg-success-subtle text-success">Disponível</span>
                                     <small class="text-muted">ISBN: 978-1118230725</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Science Library
+                                        Biblioteca de ci?ncias
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-success btn-sm"
-                                            data-bs-toggle="tooltip" title="Check Out" aria-label="Check Out">
+                                            data-bs-toggle="tooltip" title="Emprestar" aria-label="Emprestar">
                                             <i aria-hidden="true" class="bi bi-bookmark-check"></i>
                                         </button>
                                     </div>
@@ -775,29 +772,27 @@
                             <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop"
                                 class="card-img-top asset-image" alt="Medical Journal" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">Medical Journal - Vol 45</h6>
-                                <p class="card-text text-muted small mb-2">Healthcare Research Quarterly</p>
+                                <h6 class="card-title mb-2">Revista M?dica - Vol. 45</h6>
+                                <p class="card-text text-muted small mb-2">Revista Trimestral de Investiga??o em Sa?de</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-info-subtle text-info">Reserved</span>
+                                    <span class="asset-status bg-info-subtle text-info">Reservado</span>
                                     <small class="text-muted">ISSN: 1234-5678</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
-                                        <i class="bi bi-geo-alt me-1"></i>
-                                        Medical Library
-                                    </small>
+                                        <i class="bi bi-geo-alt me-1"></i>Biblioteca médica</small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-info btn-sm"
-                                            data-bs-toggle="tooltip" title="View Reservation"
-                                            aria-label="View Reservation">
+                                            data-bs-toggle="tooltip" title="Ver reserva"
+                                            aria-label="Ver reserva">
                                             <i aria-hidden="true" class="bi bi-bookmark-star"></i>
                                         </button>
                                     </div>
@@ -810,24 +805,24 @@
                             <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=200&fit=crop"
                                 class="card-img-top asset-image" alt="Digital Media Collection" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">Digital Media Collection</h6>
+                                <h6 class="card-title mb-2">Cole??o de conte?dos digitais</h6>
                                 <p class="card-text text-muted small mb-2">Educational Videos &amp; Audio</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-success-subtle text-success">Available</span>
+                                    <span class="asset-status bg-success-subtle text-success">Disponível</span>
                                     <small class="text-muted">DIG-001</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Digital Archive
+                                        Arquivo digital
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-success btn-sm"
@@ -842,31 +837,31 @@
                         <!-- Asset Card 6 -->
                         <div class="asset-card h-100">
                             <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=200&fit=crop"
-                                class="card-img-top asset-image" alt="History Reference" loading="lazy">
+                                class="card-img-top asset-image" alt="Obra de Refer?ncia de Hist?ria" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">World History Reference</h6>
+                                <h6 class="card-title mb-2">Obra de Refer?ncia de Hist?ria Mundial</h6>
                                 <p class="card-text text-muted small mb-2">by William J. Duiker</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-danger-subtle text-danger">Under Maintenance</span>
+                                    <span class="asset-status bg-danger-subtle text-danger">Em manutenção</span>
                                     <small class="text-muted">ISBN: 978-1111831664</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Main Library
+                                        Biblioteca principal
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-warning btn-sm" disabled
-                                            data-bs-toggle="tooltip" title="Under Maintenance"
-                                            aria-label="Under Maintenance">
+                                            data-bs-toggle="tooltip" title="Em manutenção"
+                                            aria-label="Em manutenção">
                                             <i aria-hidden="true" class="bi bi-tools"></i>
                                         </button>
                                     </div>
@@ -882,25 +877,25 @@
                                 <h6 class="card-title mb-2">Organic Chemistry</h6>
                                 <p class="card-text text-muted small mb-2">by Paula Y. Bruice</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-success-subtle text-success">Available</span>
+                                    <span class="asset-status bg-success-subtle text-success">Disponível</span>
                                     <small class="text-muted">ISBN: 978-0321803221</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Science Library
+                                        Biblioteca de ci?ncias
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-success btn-sm"
-                                            data-bs-toggle="tooltip" title="Check Out" aria-label="Check Out">
+                                            data-bs-toggle="tooltip" title="Emprestar" aria-label="Emprestar">
                                             <i aria-hidden="true" class="bi bi-bookmark-check"></i>
                                         </button>
                                     </div>
@@ -911,30 +906,30 @@
                         <!-- Asset Card 8 -->
                         <div class="asset-card h-100">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=face"
-                                class="card-img-top asset-image" alt="Engineering Handbook" loading="lazy">
+                                class="card-img-top asset-image" alt="Engenharia Handbook" loading="lazy">
                             <div class="card-body p-3">
-                                <h6 class="card-title mb-2">Engineering Handbook</h6>
+                                <h6 class="card-title mb-2">Engenharia Handbook</h6>
                                 <p class="card-text text-muted small mb-2">by Richard C. Dorf</p>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="asset-status bg-warning-subtle text-warning">Checked Out</span>
+                                    <span class="asset-status bg-warning-subtle text-warning">Emprestado</span>
                                     <small class="text-muted">ISBN: 978-1420049794</small>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <small class="text-muted">
                                         <i class="bi bi-geo-alt me-1"></i>
-                                        Main Library
+                                        Biblioteca principal
                                     </small>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
-                                            data-bs-toggle="tooltip" title="View Details" aria-label="View Details">
+                                            data-bs-toggle="tooltip" title="Ver Detalhes" aria-label="Ver Detalhes">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            data-bs-toggle="tooltip" title="Edit" aria-label="Edit">
+                                            data-bs-toggle="tooltip" title="Editar" aria-label="Editar">
                                             <i aria-hidden="true" class="bi bi-pencil"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-info btn-sm"
-                                            data-bs-toggle="tooltip" title="Reserve" aria-label="Reserve">
+                                            data-bs-toggle="tooltip" title="Reservar" aria-label="Reservar">
                                             <i aria-hidden="true" class="bi bi-bookmark-plus"></i>
                                         </button>
                                     </div>
@@ -946,10 +941,10 @@
 
                 <!-- Pagination -->
                 <div class="dashboard-row">
-                    <nav aria-label="Library assets pagination">
+                    <nav aria-label="Biblioteca assets pagination">
                         <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
-                                <a class="page-link" href="#" aria-label="Previous">
+                                <a class="page-link" href="#" aria-label="Anterior">
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
@@ -957,7 +952,7 @@
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
+                                <a class="page-link" href="#" aria-label="Seguinte">
                                     <span aria-hidden="true">&raquo;</span>
                                 </a>
                             </li>
@@ -972,10 +967,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

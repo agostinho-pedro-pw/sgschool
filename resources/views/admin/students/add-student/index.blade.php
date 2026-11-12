@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Add student - Kiaalap Dashboard</title>
+    <title>Adicionar estudante - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -70,7 +70,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -85,21 +85,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
-                    aria-controls="sidebar">
+                <button type="button" class="hamburger-menu" id="sidebarToggle"
+                    aria-label="Mostrar/ocultar menu lateral" aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Add student</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Adicionar estudante</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -108,29 +108,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
-                            aria-controls="searchForm">
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle"
+                            aria-label="Abrir pesquisa" aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -146,8 +146,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -160,9 +160,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -175,9 +175,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">John entregou o seu trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -191,7 +191,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída
+                                            </div>
                                             <div class="text-muted small">Yesterday</div>
                                         </div>
                                     </div>
@@ -202,7 +203,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -211,28 +212,28 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar
+                                    evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -240,14 +241,15 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de
+                                    ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar
+                                    sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -261,8 +263,8 @@
                 <!-- Page Header -->
                 <div class="dashboard-row">
                     <div class="dashboard-grid grid-cols-1">
-                        <h4 class="page-title">Add New Student</h4>
-                        <p class="text-muted">Fill in the information below to add a new student to the system</p>
+                        <h4 class="page-title">Adicionar novo estudante</h4>
+                        <p class="text-muted">Preencha os campos abaixo para adicionar um novo estudante ao sistema.</p>
                     </div>
                 </div>
 
@@ -277,21 +279,21 @@
                                         <button class="nav-link active" id="basic-tab" data-bs-toggle="tab"
                                             data-bs-target="#basic" type="button" role="tab" aria-controls="basic"
                                             aria-selected="true">
-                                            <i class="bi bi-person-circle me-2"></i>Basic Information
+                                            <i class="bi bi-person-circle me-2"></i>Informações básicas
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="account-tab" data-bs-toggle="tab"
                                             data-bs-target="#account" type="button" role="tab" aria-controls="account"
                                             aria-selected="false">
-                                            <i class="bi bi-shield-lock me-2"></i>Account Information
+                                            <i class="bi bi-shield-lock me-2"></i>Informações da conta
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="social-tab" data-bs-toggle="tab"
                                             data-bs-target="#social" type="button" role="tab" aria-controls="social"
                                             aria-selected="false">
-                                            <i class="bi bi-share me-2"></i>Social Information
+                                            <i class="bi bi-share me-2"></i>Informações sociais
                                         </button>
                                     </li>
                                 </ul>
@@ -305,128 +307,129 @@
                                             <div class="row gx-4 gy-3">
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="fullName" class="form-label">Full Name <span
+                                                        <label for="fullName" class="form-label">Nome completo <span
                                                                 class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="fullName"
-                                                            placeholder="Enter full name" required>
+                                                            placeholder="Introduza o nome completo" required>
                                                         <div class="invalid-feedback">
-                                                            Please provide a valid name.
+                                                            Introduza um nome válido.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="studentId" class="form-label">Student ID <span
+                                                        <label for="studentId" class="form-label">Estudante ID <span
                                                                 class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="studentId"
-                                                            placeholder="Enter student ID" required>
+                                                            placeholder="Introduza o ID do estudante" required>
                                                         <div class="invalid-feedback">
-                                                            Please provide a student ID.
+                                                            Indique o ID do estudante.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="department" class="form-label">Department <span
+                                                        <label for="department" class="form-label">Departamento <span
                                                                 class="text-danger">*</span></label>
                                                         <select class="form-select" id="department" required>
-                                                            <option value="" selected disabled>Select Department
+                                                            <option value="" selected disabled>Selecionar departamento
                                                             </option>
-                                                            <option value="cs">Computer Science</option>
-                                                            <option value="eng">Engineering</option>
-                                                            <option value="bus">Business Administration</option>
-                                                            <option value="med">Medicine</option>
-                                                            <option value="psy">Psychology</option>
+                                                            <option value="cs">Ci?ncias Inform?ticas</option>
+                                                            <option value="eng">Engenharia</option>
+                                                            <option value="bus">Gest?o de Empresas</option>
+                                                            <option value="med">Medicina</option>
+                                                            <option value="psy">Psicologia</option>
                                                         </select>
                                                         <div class="invalid-feedback">
-                                                            Please select a department.
+                                                            Selecione um departamento.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="course" class="form-label">Course</label>
+                                                        <label for="course" class="form-label">Curso</label>
                                                         <input type="text" class="form-control" id="course"
-                                                            placeholder="Enter course name">
+                                                            placeholder="Introduza o nome do curso">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="dateOfBirth" class="form-label">Date of Birth <span
-                                                                class="text-danger">*</span></label>
+                                                        <label for="dateOfBirth" class="form-label">Data de nascimento
+                                                            <span class="text-danger">*</span></label>
                                                         <input type="date" class="form-control" id="dateOfBirth"
                                                             required>
                                                         <div class="invalid-feedback">
-                                                            Please provide date of birth.
+                                                            Indique a data de nascimento.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="gender" class="form-label">Gender <span
+                                                        <label for="gender" class="form-label">Género <span
                                                                 class="text-danger">*</span></label>
                                                         <select class="form-select" id="gender" required>
-                                                            <option value="" selected disabled>Select Gender</option>
-                                                            <option value="male">Male</option>
-                                                            <option value="female">Female</option>
-                                                            <option value="other">Other</option>
+                                                            <option value="" selected disabled>Selecionar género
+                                                            </option>
+                                                            <option value="male">Masculino</option>
+                                                            <option value="female">Feminino</option>
+                                                            <option value="other">Outro</option>
                                                         </select>
                                                         <div class="invalid-feedback">
-                                                            Please select a gender.
+                                                            Selecione o género.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="phone" class="form-label">Phone Number <span
+                                                        <label for="phone" class="form-label">Número de telefone <span
                                                                 class="text-danger">*</span></label>
                                                         <input type="tel" class="form-control" id="phone"
-                                                            placeholder="Enter phone number" required>
+                                                            placeholder="Introduza o número de telefone" required>
                                                         <div class="invalid-feedback">
-                                                            Please provide a phone number.
+                                                            Introduza um número de telefone.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="parentPhone" class="form-label">Parent/Guardian
-                                                            Phone</label>
+                                                        <label for="parentPhone" class="form-label">Encarregado de educa??o
+                                                            Telefone</label>
                                                         <input type="tel" class="form-control" id="parentPhone"
-                                                            placeholder="Enter parent phone">
+                                                            placeholder="Introduza o telefone do pai/mãe ou responsável">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 px-2">
                                                     <div class="mb-4">
-                                                        <label for="address" class="form-label">Address</label>
+                                                        <label for="address" class="form-label">Morada</label>
                                                         <textarea class="form-control" id="address" rows="3"
-                                                            placeholder="Enter address"></textarea>
+                                                            placeholder="Introduza o endereço"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 px-2">
                                                     <div class="mb-4">
-                                                        <label for="city" class="form-label">City</label>
+                                                        <label for="city" class="form-label">Localidade</label>
                                                         <input type="text" class="form-control" id="city"
-                                                            placeholder="Enter city">
+                                                            placeholder="Introduza a cidade">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 px-2">
                                                     <div class="mb-4">
-                                                        <label for="state" class="form-label">State/Province</label>
+                                                        <label for="state" class="form-label">Distrito/Prov?ncia</label>
                                                         <input type="text" class="form-control" id="state"
-                                                            placeholder="Enter state">
+                                                            placeholder="Introduza o estado ou a província">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 px-2">
                                                     <div class="mb-4">
-                                                        <label for="postalCode" class="form-label">Postal Code</label>
+                                                        <label for="postalCode" class="form-label">C?digo postal</label>
                                                         <input type="text" class="form-control" id="postalCode"
-                                                            placeholder="Enter postal code">
+                                                            placeholder="Introduza o código postal">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 px-2">
                                                     <div class="mb-4">
-                                                        <label for="profileImage" class="form-label">Profile
-                                                            Image</label>
+                                                        <label for="profileImage" class="form-label">Perfil
+                                                            Imagem</label>
                                                         <input class="form-control" type="file" id="profileImage"
                                                             accept="image/*">
                                                         <div class="form-text">Accepted formats: JPG, PNG, GIF (Max 2MB)
@@ -437,11 +440,12 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 px-2">
                                                     <button type="submit" class="btn btn-primary">
-                                                        <i class="bi bi-check-circle me-2"></i>Save Basic Information
+                                                        <i class="bi bi-check-circle me-2"></i>Guardar informações
+                                                        básicas
                                                     </button>
                                                     <button type="button" class="btn btn-secondary ms-2"
                                                         onclick="window.location.href='all-students.html'">
-                                                        <i class="bi bi-x-circle me-2"></i>Cancel
+                                                        <i class="bi bi-x-circle me-2"></i>Cancelar
                                                     </button>
                                                 </div>
                                             </div>
@@ -455,67 +459,68 @@
                                             <div class="row gx-4 gy-3">
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="email" class="form-label">Email Address <span
+                                                        <label for="email" class="form-label">Endereço de e-mail <span
                                                                 class="text-danger">*</span></label>
                                                         <input type="email" class="form-control" id="email"
-                                                            placeholder="Enter email address" required>
+                                                            placeholder="Introduza o endereço de e-mail" required>
                                                         <div class="invalid-feedback">
-                                                            Please provide a valid email.
+                                                            Introduza um endereço de e-mail válido.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="username" class="form-label">Username <span
+                                                        <label for="username" class="form-label">Nome de utilizador <span
                                                                 class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" id="username"
-                                                            placeholder="Enter username" required>
+                                                            placeholder="Introduza o nome de utilizador" required>
                                                         <div class="invalid-feedback">
-                                                            Please provide a username.
+                                                            Introduza um nome de utilizador.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="password" class="form-label">Password <span
+                                                        <label for="password" class="form-label">Palavra-passe <span
                                                                 class="text-danger">*</span></label>
                                                         <input type="password" class="form-control" id="password"
-                                                            placeholder="Enter password" required
+                                                            placeholder="Introduza a palavra-passe" required
                                                             autocomplete="new-password">
                                                         <div class="invalid-feedback">
-                                                            Please provide a password.
+                                                            Introduza uma palavra-passe.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="confirmPassword" class="form-label">Confirm Password
+                                                        <label for="confirmPassword" class="form-label">Confirmar
+                                                            palavra-passe
                                                             <span class="text-danger">*</span></label>
                                                         <input type="password" class="form-control" id="confirmPassword"
-                                                            placeholder="Confirm password" required
+                                                            placeholder="Confirmar palavra-passe" required
                                                             autocomplete="new-password">
                                                         <div class="invalid-feedback">
-                                                            Passwords must match.
+                                                            As palavras-passe têm de coincidir.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="accountStatus" class="form-label">Account
-                                                            Status</label>
+                                                        <label for="accountStatus" class="form-label">Estado da
+                                                            conta</label>
                                                         <select class="form-select" id="accountStatus">
-                                                            <option value="active" selected>Active</option>
-                                                            <option value="inactive">Inactive</option>
-                                                            <option value="suspended">Suspended</option>
+                                                            <option value="active" selected>Ativo</option>
+                                                            <option value="inactive">Inativo</option>
+                                                            <option value="suspended">Suspensa</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="role" class="form-label">Role</label>
+                                                        <label for="role" class="form-label">Fun??o</label>
                                                         <select class="form-select" id="role">
-                                                            <option value="student" selected>Student</option>
-                                                            <option value="class_rep">Class Representative</option>
+                                                            <option value="student" selected>Estudante</option>
+                                                            <option value="class_rep">Delegado de turma</option>
                                                             <option value="prefect">Prefect</option>
                                                         </select>
                                                     </div>
@@ -524,10 +529,11 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 px-2">
                                                     <button type="submit" class="btn btn-primary">
-                                                        <i class="bi bi-check-circle me-2"></i>Save Account Information
+                                                        <i class="bi bi-check-circle me-2"></i>Guardar informações da
+                                                        conta
                                                     </button>
                                                     <button type="reset" class="btn btn-secondary ms-2">
-                                                        <i class="bi bi-arrow-clockwise me-2"></i>Reset
+                                                        <i class="bi bi-arrow-clockwise me-2"></i>Repor
                                                     </button>
                                                 </div>
                                             </div>
@@ -541,7 +547,7 @@
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
                                                         <label for="facebook" class="form-label">Facebook
-                                                            Profile</label>
+                                                            Perfil</label>
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i
                                                                     class="bi bi-facebook"></i></span>
@@ -552,7 +558,7 @@
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="twitter" class="form-label">Twitter Profile</label>
+                                                        <label for="twitter" class="form-label">Twitter Perfil</label>
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i
                                                                     class="bi bi-twitter"></i></span>
@@ -564,7 +570,7 @@
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
                                                         <label for="linkedin" class="form-label">LinkedIn
-                                                            Profile</label>
+                                                            Perfil</label>
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i
                                                                     class="bi bi-linkedin"></i></span>
@@ -576,7 +582,7 @@
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
                                                         <label for="instagram" class="form-label">Instagram
-                                                            Profile</label>
+                                                            Perfil</label>
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i
                                                                     class="bi bi-instagram"></i></span>
@@ -598,7 +604,7 @@
                                                 </div>
                                                 <div class="col-md-6 px-2">
                                                     <div class="mb-4">
-                                                        <label for="github" class="form-label">GitHub Profile</label>
+                                                        <label for="github" class="form-label">GitHub Perfil</label>
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i
                                                                     class="bi bi-github"></i></span>
@@ -611,7 +617,8 @@
                                             <div class="row mt-4">
                                                 <div class="col-12 px-2">
                                                     <button type="submit" class="btn btn-primary">
-                                                        <i class="bi bi-check-circle me-2"></i>Save Social Information
+                                                        <i class="bi bi-check-circle me-2"></i>Guardar informações
+                                                        sociais
                                                     </button>
                                                     <button type="button" class="btn btn-success ms-2"
                                                         onclick="window.location.href='all-students.html'">
@@ -634,10 +641,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Kiaalap</title>
+    <title>Registo - sgSchool</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 
     <style>
@@ -95,116 +95,116 @@
                 <div class="brand-logo">
                     <i class="bi bi-mortarboard-fill"></i>
                 </div>
-                <h1 class="h3 mb-2 fw-bold">Create Account</h1>
-                <p class="text-muted">Join the Kiaalap community today</p>
+                <h1 class="h3 mb-2 fw-bold">Criar Conta</h1>
+                <p class="text-muted">Junte-se hoje à comunidade sgSchool</p>
             </div>
 
             <form id="registerForm" novalidate>
                 <div class="dashboard-grid grid-cols-2">
                     <div>
-                        <label for="firstName" class="form-label">First Name</label>
+                        <label for="firstName" class="form-label">Nome Próprio</label>
                         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John"
                             required>
                         <div class="invalid-feedback">
-                            Please enter your first name.
+                            Introduza o seu nome próprio.
                         </div>
                     </div>
 
                     <div>
-                        <label for="lastName" class="form-label">Last Name</label>
+                        <label for="lastName" class="form-label">Apelido</label>
                         <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe"
                             required>
                         <div class="invalid-feedback">
-                            Please enter your last name.
+                            Introduza o seu apelido.
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-3 mt-3">
-                    <label for="email" class="form-label">Email Address</label>
+                    <label for="email" class="form-label">Endereço de Email</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="bi bi-envelope"></i>
                         </span>
                         <input type="email" class="form-control" id="email" name="email"
-                            placeholder="example@kiaalap.edu" required aria-describedby="emailHelp">
+                            placeholder="exemplo@sgschool.edu" required aria-describedby="emailHelp">
                     </div>
                     <div class="invalid-feedback">
-                        Please enter a valid email address.
+                        Introduza um endereço de email válido.
                     </div>
                     <small id="emailHelp" class="form-text text-muted">
-                        We'll never share your email with anyone else.
+                        Nunca partilharemos o seu endereço de email com terceiros.
                     </small>
                 </div>
 
                 <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
+                    <label for="username" class="form-label">Nome de Utilizador</label>
                     <div class="input-group">
                         <span class="input-group-text">@</span>
                         <input type="text" class="form-control" id="username" name="username" placeholder="johndoe"
                             required pattern="[a-zA-Z0-9_]{3,20}" aria-describedby="usernameHelp">
                     </div>
                     <div class="invalid-feedback">
-                        Username must be 3-20 characters, letters, numbers, and underscores only.
+                        O nome de utilizador deve ter entre 3 e 20 caracteres e conter apenas letras, números e sublinhados.
                     </div>
                     <small id="usernameHelp" class="form-text text-muted">
-                        Choose a unique username for your account.
+                        Escolha um nome de utilizador único para a sua conta.
                     </small>
                 </div>
 
                 <div class="dashboard-grid grid-cols-2">
                     <div>
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">Palavra-passe</label>
                         <div class="input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-lock"></i>
                             </span>
                             <input type="password" autocomplete="new-password" class="form-control" id="password"
-                                name="password" placeholder="Min 8 characters" required minlength="8"
+                                name="password" placeholder="Mínimo de 8 caracteres" required minlength="8"
                                 aria-describedby="passwordHelp">
                             <button class="btn btn-outline-secondary" type="button" id="togglePassword"
-                                aria-label="Show password">
+                                aria-label="Mostrar palavra-passe">
                                 <i class="bi bi-eye"></i>
                             </button>
                         </div>
                         <div class="invalid-feedback">
-                            Password must be at least 8 characters.
+                            A palavra-passe deve ter pelo menos 8 caracteres.
                         </div>
                         <small id="passwordHelp" class="form-text text-muted">
-                            Use a strong password.
+                            Utilize uma palavra-passe forte.
                         </small>
                     </div>
 
                     <div>
-                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <label for="confirmPassword" class="form-label">Confirmar Palavra-passe</label>
                         <div class="input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-lock-fill"></i>
                             </span>
                             <input type="password" autocomplete="new-password" class="form-control" id="confirmPassword"
-                                name="confirmPassword" placeholder="Repeat password" required>
+                                name="confirmPassword" placeholder="Repetir palavra-passe" required>
                             <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPassword"
-                                aria-label="Show password">
+                                aria-label="Mostrar palavra-passe">
                                 <i class="bi bi-eye"></i>
                             </button>
                         </div>
                         <div class="invalid-feedback">
-                            Passwords do not match.
+                            As palavras-passe não coincidem.
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-3 mt-3">
-                    <label for="role" class="form-label">I am a</label>
-                    <select class="form-select" id="role" name="role" required aria-label="Select role">
-                        <option value="">Choose your role...</option>
-                        <option value="student">Student</option>
+                    <label for="role" class="form-label">Sou</label>
+                    <select class="form-select" id="role" name="role" required aria-label="Selecionar função">
+                        <option value="">Escolha a sua função...</option>
+                        <option value="student">Estudante</option>
                         <option value="professor">Professor</option>
-                        <option value="staff">Staff Member</option>
-                        <option value="admin">Administrator</option>
+                        <option value="staff">Funcionário</option>
+                        <option value="admin">Administrador</option>
                     </select>
                     <div class="invalid-feedback">
-                        Please select your role.
+                        Selecione a sua função.
                     </div>
                 </div>
 
@@ -212,18 +212,18 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="newsletter">
                         <label class="form-check-label" for="newsletter">
-                            Sign up for our newsletter
+                            Subscrever a nossa newsletter
                         </label>
                     </div>
 
                     <div class="form-check mt-2">
                         <input class="form-check-input" type="checkbox" value="" id="terms" required>
                         <label class="form-check-label" for="terms">
-                            I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and
-                            <a href="#" class="text-decoration-none">Privacy Policy</a>
+                            Concordo com os <a href="#" class="text-decoration-none">Termos de Serviço</a> e
+                            <a href="#" class="text-decoration-none">Política de Privacidade</a>
                         </label>
                         <div class="invalid-feedback">
-                            You must agree to the terms and conditions.
+                            Tem de aceitar os termos e condições.
                         </div>
                     </div>
                 </div>
@@ -231,11 +231,11 @@
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary btn-lg" type="submit">
                         <i class="bi bi-person-plus me-2"></i>
-                        Create Account
+                        Criar Conta
                     </button>
 
                     <div class="text-center my-3">
-                        <span class="text-muted">or sign up with</span>
+                        <span class="text-muted">ou registe-se com</span>
                     </div>
 
                     <div class="dashboard-grid grid-cols-2">
@@ -258,9 +258,9 @@
 
                 <div class="text-center">
                     <p>
-                        Already have an account?
+                        Já tem uma conta?
                         <a href="login.html" class="text-decoration-none fw-bold">
-                            Sign in
+                            Iniciar sessão
                         </a>
                     </p>
                 </div>
@@ -269,9 +269,9 @@
 
         <div class="text-center mt-4">
             <p class="text-white-50 small">
-                &copy; 2025 Kiaalap. All rights reserved.
-                <a href="#" class="text-white-50">Privacy</a> ·
-                <a href="#" class="text-white-50">Terms</a>
+                &copy; 2025 sgSchool. Todos os direitos reservados.
+                <a href="#" class="text-white-50">Privacidade</a> ·
+                <a href="#" class="text-white-50">Termos</a>
             </p>
         </div>
     </div>

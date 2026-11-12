@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
@@ -153,7 +153,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -168,21 +168,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Add course</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Adicionar Curso</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -191,29 +191,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -229,8 +229,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -243,9 +243,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -258,9 +258,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -273,9 +273,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -285,7 +285,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -294,28 +294,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -323,14 +321,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -345,8 +343,8 @@
                 <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 fw-bold mb-2">Add New Course</h1>
-                            <p class="text-muted mb-0">Create a new course for the academic curriculum</p>
+                            <h1 class="h3 fw-bold mb-2">Adicionar Novo Curso</h1>
+                            <p class="text-muted mb-0">Crie um novo curso para o plano curricular</p>
                         </div>
                         <div class="d-none d-md-flex gap-2">
                             <button type="button" class="btn btn-outline-secondary">
@@ -354,7 +352,7 @@
                             </button>
                             <button type="button" class="btn btn-light"
                                 onclick="window.location.href='all-courses.html'">
-                                <i class="bi bi-arrow-left me-2"></i>Back to Courses
+                                <i class="bi bi-arrow-left me-2"></i>Voltar aos Cursos
                             </button>
                         </div>
                     </div>
@@ -367,54 +365,54 @@
                             <!-- Basic Information -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Basic Information</h5>
+                                    <h5 class="dashboard-card-title">Informações Básicas</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="dashboard-grid grid-cols-2 mb-3">
                                         <div>
-                                            <label for="courseCode" class="form-label">Course Code <span
+                                            <label for="courseCode" class="form-label">Código do Curso <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="courseCode"
                                                 placeholder="e.g., CS101" required>
                                             <div class="invalid-feedback">
-                                                Please provide a valid course code.
+                                                Introduza um código de curso válido.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="courseName" class="form-label">Course Name <span
+                                            <label for="courseName" class="form-label">Nome do Curso <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="courseName"
-                                                placeholder="e.g., Introduction to Computer Science" required>
+                                                placeholder="por exemplo, Introdução à Informática" required>
                                             <div class="invalid-feedback">
-                                                Please provide a course name.
+                                                Introduza o nome do curso.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="dashboard-grid grid-cols-2 mb-3">
                                         <div>
-                                            <label for="department" class="form-label">Department <span
+                                            <label for="department" class="form-label">Departamento <span
                                                     class="text-danger">*</span></label>
                                             <select class="form-select" id="department" required>
-                                                <option value="">Select Department</option>
-                                                <option value="cs">Computer Science</option>
-                                                <option value="math">Mathematics</option>
-                                                <option value="physics">Physics</option>
-                                                <option value="chemistry">Chemistry</option>
-                                                <option value="biology">Biology</option>
-                                                <option value="business">Business Administration</option>
-                                                <option value="engineering">Engineering</option>
-                                                <option value="english">English Literature</option>
+                                                <option value="">Selecionar Departamento</option>
+                                                <option value="cs">Ciências da Computação</option>
+                                                <option value="math">Matemática</option>
+                                                <option value="physics">Física</option>
+                                                <option value="chemistry">Química</option>
+                                                <option value="biology">Biologia</option>
+                                                <option value="business">Administração de Empresas</option>
+                                                <option value="engineering">Engenharia</option>
+                                                <option value="english">Literatura Inglesa</option>
                                             </select>
                                             <div class="invalid-feedback">
-                                                Please select a department.
+                                                Selecione um departamento.
                                             </div>
                                         </div>
                                         <div>
                                             <label for="professor" class="form-label">Professor <span
                                                     class="text-danger">*</span></label>
                                             <select class="form-select" id="professor" required>
-                                                <option value="">Select Professor</option>
+                                                <option value="">Selecionar Professor</option>
                                                 <option value="1">Dr. Robert Smith</option>
                                                 <option value="2">Dr. Emily Johnson</option>
                                                 <option value="3">Prof. Michael Chen</option>
@@ -423,45 +421,45 @@
                                                 <option value="6">Dr. Jennifer Garcia</option>
                                             </select>
                                             <div class="invalid-feedback">
-                                                Please select a professor.
+                                                Selecione um professor.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="courseDescription" class="form-label">Course Description</label>
+                                        <label for="courseDescription" class="form-label">Descrição do Curso</label>
                                         <textarea class="form-control" id="courseDescription" rows="4"
-                                            placeholder="Enter detailed course description..."></textarea>
+                                            placeholder="Introduza uma descrição detalhada do curso..."></textarea>
                                     </div>
 
                                     <div class="dashboard-grid grid-cols-3 mb-3">
                                         <div>
-                                            <label for="credits" class="form-label">Credits <span
+                                            <label for="credits" class="form-label">Créditos <span
                                                     class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="credits" min="1" max="6"
                                                 value="3" required>
                                             <div class="invalid-feedback">
-                                                Credits must be between 1 and 6.
+                                                Os créditos devem estar entre 1 e 6.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="duration" class="form-label">Duration (weeks) <span
+                                            <label for="duration" class="form-label">Duração (semanas) <span
                                                     class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="duration" min="1" max="52"
                                                 value="16" required>
                                             <div class="invalid-feedback">
-                                                Duration must be between 1 and 52 weeks.
+                                                A duração deve estar entre 1 e 52 semanas.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="maxStudents" class="form-label">Max Students</label>
+                                            <label for="maxStudents" class="form-label">Número Máximo de Estudantes</label>
                                             <input type="number" class="form-control" id="maxStudents" min="1" max="500"
                                                 value="30">
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="prerequisites" class="form-label">Prerequisites</label>
+                                        <label for="prerequisites" class="form-label">Pré-requisitos</label>
                                         <input type="text" class="form-control" id="prerequisites"
                                             placeholder="e.g., MATH101, CS100 (comma separated)">
                                         <small class="text-muted">Enter prerequisite course codes separated by
@@ -473,89 +471,89 @@
                             <!-- Schedule Information -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Schedule Information</h5>
+                                    <h5 class="dashboard-card-title">Informações do Horário</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="dashboard-grid grid-cols-2 mb-3">
                                         <div>
-                                            <label for="semester" class="form-label">Semester <span
+                                            <label for="semester" class="form-label">Semestre <span
                                                     class="text-danger">*</span></label>
                                             <select class="form-select" id="semester" required>
-                                                <option value="">Select Semester</option>
-                                                <option value="spring2025">Spring 2025</option>
-                                                <option value="summer2025">Summer 2025</option>
-                                                <option value="fall2025">Fall 2025</option>
+                                                <option value="">Selecionar Semestre</option>
+                                                <option value="spring2025">Primavera de 2025</option>
+                                                <option value="summer2025">Verão de 2025</option>
+                                                <option value="fall2025">Outono de 2025</option>
                                             </select>
                                             <div class="invalid-feedback">
-                                                Please select a semester.
+                                                Selecione um semestre.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="courseType" class="form-label">Course Type <span
+                                            <label for="courseType" class="form-label">Tipo de Curso <span
                                                     class="text-danger">*</span></label>
                                             <select class="form-select" id="courseType" required>
-                                                <option value="">Select Type</option>
-                                                <option value="core">Core Course</option>
-                                                <option value="elective">Elective</option>
-                                                <option value="lab">Laboratory</option>
-                                                <option value="seminar">Seminar</option>
+                                                <option value="">Selecionar Tipo</option>
+                                                <option value="core">Curso Obrigatório</option>
+                                                <option value="elective">Optativa</option>
+                                                <option value="lab">Laboratório</option>
+                                                <option value="seminar">Seminário</option>
                                             </select>
                                             <div class="invalid-feedback">
-                                                Please select a course type.
+                                                Selecione um tipo de curso.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label">Class Days <span class="text-danger">*</span></label>
+                                        <label class="form-label">Dias de Aula <span class="text-danger">*</span></label>
                                         <div class="d-flex flex-wrap gap-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="monday" name="days">
-                                                <label class="form-check-label" for="monday">Monday</label>
+                                                <label class="form-check-label" for="monday">Segunda-feira</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="tuesday"
                                                     name="days">
-                                                <label class="form-check-label" for="tuesday">Tuesday</label>
+                                                <label class="form-check-label" for="tuesday">Terça-feira</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="wednesday"
                                                     name="days">
-                                                <label class="form-check-label" for="wednesday">Wednesday</label>
+                                                <label class="form-check-label" for="wednesday">Quarta-feira</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="thursday"
                                                     name="days">
-                                                <label class="form-check-label" for="thursday">Thursday</label>
+                                                <label class="form-check-label" for="thursday">Quinta-feira</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="friday" name="days">
-                                                <label class="form-check-label" for="friday">Friday</label>
+                                                <label class="form-check-label" for="friday">Sexta-feira</label>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="dashboard-grid grid-cols-2 mb-3">
                                         <div>
-                                            <label for="startTime" class="form-label">Start Time <span
+                                            <label for="startTime" class="form-label">Hora de Início <span
                                                     class="text-danger">*</span></label>
                                             <input type="time" class="form-control" id="startTime" required>
                                             <div class="invalid-feedback">
-                                                Please select a start time.
+                                                Selecione a hora de início.
                                             </div>
                                         </div>
                                         <div>
-                                            <label for="endTime" class="form-label">End Time <span
+                                            <label for="endTime" class="form-label">Hora de Fim <span
                                                     class="text-danger">*</span></label>
                                             <input type="time" class="form-control" id="endTime" required>
                                             <div class="invalid-feedback">
-                                                Please select an end time.
+                                                Selecione a hora de fim.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="classroom" class="form-label">Classroom/Location</label>
+                                        <label for="classroom" class="form-label">Sala/Localização</label>
                                         <input type="text" class="form-control" id="classroom"
                                             placeholder="e.g., Building A, Room 101">
                                     </div>
@@ -567,11 +565,11 @@
                             <!-- Course Image -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Course Image</h5>
+                                    <h5 class="dashboard-card-title">Imagem do Curso</h5>
                                 </div>
                                 <div class="dashboard-card-body text-center">
                                     <div class="position-relative d-inline-block mb-3">
-                                        <img src="https://picsum.photos/400/250?random=1" alt="Course Thumbnail"
+                                        <img src="https://picsum.photos/400/250?random=1" alt="Miniatura do curso"
                                             class="img-fluid rounded" id="courseImagePreview"
                                             style="max-height: 200px; width: 100%; object-fit: cover;" loading="lazy"
                                             decoding="async">
@@ -580,9 +578,9 @@
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="courseImage" class="form-label">Upload Course Image</label>
+                                        <label for="courseImage" class="form-label">Carregar Imagem do Curso</label>
                                         <input class="form-control" type="file" id="courseImage" accept="image/*">
-                                        <small class="text-muted">JPG, PNG up to 5MB. Recommended: 800x500px</small>
+                                        <small class="text-muted">JPG ou PNG até 5 MB. Recomendado: 800x500 px</small>
                                     </div>
                                 </div>
                             </div>
@@ -590,29 +588,29 @@
                             <!-- Course Settings -->
                             <div class="dashboard-card mb-3">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Course Settings</h5>
+                                    <h5 class="dashboard-card-title">Configurações do Curso</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="mb-3">
-                                        <label for="courseStatus" class="form-label">Status</label>
+                                        <label for="courseStatus" class="form-label">Estado</label>
                                         <select class="form-select" id="courseStatus">
-                                            <option value="active" selected>Active</option>
-                                            <option value="draft">Draft</option>
-                                            <option value="inactive">Inactive</option>
+                                            <option value="active" selected>Ativo</option>
+                                            <option value="draft">Rascunho</option>
+                                            <option value="inactive">Inativo</option>
                                         </select>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="enrollmentType" class="form-label">Enrollment Type</label>
+                                        <label for="enrollmentType" class="form-label">Tipo de Inscrição</label>
                                         <select class="form-select" id="enrollmentType">
-                                            <option value="open" selected>Open Enrollment</option>
-                                            <option value="approval">Requires Approval</option>
-                                            <option value="closed">Closed</option>
+                                            <option value="open" selected>Inscrições Abertas</option>
+                                            <option value="approval">Requer Aprovação</option>
+                                            <option value="closed">Encerrado</option>
                                         </select>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label">Course Options</label>
+                                        <label class="form-label">Opções do Curso</label>
                                         <div class="form-check mb-2">
                                             <input class="form-check-input" type="checkbox" id="onlineAvailable"
                                                 checked>
@@ -636,22 +634,22 @@
                             <!-- Fee Structure -->
                             <div class="dashboard-card">
                                 <div class="dashboard-card-header">
-                                    <h5 class="dashboard-card-title">Fee Structure</h5>
+                                    <h5 class="dashboard-card-title">Estrutura de Taxas</h5>
                                 </div>
                                 <div class="dashboard-card-body">
                                     <div class="dashboard-grid grid-cols-3 mb-3">
                                         <div>
-                                            <label for="courseFee" class="form-label">Course Fee ($)</label>
+                                            <label for="courseFee" class="form-label">Taxa do Curso ($)</label>
                                             <input type="number" class="form-control" id="courseFee" min="0" step="0.01"
                                                 placeholder="0.00">
                                         </div>
                                         <div>
-                                            <label for="labFee" class="form-label">Lab Fee ($)</label>
+                                            <label for="labFee" class="form-label">Taxa de Laboratório ($)</label>
                                             <input type="number" class="form-control" id="labFee" min="0" step="0.01"
                                                 placeholder="0.00">
                                         </div>
                                         <div>
-                                            <label for="materialFee" class="form-label">Material Fee ($)</label>
+                                            <label for="materialFee" class="form-label">Taxa de Material ($)</label>
                                             <input type="number" class="form-control" id="materialFee" min="0"
                                                 step="0.01" placeholder="0.00">
                                         </div>
@@ -659,10 +657,10 @@
 
                                     <div class="border-top pt-3 mt-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="h6 mb-0">Total Course Fee:</span>
+                                            <span class="h6 mb-0">Taxa Total do Curso:</span>
                                             <span class="h5 mb-0 text-primary fw-bold" id="totalFee">$0.00</span>
                                         </div>
-                                        <small class="text-muted">All fees are per semester</small>
+                                        <small class="text-muted">Todas as taxas são por semestre</small>
                                     </div>
                                 </div>
                             </div>
@@ -675,16 +673,16 @@
                             <hr class="my-4">
                             <div class="d-flex gap-3">
                                 <button type="submit" class="btn btn-primary">
-                                    <i class="bi bi-check-lg me-2"></i>Create Course
+                                    <i class="bi bi-check-lg me-2"></i>Criar Curso
                                 </button>
                                 <button type="button" class="btn btn-outline-secondary">
-                                    <i class="bi bi-x-lg me-2"></i>Cancel
+                                    <i class="bi bi-x-lg me-2"></i>Cancelar
                                 </button>
                                 <button type="reset" class="btn btn-outline-warning">
-                                    <i class="bi bi-arrow-clockwise me-2"></i>Reset Form
+                                    <i class="bi bi-arrow-clockwise me-2"></i>Repor Formulário
                                 </button>
                                 <button type="button" class="btn btn-outline-info">
-                                    <i class="bi bi-file-text me-2"></i>Save as Draft
+                                    <i class="bi bi-file-text me-2"></i>Guardar como Rascunho
                                 </button>
                             </div>
                         </div>
@@ -698,10 +696,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

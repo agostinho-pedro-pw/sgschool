@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Events - Kiaalap Dashboard</title>
+    <title>Eventos - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -183,7 +183,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -200,21 +200,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Events</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Eventos</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -223,29 +223,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -261,8 +261,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -275,9 +275,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -290,9 +290,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -305,9 +305,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -317,7 +317,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -326,28 +326,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -355,14 +353,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -377,16 +375,16 @@
                 <div class="mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 mb-0 text-gray-800">Events Management</h1>
-                            <p class="text-muted mb-0">Manage and track institutional events and activities</p>
+                            <h1 class="h3 mb-0 text-gray-800">Gestão de Eventos</h1>
+                            <p class="text-muted mb-0">Gira e acompanhe os eventos e atividades da instituição</p>
                         </div>
                         <div class="d-flex gap-2">
                             <button type="button" class="btn btn-outline-secondary" id="calendarViewBtn">
-                                <i class="bi bi-calendar-month me-1"></i> Calendar View
+                                <i class="bi bi-calendar-month me-1"></i> Vista de Calendário
                             </button>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#addEventModal">
-                                <i class="bi bi-calendar-plus me-1"></i> Add Event
+                                <i class="bi bi-calendar-plus me-1"></i> Adicionar Evento
                             </button>
                         </div>
                     </div>
@@ -394,13 +392,13 @@
 
                 <!-- Event Stats -->
                 <div class="dashboard-row">
-                    <h2 class="h5 fw-semibold text-gray-800 mb-4">Event Overview</h2>
+                    <h2 class="h5 fw-semibold text-gray-800 mb-4">Resumo dos Eventos</h2>
                     <div class="dashboard-grid grid-cols-4">
                         <div class="dashboard-card">
                             <div class="dashboard-card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <p class="text-muted mb-1 small">Total Events</p>
+                                        <p class="text-muted mb-1 small">Total de Eventos</p>
                                         <h4 class="mb-0">28</h4>
                                     </div>
                                     <div class="stats-icon bg-primary bg-opacity-10 text-primary">
@@ -411,7 +409,7 @@
                                     <span class="badge bg-success-subtle text-success me-2">
                                         <i class="bi bi-arrow-up"></i> 8%
                                     </span>
-                                    <span class="text-muted small">vs last month</span>
+                                    <span class="text-muted small">face ao mês passado</span>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +418,7 @@
                             <div class="dashboard-card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <p class="text-muted mb-1 small">Upcoming</p>
+                                        <p class="text-muted mb-1 small">Próximos</p>
                                         <h4 class="mb-0">12</h4>
                                     </div>
                                     <div class="stats-icon bg-info bg-opacity-10 text-info">
@@ -429,7 +427,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="badge bg-info-subtle text-info me-2">
-                                        <i class="bi bi-calendar-check"></i> This month
+                                        <i class="bi bi-calendar-check"></i> Este mês
                                     </span>
                                 </div>
                             </div>
@@ -439,7 +437,7 @@
                             <div class="dashboard-card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <p class="text-muted mb-1 small">Ongoing</p>
+                                        <p class="text-muted mb-1 small">Em Curso</p>
                                         <h4 class="mb-0">3</h4>
                                     </div>
                                     <div class="stats-icon bg-success bg-opacity-10 text-success">
@@ -448,7 +446,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="badge bg-success-subtle text-success me-2">
-                                        <i class="bi bi-activity"></i> Active now
+                                        <i class="bi bi-activity"></i> Ativos agora
                                     </span>
                                 </div>
                             </div>
@@ -458,7 +456,7 @@
                             <div class="dashboard-card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <p class="text-muted mb-1 small">Attendees</p>
+                                        <p class="text-muted mb-1 small">Participantes</p>
                                         <h4 class="mb-0">1,247</h4>
                                     </div>
                                     <div class="stats-icon bg-warning bg-opacity-10 text-warning">
@@ -469,7 +467,7 @@
                                     <span class="badge bg-warning-subtle text-warning me-2">
                                         <i class="bi bi-arrow-up"></i> 23%
                                     </span>
-                                    <span class="text-muted small">vs last month</span>
+                                    <span class="text-muted small">face ao mês passado</span>
                                 </div>
                             </div>
                         </div>
@@ -481,15 +479,15 @@
                     <div class="dashboard-card">
                         <div class="dashboard-card-header py-4 px-4">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="mb-0">Event Calendar</h6>
+                                <h6 class="mb-0">Calendário de Eventos</h6>
                                 <button type="button" class="btn btn-sm btn-light" id="closeCalendarView">
-                                    <i aria-hidden="true" class="bi bi-list-ul me-1"></i> Back to list
+                                    <i aria-hidden="true" class="bi bi-list-ul me-1"></i> Voltar à lista
                                 </button>
                             </div>
                         </div>
                         <div class="dashboard-card-body p-4">
                             <div id="eventCalendar" aria-busy="true">
-                                <p class="text-muted mb-0" id="calendarLoading">Loading calendar…</p>
+                                <p class="text-muted mb-0" id="calendarLoading">A carregar o calendário…</p>
                             </div>
                         </div>
                     </div>
@@ -502,16 +500,16 @@
                         <div class="dashboard-card">
                             <div class="dashboard-card-header py-4 px-4">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="mb-0">Recent Events</h6>
+                                    <h6 class="mb-0">Eventos Recentes</h6>
                                     <div class="dropdown">
                                         <button type="button" class="btn btn-sm btn-light" data-bs-toggle="dropdown"
-                                            aria-label="More options">
+                                            aria-label="Mais opções">
                                             <i aria-hidden="true" class="bi bi-three-dots"></i>
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">View All</a></li>
-                                            <li><a class="dropdown-item" href="#">Export List</a></li>
-                                            <li><a class="dropdown-item" href="#">Filter Events</a></li>
+                                            <li><a class="dropdown-item" href="#">Ver Todos</a></li>
+                                            <li><a class="dropdown-item" href="#">Exportar Lista</a></li>
+                                            <li><a class="dropdown-item" href="#">Filtrar Eventos</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -526,23 +524,23 @@
                                             <div class="h4 mb-0">15</div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Annual Science Fair</h6>
+                                            <h6 class="mb-1">Feira Anual de Ciências</h6>
                                             <p class="text-muted small mb-2">Students showcase their innovative projects
                                                 and experiments</p>
                                             <div class="d-flex align-items-center gap-3">
-                                                <span class="badge bg-primary-subtle text-primary">Academic</span>
+                                                <span class="badge bg-primary-subtle text-primary">Académico</span>
                                                 <small class="text-muted">
                                                     <i class="bi bi-clock me-1"></i> 9:00 AM - 5:00 PM
                                                 </small>
                                                 <small class="text-muted">
-                                                    <i class="bi bi-geo-alt me-1"></i> Main Auditorium
+                                                    <i class="bi bi-geo-alt me-1"></i> Auditório Principal
                                                 </small>
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <span class="badge bg-info event-status upcoming">Upcoming</span>
+                                            <span class="badge bg-info event-status upcoming">Próximos</span>
                                             <div class="mt-2">
-                                                <small class="text-muted">124 registered</small>
+                                                <small class="text-muted">124 inscritos</small>
                                             </div>
                                         </div>
                                     </div>
@@ -555,11 +553,11 @@
                                             <div class="h4 mb-0">12</div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Faculty Development Workshop</h6>
+                                            <h6 class="mb-1">Workshop de Desenvolvimento Docente</h6>
                                             <p class="text-muted small mb-2">Professional development session on modern
                                                 teaching methodologies</p>
                                             <div class="d-flex align-items-center gap-3">
-                                                <span class="badge bg-success-subtle text-success">Professional</span>
+                                                <span class="badge bg-success-subtle text-success">Profissional</span>
                                                 <small class="text-muted">
                                                     <i class="bi bi-clock me-1"></i> 2:00 PM - 4:00 PM
                                                 </small>
@@ -569,9 +567,9 @@
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <span class="badge bg-success event-status ongoing">Ongoing</span>
+                                            <span class="badge bg-success event-status ongoing">Em Curso</span>
                                             <div class="mt-2">
-                                                <small class="text-muted">45 attending</small>
+                                                <small class="text-muted">45 participantes</small>
                                             </div>
                                         </div>
                                     </div>
@@ -584,23 +582,23 @@
                                             <div class="h4 mb-0">18</div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Student Council Elections</h6>
+                                            <h6 class="mb-1">Eleições do Conselho de Estudantes</h6>
                                             <p class="text-muted small mb-2">Annual elections for student
                                                 representatives</p>
                                             <div class="d-flex align-items-center gap-3">
-                                                <span class="badge bg-warning-subtle text-warning">Student Life</span>
+                                                <span class="badge bg-warning-subtle text-warning">Vida Estudantil</span>
                                                 <small class="text-muted">
                                                     <i class="bi bi-clock me-1"></i> 8:00 AM - 6:00 PM
                                                 </small>
                                                 <small class="text-muted">
-                                                    <i class="bi bi-geo-alt me-1"></i> Campus Wide
+                                                    <i class="bi bi-geo-alt me-1"></i> Todo o Campus
                                                 </small>
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <span class="badge bg-info event-status upcoming">Upcoming</span>
+                                            <span class="badge bg-info event-status upcoming">Próximos</span>
                                             <div class="mt-2">
-                                                <small class="text-muted">All students eligible</small>
+                                                <small class="text-muted">Todos os estudantes são elegíveis</small>
                                             </div>
                                         </div>
                                     </div>
@@ -613,7 +611,7 @@
                                             <div class="h4 mb-0">22</div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Alumni Networking Event</h6>
+                                            <h6 class="mb-1">Encontro de Networking de Antigos Alunos</h6>
                                             <p class="text-muted small mb-2">Connect current students with successful
                                                 alumni</p>
                                             <div class="d-flex align-items-center gap-3">
@@ -627,9 +625,9 @@
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <span class="badge bg-info event-status upcoming">Upcoming</span>
+                                            <span class="badge bg-info event-status upcoming">Próximos</span>
                                             <div class="mt-2">
-                                                <small class="text-muted">67 registered</small>
+                                                <small class="text-muted">67 inscritos</small>
                                             </div>
                                         </div>
                                     </div>
@@ -642,7 +640,7 @@
                                             <div class="h4 mb-0">08</div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">International Women's Day Celebration</h6>
+                                            <h6 class="mb-1">Celebração do Dia Internacional da Mulher</h6>
                                             <p class="text-muted small mb-2">Honoring achievements of women in academia
                                                 and research</p>
                                             <div class="d-flex align-items-center gap-3">
@@ -656,9 +654,9 @@
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <span class="badge bg-secondary event-status completed">Completed</span>
+                                            <span class="badge bg-secondary event-status completed">Concluído</span>
                                             <div class="mt-2">
-                                                <small class="text-muted">89 attended</small>
+                                                <small class="text-muted">89 participantes</small>
                                             </div>
                                         </div>
                                     </div>
@@ -671,7 +669,7 @@
                             <!-- Mini Calendar -->
                             <div class="dashboard-card">
                                 <div class="dashboard-card-header py-3 px-4">
-                                    <h6 class="mb-0">March 2024</h6>
+                                    <h6 class="mb-0">Março de 2024</h6>
                                 </div>
                                 <div class="dashboard-card-body px-4 py-3">
                                     <div class="calendar-grid">
@@ -730,17 +728,17 @@
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="bg-primary rounded me-2" style="width: 12px; height: 12px;">
                                             </div>
-                                            <small>Academic Events</small>
+                                            <small>Eventos Académicos</small>
                                         </div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="bg-success rounded me-2" style="width: 12px; height: 12px;">
                                             </div>
-                                            <small>Professional Development</small>
+                                            <small>Desenvolvimento Profissional</small>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-warning rounded me-2" style="width: 12px; height: 12px;">
                                             </div>
-                                            <small>Student Activities</small>
+                                            <small>Atividades Estudantis</small>
                                         </div>
                                     </div>
                                 </div>
@@ -749,22 +747,22 @@
                             <!-- Quick Actions -->
                             <div class="dashboard-card">
                                 <div class="dashboard-card-header py-3 px-4">
-                                    <h6 class="mb-0">Quick Actions</h6>
+                                    <h6 class="mb-0">Ações Rápidas</h6>
                                 </div>
                                 <div class="dashboard-card-body px-4 py-3">
                                     <div class="d-grid gap-2">
                                         <button type="button" class="btn btn-outline-primary btn-sm"
                                             data-bs-toggle="modal" data-bs-target="#addEventModal">
-                                            <i class="bi bi-calendar-plus me-1"></i> Schedule Event
+                                            <i class="bi bi-calendar-plus me-1"></i> Agendar Evento
                                         </button>
                                         <button type="button" class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-people me-1"></i> Manage Attendees
+                                            <i class="bi bi-people me-1"></i> Gerir Participantes
                                         </button>
                                         <button type="button" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-geo-alt me-1"></i> Book Venues
+                                            <i class="bi bi-geo-alt me-1"></i> Reservar Espaços
                                         </button>
                                         <button type="button" class="btn btn-outline-warning btn-sm">
-                                            <i class="bi bi-bell me-1"></i> Send Reminders
+                                            <i class="bi bi-bell me-1"></i> Enviar Lembretes
                                         </button>
                                     </div>
                                 </div>
@@ -780,10 +778,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -801,18 +799,18 @@
                             <div class="h5 mb-0" id="modalEventDay">15</div>
                         </div>
                         <div>
-                            <h5 class="modal-title mb-0" id="eventDetailsModalLabel">Annual Science Fair</h5>
+                            <h5 class="modal-title mb-0" id="eventDetailsModalLabel">Feira Anual de Ciências</h5>
                             <small class="opacity-75" id="modalEventTime">9:00 AM - 5:00 PM</small>
                         </div>
                     </div>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                        aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="mb-4">
-                                <h6 class="text-muted mb-2">Event Description</h6>
+                                <h6 class="text-muted mb-2">Descrição do Evento</h6>
                                 <p id="modalEventDescription" class="mb-0">Students showcase their innovative projects
                                     and experiments in this annual celebration of scientific achievement and discovery.
                                 </p>
@@ -820,56 +818,56 @@
 
                             <div class="row mb-4">
                                 <div class="col-sm-6">
-                                    <h6 class="text-muted mb-2">Location</h6>
+                                    <h6 class="text-muted mb-2">Localização</h6>
                                     <div class="d-flex align-items-center">
                                         <i class="bi bi-geo-alt text-primary me-2"></i>
-                                        <span id="modalEventLocation">Main Auditorium</span>
+                                        <span id="modalEventLocation">Auditório Principal</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h6 class="text-muted mb-2">Category</h6>
+                                    <h6 class="text-muted mb-2">Categoria</h6>
                                     <span class="badge bg-primary-subtle text-primary"
-                                        id="modalEventCategory">Academic</span>
+                                        id="modalEventCategory">Académico</span>
                                 </div>
                             </div>
 
                             <div class="mb-4">
-                                <h6 class="text-muted mb-2">Event Agenda</h6>
+                                <h6 class="text-muted mb-2">Programa do Evento</h6>
                                 <div class="timeline">
                                     <div class="timeline-item">
                                         <div class="timeline-time">9:00 AM</div>
                                         <div class="timeline-content">
-                                            <strong>Registration &amp; Welcome</strong>
-                                            <p class="text-muted small mb-0">Check-in and morning refreshments</p>
+                                            <strong>Inscrição e Boas-vindas</strong>
+                                            <p class="text-muted small mb-0">Receção e bebidas de boas-vindas</p>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-time">10:00 AM</div>
                                         <div class="timeline-content">
-                                            <strong>Opening Ceremony</strong>
-                                            <p class="text-muted small mb-0">Welcome address by Dean of Sciences</p>
+                                            <strong>Cerimónia de Abertura</strong>
+                                            <p class="text-muted small mb-0">Discurso de boas-vindas do Diretor de Ciências</p>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-time">11:00 AM</div>
                                         <div class="timeline-content">
-                                            <strong>Project Presentations</strong>
-                                            <p class="text-muted small mb-0">Student project demonstrations and displays
+                                            <strong>Apresentações de Projetos</strong>
+                                            <p class="text-muted small mb-0">Demonstrações e exposições dos projetos dos estudantes
                                             </p>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-time">3:00 PM</div>
                                         <div class="timeline-content">
-                                            <strong>Awards Ceremony</strong>
-                                            <p class="text-muted small mb-0">Recognition of outstanding projects</p>
+                                            <strong>Cerimónia de Entrega de Prémios</strong>
+                                            <p class="text-muted small mb-0">Reconhecimento dos projetos de excelência</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <h6 class="text-muted mb-2">Event Organizers</h6>
+                                <h6 class="text-muted mb-2">Organizadores do Evento</h6>
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="d-flex align-items-center">
                                         <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=6366f1&color=fff&size=32"
@@ -877,7 +875,7 @@
                                             loading="lazy" decoding="async">
                                         <div>
                                             <div class="fw-semibold small">Dr. Sarah Johnson</div>
-                                            <div class="text-muted small">Science Department Head</div>
+                                            <div class="text-muted small">Chefe do Departamento de Ciências</div>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -886,7 +884,7 @@
                                             loading="lazy" decoding="async">
                                         <div>
                                             <div class="fw-semibold small">Prof. Michael Chen</div>
-                                            <div class="text-muted small">Event Coordinator</div>
+                                            <div class="text-muted small">Coordenador do Evento</div>
                                         </div>
                                     </div>
                                 </div>
@@ -896,15 +894,15 @@
                         <div class="col-md-4">
                             <div class="card bg-light border-0">
                                 <div class="card-header bg-transparent border-0">
-                                    <h6 class="mb-0">Event Status</h6>
+                                    <h6 class="mb-0">Estado do Evento</h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <span>Registration Status</span>
-                                        <span class="badge bg-success" id="modalEventStatus">Upcoming</span>
+                                        <span>Estado da Inscrição</span>
+                                        <span class="badge bg-success" id="modalEventStatus">Próximos</span>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <span>Registered</span>
+                                        <span>Inscrito</span>
                                         <span class="fw-bold" id="modalEventRegistered">124 / 200</span>
                                     </div>
                                     <div class="progress mb-3" style="height: 8px;">
@@ -913,20 +911,20 @@
                                     </div>
                                     <div class="d-grid gap-2">
                                         <button type="button" class="btn btn-primary btn-sm">
-                                            <i class="bi bi-calendar-plus me-1"></i> Add to Calendar
+                                            <i class="bi bi-calendar-plus me-1"></i> Adicionar ao Calendário
                                         </button>
                                         <button type="button" class="btn btn-outline-secondary btn-sm">
-                                            <i class="bi bi-share me-1"></i> Share Event
+                                            <i class="bi bi-share me-1"></i> Partilhar Evento
                                         </button>
                                         <button type="button" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-people me-1"></i> View Attendees
+                                            <i class="bi bi-people me-1"></i> Ver Participantes
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mt-4">
-                                <h6 class="text-muted mb-3">Related Events</h6>
+                                <h6 class="text-muted mb-3">Eventos Relacionados</h6>
                                 <div class="small">
                                     <div class="d-flex align-items-center mb-2 p-2 bg-light rounded">
                                         <div
@@ -935,7 +933,7 @@
                                             <div style="font-size: 0.8rem;">22</div>
                                         </div>
                                         <div>
-                                            <div class="fw-semibold">Alumni Networking</div>
+                                            <div class="fw-semibold">Encontro de Antigos Alunos</div>
                                             <div class="text-muted" style="font-size: 0.75rem;">6:00 PM</div>
                                         </div>
                                     </div>
@@ -946,7 +944,7 @@
                                             <div style="font-size: 0.8rem;">18</div>
                                         </div>
                                         <div>
-                                            <div class="fw-semibold">Student Elections</div>
+                                            <div class="fw-semibold">Eleições de Estudantes</div>
                                             <div class="text-muted" style="font-size: 0.75rem;">8:00 AM</div>
                                         </div>
                                     </div>
@@ -956,12 +954,12 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
                     <button type="button" class="btn btn-warning">
-                        <i class="bi bi-pencil me-1"></i> Edit Event
+                        <i class="bi bi-pencil me-1"></i> Editar Evento
                     </button>
                     <button type="button" class="btn btn-primary">
-                        <i class="bi bi-person-plus me-1"></i> Register for Event
+                        <i class="bi bi-person-plus me-1"></i> Inscrever-se no Evento
                     </button>
                 </div>
             </div>
@@ -973,26 +971,26 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addEventModalLabel">Create New Event</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="addEventModalLabel">Criar Novo Evento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
                     <form id="addEventForm">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="mb-3">
-                                    <label for="eventTitle" class="form-label">Event Title</label>
+                                    <label for="eventTitle" class="form-label">Título do Evento</label>
                                     <input type="text" class="form-control" id="eventTitle" required>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3">
-                                    <label for="eventCategory" class="form-label">Category</label>
+                                    <label for="eventCategory" class="form-label">Categoria</label>
                                     <select class="form-select" id="eventCategory" required>
-                                        <option value="">Select Category</option>
-                                        <option value="academic">Academic</option>
-                                        <option value="professional">Professional</option>
-                                        <option value="student-life">Student Life</option>
+                                        <option value="">Selecionar Categoria</option>
+                                        <option value="academic">Académico</option>
+                                        <option value="professional">Profissional</option>
+                                        <option value="student-life">Vida Estudantil</option>
                                         <option value="networking">Networking</option>
                                         <option value="cultural">Cultural</option>
                                     </select>
@@ -1001,26 +999,26 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="eventDescription" class="form-label">Description</label>
+                            <label for="eventDescription" class="form-label">Descrição</label>
                             <textarea class="form-control" id="eventDescription" rows="3"></textarea>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="eventDate" class="form-label">Date</label>
+                                    <label for="eventDate" class="form-label">Data</label>
                                     <input type="date" class="form-control" id="eventDate" required>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3">
-                                    <label for="eventStartTime" class="form-label">Start Time</label>
+                                    <label for="eventStartTime" class="form-label">Hora de Início</label>
                                     <input type="time" class="form-control" id="eventStartTime" required>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3">
-                                    <label for="eventEndTime" class="form-label">End Time</label>
+                                    <label for="eventEndTime" class="form-label">Hora de Fim</label>
                                     <input type="time" class="form-control" id="eventEndTime" required>
                                 </div>
                             </div>
@@ -1029,13 +1027,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="eventLocation" class="form-label">Location</label>
+                                    <label for="eventLocation" class="form-label">Localização</label>
                                     <input type="text" class="form-control" id="eventLocation" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="eventCapacity" class="form-label">Capacity</label>
+                                    <label for="eventCapacity" class="form-label">Capacidade</label>
                                     <input type="number" class="form-control" id="eventCapacity" min="1">
                                 </div>
                             </div>
@@ -1045,15 +1043,15 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="registrationRequired">
                                 <label class="form-check-label" for="registrationRequired">
-                                    Registration Required
+                                    Inscrição Obrigatória
                                 </label>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" form="addEventForm" class="btn btn-primary">Create Event</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="addEventForm" class="btn btn-primary">Criar Evento</button>
                 </div>
             </div>
         </div>
@@ -1202,7 +1200,7 @@
             const location = document.getElementById('eventLocation').value;
 
             if (!title || !category || !date || !startTime || !location) {
-                alert('Please fill in all required fields.');
+                alert('Preencha todos os campos obrigatórios.');
                 return;
             }
 
@@ -1221,7 +1219,7 @@
             addEventForm.reset();
 
             // Show success message
-            alert('Event created successfully!');
+            alert('Evento criado com sucesso!');
         });
     }
 
@@ -1286,7 +1284,7 @@
         } catch (err) {
             console.error('Failed to load the calendar:', err);
             host.innerHTML =
-                '<div class="alert alert-warning mb-0">Calendar could not be loaded. Please retry.</div>';
+                '<div class="alert alert-warning mb-0">Não foi possível carregar o calendário. Tente novamente.</div>';
             host.setAttribute('aria-busy', 'false');
         }
     }
@@ -1328,7 +1326,7 @@
                 if (event) {
                 showEventDetails(day);
             } else {
-                    alert(`No events scheduled for March ${day}`);
+                    alert(`Não há eventos agendados para março ${day}`);
                 }
             });
         }

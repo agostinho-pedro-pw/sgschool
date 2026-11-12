@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>All professors - Kiaalap Dashboard</title>
+    <title>Todos os Professores - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -83,7 +83,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -98,21 +98,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">All professors</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Todos os Professores</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -121,29 +121,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -159,8 +159,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -173,9 +173,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -188,9 +188,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -203,9 +203,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -215,7 +215,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -224,28 +224,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -253,14 +251,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -275,12 +273,12 @@
                 <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 font-bold">All Professors</h1>
-                            <p class="text-muted text-sm">Manage and view all faculty members in your institution.</p>
+                            <h1 class="h3 font-bold">Todos os Professores</h1>
+                            <p class="text-muted text-sm">Gira e consulte todos os membros do corpo docente da sua instituição.</p>
                         </div>
                         <div>
                             <a href="add-professor.html" class="btn btn-primary">
-                                <i class="bi bi-plus-lg me-2"></i>Add Professor
+                                <i class="bi bi-plus-lg me-2"></i>Adicionar Professor
                             </a>
                         </div>
                     </div>
@@ -290,27 +288,27 @@
                 <div class="dashboard-row">
                     <div class="dashboard-grid grid-cols-4">
                         <div class="stats-card">
-                            <div class="stats-card-label">Total Professors</div>
+                            <div class="stats-card-label">Total de Professores</div>
                             <div class="stats-card-value">156</div>
-                            <span class="stats-card-change positive">+12 this month</span>
+                            <span class="stats-card-change positive">+12 este mês</span>
                             <div class="progress-custom">
                                 <div class="progress-bar-custom bg-primary" style="width: 80%"></div>
                             </div>
                         </div>
 
                         <div class="stats-card">
-                            <div class="stats-card-label">Full-Time</div>
+                            <div class="stats-card-label">Tempo Inteiro</div>
                             <div class="stats-card-value">89</div>
-                            <span class="stats-card-change positive">+5 this month</span>
+                            <span class="stats-card-change positive">+5 este mês</span>
                             <div class="progress-custom">
                                 <div class="progress-bar-custom bg-success" style="width: 60%"></div>
                             </div>
                         </div>
 
                         <div class="stats-card">
-                            <div class="stats-card-label">Part-Time</div>
+                            <div class="stats-card-label">Tempo Parcial</div>
                             <div class="stats-card-value">67</div>
-                            <span class="stats-card-change positive">+7 this month</span>
+                            <span class="stats-card-change positive">+7 este mês</span>
                             <div class="progress-custom">
                                 <div class="progress-bar-custom bg-warning" style="width: 40%"></div>
                             </div>
@@ -319,7 +317,7 @@
                         <div class="stats-card">
                             <div class="stats-card-label">Departments</div>
                             <div class="stats-card-value">24</div>
-                            <span class="stats-card-change neutral">No change</span>
+                            <span class="stats-card-change neutral">Sem alterações</span>
                             <div class="progress-custom">
                                 <div class="progress-bar-custom bg-info" style="width: 100%"></div>
                             </div>
@@ -331,8 +329,8 @@
                 <div class="dashboard-row">
                     <div class="dashboard-card">
                         <div class="dashboard-card-header">
-                            <h5 class="dashboard-card-title mb-0">Featured Professors</h5>
-                            <a href="#" class="text-primary text-sm">View All</a>
+                            <h5 class="dashboard-card-title mb-0">Professores em Destaque</h5>
+                            <a href="#" class="text-primary text-sm">Ver Todos</a>
                         </div>
                         <div class="dashboard-card-body">
                             <div class="dashboard-grid grid-cols-4 gap-4">
@@ -345,9 +343,9 @@
                                     </div>
                                     <div class="text-center">
                                         <h6 class="mb-1">Dr. Sarah Johnson</h6>
-                                        <p class="text-muted text-sm mb-2">Computer Science</p>
+                                        <p class="text-muted text-sm mb-2">Ciências da Computação</p>
                                         <div class="mb-2">
-                                            <span class="badge bg-success">Full-Time</span>
+                                            <span class="badge bg-success">Tempo Inteiro</span>
                                         </div>
                                         <div class="text-warning mb-2">
                                             <i class="bi bi-star-fill"></i>
@@ -359,9 +357,9 @@
                                         </div>
                                         <div class="d-flex gap-2 justify-content-center">
                                             <a href="professor-profile.html"
-                                                class="btn btn-sm btn-outline-primary">View</a>
+                                                class="btn btn-sm btn-outline-primary">Ver</a>
                                             <a href="edit-professor.html"
-                                                class="btn btn-sm btn-outline-secondary">Edit</a>
+                                                class="btn btn-sm btn-outline-secondary">Editar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -375,9 +373,9 @@
                                     </div>
                                     <div class="text-center">
                                         <h6 class="mb-1">Dr. Emily Rodriguez</h6>
-                                        <p class="text-muted text-sm mb-2">English Literature</p>
+                                        <p class="text-muted text-sm mb-2">Literatura Inglesa</p>
                                         <div class="mb-2">
-                                            <span class="badge bg-warning">Part-Time</span>
+                                            <span class="badge bg-warning">Tempo Parcial</span>
                                         </div>
                                         <div class="text-warning mb-2">
                                             <i class="bi bi-star-fill"></i>
@@ -389,9 +387,9 @@
                                         </div>
                                         <div class="d-flex gap-2 justify-content-center">
                                             <a href="professor-profile.html"
-                                                class="btn btn-sm btn-outline-primary">View</a>
+                                                class="btn btn-sm btn-outline-primary">Ver</a>
                                             <a href="edit-professor.html"
-                                                class="btn btn-sm btn-outline-secondary">Edit</a>
+                                                class="btn btn-sm btn-outline-secondary">Editar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -405,9 +403,9 @@
                                     </div>
                                     <div class="text-center">
                                         <h6 class="mb-1">Dr. James Wilson</h6>
-                                        <p class="text-muted text-sm mb-2">Physics</p>
+                                        <p class="text-muted text-sm mb-2">Física</p>
                                         <div class="mb-2">
-                                            <span class="badge bg-success">Full-Time</span>
+                                            <span class="badge bg-success">Tempo Inteiro</span>
                                         </div>
                                         <div class="text-warning mb-2">
                                             <i class="bi bi-star-fill"></i>
@@ -419,9 +417,9 @@
                                         </div>
                                         <div class="d-flex gap-2 justify-content-center">
                                             <a href="professor-profile.html"
-                                                class="btn btn-sm btn-outline-primary">View</a>
+                                                class="btn btn-sm btn-outline-primary">Ver</a>
                                             <a href="edit-professor.html"
-                                                class="btn btn-sm btn-outline-secondary">Edit</a>
+                                                class="btn btn-sm btn-outline-secondary">Editar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -435,9 +433,9 @@
                                     </div>
                                     <div class="text-center">
                                         <h6 class="mb-1">Dr. Maria Chen</h6>
-                                        <p class="text-muted text-sm mb-2">Mathematics</p>
+                                        <p class="text-muted text-sm mb-2">Matemática</p>
                                         <div class="mb-2">
-                                            <span class="badge bg-success">Full-Time</span>
+                                            <span class="badge bg-success">Tempo Inteiro</span>
                                         </div>
                                         <div class="text-warning mb-2">
                                             <i class="bi bi-star-fill"></i>
@@ -449,9 +447,9 @@
                                         </div>
                                         <div class="d-flex gap-2 justify-content-center">
                                             <a href="professor-profile.html"
-                                                class="btn btn-sm btn-outline-primary">View</a>
+                                                class="btn btn-sm btn-outline-primary">Ver</a>
                                             <a href="edit-professor.html"
-                                                class="btn btn-sm btn-outline-secondary">Edit</a>
+                                                class="btn btn-sm btn-outline-secondary">Editar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -465,24 +463,24 @@
                     <div class="dashboard-card">
                         <div class="dashboard-card-header">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Professors Directory</h5>
+                                <h5 class="dashboard-card-title mb-0">Diretório de Professores</h5>
                                 <div class="d-flex gap-2">
                                     <div class="dropdown">
                                         <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="bi bi-funnel me-1"></i>Filter
+                                            <i class="bi bi-funnel me-1"></i>Filtrar
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#" data-filter="all">All Professors</a>
+                                            <li><a class="dropdown-item" href="#" data-filter="all">Todos os Professores</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#" data-filter="full-time">Full-Time</a>
+                                            <li><a class="dropdown-item" href="#" data-filter="full-time">Tempo Inteiro</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#" data-filter="part-time">Part-Time</a>
+                                            <li><a class="dropdown-item" href="#" data-filter="part-time">Tempo Parcial</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" href="#" data-filter="senior">Senior Level</a>
+                                            <li><a class="dropdown-item" href="#" data-filter="senior">Nível Sénior</a>
                                             </li>
                                             <li><a class="dropdown-item" href="#" data-filter="associate">Associate
                                                     Level</a></li>
@@ -492,9 +490,9 @@
                                     </div>
                                     <div class="input-group" style="width: 250px;">
                                         <input type="text" class="form-control form-control-sm"
-                                            placeholder="Search professors...">
+                                            placeholder="Pesquisar professores...">
                                         <button class="btn btn-outline-secondary btn-sm" type="button"
-                                            aria-label="Search">
+                                            aria-label="Pesquisar">
                                             <i aria-hidden="true" class="bi bi-search"></i>
                                         </button>
                                     </div>
@@ -509,17 +507,17 @@
                                             <th scope="col" class="border-0">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" id="selectAll"
-                                                        aria-label="Select all professors">
+                                                        aria-label="Selecionar todos os professores">
                                                 </div>
                                             </th>
                                             <th scope="col" class="border-0">Professor</th>
-                                            <th scope="col" class="border-0">Department</th>
-                                            <th scope="col" class="border-0">Position</th>
-                                            <th scope="col" class="border-0">Employment Type</th>
-                                            <th scope="col" class="border-0">Courses</th>
-                                            <th scope="col" class="border-0">Rating</th>
-                                            <th scope="col" class="border-0">Status</th>
-                                            <th scope="col" class="border-0">Actions</th>
+                                            <th scope="col" class="border-0">Departamento</th>
+                                            <th scope="col" class="border-0">Cargo</th>
+                                            <th scope="col" class="border-0">Tipo de Vínculo</th>
+                                            <th scope="col" class="border-0">Cursos</th>
+                                            <th scope="col" class="border-0">Classificação</th>
+                                            <th scope="col" class="border-0">Estado</th>
+                                            <th scope="col" class="border-0">Ações</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -527,7 +525,7 @@
                                             <td>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"
-                                                        aria-label="Select professor">
+                                                        aria-label="Selecionar professor">
                                                 </div>
                                             </td>
                                             <td>
@@ -537,13 +535,13 @@
                                                         style="width: 40px; height: 40px;" loading="lazy">
                                                     <div>
                                                         <div class="fw-medium">Dr. Sarah Johnson</div>
-                                                        <small class="text-muted">s.johnson@kiaalap.edu</small>
+                                                        <small class="text-muted">s.johnson@sgschool.edu</small>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>Computer Science</td>
+                                            <td>Ciências da Computação</td>
                                             <td>Professor</td>
-                                            <td><span class="badge bg-success">Full-Time</span></td>
+                                            <td><span class="badge bg-success">Tempo Inteiro</span></td>
                                             <td>5 courses</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
@@ -557,27 +555,27 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td><span class="badge bg-success">Ativo</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-link text-decoration-none p-1" type="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false"
-                                                        aria-label="More options">
+                                                        aria-label="Mais opções">
                                                         <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-end">
                                                         <li><a class="dropdown-item" href="professor-profile.html"><i
-                                                                    class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                    class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                         <li><a class="dropdown-item" href="edit-professor.html"><i
-                                                                    class="bi bi-pencil me-2"></i>Edit</a></li>
+                                                                    class="bi bi-pencil me-2"></i>Editar</a></li>
                                                         <li><a class="dropdown-item" href="#"><i
-                                                                    class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                    class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider">
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#"><i
-                                                                    class="bi bi-trash me-2"></i>Remove</a></li>
+                                                                    class="bi bi-trash me-2"></i>Remover</a></li>
                                                     </ul>
                                                 </div>
                                             </td>
@@ -586,7 +584,7 @@
                                             <td>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"
-                                                        aria-label="Select professor">
+                                                        aria-label="Selecionar professor">
                                                 </div>
                                             </td>
                                             <td>
@@ -596,13 +594,13 @@
                                                         style="width: 40px; height: 40px;" loading="lazy">
                                                     <div>
                                                         <div class="fw-medium">Dr. Michael Chen</div>
-                                                        <small class="text-muted">m.chen@kiaalap.edu</small>
+                                                        <small class="text-muted">m.chen@sgschool.edu</small>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>Mathematics</td>
-                                            <td>Associate Professor</td>
-                                            <td><span class="badge bg-success">Full-Time</span></td>
+                                            <td>Matemática</td>
+                                            <td>Professor Associado</td>
+                                            <td><span class="badge bg-success">Tempo Inteiro</span></td>
                                             <td>4 courses</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
@@ -616,27 +614,27 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td><span class="badge bg-success">Ativo</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-link text-decoration-none p-1" type="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false"
-                                                        aria-label="More options">
+                                                        aria-label="Mais opções">
                                                         <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-end">
                                                         <li><a class="dropdown-item" href="professor-profile.html"><i
-                                                                    class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                    class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                         <li><a class="dropdown-item" href="edit-professor.html"><i
-                                                                    class="bi bi-pencil me-2"></i>Edit</a></li>
+                                                                    class="bi bi-pencil me-2"></i>Editar</a></li>
                                                         <li><a class="dropdown-item" href="#"><i
-                                                                    class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                    class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider">
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#"><i
-                                                                    class="bi bi-trash me-2"></i>Remove</a></li>
+                                                                    class="bi bi-trash me-2"></i>Remover</a></li>
                                                     </ul>
                                                 </div>
                                             </td>
@@ -645,7 +643,7 @@
                                             <td>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"
-                                                        aria-label="Select professor">
+                                                        aria-label="Selecionar professor">
                                                 </div>
                                             </td>
                                             <td>
@@ -655,13 +653,13 @@
                                                         style="width: 40px; height: 40px;" loading="lazy">
                                                     <div>
                                                         <div class="fw-medium">Dr. Emily Rodriguez</div>
-                                                        <small class="text-muted">e.rodriguez@kiaalap.edu</small>
+                                                        <small class="text-muted">e.rodriguez@sgschool.edu</small>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>English Literature</td>
-                                            <td>Assistant Professor</td>
-                                            <td><span class="badge bg-warning">Part-Time</span></td>
+                                            <td>Literatura Inglesa</td>
+                                            <td>Professor Auxiliar</td>
+                                            <td><span class="badge bg-warning">Tempo Parcial</span></td>
                                             <td>3 courses</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
@@ -675,27 +673,27 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td><span class="badge bg-success">Ativo</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-link text-decoration-none p-1" type="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false"
-                                                        aria-label="More options">
+                                                        aria-label="Mais opções">
                                                         <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-end">
                                                         <li><a class="dropdown-item" href="professor-profile.html"><i
-                                                                    class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                    class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                         <li><a class="dropdown-item" href="edit-professor.html"><i
-                                                                    class="bi bi-pencil me-2"></i>Edit</a></li>
+                                                                    class="bi bi-pencil me-2"></i>Editar</a></li>
                                                         <li><a class="dropdown-item" href="#"><i
-                                                                    class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                    class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider">
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#"><i
-                                                                    class="bi bi-trash me-2"></i>Remove</a></li>
+                                                                    class="bi bi-trash me-2"></i>Remover</a></li>
                                                     </ul>
                                                 </div>
                                             </td>
@@ -704,7 +702,7 @@
                                             <td>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"
-                                                        aria-label="Select professor">
+                                                        aria-label="Selecionar professor">
                                                 </div>
                                             </td>
                                             <td>
@@ -714,13 +712,13 @@
                                                         style="width: 40px; height: 40px;" loading="lazy">
                                                     <div>
                                                         <div class="fw-medium">Dr. James Wilson</div>
-                                                        <small class="text-muted">j.wilson@kiaalap.edu</small>
+                                                        <small class="text-muted">j.wilson@sgschool.edu</small>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>Physics</td>
+                                            <td>Física</td>
                                             <td>Professor</td>
-                                            <td><span class="badge bg-success">Full-Time</span></td>
+                                            <td><span class="badge bg-success">Tempo Inteiro</span></td>
                                             <td>4 courses</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
@@ -734,27 +732,27 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td><span class="badge bg-warning">On Leave</span></td>
+                                            <td><span class="badge bg-warning">De Licença</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-link text-decoration-none p-1" type="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false"
-                                                        aria-label="More options">
+                                                        aria-label="Mais opções">
                                                         <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-end">
                                                         <li><a class="dropdown-item" href="professor-profile.html"><i
-                                                                    class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                    class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                         <li><a class="dropdown-item" href="edit-professor.html"><i
-                                                                    class="bi bi-pencil me-2"></i>Edit</a></li>
+                                                                    class="bi bi-pencil me-2"></i>Editar</a></li>
                                                         <li><a class="dropdown-item" href="#"><i
-                                                                    class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                    class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider">
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#"><i
-                                                                    class="bi bi-trash me-2"></i>Remove</a></li>
+                                                                    class="bi bi-trash me-2"></i>Remover</a></li>
                                                     </ul>
                                                 </div>
                                             </td>
@@ -763,7 +761,7 @@
                                             <td>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"
-                                                        aria-label="Select professor">
+                                                        aria-label="Selecionar professor">
                                                 </div>
                                             </td>
                                             <td>
@@ -773,13 +771,13 @@
                                                         style="width: 40px; height: 40px;" loading="lazy">
                                                     <div>
                                                         <div class="fw-medium">Dr. Lisa Thompson</div>
-                                                        <small class="text-muted">l.thompson@kiaalap.edu</small>
+                                                        <small class="text-muted">l.thompson@sgschool.edu</small>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>Biology</td>
-                                            <td>Associate Professor</td>
-                                            <td><span class="badge bg-success">Full-Time</span></td>
+                                            <td>Biologia</td>
+                                            <td>Professor Associado</td>
+                                            <td><span class="badge bg-success">Tempo Inteiro</span></td>
                                             <td>6 courses</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
@@ -793,27 +791,27 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td><span class="badge bg-success">Ativo</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-link text-decoration-none p-1" type="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false"
-                                                        aria-label="More options">
+                                                        aria-label="Mais opções">
                                                         <i aria-hidden="true" class="bi bi-three-dots-vertical"></i>
                                                     </button>
                                                     <ul class="dropdown-menu dropdown-menu-end">
                                                         <li><a class="dropdown-item" href="professor-profile.html"><i
-                                                                    class="bi bi-eye me-2"></i>View Profile</a></li>
+                                                                    class="bi bi-eye me-2"></i>Ver Perfil</a></li>
                                                         <li><a class="dropdown-item" href="edit-professor.html"><i
-                                                                    class="bi bi-pencil me-2"></i>Edit</a></li>
+                                                                    class="bi bi-pencil me-2"></i>Editar</a></li>
                                                         <li><a class="dropdown-item" href="#"><i
-                                                                    class="bi bi-envelope me-2"></i>Send Message</a>
+                                                                    class="bi bi-envelope me-2"></i>Enviar Mensagem</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider">
                                                         </li>
                                                         <li><a class="dropdown-item text-danger" href="#"><i
-                                                                    class="bi bi-trash me-2"></i>Remove</a></li>
+                                                                    class="bi bi-trash me-2"></i>Remover</a></li>
                                                     </ul>
                                                 </div>
                                             </td>
@@ -825,12 +823,12 @@
                         <div class="dashboard-card-footer">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <small class="text-muted">Showing 1-5 of 156 professors</small>
+                                    <small class="text-muted">A mostrar 1–5 de 156 professores</small>
                                 </div>
-                                <nav aria-label="Professors pagination">
+                                <nav aria-label="Paginação dos professores">
                                     <ul class="pagination pagination-sm mb-0">
                                         <li class="page-item disabled">
-                                            <span class="page-link">Previous</span>
+                                            <span class="page-link">Anterior</span>
                                         </li>
                                         <li class="page-item active">
                                             <span class="page-link">1</span>
@@ -842,7 +840,7 @@
                                             <a class="page-link" href="#">3</a>
                                         </li>
                                         <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
+                                            <a class="page-link" href="#">Seguinte</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -858,10 +856,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

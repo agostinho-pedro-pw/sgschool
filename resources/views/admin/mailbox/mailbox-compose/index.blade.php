@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Compose Message - Kiaalap Dashboard</title>
+    <title>Escrever mensagem - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -69,7 +69,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -84,23 +84,23 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Mostrar/ocultar menu lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Communication</a></li>
-                        <li class="breadcrumb-item"><a href="mailbox.html">Mailbox</a></li>
-                        <li class="breadcrumb-item active">Compose</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item"><a href="#">Comunicação</a></li>
+                        <li class="breadcrumb-item"><a href="mailbox.html">Correio</a></li>
+                        <li class="breadcrumb-item active">Compor</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -109,29 +109,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Submissão de notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -147,8 +147,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -161,9 +161,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciências a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -176,9 +176,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">John entregou o seu trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -192,7 +192,7 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
                                             <div class="text-muted small">Yesterday</div>
                                         </div>
                                     </div>
@@ -203,7 +203,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -212,28 +212,27 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -241,14 +240,13 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -262,9 +260,9 @@
                 <!-- Back Button and Page Header -->
                 <div class="mb-4">
                     <a href="mailbox.html" class="btn btn-outline-secondary btn-sm mb-3">
-                        <i class="bi bi-arrow-left me-2"></i>Back to Inbox
+                        <i class="bi bi-arrow-left me-2"></i>Voltar à caixa de entrada
                     </a>
-                    <h1 class="h3 font-bold">Compose New Message</h1>
+                    <h1 class="h3 font-bold">Compor nova mensagem</h1>
                 </div>
 
                 <!-- Compose View -->
@@ -274,7 +272,7 @@
                         <div class="card shadow-sm">
                             <div class="card-body p-4">
                                 <a href="mailbox-compose.html" class="btn btn-primary w-100 mb-3">
-                                    <i class="bi bi-pencil-square me-2"></i>Compose
+                                    <i class="bi bi-pencil-square me-2"></i>Compor
                                 </a>
 
                                 <div class="mailbox-sidebar">
@@ -283,7 +281,7 @@
                                             <a href="mailbox.html"
                                                 class="d-flex align-items-center text-decoration-none text-dark">
                                                 <i class="bi bi-inbox-fill me-2"></i>
-                                                <span>Inbox</span>
+                                                <span>Caixa de entrada</span>
                                                 <span class="badge bg-primary ms-auto">12</span>
                                             </a>
                                         </li>
@@ -291,14 +289,14 @@
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-send me-2"></i>
-                                                <span>Sent</span>
+                                                <span>Enviados</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-file-earmark-text me-2"></i>
-                                                <span>Drafts</span>
+                                                <span>Rascunhos</span>
                                                 <span class="badge bg-secondary ms-auto">3</span>
                                             </a>
                                         </li>
@@ -306,28 +304,28 @@
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-star me-2"></i>
-                                                <span>Important</span>
+                                                <span>Importante</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <i class="bi bi-trash me-2"></i>
-                                                <span>Trash</span>
+                                                <span>Lixo</span>
                                             </a>
                                         </li>
                                     </ul>
 
                                     <hr>
 
-                                    <h6 class="text-muted text-uppercase small mb-3">Labels</h6>
+                                    <h6 class="text-muted text-uppercase small mb-3">Etiquetas</h6>
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
                                             <a href="#"
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-success me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Academic</span>
+                                                <span>Académico</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
@@ -335,7 +333,7 @@
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-warning me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Administrative</span>
+                                                <span>Administrativo</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
@@ -343,7 +341,7 @@
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-info me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Students</span>
+                                                <span>Estudantes</span>
                                             </a>
                                         </li>
                                         <li class="mb-2">
@@ -351,7 +349,7 @@
                                                 class="d-flex align-items-center text-decoration-none text-muted">
                                                 <span class="badge rounded-circle bg-danger me-2"
                                                     style="width: 10px; height: 10px;"></span>
-                                                <span>Urgent</span>
+                                                <span>Urgente</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -368,12 +366,12 @@
                                     <!-- Recipients -->
                                     <div class="mb-3">
                                         <div class="input-group">
-                                            <span class="input-group-text">To</span>
+                                            <span class="input-group-text">Para</span>
                                             <input type="text" class="form-control" id="toRecipients"
-                                                placeholder="Enter recipients">
+                                                placeholder="Introduza os destinatários">
                                             <button class="btn btn-outline-secondary" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#ccBccSection">
-                                                Cc/Bcc
+                                                Cc/Cco
                                             </button>
                                         </div>
                                     </div>
@@ -389,7 +387,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <div class="input-group">
-                                                <span class="input-group-text">Bcc</span>
+                                                <span class="input-group-text">Cco</span>
                                                 <input type="text" class="form-control" id="bccRecipients"
                                                     placeholder="Blind carbon copy recipients">
                                             </div>
@@ -398,12 +396,12 @@
 
                                     <!-- Subject -->
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="Assunto">
                                     </div>
 
                                     <!-- Label Selection -->
                                     <div class="mb-3">
-                                        <label class="form-label">Add Label</label>
+                                        <label class="form-label">Adicionar Label</label>
                                         <div>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="labelAcademic"
@@ -411,7 +409,7 @@
                                                 <label class="form-check-label" for="labelAcademic">
                                                     <span class="badge rounded-circle bg-success me-1"
                                                         style="width: 10px; height: 10px;"></span>
-                                                    Academic
+                                                    Académico
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
@@ -420,7 +418,7 @@
                                                 <label class="form-check-label" for="labelAdmin">
                                                     <span class="badge rounded-circle bg-warning me-1"
                                                         style="width: 10px; height: 10px;"></span>
-                                                    Administrative
+                                                    Administrativo
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
@@ -429,7 +427,7 @@
                                                 <label class="form-check-label" for="labelStudents">
                                                     <span class="badge rounded-circle bg-info me-1"
                                                         style="width: 10px; height: 10px;"></span>
-                                                    Students
+                                                    Estudantes
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
@@ -438,7 +436,7 @@
                                                 <label class="form-check-label" for="labelUrgent">
                                                     <span class="badge rounded-circle bg-danger me-1"
                                                         style="width: 10px; height: 10px;"></span>
-                                                    Urgent
+                                                    Urgente
                                                 </label>
                                             </div>
                                         </div>
@@ -450,50 +448,50 @@
                                             <div class="btn-toolbar" role="toolbar">
                                                 <div class="btn-group me-2" role="group">
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('bold')" aria-label="Type bold">
+                                                        onclick="formatText('bold')" aria-label="Negrito">
                                                         <i aria-hidden="true" class="bi bi-type-bold"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('italic')" aria-label="Type italic">
+                                                        onclick="formatText('italic')" aria-label="Itálico">
                                                         <i aria-hidden="true" class="bi bi-type-italic"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('underline')" aria-label="Type underline">
+                                                        onclick="formatText('underline')" aria-label="Sublinhar">
                                                         <i aria-hidden="true" class="bi bi-type-underline"></i>
                                                     </button>
                                                 </div>
                                                 <div class="btn-group me-2" role="group">
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('justifyLeft')" aria-label="Text left">
+                                                        onclick="formatText('justifyLeft')" aria-label="Alinhar texto à esquerda">
                                                         <i aria-hidden="true" class="bi bi-text-left"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('justifyCenter')" aria-label="Text center">
+                                                        onclick="formatText('justifyCenter')" aria-label="Centrar texto">
                                                         <i aria-hidden="true" class="bi bi-text-center"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('justifyRight')" aria-label="Text right">
+                                                        onclick="formatText('justifyRight')" aria-label="Alinhar texto à direita">
                                                         <i aria-hidden="true" class="bi bi-text-right"></i>
                                                     </button>
                                                 </div>
                                                 <div class="btn-group me-2" role="group">
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="formatText('insertOrderedList')" aria-label="List ol">
+                                                        onclick="formatText('insertOrderedList')" aria-label="Lista numerada">
                                                         <i aria-hidden="true" class="bi bi-list-ol"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
                                                         onclick="formatText('insertUnorderedList')"
-                                                        aria-label="List ul">
+                                                        aria-label="Lista com marcas">
                                                         <i aria-hidden="true" class="bi bi-list-ul"></i>
                                                     </button>
                                                 </div>
                                                 <div class="btn-group me-2" role="group">
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="insertLink()" aria-label="Link 45deg">
+                                                        onclick="insertLink()" aria-label="Inserir ligação">
                                                         <i aria-hidden="true" class="bi bi-link-45deg"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                        onclick="insertImage()" aria-label="Image">
+                                                        onclick="insertImage()" aria-label="Imagemm">
                                                         <i aria-hidden="true" class="bi bi-image"></i>
                                                     </button>
                                                 </div>
@@ -507,11 +505,11 @@
 
                                     <!-- Attachments -->
                                     <div class="mb-3">
-                                        <label class="form-label">Attachments</label>
+                                        <label class="form-label">Anexos</label>
                                         <div class="input-group">
                                             <input type="file" class="form-control" id="attachments" multiple>
                                             <button class="btn btn-outline-secondary" type="button">
-                                                <i class="bi bi-paperclip"></i> Attach Files
+                                                <i class="bi bi-paperclip"></i> Anexar ficheiros
                                             </button>
                                         </div>
                                         <div id="attachmentList" class="mt-2"></div>
@@ -522,22 +520,22 @@
                                         <div>
                                             <button type="button" class="btn btn-outline-secondary me-2"
                                                 onclick="saveDraft()">
-                                                <i class="bi bi-save"></i> Save Draft
+                                                <i class="bi bi-save"></i> Guardar rascunho
                                             </button>
                                             <button type="button" class="btn btn-outline-danger"
                                                 onclick="discardMessage()">
-                                                <i class="bi bi-trash"></i> Discard
+                                                <i class="bi bi-trash"></i> Descartar
                                             </button>
                                         </div>
                                         <div>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="requestReadReceipt">
                                                 <label class="form-check-label" for="requestReadReceipt">
-                                                    Request read receipt
+                                                    Solicitar confirmação de leitura
                                                 </label>
                                             </div>
                                             <button type="submit" class="btn btn-primary">
-                                                <i class="bi bi-send"></i> Send Message
+                                                <i class="bi bi-send"></i> Enviar mensagem
                                             </button>
                                         </div>
                                     </div>
@@ -551,21 +549,21 @@
                                             <div class="template-card border rounded p-2 cursor-pointer"
                                                 onclick="useTemplate('meeting')">
                                                 <i class="bi bi-calendar-event text-primary"></i>
-                                                <span class="ms-2">Meeting Request</span>
+                                                <span class="ms-2">Pedido de reuni?o</span>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="template-card border rounded p-2 cursor-pointer"
                                                 onclick="useTemplate('announcement')">
                                                 <i class="bi bi-megaphone text-info"></i>
-                                                <span class="ms-2">Announcement</span>
+                                                <span class="ms-2">An?ncio</span>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="template-card border rounded p-2 cursor-pointer"
                                                 onclick="useTemplate('assignment')">
                                                 <i class="bi bi-clipboard-check text-success"></i>
-                                                <span class="ms-2">Assignment Notice</span>
+                                                <span class="ms-2">Aviso de trabalho</span>
                                             </div>
                                         </div>
                                     </div>
@@ -582,10 +580,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -602,7 +600,7 @@ function formatText(command) {
 }
 
 function insertLink() {
-    const url = prompt('Enter URL:');
+    const url = prompt('Introduza o URL:');
     if (url) {
         document.execCommand('createLink', false, url);
         document.getElementById('messageBody').focus();
@@ -610,7 +608,7 @@ function insertLink() {
 }
 
 function insertImage() {
-    const url = prompt('Enter image URL:');
+    const url = prompt('Introduza o URL da imagem:');
     if (url) {
         document.execCommand('insertImage', false, url);
         document.getElementById('messageBody').focus();
@@ -621,42 +619,42 @@ function insertImage() {
 function useTemplate(type) {
     const templates = {
         meeting: {
-            subject: 'Meeting Request - [Date]',
-            body: `<p>Dear [Recipient],</p>
-                   <p>I would like to schedule a meeting to discuss [topic].</p>
-                   <p>Proposed times:</p>
+            subject: 'Pedido de reuni?o - [Data]',
+            body: `<p>Caro(a) [destinat?rio(a)],</p>
+                   <p>Gostaria de marcar uma reuni?o para falar sobre [assunto].</p>
+                   <p>Hor?rios propostos:</p>
                    <ul>
-                       <li>Option 1: [Date and Time]</li>
-                       <li>Option 2: [Date and Time]</li>
+                       <li>Op??o 1: [data e hora]</li>
+                       <li>Op??o 2: [data e hora]</li>
                    </ul>
-                   <p>Please let me know which time works best for you.</p>
-                   <p>Best regards,<br>[Your Name]</p>`
+                   <p>Indique-me, por favor, qual dos hor?rios lhe ? mais conveniente.</p>
+                   <p>Com os melhores cumprimentos,<br>[O seu nome]</p>`
         },
         announcement: {
-            subject: 'Important Announcement - [Title]',
-            body: `<p>Dear Students/Faculty,</p>
-                   <p>This is to inform you about [announcement details].</p>
-                   <p>Key points:</p>
+            subject: 'An?ncio importante - [Título]',
+            body: `<p>Caros estudantes e membros do corpo docente,</p>
+                   <p>Informamos que [detalhes do an?ncio].</p>
+                   <p>Pontos principais:</p>
                    <ul>
-                       <li>[Point 1]</li>
-                       <li>[Point 2]</li>
-                       <li>[Point 3]</li>
+                       <li>[Ponto 1]</li>
+                       <li>[Ponto 2]</li>
+                       <li>[Ponto 3]</li>
                    </ul>
-                   <p>If you have any questions, please feel free to contact me.</p>
-                   <p>Thank you,<br>[Your Name]</p>`
+                   <p>Se tiver alguma quest?o, n?o hesite em contactar-me.</p>
+                   <p>Obrigado(a),<br>[O seu nome]</p>`
         },
         assignment: {
-            subject: 'New Assignment - [Course Name]',
-            body: `<p>Dear Students,</p>
-                   <p>A new assignment has been posted for [Course Name].</p>
-                   <p><strong>Assignment Details:</strong></p>
+            subject: 'Novo trabalho - [Nome do curso]',
+            body: `<p>Caros estudantes,</p>
+                   <p>Foi publicado um novo trabalho para [Nome do curso].</p>
+                   <p><strong>Detalhes do trabalho:</strong></p>
                    <ul>
-                       <li>Title: [Assignment Title]</li>
-                       <li>Due Date: [Date]</li>
-                       <li>Submission Format: [Format]</li>
+                       <li>T?tulo: [t?tulo do trabalho]</li>
+                       <li>Data de entrega: [data]</li>
+                       <li>Formato de entrega: [formato]</li>
                    </ul>
-                   <p>Please review the attached materials and let me know if you have any questions.</p>
-                   <p>Best regards,<br>[Your Name]</p>`
+                   <p>Consulte os materiais em anexo e informe-me se tiver alguma quest?o.</p>
+                   <p>Com os melhores cumprimentos,<br>[O seu nome]</p>`
         }
     };
 
@@ -668,11 +666,11 @@ function useTemplate(type) {
 
 // Form functions
 function saveDraft() {
-    alert('Draft saved successfully!');
+    alert('Rascunho guardado com sucesso!');
 }
 
 function discardMessage() {
-    if (confirm('Are you sure you want to discard this message?')) {
+    if (confirm('Tem a certeza de que pretende descartar esta mensagem?')) {
         window.location.href = 'mailbox.html';
     }
 }
@@ -698,7 +696,7 @@ document.getElementById('attachments')?.addEventListener('change', function(e) {
 // Form submission
 document.getElementById('composeForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Message sent successfully!');
+    alert('Mensagem enviada com sucesso!');
     window.location.href = 'mailbox.html';
 });
     </script>

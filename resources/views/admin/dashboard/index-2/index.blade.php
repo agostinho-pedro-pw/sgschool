@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+    <meta name="keywords" content="educação, painel, universidade, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Dashboard Variant 2 - Kiaalap Dashboard</title>
+    <title>Painel - Variante 2 - sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -73,7 +73,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -88,21 +88,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active">Painel</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -111,29 +111,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
-                                <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Matrícula de Estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Lançamento de Notas</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório de Professores</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da Biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa Avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -149,8 +149,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -163,9 +163,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo Evento</div>
+                                            <div class="text-muted small">Feira de Ciências a 15 de março</div>
+                                            <div class="text-muted small">há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -178,9 +178,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho Submetido</div>
+                                            <div class="text-muted small">O João submeteu o seu trabalho</div>
+                                            <div class="text-muted small">há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -193,9 +193,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do Sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -205,7 +205,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -214,28 +214,26 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -243,14 +241,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
                                     Center</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -265,16 +263,16 @@
                 <div class="mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h1 class="h3 font-bold">Academic Management Dashboard</h1>
+                            <h1 class="h3 font-bold">Painel de Gestão Académica</h1>
                             <p class="text-muted text-sm">Comprehensive overview of courses, student progress, and
                                 academic performance metrics.</p>
                         </div>
                         <div class="d-flex gap-2">
                             <button type="button" class="btn btn-outline-secondary">
-                                <i class="bi bi-calendar-week me-2"></i>Academic Calendar
+                                <i class="bi bi-calendar-week me-2"></i>Calendário Académico
                             </button>
                             <button type="button" class="btn btn-success">
-                                <i class="bi bi-plus-circle me-2"></i>New Semester
+                                <i class="bi bi-plus-circle me-2"></i>Novo Semestre
                             </button>
                         </div>
                     </div>
@@ -292,11 +290,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-success fw-bold mb-1" style="font-size: 2rem;">142</div>
-                                <div class="stat-label text-muted mb-2">Active Courses</div>
+                                <div class="stat-label text-muted mb-2">Cursos Ativos</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +8
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">new this semester</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">novos neste semestre</div>
                             </div>
                         </div>
 
@@ -309,11 +307,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-primary fw-bold mb-1" style="font-size: 2rem;">9,284</div>
-                                <div class="stat-label text-muted mb-2">Enrolled Students</div>
+                                <div class="stat-label text-muted mb-2">Estudantes Inscritos</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +412
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">since last month</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">desde o mês passado</div>
                             </div>
                         </div>
 
@@ -326,11 +324,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-warning fw-bold mb-1" style="font-size: 2rem;">68</div>
-                                <div class="stat-label text-muted mb-2">Faculty Members</div>
+                                <div class="stat-label text-muted mb-2">Membros do Corpo Docente</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +3
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">new hires</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">novas contratações</div>
                             </div>
                         </div>
 
@@ -343,11 +341,11 @@
                                     </div>
                                 </div>
                                 <div class="stat-value text-info fw-bold mb-1" style="font-size: 2rem;">4.7</div>
-                                <div class="stat-label text-muted mb-2">Course Rating</div>
+                                <div class="stat-label text-muted mb-2">Classificação do Curso</div>
                                 <div class="stat-change text-success small fw-semibold">
                                     <i class="bi bi-arrow-up" style="font-size: 12px;"></i> +0.3
                                 </div>
-                                <div class="text-muted" style="font-size: 0.75rem;">average improvement</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">melhoria média</div>
                             </div>
                         </div>
                     </div>
@@ -358,16 +356,16 @@
                     <div class="dashboard-grid grid-cols-2">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Course Performance</h5>
+                                <h5 class="dashboard-card-title mb-0">Desempenho dos Cursos</h5>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle"
                                         data-bs-toggle="dropdown">
-                                        Current Semester
+                                        Semestre Atual
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Current Semester</a></li>
-                                        <li><a class="dropdown-item" href="#">Last Semester</a></li>
-                                        <li><a class="dropdown-item" href="#">Academic Year</a></li>
+                                        <li><a class="dropdown-item" href="#">Semestre Atual</a></li>
+                                        <li><a class="dropdown-item" href="#">Semestre Anterior</a></li>
+                                        <li><a class="dropdown-item" href="#">Ano Académico</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -380,14 +378,14 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Student Progress</h5>
+                                <h5 class="dashboard-card-title mb-0">Progresso dos Estudantes</h5>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle"
                                         data-bs-toggle="dropdown">
-                                        All Departments
+                                        Todos os Departamentos
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">All Departments</a></li>
+                                        <li><a class="dropdown-item" href="#">Todos os Departamentos</a></li>
                                         <li><a class="dropdown-item" href="#">Computer Science</a></li>
                                         <li><a class="dropdown-item" href="#">Mathematics</a></li>
                                         <li><a class="dropdown-item" href="#">Biology</a></li>
@@ -408,7 +406,7 @@
                     <div class="dashboard-grid grid-cols-3">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title">Department Overview</h6>
+                                <h6 class="dashboard-card-title">Resumo dos Departamentos</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="mb-3">
@@ -458,7 +456,7 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title">Academic Calendar</h6>
+                                <h6 class="dashboard-card-title">Calendário Académico</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="mb-3">
@@ -468,7 +466,7 @@
                                             <i class="bi bi-calendar-event" style="font-size: 14px;"></i>
                                         </div>
                                         <div>
-                                            <h6 class="mb-1">Spring Registration</h6>
+                                            <h6 class="mb-1">Inscrições da Primavera</h6>
                                             <small class="text-muted">Opens February 1st</small>
                                             <div class="small text-warning fw-semibold">In 2 weeks</div>
                                         </div>
@@ -481,7 +479,7 @@
                                             <i class="bi bi-mortarboard" style="font-size: 14px;"></i>
                                         </div>
                                         <div>
-                                            <h6 class="mb-1">Midterm Exams</h6>
+                                            <h6 class="mb-1">Exames Intercalares</h6>
                                             <small class="text-muted">March 15-22, 2025</small>
                                             <div class="small text-primary fw-semibold">In 8 weeks</div>
                                         </div>
@@ -494,7 +492,7 @@
                                             <i class="bi bi-trophy" style="font-size: 14px;"></i>
                                         </div>
                                         <div>
-                                            <h6 class="mb-1">Graduation Ceremony</h6>
+                                            <h6 class="mb-1">Cerimónia de Graduação</h6>
                                             <small class="text-muted">May 18, 2025</small>
                                             <div class="small text-success fw-semibold">In 16 weeks</div>
                                         </div>
@@ -505,24 +503,24 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header">
-                                <h6 class="dashboard-card-title">Quick Actions</h6>
+                                <h6 class="dashboard-card-title">Ações Rápidas</h6>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="d-grid gap-2">
                                     <button type="button" class="btn btn-outline-primary btn-sm">
-                                        <i class="bi bi-plus-circle me-2"></i>Create Course
+                                        <i class="bi bi-plus-circle me-2"></i>Criar Curso
                                     </button>
                                     <button type="button" class="btn btn-outline-success btn-sm">
-                                        <i class="bi bi-person-plus me-2"></i>Enroll Student
+                                        <i class="bi bi-person-plus me-2"></i>Inscrever Estudante
                                     </button>
                                     <button type="button" class="btn btn-outline-info btn-sm">
-                                        <i class="bi bi-calendar-plus me-2"></i>Schedule Class
+                                        <i class="bi bi-calendar-plus me-2"></i>Agendar Aula
                                     </button>
                                     <button type="button" class="btn btn-outline-warning btn-sm">
-                                        <i class="bi bi-file-earmark-text me-2"></i>Grade Report
+                                        <i class="bi bi-file-earmark-text me-2"></i>Relatório de Notas
                                     </button>
                                     <button type="button" class="btn btn-outline-secondary btn-sm">
-                                        <i class="bi bi-gear me-2"></i>Settings
+                                        <i class="bi bi-gear me-2"></i>Configurações
                                     </button>
                                 </div>
                             </div>
@@ -535,8 +533,8 @@
                     <div class="dashboard-grid grid-cols-2">
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Recent Course Activity</h5>
-                                <a href="all-courses.html" class="btn btn-outline-primary btn-sm">View All</a>
+                                <h5 class="dashboard-card-title mb-0">Atividade Recente dos Cursos</h5>
+                                <a href="all-courses.html" class="btn btn-outline-primary btn-sm">Ver Todos</a>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="list-group list-group-flush">
@@ -546,11 +544,11 @@
                                             <i class="bi bi-plus-circle" style="color: #0d6efd; font-size: 16px;"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">New Course Created</h6>
+                                            <h6 class="mb-1">Novo Curso Criado</h6>
                                             <small class="text-muted">Advanced Machine Learning</small>
                                             <div class="small text-muted">Prof. Sarah Johnson - 2 hours ago</div>
                                         </div>
-                                        <span class="badge bg-primary">New</span>
+                                        <span class="badge bg-primary">Novo</span>
                                     </div>
                                     <div class="list-group-item d-flex align-items-center px-0 py-3">
                                         <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center me-3"
@@ -558,8 +556,8 @@
                                             <i class="bi bi-person-check" style="color: #198754; font-size: 16px;"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Student Enrollment</h6>
-                                            <small class="text-muted">15 new students in Data Structures</small>
+                                            <h6 class="mb-1">Matrícula de Estudantes</h6>
+                                            <small class="text-muted">15 novos estudantes em Estruturas de Dados</small>
                                             <div class="small text-muted">Prof. Michael Chen - 4 hours ago</div>
                                         </div>
                                         <span class="badge bg-success">+15</span>
@@ -571,7 +569,7 @@
                                                 style="color: #ffc107; font-size: 16px;"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1">Assignment Graded</h6>
+                                            <h6 class="mb-1">Trabalho Avaliado</h6>
                                             <small class="text-muted">Programming Assignment #3</small>
                                             <div class="small text-muted">Prof. Lisa Wang - 6 hours ago</div>
                                         </div>
@@ -583,8 +581,8 @@
 
                         <div class="dashboard-card">
                             <div class="dashboard-card-header d-flex justify-content-between align-items-center">
-                                <h5 class="dashboard-card-title mb-0">Top Performing Courses</h5>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Report</a>
+                                <h5 class="dashboard-card-title mb-0">Cursos com Melhor Desempenho</h5>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Relatório</a>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="list-group list-group-flush">
@@ -649,10 +647,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>

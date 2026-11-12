@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kiaalap - Modern Education Management Dashboard for Universities">
-    <meta name="keywords" content="education, dashboard, university, management, admin">
-    <meta name="author" content="Kiaalap">
+    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para instituições de ensino">
+    <meta name="keywords" content="educação, painel, ensino, gestão, administração">
+    <meta name="author" content="Agostinho Pedro">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Password meter - Kiaalap Dashboard</title>
+    <title>Indicador de segurança da palavra-passe - Painel sgSchool</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -87,7 +87,7 @@
 
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
     <!-- Required DOM elements for dashboard.js -->
     <div class="search-backdrop" id="searchBackdrop"></div>
@@ -100,124 +100,124 @@
             <div class="sidebar-brand">
                 <h5>
                     <i class="bi bi-mortarboard-fill"></i>
-                    Kiaalap
+                    sgSchool
                 </h5>
-                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+                <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Fechar barra lateral">
                     <i class="bi bi-x-lg"></i>
                 </button>
             </div>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Main navigation">
+        <nav class="sidebar-nav" aria-label="Navegação principal">
             <div class="menu-section">
-                <div class="menu-section-title">Main</div>
+                <div class="menu-section-title">Principal</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#dashboardSubmenu" aria-expanded="false">
                             <i class="bi bi-speedometer2"></i>
-                            <span>Dashboard</span>
+                            <span>Painel</span>
                         </a>
                         <ul id="dashboardSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="index.html">Dashboard v.1</a></li>
-                            <li><a class="nav-link " href="index-1.html">Dashboard v.2</a></li>
-                            <li><a class="nav-link " href="index-2.html">Dashboard v.3</a></li>
-                            <li><a class="nav-link " href="analytics.html">Analytics</a></li>
-                            <li><a class="nav-link " href="widgets.html">Widgets</a></li>
+                            <li><a class="nav-link " href="index.html">Painel v.1</a></li>
+                            <li><a class="nav-link " href="index-1.html">Painel v.2</a></li>
+                            <li><a class="nav-link " href="index-2.html">Painel v.3</a></li>
+                            <li><a class="nav-link " href="widgets.html">Elementos</a></li>
+                            <li><a class="nav-link " href="analytics.html">Análise de dados</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="events.html">
                             <i class="bi bi-calendar-event"></i>
-                            <span>Events</span>
+                            <span>Eventos</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Academic</div>
+                <div class="menu-section-title">Académico</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#professorsSubmenu" aria-expanded="false">
                             <i class="bi bi-person-badge"></i>
-                            <span>Professors</span>
+                            <span>Professores</span>
                         </a>
                         <ul id="professorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-professors.html">All Professors</a></li>
-                            <li><a class="nav-link " href="add-professor.html">Add Professor</a></li>
-                            <li><a class="nav-link " href="edit-professor.html">Edit Professor</a></li>
-                            <li><a class="nav-link " href="professor-profile.html">Professor Profile</a></li>
+                            <li><a class="nav-link " href="all-professors.html">Todos os professores</a></li>
+                            <li><a class="nav-link " href="add-professor.html">Adicionar professor</a></li>
+                            <li><a class="nav-link " href="edit-professor.html">Editar professor</a></li>
+                            <li><a class="nav-link " href="professor-profile.html">Perfil do professor</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#studentsSubmenu" aria-expanded="false">
                             <i class="bi bi-people"></i>
-                            <span>Students</span>
+                            <span>Estudantes</span>
                         </a>
                         <ul id="studentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-students.html">All Students</a></li>
-                            <li><a class="nav-link " href="add-student.html">Add Student</a></li>
-                            <li><a class="nav-link " href="edit-student.html">Edit Student</a></li>
-                            <li><a class="nav-link " href="student-profile.html">Student Profile</a></li>
+                            <li><a class="nav-link " href="all-students.html">Todos os estudantes</a></li>
+                            <li><a class="nav-link " href="add-student.html">Adicionar estudante</a></li>
+                            <li><a class="nav-link " href="edit-student.html">Editar estudante</a></li>
+                            <li><a class="nav-link " href="student-profile.html">Perfil do estudante</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#coursesSubmenu" aria-expanded="false">
                             <i class="bi bi-book"></i>
-                            <span>Courses</span>
+                            <span>Cursos</span>
                         </a>
                         <ul id="coursesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="all-courses.html">All Courses</a></li>
-                            <li><a class="nav-link " href="add-course.html">Add Course</a></li>
-                            <li><a class="nav-link " href="edit-course.html">Edit Course</a></li>
-                            <li><a class="nav-link " href="course-info.html">Course Info</a></li>
-                            <li><a class="nav-link " href="course-payment.html">Course Payment</a></li>
+                            <li><a class="nav-link " href="all-courses.html">Todos os cursos</a></li>
+                            <li><a class="nav-link " href="add-course.html">Adicionar curso</a></li>
+                            <li><a class="nav-link " href="edit-course.html">Editar curso</a></li>
+                            <li><a class="nav-link " href="course-info.html">Informações do curso</a></li>
+                            <li><a class="nav-link " href="course-payment.html">Pagamento do curso</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#librarySubmenu" aria-expanded="false">
                             <i class="bi bi-journal-bookmark"></i>
-                            <span>Library</span>
+                            <span>Biblioteca</span>
                         </a>
                         <ul id="librarySubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="library-assets.html">Library Assets</a></li>
-                            <li><a class="nav-link " href="add-library-assets.html">Add Library Asset</a></li>
-                            <li><a class="nav-link " href="edit-library-assets.html">Edit Library Asset</a></li>
+                            <li><a class="nav-link " href="library-assets.html">Recursos da biblioteca</a></li>
+                            <li><a class="nav-link " href="add-library-assets.html">Adicionar recurso da biblioteca</a></li>
+                            <li><a class="nav-link " href="edit-library-assets.html">Editar recurso da biblioteca</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#departmentsSubmenu" aria-expanded="false">
                             <i class="bi bi-building"></i>
-                            <span>Departments</span>
+                            <span>Departamentos</span>
                         </a>
                         <ul id="departmentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="departments.html">Departments List</a></li>
-                            <li><a class="nav-link " href="add-department.html">Add Department</a></li>
-                            <li><a class="nav-link " href="edit-department.html">Edit Department</a></li>
+                            <li><a class="nav-link " href="departments.html">Lista de departamentos</a></li>
+                            <li><a class="nav-link " href="add-department.html">Adicionar departamento</a></li>
+                            <li><a class="nav-link " href="edit-department.html">Editar departamento</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Communication</div>
+                <div class="menu-section-title">Comunicação</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#mailboxSubmenu" aria-expanded="false">
                             <i class="bi bi-envelope"></i>
-                            <span>Mailbox</span>
+                            <span>Correio</span>
                         </a>
                         <ul id="mailboxSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="mailbox.html">Inbox</a></li>
-                            <li><a class="nav-link " href="mailbox-compose.html">Compose</a></li>
-                            <li><a class="nav-link " href="mailbox-view.html">View Message</a></li>
+                            <li><a class="nav-link " href="mailbox.html">Caixa de entrada</a></li>
+                            <li><a class="nav-link " href="mailbox-compose.html">Redigir</a></li>
+                            <li><a class="nav-link " href="mailbox-view.html">Ver mensagem</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -230,129 +230,129 @@
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#componentsSubmenu" aria-expanded="false">
                             <i class="bi bi-layout-wtf"></i>
-                            <span>Components</span>
+                            <span>Componentes</span>
                         </a>
                         <ul id="componentsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="buttons.html">Buttons</a></li>
-                            <li><a class="nav-link " href="alerts.html">Alerts</a></li>
-                            <li><a class="nav-link " href="modals.html">Modals</a></li>
-                            <li><a class="nav-link " href="tabs.html">Tabs</a></li>
-                            <li><a class="nav-link " href="accordion.html">Accordion</a></li>
+                            <li><a class="nav-link " href="buttons.html">Botões</a></li>
+                            <li><a class="nav-link " href="alerts.html">Alertas</a></li>
+                            <li><a class="nav-link " href="modals.html">Modais</a></li>
+                            <li><a class="nav-link " href="tabs.html">Separadores</a></li>
+                            <li><a class="nav-link " href="accordion.html">Acordeão</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu active" href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#formsSubmenu" aria-expanded="true">
                             <i class="bi bi-card-list"></i>
-                            <span>Forms</span>
+                            <span>Formulários</span>
                         </a>
                         <ul id="formsSubmenu" class="submenu collapse show list-unstyled">
-                            <li><a class="nav-link " href="basic-form-element.html">Basic Forms</a></li>
-                            <li><a class="nav-link " href="advance-form-element.html">Advanced Forms</a></li>
-                            <li><a class="nav-link active" href="password-meter.html">Password Meter</a></li>
-                            <li><a class="nav-link " href="multi-upload.html">File Upload</a></li>
-                            <li><a class="nav-link " href="images-cropper.html">Image Cropper</a></li>
+                            <li><a class="nav-link " href="basic-form-element.html">Formulários básicos</a></li>
+                            <li><a class="nav-link " href="advance-form-element.html">Formulários avançados</a></li>
+                            <li><a class="nav-link active" href="password-meter.html">Indicador de segurança da palavra-passe</a></li>
+                            <li><a class="nav-link " href="multi-upload.html">Carregamento de ficheiros</a></li>
+                            <li><a class="nav-link " href="images-cropper.html">Recortador de imagens</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#chartsSubmenu" aria-expanded="false">
                             <i class="bi bi-bar-chart"></i>
-                            <span>Charts</span>
+                            <span>Gráficos</span>
                         </a>
                         <ul id="chartsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="line-charts.html">Line Charts</a></li>
-                            <li><a class="nav-link " href="area-charts.html">Area Charts</a></li>
-                            <li><a class="nav-link " href="bar-charts.html">Bar Charts</a></li>
-                            <li><a class="nav-link " href="c3.html">C3 Charts</a></li>
-                            <li><a class="nav-link " href="peity.html">Peity Charts</a></li>
-                            <li><a class="nav-link " href="rounded-chart.html">Rounded Charts</a></li>
+                            <li><a class="nav-link " href="line-charts.html">Gráficos de linhas</a></li>
+                            <li><a class="nav-link " href="area-charts.html">Gráficos de área</a></li>
+                            <li><a class="nav-link " href="bar-charts.html">Gráficos de barras</a></li>
+                            <li><a class="nav-link " href="c3.html">Gráficos C3</a></li>
+                            <li><a class="nav-link " href="peity.html">Gráficos Peity</a></li>
+                            <li><a class="nav-link " href="rounded-chart.html">Gráficos arredondados</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#tablesSubmenu" aria-expanded="false">
                             <i class="bi bi-table"></i>
-                            <span>Tables</span>
+                            <span>Tabelas</span>
                         </a>
                         <ul id="tablesSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="static-table.html">Static Tables</a></li>
-                            <li><a class="nav-link " href="data-table.html">Data Tables</a></li>
+                            <li><a class="nav-link " href="static-table.html">Tabelas estáticas</a></li>
+                            <li><a class="nav-link " href="data-table.html">Tabelas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Developer Tools</div>
+                <div class="menu-section-title">Ferramentas de desenvolvimento</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link " href="code-editor.html">
                             <i class="bi bi-code-slash"></i>
-                            <span>Code Editor</span>
+                            <span>Editor de código</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#uiToolsSubmenu" aria-expanded="false">
                             <i class="bi bi-tools"></i>
-                            <span>UI Components</span>
+                            <span>Componentes da interface</span>
                         </a>
                         <ul id="uiToolsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="preloader.html">Preloaders</a></li>
-                            <li><a class="nav-link " href="notifications.html">Notifications</a></li>
-                            <li><a class="nav-link " href="tree-view.html">Tree View</a></li>
+                            <li><a class="nav-link " href="preloader.html">Indicadores de carregamento</a></li>
+                            <li><a class="nav-link " href="notifications.html">Notificações</a></li>
+                            <li><a class="nav-link " href="tree-view.html">Vista em árvore</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#viewersSubmenu" aria-expanded="false">
                             <i class="bi bi-eye"></i>
-                            <span>Viewers</span>
+                            <span>Visualizadores</span>
                         </a>
                         <ul id="viewersSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="pdf-viewer.html">PDF Viewer</a></li>
+                            <li><a class="nav-link " href="pdf-viewer.html">Visualizador de PDF</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#mapsSubmenu" aria-expanded="false">
                             <i class="bi bi-map"></i>
-                            <span>Maps</span>
+                            <span>Mapas</span>
                         </a>
                         <ul id="mapsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="google-map.html">Interactive Maps</a></li>
-                            <li><a class="nav-link " href="data-maps.html">Data Maps</a></li>
+                            <li><a class="nav-link " href="google-map.html">Mapas interativos</a></li>
+                            <li><a class="nav-link " href="data-maps.html">Mapas de dados</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Pages</div>
+                <div class="menu-section-title">Páginas</div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#authSubmenu" aria-expanded="false">
                             <i class="bi bi-shield-lock"></i>
-                            <span>Authentication</span>
+                            <span>Autenticação</span>
                         </a>
                         <ul id="authSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="login.html">Login</a></li>
-                            <li><a class="nav-link " href="register.html">Register</a></li>
+                            <li><a class="nav-link " href="login.html">Iniciar sessão</a></li>
+                            <li><a class="nav-link " href="register.html">Registar</a></li>
                             <li><a class="nav-link " href="lock.html">Lock Screen</a></li>
-                            <li><a class="nav-link " href="password-recovery.html">Forgot Password</a></li>
+                            <li><a class="nav-link " href="password-recovery.html">Recuperar palavra-passe</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
                             data-bs-target="#errorsSubmenu" aria-expanded="false">
                             <i class="bi bi-exclamation-triangle"></i>
-                            <span>Error Pages</span>
+                            <span>Páginas de erro</span>
                         </a>
                         <ul id="errorsSubmenu" class="submenu collapse  list-unstyled">
-                            <li><a class="nav-link " href="404.html">404 Error</a></li>
-                            <li><a class="nav-link " href="500.html">500 Error</a></li>
+                            <li><a class="nav-link " href="404.html">Erro 404</a></li>
+                            <li><a class="nav-link " href="500.html">Erro 500</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -365,21 +365,21 @@
         <header class="navbar top-navbar">
             <div class="container-fluid d-flex align-items-center h-100">
                 <!-- Hamburger Menu -->
-                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Toggle sidebar"
+                <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
                     aria-controls="sidebar">
                     <i class="bi bi-list"></i>
                 </button>
 
                 <!-- Breadcrumb for desktop -->
-                <nav aria-label="Header breadcrumb" class="d-none d-lg-block ms-3">
+                <nav aria-label="Migalhas de pão do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Password meter</li>
+                        <li class="breadcrumb-item"><a href="index.html">Página inicial</a></li>
+                        <li class="breadcrumb-item active">Indicador de segurança da palavra-passe</li>
                     </ol>
                 </nav>
 
                 <!-- Logo for mobile -->
-                <div class="navbar-brand d-lg-none fw-bold me-auto">Kiaalap</div>
+                <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
 
                 <!-- Spacer for desktop -->
                 <div class="flex-grow-1 d-none d-lg-block"></div>
@@ -388,29 +388,29 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Open search"
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
                             aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
-                        <div class="search-form" id="searchForm" role="search" aria-label="Site search">
+                        <div class="search-form" id="searchForm" role="search" aria-label="Pesquisa no site">
                             <i class="bi bi-search search-icon"></i>
-                            <input type="text" class="form-control" id="searchInput" aria-label="Search pages"
-                                placeholder="Search..." data-bs-toggle="dropdown">
-                            <button type="button" class="close-search" id="closeSearch" aria-label="Close search">
+                            <input type="text" class="form-control" id="searchInput" aria-label="Pesquisar páginas"
+                                placeholder="Pesquisar..." data-bs-toggle="dropdown">
+                            <button type="button" class="close-search" id="closeSearch" aria-label="Fechar pesquisa">
                                 <i class="bi bi-x-lg"></i>
                             </button>
 
                             <ul class="dropdown-menu w-100 mt-2">
-                                <li><a class="dropdown-item" href="#">Student Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Course Management</a></li>
+                                <li><a class="dropdown-item" href="#">Registo de estudantes</a></li>
+                                <li><a class="dropdown-item" href="#">Gestão de cursos</a></li>
                                 <li><a class="dropdown-item" href="#">Grade Submission</a></li>
-                                <li><a class="dropdown-item" href="#">Faculty Directory</a></li>
-                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Diretório do corpo docente</a></li>
+                                <li><a class="dropdown-item" href="#">Recursos da biblioteca</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                <li><a class="dropdown-item" href="#">Pesquisa avançada</a></li>
                             </ul>
                         </div>
                     </div>
@@ -418,7 +418,7 @@
                     <!-- Notifications -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon position-relative" data-bs-toggle="dropdown"
-                            id="notificationsToggle" aria-label="Notifications">
+                            id="notificationsToggle" aria-label="Notificações">
                             <i class="bi bi-bell"></i>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -426,8 +426,8 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" style="width: 320px;">
                             <li class="dropdown-header d-flex align-items-center justify-content-between">
-                                <span>Notifications</span>
-                                <small class="text-muted">3 new</small>
+                                <span>Notificações</span>
+                                <small class="text-muted">3 novas</small>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -440,9 +440,9 @@
                                             <i class="bi bi-calendar-check text-primary"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">New Event</div>
-                                            <div class="text-muted small">Science Fair on March 15</div>
-                                            <div class="text-muted small">5 minutes ago</div>
+                                            <div class="fw-semibold">Novo evento</div>
+                                            <div class="text-muted small">Feira de ciência a 15 de março</div>
+                                            <div class="text-muted small">Há 5 minutos</div>
                                         </div>
                                     </div>
                                 </a>
@@ -455,9 +455,9 @@
                                             <i class="bi bi-check-circle text-success"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">Assignment Submitted</div>
-                                            <div class="text-muted small">John submitted his project</div>
-                                            <div class="text-muted small">2 hours ago</div>
+                                            <div class="fw-semibold">Trabalho submetido</div>
+                                            <div class="text-muted small">O John submeteu o trabalho</div>
+                                            <div class="text-muted small">Há 2 horas</div>
                                         </div>
                                     </div>
                                 </a>
@@ -470,9 +470,9 @@
                                             <i class="bi bi-exclamation-triangle text-warning"></i>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <div class="fw-semibold">System Alert</div>
-                                            <div class="text-muted small">Database backup completed</div>
-                                            <div class="text-muted small">Yesterday</div>
+                                            <div class="fw-semibold">Alerta do sistema</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
                                 </a>
@@ -482,7 +482,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item text-center" href="notifications.html">
-                                    <small>View all notifications</small>
+                                    <small>Ver todas as notificações</small>
                                 </a>
                             </li>
                         </ul>
@@ -491,28 +491,28 @@
                     <!-- Quick Actions -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
-                            aria-label="Quick actions">
+                            aria-label="Ações rápidas">
                             <i class="bi bi-plus-lg"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
-                                        class="bi bi-person-plus me-2"></i>Add Student</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Add
-                                    Course</a></li>
+                                        class="bi bi-person-plus me-2"></i>Adicionar estudante</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
-                                        class="bi bi-person-badge me-2"></i>Add Professor</a></li>
+                                        class="bi bi-person-badge me-2"></i>Adicionar professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Schedule
-                                    Event</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar
+                                    evento</a></li>
                         </ul>
                     </div>
 
                     <!-- User Menu -->
                     <div class="dropdown">
                         <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown"
-                            aria-label="Sarah Johnson account menu">
+                            aria-label="Menu da conta de Sarah Johnson">
                             <span class="user-avatar me-2">
                                 SJ
                             </span>
@@ -520,14 +520,14 @@
                             <i class="bi bi-chevron-down ms-1"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Help
-                                    Center</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle me-2"></i>Centro de
+                                    ajuda</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -540,8 +540,8 @@
             <div class="container-fluid">
                 <!-- Page Header -->
                 <div class="mb-3">
-                    <h1 class="h3 font-bold">Password Meter</h1>
-                    <p class="text-muted text-sm">Advanced password strength validation and security tools</p>
+                    <h1 class="h3 font-bold">Indicador de segurança da palavra-passe</h1>
+                    <p class="text-muted text-sm">Validação avançada da robustez da palavra-passe e ferramentas de segurança</p>
                 </div>
 
                 <!-- Password Strength Meter Row -->
@@ -549,21 +549,21 @@
                     <div class="dashboard-grid grid-cols-2">
                         <!-- Password Strength Test -->
                         <div class="stats-card">
-                            <div class="stats-card-label">Password Strength Analyzer</div>
+                            <div class="stats-card-label">Analisador da robustez da palavra-passe</div>
                             <div class="mb-3">
-                                <label for="passwordTest" class="form-label">Enter Password</label>
+                                <label for="passwordTest" class="form-label">Introduza a palavra-passe</label>
                                 <div class="password-input-wrapper">
                                     <input type="password" class="form-control" id="passwordTest"
-                                        placeholder="Type your password..." autocomplete="new-password">
-                                    <button type="button" class="password-toggle" id="passwordToggle" aria-label="View">
+                                        placeholder="Introduza a sua palavra-passe..." autocomplete="new-password">
+                                    <button type="button" class="password-toggle" id="passwordToggle" aria-label="Ver">
                                         <i aria-hidden="true" class="bi bi-eye"></i>
                                     </button>
                                 </div>
                             </div>
                             <div class="password-strength-meter mb-3">
                                 <div class="strength-label-row">
-                                    <span class="strength-label">Strength:</span>
-                                    <span class="strength-text" id="strengthText">Enter a password</span>
+                                    <span class="strength-label">Robustez:</span>
+                                    <span class="strength-text" id="strengthText">Introduza uma palavra-passe</span>
                                 </div>
                                 <div class="strength-bar-container">
                                     <div class="strength-bar" id="strengthBar"></div>
@@ -572,44 +572,44 @@
                             <div class="d-flex justify-content-between">
                                 <div class="metric-small">
                                     <div class="metric-value-sm" id="passwordScore">0</div>
-                                    <div class="metric-label-sm">Score</div>
+                                    <div class="metric-label-sm">Pontuação</div>
                                 </div>
                                 <div class="metric-small">
                                     <div class="metric-value-sm" id="passwordLength">0</div>
-                                    <div class="metric-label-sm">Length</div>
+                                    <div class="metric-label-sm">Comprimento</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Password Requirements -->
                         <div class="stats-card">
-                            <div class="stats-card-label">Security Requirements</div>
+                            <div class="stats-card-label">Requisitos de segurança</div>
                             <div class="requirements-list">
                                 <div class="requirement-item" id="req-length">
                                     <i class="bi bi-circle requirement-icon"></i>
-                                    <span>At least 8 characters</span>
+                                    <span>Pelo menos 8 caracteres</span>
                                 </div>
                                 <div class="requirement-item" id="req-uppercase">
                                     <i class="bi bi-circle requirement-icon"></i>
-                                    <span>Uppercase letter (A-Z)</span>
+                                    <span>Letra maiúscula (A-Z)</span>
                                 </div>
                                 <div class="requirement-item" id="req-lowercase">
                                     <i class="bi bi-circle requirement-icon"></i>
-                                    <span>Lowercase letter (a-z)</span>
+                                    <span>Letra minúscula (a-z)</span>
                                 </div>
                                 <div class="requirement-item" id="req-number">
                                     <i class="bi bi-circle requirement-icon"></i>
-                                    <span>Number (0-9)</span>
+                                    <span>Número (0-9)</span>
                                 </div>
                                 <div class="requirement-item" id="req-special">
                                     <i class="bi bi-circle requirement-icon"></i>
-                                    <span>Special character (!@#$%)</span>
+                                    <span>Carácter especial (!@#$%)</span>
                                 </div>
                             </div>
                             <div class="requirements-status mt-3">
                                 <div class="status-indicator" id="requirementsStatus">
                                     <i class="bi bi-info-circle"></i>
-                                    <span>Enter a password to check</span>
+                                    <span>Introduza uma palavra-passe para verificar</span>
                                 </div>
                             </div>
                         </div>
@@ -622,12 +622,12 @@
                         <!-- Password Generator -->
                         <div class="chart-wrapper">
                             <div class="dashboard-card-header">
-                                <h5 class="dashboard-card-title">Password Generator</h5>
+                                <h5 class="dashboard-card-title">Gerador de palavras-passe</h5>
                             </div>
                             <div class="dashboard-card-body">
                                 <div class="row mb-3">
                                     <div class="col-md-6">
-                                        <label for="generatorLength" class="form-label">Length</label>
+                                        <label for="generatorLength" class="form-label">Comprimento</label>
                                         <div class="d-flex align-items-center gap-2">
                                             <input type="range" class="form-range" id="generatorLength" min="8" max="64"
                                                 value="16">
@@ -639,69 +639,69 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="includeUppercase"
                                                     checked>
-                                                <label class="form-check-label" for="includeUppercase">Uppercase</label>
+                                                <label class="form-check-label" for="includeUppercase">Maiúsculas</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="includeLowercase"
                                                     checked>
-                                                <label class="form-check-label" for="includeLowercase">Lowercase</label>
+                                                <label class="form-check-label" for="includeLowercase">Minúsculas</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="includeNumbers"
                                                     checked>
-                                                <label class="form-check-label" for="includeNumbers">Numbers</label>
+                                                <label class="form-check-label" for="includeNumbers">Números</label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="includeSymbols"
                                                     checked>
-                                                <label class="form-check-label" for="includeSymbols">Symbols</label>
+                                                <label class="form-check-label" for="includeSymbols">Símbolos</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <button type="button" class="btn btn-primary mb-3" id="generatePassword">
-                                    <i class="bi bi-arrow-clockwise me-2"></i>Generate Password
+                                    <i class="bi bi-arrow-clockwise me-2"></i>Gerar palavra-passe
                                 </button>
                                 <div class="input-group">
                                     <input type="text" class="form-control font-monospace" id="generatedPassword"
-                                        readonly placeholder="Generated password will appear here">
+                                        readonly placeholder="A palavra-passe gerada aparecerá aqui">
                                     <button class="btn btn-outline-secondary" type="button" id="copyPassword"
-                                        aria-label="Copy">
+                                        aria-label="Copiar">
                                         <i aria-hidden="true" class="bi bi-clipboard"></i>
                                     </button>
                                 </div>
-                                <small class="text-muted mt-2 d-block" id="generatedStrength">Click generate to see
-                                    strength</small>
+                                <small class="text-muted mt-2 d-block" id="generatedStrength">Clique em «Gerar palavra-passe»
+                                    para ver o nível de segurança</small>
                             </div>
                         </div>
 
                         <!-- Security Tips -->
                         <div style="display: flex; flex-direction: column; gap: 24px;">
                             <div class="stats-card">
-                                <div class="stats-card-label text-success">Password Best Practices</div>
+                                <div class="stats-card-label text-success">Boas práticas para palavras-passe</div>
                                 <ul class="tip-list small">
-                                    <li>Use at least 12 characters</li>
-                                    <li>Mix letters, numbers, symbols</li>
-                                    <li>Avoid personal information</li>
-                                    <li>Use unique passwords per site</li>
-                                    <li>Consider a password manager</li>
+                                    <li>Utilize pelo menos 12 caracteres</li>
+                                    <li>Combine letras, números e símbolos</li>
+                                    <li>Evite informações pessoais</li>
+                                    <li>Utilize palavras-passe únicas em cada site</li>
+                                    <li>Considere utilizar um gestor de palavras-passe</li>
                                 </ul>
                             </div>
 
                             <div class="stats-card">
-                                <div class="stats-card-label text-warning">Common Mistakes</div>
+                                <div class="stats-card-label text-warning">Erros comuns</div>
                                 <div class="pattern-examples">
                                     <div class="pattern-example small mb-2">
                                         <div class="pattern-bad">password123</div>
-                                        <small class="text-muted">Dictionary + numbers</small>
+                                        <small class="text-muted">Dicionário e números</small>
                                     </div>
                                     <div class="pattern-example small mb-2">
                                         <div class="pattern-bad">qwerty</div>
-                                        <small class="text-muted">Keyboard patterns</small>
+                                        <small class="text-muted">Padrões do teclado</small>
                                     </div>
                                     <div class="pattern-example small">
                                         <div class="pattern-bad">john1990</div>
-                                        <small class="text-muted">Name + birth year</small>
+                                        <small class="text-muted">Nome e ano de nascimento</small>
                                     </div>
                                 </div>
                             </div>
@@ -713,17 +713,17 @@
                 <div class="dashboard-grid grid-cols-2">
                     <div class="dashboard-card">
                         <div class="dashboard-card-header">
-                            <h5 class="dashboard-card-title">Password Comparison</h5>
+                            <h5 class="dashboard-card-title">Comparação de palavras-passe</h5>
                         </div>
                         <div class="dashboard-card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="comparePassword1" class="form-label">Password A</label>
+                                    <label for="comparePassword1" class="form-label">Palavra-passe A</label>
                                     <div class="password-input-wrapper">
                                         <input type="password" class="form-control" id="comparePassword1"
-                                            placeholder="First password" autocomplete="new-password">
+                                            placeholder="Primeira palavra-passe" autocomplete="new-password">
                                         <button type="button" class="password-toggle" id="compareToggle1"
-                                            aria-label="View">
+                                            aria-label="Ver">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                     </div>
@@ -733,12 +733,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="comparePassword2" class="form-label">Password B</label>
+                                    <label for="comparePassword2" class="form-label">Palavra-passe B</label>
                                     <div class="password-input-wrapper">
                                         <input type="password" class="form-control" id="comparePassword2"
-                                            placeholder="Second password" autocomplete="new-password">
+                                            placeholder="Segunda palavra-passe" autocomplete="new-password">
                                         <button type="button" class="password-toggle" id="compareToggle2"
-                                            aria-label="View">
+                                            aria-label="Ver">
                                             <i aria-hidden="true" class="bi bi-eye"></i>
                                         </button>
                                     </div>
@@ -751,7 +751,7 @@
                             <div class="comparison-summary mt-3" id="comparisonSummary">
                                 <div class="alert alert-info">
                                     <i class="bi bi-info-circle me-2"></i>
-                                    Enter passwords in both fields to compare
+                                    Introduza uma palavra-passe em cada campo para comparar
                                 </div>
                             </div>
                         </div>
@@ -759,24 +759,24 @@
 
                     <div class="dashboard-card">
                         <div class="dashboard-card-header">
-                            <h5 class="dashboard-card-title">Security Analysis</h5>
+                            <h5 class="dashboard-card-title">Análise de segurança</h5>
                         </div>
                         <div class="dashboard-card-body">
                             <div class="security-metrics">
                                 <div class="metric-row">
                                     <div class="metric-item">
                                         <div class="metric-value" id="entropyValue">0</div>
-                                        <div class="metric-label">Entropy (bits)</div>
+                                        <div class="metric-label">Entropia (bits)</div>
                                     </div>
                                     <div class="metric-item">
                                         <div class="metric-value" id="crackTime">0s</div>
-                                        <div class="metric-label">Crack Time</div>
+                                        <div class="metric-label">Tempo estimado para decifrar</div>
                                     </div>
                                 </div>
                                 <div class="security-recommendations mt-3" id="securityRecommendations">
                                     <div class="alert alert-info">
                                         <i class="bi bi-lightbulb me-2"></i>
-                                        Enter a password to see security analysis
+                                        Introduza uma palavra-passe para ver a análise de segurança
                                     </div>
                                 </div>
                             </div>
@@ -791,10 +791,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 Kiaalap. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> for education</p>
+                        <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                     </div>
                 </div>
             </div>
@@ -815,7 +815,7 @@
             let feedback = [];
 
             if (password.length === 0) {
-                return { score: 0, level: 'none', text: 'Enter a password', feedback: [] };
+                return { score: 0, level: 'none', text: 'Introduza uma palavra-passe', feedback: [] };
             }
 
             // Length scoring
@@ -836,26 +836,26 @@
             // Common password check
             if (commonPasswords.includes(password.toLowerCase())) {
                 score -= 25;
-                feedback.push('Avoid common passwords');
+                feedback.push('Evite palavras-passe comuns');
             }
 
             // Determine strength level
             let level, text;
             if (score < 30) {
                 level = 'very-weak';
-                text = 'Very Weak';
+                text = 'Muito fraca';
             } else if (score < 50) {
                 level = 'weak';
-                text = 'Weak';
+                text = 'Fraca';
             } else if (score < 70) {
                 level = 'medium';
-                text = 'Medium';
+                text = 'Médio';
             } else if (score < 90) {
                 level = 'strong';
-                text = 'Strong';
+                text = 'Forte';
             } else {
                 level = 'very-strong';
-                text = 'Very Strong';
+                text = 'Muito forte';
             }
 
             return { score: Math.max(0, score), level, text, feedback };
@@ -902,11 +902,11 @@
             const guessesPerSecond = 1000000000; // 1 billion guesses per second
             const seconds = combinations / (2 * guessesPerSecond);
 
-            if (seconds < 60) return seconds.toFixed(0) + 's';
-            if (seconds < 3600) return (seconds / 60).toFixed(0) + 'm';
-            if (seconds < 86400) return (seconds / 3600).toFixed(0) + 'h';
-            if (seconds < 31536000) return (seconds / 86400).toFixed(0) + 'd';
-            return (seconds / 31536000).toFixed(0) + 'y';
+            if (seconds < 60)             return seconds.toFixed(0) + ' s';
+            if (seconds < 3600) return (seconds / 60).toFixed(0) + ' min';
+            if (seconds < 86400) return (seconds / 3600).toFixed(0) + ' h';
+            if (seconds < 31536000) return (seconds / 86400).toFixed(0) + ' d';
+            return (seconds / 31536000).toFixed(0) + ' a';
         }
 
         // Update security recommendations
@@ -914,17 +914,17 @@
             const container = document.getElementById('securityRecommendations');
             let recommendations = [];
 
-            if (password.length < 12) recommendations.push('Use at least 12 characters');
-            if (!/[A-Z]/.test(password)) recommendations.push('Add uppercase letters');
-            if (!/[a-z]/.test(password)) recommendations.push('Add lowercase letters');
-            if (!/[0-9]/.test(password)) recommendations.push('Add numbers');
-            if (!/[^A-Za-z0-9]/.test(password)) recommendations.push('Add special characters');
+            if (password.length < 12) recommendations.push('Utilize pelo menos 12 caracteres');
+            if (!/[A-Z]/.test(password)) recommendations.push('Adicione letras maiúsculas');
+            if (!/[a-z]/.test(password)) recommendations.push('Adicione letras minúsculas');
+            if (!/[0-9]/.test(password)) recommendations.push('Adicione números');
+            if (!/[^A-Za-z0-9]/.test(password)) recommendations.push('Adicione caracteres especiais');
 
             if (recommendations.length === 0) {
-                container.innerHTML = '<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>Password meets security standards!</div>';
+                container.innerHTML = '<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>A palavra-passe cumpre os requisitos de segurança!</div>';
             } else {
                 const listItems = recommendations.map(rec => `<li>${rec}</li>`).join('');
-                container.innerHTML = `<div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i>Recommendations:<ul class="mb-0 mt-2">${listItems}</ul></div>`;
+                container.innerHTML = `<div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i>Recomendações:<ul class="mb-0 mt-2">${listItems}</ul></div>`;
             }
         }
 
@@ -958,13 +958,13 @@
             const totalReq = Object.keys(requirements).length;
 
             if (password.length === 0) {
-                statusEl.innerHTML = '<i class="bi bi-info-circle"></i><span>Enter a password to check</span>';
+                statusEl.innerHTML = '<i class="bi bi-info-circle"></i><span>Introduza uma palavra-passe para verificar</span>';
                 statusEl.parentElement.className = 'requirements-status mt-3 status-info';
             } else if (metCount === totalReq) {
-                statusEl.innerHTML = '<i class="bi bi-check-circle"></i><span>All requirements met!</span>';
+                statusEl.innerHTML = '<i class="bi bi-check-circle"></i><span>Todos os requisitos foram cumpridos!</span>';
                 statusEl.parentElement.className = 'requirements-status mt-3 status-success';
             } else {
-                statusEl.innerHTML = `<i class="bi bi-exclamation-triangle"></i><span>${metCount}/${totalReq} requirements met</span>`;
+                statusEl.innerHTML = `<i class="bi bi-exclamation-triangle"></i><span>${metCount}/${totalReq} requisitos cumpridos</span>`;
                 statusEl.parentElement.className = 'requirements-status mt-3 status-warning';
             }
         }
@@ -984,7 +984,7 @@
             if (includeSymbols) chars += '!@#$%^&*()_+-=[]{}|;:,.<>?';
 
             if (chars === '') {
-                alert('Please select at least one character type');
+                alert('Selecione pelo menos um tipo de carácter');
                 return '';
             }
 
@@ -1036,7 +1036,7 @@
             if (password) {
                 document.getElementById('generatedPassword').value = password;
                 const result = calculatePasswordStrength(password);
-                document.getElementById('generatedStrength').textContent = `Strength: ${result.text} (${result.score}/100)`;
+                document.getElementById('generatedStrength').textContent = `Segurança: ${result.text} (${result.score}/100)`;
             }
         });
 
@@ -1078,11 +1078,11 @@
                 const summary = document.getElementById('comparisonSummary');
 
                 if (result1.score > result2.score) {
-                    summary.innerHTML = `<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>Password A is stronger (${result1.score} vs ${result2.score})</div>`;
+                    summary.innerHTML = `<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>A palavra-passe A é mais segura (${result1.score} contra ${result2.score})</div>`;
                 } else if (result2.score > result1.score) {
-                    summary.innerHTML = `<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>Password B is stronger (${result2.score} vs ${result1.score})</div>`;
+                    summary.innerHTML = `<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>A palavra-passe B é mais segura (${result2.score} contra ${result1.score})</div>`;
                 } else {
-                    summary.innerHTML = `<div class="alert alert-warning"><i class="bi bi-info-circle me-2"></i>Both passwords have equal strength (${result1.score})</div>`;
+                    summary.innerHTML = `<div class="alert alert-warning"><i class="bi bi-info-circle me-2"></i>As duas palavras-passe têm o mesmo nível de segurança (${result1.score})</div>`;
                 }
             }
         }

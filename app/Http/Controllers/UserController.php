@@ -111,6 +111,19 @@ class UserController extends Controller
     {
         return view('admin.mailbox.mailbox.index');
     }
+    //----------------departamentos
+    public function add_department()
+    {
+        return view('admin.departments.add-department.index');
+    }
+    public function edit_department()
+    {
+        return view('admin.departments.edit-department.index');
+    }
+    public function department()
+    {
+        return view('admin.departments.departments.index');
+    }
     //rota para armazenar os dados do usuario no banco de dados
     public function store(Request $request)
     {

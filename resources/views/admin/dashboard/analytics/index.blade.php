@@ -295,6 +295,84 @@
                     </div>
                 </div>
 
+                <!-- Enrollment Applications -->
+                <div class="dashboard-row">
+                    <h2 class="h5 fw-semibold text-gray-800 mb-4">Candidaturas de Matrícula</h2>
+                    <div class="dashboard-card">
+                        <div class="dashboard-card-header py-4 px-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0">Candidaturas submetidas</h6>
+                                <span class="badge bg-primary-subtle text-primary">{{ $enrollments->count() }}</span>
+                            </div>
+                        </div>
+                        <div class="dashboard-card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="px-4 py-3">Nome completo</th>
+                                            <th scope="col" class="py-3">NIF</th>
+                                            <th scope="col" class="py-3">Curso pretendido</th>
+                                            <th scope="col" class="py-3">Data da candidatura</th>
+                                            <th scope="col" class="py-3">Estado</th>
+                                            <th scope="col" class="py-3 pe-4">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @forelse ($enrollments as $enrollment)
+                                            @php
+                                                $statusDetails = [
+                                                    'pending' => ['Pendente', 'bg-warning-subtle text-warning'],
+                                                    'accepted' => ['Aceite', 'bg-success-subtle text-success'],
+                                                    'denied' => ['Recusada', 'bg-danger-subtle text-danger'],
+                                                ][$enrollment->status] ?? [$enrollment->status, 'bg-secondary-subtle text-secondary'];
+                                            @endphp
+                                            <tr>
+                                                <td class="px-4">
+                                                    <div class="fw-semibold">
+                                                        {{ implode(' ', array_filter([$enrollment->first_name, $enrollment->middle_name, $enrollment->last_name])) }}
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">{{ $enrollment->nif }}</td>
+                                                <td>{{ \App\Models\Enrollment::COURSES[$enrollment->course] ?? $enrollment->course }}</td>
+                                                <td class="text-nowrap">{{ $enrollment->application_date->format('d/m/Y') }}</td>
+                                                <td>
+                                                    <span class="badge {{ $statusDetails[1] }}">{{ $statusDetails[0] }}</span>
+                                                </td>
+                                                <td class="pe-4">
+                                                    <div class="d-flex gap-2 text-nowrap">
+                                                        <a href="{{ route('enrollment-applications.show', $enrollment) }}"
+                                                            class="btn btn-sm btn-primary">Ver</a>
+                                                        <button type="button" class="btn btn-sm btn-success">Aceitar</button>
+                                                        <button type="button" class="btn btn-sm btn-warning">Recusar</button>
+                                                        <form action="{{ route('enrollment-applications.destroy', $enrollment) }}"
+                                                            method="POST"
+                                                            onsubmit="return confirm('Tem a certeza de que pretende eliminar esta candidatura?');">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                                                        </form>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        @empty
+                                            <tr>
+                                                <td colspan="6" class="px-4 py-5 text-center">
+                                                    <div class="text-muted">
+                                                        <i class="bi bi-inbox fs-2 d-block mb-2" aria-hidden="true"></i>
+                                                        <p class="fw-semibold mb-1">Ainda não existem candidaturas.</p>
+                                                        <p class="small mb-0">As candidaturas submetidas aparecerão aqui.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Stats Cards -->
                 <div class="dashboard-row">
                     <h2 class="h5 fw-semibold text-gray-800 mb-4">Indicadores-chave</h2>
@@ -574,118 +652,12 @@
                     </div>
                 </div>
 
-                <!-- Table -->
-                <div class="dashboard-row">
-                    <h2 class="h5 fw-semibold text-gray-800 mb-4">Tabela de Desempenho dos Estudantes</h2>
-                    <div class="dashboard-card">
-                        <div class="dashboard-card-header py-4 px-4">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h6 class="mb-0">Estudantes com Melhor Desempenho</h6>
-                                <button type="button" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-download me-1"></i> Export
-                                </button>
-                            </div>
-                        </div>
-                        <div class="dashboard-card-body px-4 py-3">
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Estudante</th>
-                                            <th>Departamento</th>
-                                            <th>GPA</th>
-                                            <th>Assiduidade</th>
-                                            <th>Estado</th>
-                                            <th>Ação</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img src="https://ui-avatars.com/api/?name=Emily+Chen&background=6366f1&color=fff"
-                                                        class="rounded-circle me-2" width="32" height="32" alt="Emily"
-                                                        loading="lazy">
-                                                    <div>
-                                                        <div class="fw-semibold">Emily Chen</div>
-                                                        <div class="text-muted small">ID: 2025001</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Computer Science</td>
-                                            <td><span class="badge bg-success">3.95</span></td>
-                                            <td>98%</td>
-                                            <td><span class="badge bg-success-subtle text-success">Ativo</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-sm btn-light">Ver</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img src="https://ui-avatars.com/api/?name=Michael+Davis&background=10b981&color=fff"
-                                                        class="rounded-circle me-2" width="32" height="32" alt="Michael"
-                                                        loading="lazy">
-                                                    <div>
-                                                        <div class="fw-semibold">Michael Davis</div>
-                                                        <div class="text-muted small">ID: 2025002</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Engineering</td>
-                                            <td><span class="badge bg-success">3.88</span></td>
-                                            <td>95%</td>
-                                            <td><span class="badge bg-success-subtle text-success">Ativo</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-sm btn-light">Ver</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=f59e0b&color=fff"
-                                                        class="rounded-circle me-2" width="32" height="32" alt="Sarah"
-                                                        loading="lazy">
-                                                    <div>
-                                                        <div class="fw-semibold">Sarah Johnson</div>
-                                                        <div class="text-muted small">ID: 2025003</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Medicine</td>
-                                            <td><span class="badge bg-success">3.92</span></td>
-                                            <td>96%</td>
-                                            <td><span class="badge bg-success-subtle text-success">Ativo</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-sm btn-light">Ver</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img src="https://ui-avatars.com/api/?name=James+Wilson&background=ef4444&color=fff"
-                                                        class="rounded-circle me-2" width="32" height="32" alt="James"
-                                                        loading="lazy">
-                                                    <div>
-                                                        <div class="fw-semibold">James Wilson</div>
-                                                        <div class="text-muted small">ID: 2025004</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Business</td>
-                                            <td><span class="badge bg-success">3.85</span></td>
-                                            <td>94%</td>
-                                            <td><span class="badge bg-success-subtle text-success">Ativo</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-sm btn-light">Ver</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                @if (session('success'))
+                    <div class="alert alert-success" role="status">
+                        {{ session('success') }}
                     </div>
-                </div>
+                @endif
+
             </div>
         </main>
 

@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
 
 // definisd as rotas do sistema
 /*
@@ -26,7 +26,9 @@ Route::post(
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', [UserController::class, 'login'])->name('login');
+Route::get('/', function () {
+    return view('admin.auth.register.index');
+})->name('register');
 Route::post('/create-user', [UserController::class, 'store'])->name('create-user');
 
 /*
@@ -39,7 +41,16 @@ Route::get('/dashboard', [UserController::class, 'index'])->name('dashboard');
 Route::get('/dashboard-1', [UserController::class, 'index_1'])->name('dashboard-1');
 Route::get('/dashboard-2', [UserController::class, 'index_2'])->name('dashboard-2');
 Route::get('/widgets', [UserController::class, 'widgets'])->name('widgets');
-Route::get('/analytics', [UserController::class, 'analytics'])->name('analytics');
+Route::get('/analytics', [EnrollmentController::class, 'index'])->name('analytics');
+
+Route::post('/enrollment-applications', [EnrollmentController::class, 'store'])
+    ->name('enrollment-applications.store');
+Route::get('/enrollment-applications/{enrollment}', [EnrollmentController::class, 'show'])
+    ->name('enrollment-applications.show');
+Route::get('/enrollment-applications/{enrollment}/documents/{document}', [EnrollmentController::class, 'document'])
+    ->name('enrollment-applications.documents.show');
+Route::delete('/enrollment-applications/{enrollment}', [EnrollmentController::class, 'destroy'])
+    ->name('enrollment-applications.destroy');
 
 /*
 |--------------------------------------------------------------------------

@@ -295,7 +295,7 @@
                     </div>
                 </div>
 
-                <!-- Enrollment Applications -->
+                <!-- Enrollment applications table: Status is intentionally omitted; other columns and actions stay unchanged. -->
                 <div class="dashboard-row">
                     <h2 class="h5 fw-semibold text-gray-800 mb-4">Candidaturas de Matrícula</h2>
                     <div class="dashboard-card">
@@ -314,19 +314,11 @@
                                             <th scope="col" class="py-3">NIF</th>
                                             <th scope="col" class="py-3">Curso pretendido</th>
                                             <th scope="col" class="py-3">Data da candidatura</th>
-                                            <th scope="col" class="py-3">Estado</th>
                                             <th scope="col" class="py-3 pe-4">Ações</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @forelse ($enrollments as $enrollment)
-                                            @php
-                                                $statusDetails = [
-                                                    'pending' => ['Pendente', 'bg-warning-subtle text-warning'],
-                                                    'accepted' => ['Aceite', 'bg-success-subtle text-success'],
-                                                    'denied' => ['Recusada', 'bg-danger-subtle text-danger'],
-                                                ][$enrollment->status] ?? [$enrollment->status, 'bg-secondary-subtle text-secondary'];
-                                            @endphp
                                             <tr>
                                                 <td class="px-4">
                                                     <div class="fw-semibold">
@@ -336,9 +328,6 @@
                                                 <td class="text-nowrap">{{ $enrollment->nif }}</td>
                                                 <td>{{ \App\Models\Enrollment::COURSES[$enrollment->course] ?? $enrollment->course }}</td>
                                                 <td class="text-nowrap">{{ $enrollment->application_date->format('d/m/Y') }}</td>
-                                                <td>
-                                                    <span class="badge {{ $statusDetails[1] }}">{{ $statusDetails[0] }}</span>
-                                                </td>
                                                 <td class="pe-4">
                                                     <div class="d-flex gap-2 text-nowrap">
                                                         <a href="{{ route('enrollment-applications.show', $enrollment) }}"
@@ -357,7 +346,8 @@
                                             </tr>
                                         @empty
                                             <tr>
-                                                <td colspan="6" class="px-4 py-5 text-center">
+                                                {{-- Empty state spans the five remaining table columns. --}}
+                                                <td colspan="5" class="px-4 py-5 text-center">
                                                     <div class="text-muted">
                                                         <i class="bi bi-inbox fs-2 d-block mb-2" aria-hidden="true"></i>
                                                         <p class="fw-semibold mb-1">Ainda não existem candidaturas.</p>

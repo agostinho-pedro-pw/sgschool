@@ -122,61 +122,31 @@
             </div>
 
             @if (session('success'))
-                <div class="alert alert-success" role="status">
-                    {{ session('success') }}
-                </div>
+            <div class="alert alert-success" role="status">
+                {{ session('success') }}
+            </div>
             @endif
 
             @if ($errors->any())
-                <div class="alert alert-danger" role="alert">
-                    <p class="fw-semibold mb-2">Não foi possível submeter a candidatura:</p>
-                    <ul class="mb-0">
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
+            <div class="alert alert-danger" role="alert">
+                <p class="fw-semibold mb-2">Não foi possível submeter a candidatura:</p>
+                <ul class="mb-0">
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
             @endif
 
-            <form id="registerForm" action="{{ route('enrollment-applications.store') }}" method="POST"
-                enctype="multipart/form-data">
+            <form id="registerForm" action="{{ route('enrollment-applications.store') }}" method="POST">
                 @csrf
                 <div class="dashboard-grid grid-cols-3">
-                    <div>
-                        <label for="firstName" class="form-label">Primeiro nome</label>
-                        <input type="text" class="form-control @error('firstName') is-invalid @enderror"
-                            id="firstName" name="firstName" value="{{ old('firstName') }}" placeholder="Nome próprio"
-                            required>
-                        @error('firstName')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div>
-                        <label for="middleName" class="form-label">Nome do meio (opcional)</label>
-                        <input type="text" class="form-control @error('middleName') is-invalid @enderror"
-                            id="middleName" name="middleName" value="{{ old('middleName') }}"
-                            placeholder="Nome do meio">
-                        @error('middleName')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div>
-                        <label for="lastName" class="form-label">Apelido</label>
-                        <input type="text" class="form-control @error('lastName') is-invalid @enderror" id="lastName"
-                            name="lastName" value="{{ old('lastName') }}" placeholder="Apelido" required>
-                        @error('lastName')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div>
-                        <label for="nif" class="form-label">NIF</label>
-                        <input type="text" class="form-control @error('nif') is-invalid @enderror" id="nif"
-                            name="nif" value="{{ old('nif') }}" placeholder="NIF" required>
-                        @error('nif')
-                            <div class="invalid-feedback">{{ $message }}</div>
+                    <div class="grid-span-2">
+                        <label for="fullName" class="form-label">Nome completo</label>
+                        <input type="text" class="form-control @error('fullName') is-invalid @enderror" id="fullName"
+                            name="fullName" value="{{ old('fullName') }}" placeholder="Nome completo" required>
+                        @error('fullName')
+                        <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -194,7 +164,7 @@
                         <input type="tel" class="form-control @error('phone') is-invalid @enderror" id="phone"
                             name="phone" value="{{ old('phone') }}" placeholder="Telefone" required>
                         @error('phone')
-                            <div class="invalid-feedback">{{ $message }}</div>
+                        <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -209,7 +179,7 @@
                                 aria-describedby="emailHelp">
                         </div>
                         @error('email')
-                            <div class="invalid-feedback d-block">{{ $message }}</div>
+                        <div class="invalid-feedback d-block">{{ $message }}</div>
                         @enderror
                         <small id="emailHelp" class="form-text text-muted">
                             Nunca partilharemos o seu endereço de email com terceiros.
@@ -217,47 +187,42 @@
                     </div>
 
                     <div>
-                        <label for="course" class="form-label">Curso</label>
-                        <select class="form-select @error('course') is-invalid @enderror" id="course" name="course"
-                            required>
-                            <option value="" disabled @selected(old('course') === null)>Selecione um curso...</option>
-                            <option value="informatica-gestao" @selected(old('course') === 'informatica-gestao')>
-                                Informática de Gestão
-                            </option>
-                            <option value="informatica-sistemas-multimedia"
-                                @selected(old('course') === 'informatica-sistemas-multimedia')>
-                                Informática e Sistemas Multimédia
-                            </option>
-                            <option value="eletronica-telecomunicacoes"
-                                @selected(old('course') === 'eletronica-telecomunicacoes')>
-                                Eletrónica e Telecomunicações
-                            </option>
-                        </select>
-                        @error('course')
+                        <fieldset class="border-0 p-0 m-0">
+                            <legend class="form-label">Género</legend>
+                            @foreach (['Masculino', 'Feminino'] as $genderOption)
+                            <div class="form-check">
+                                <input class="form-check-input @error('gender') is-invalid @enderror" type="radio"
+                                    id="gender-{{ $loop->index }}" name="gender" value="{{ $genderOption }}"
+                                    @checked(old('gender')===$genderOption) required>
+                                <label class="form-check-label" for="gender-{{ $loop->index }}">
+                                    {{ $genderOption }}
+                                </label>
+                            </div>
+                            @endforeach
+                            @error('gender')
                             <div class="invalid-feedback d-block">{{ $message }}</div>
-                        @enderror
+                            @enderror
+                        </fieldset>
                     </div>
 
-                    <div>
-                        <label for="identity_card" class="form-label">Bilhete de Identidade (BI)</label>
-                        <input type="file" class="form-control @error('identity_card') is-invalid @enderror"
-                            id="identity_card" name="identity_card"
-                            accept=".pdf,.jpg,.jpeg,.png">
-                        @error('identity_card')
+                    <div class="grid-span-2">
+                        <fieldset class="border-0 p-0 m-0">
+                            <legend class="form-label">Curso</legend>
+                            @foreach (\App\Models\Enrollment::COURSES as $courseValue => $courseLabel)
+                            <div class="form-check">
+                                <input class="form-check-input @error('course') is-invalid @enderror" type="radio"
+                                    id="course-{{ $loop->index }}" name="course" value="{{ $courseValue }}"
+                                    @checked(old('course')===$courseValue) required>
+                                <label class="form-check-label" for="course-{{ $loop->index }}">
+                                    {{ $courseLabel }}
+                                </label>
+                            </div>
+                            @endforeach
+                            @error('course')
                             <div class="invalid-feedback d-block">{{ $message }}</div>
-                        @enderror
+                            @enderror
+                        </fieldset>
                     </div>
-
-                    <div>
-                        <label for="secondary_certificate" class="form-label">Certificado de conclusão do ensino
-                            secundário</label>
-                        <input type="file" class="form-control @error('secondary_certificate') is-invalid @enderror"
-                            id="secondary_certificate" name="secondary_certificate" accept=".pdf,.jpg,.jpeg,.png">
-                        @error('secondary_certificate')
-                            <div class="invalid-feedback d-block">{{ $message }}</div>
-                        @enderror
-                    </div>
-
                 </div>
 
                 <div class="mb-4">

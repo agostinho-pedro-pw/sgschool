@@ -2,25 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Enrollment extends Model
 {
-    use HasFactory;
-
     protected $fillable = [
-        'first_name',
-        'middle_name',
-        'last_name',
-        'nif',
-        'date_of_birth',
+        'fullName',
+        'dateOfBirth',
         'phone',
         'email',
+        'gender',
         'course',
-        'identity_card_path',
-        'secondary_certificate_path',
-        'application_date',
+        'applicationDate',
         'status',
     ];
 
@@ -33,8 +26,8 @@ class Enrollment extends Model
     protected function casts(): array
     {
         return [
-            'date_of_birth' => 'date',
-            'application_date' => 'date',
+            'dateOfBirth' => 'date',
+            'applicationDate' => 'date',
         ];
     }
 }

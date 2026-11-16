@@ -41,7 +41,8 @@ Route::get('/dashboard', [UserController::class, 'index'])->name('dashboard');
 Route::get('/dashboard-1', [UserController::class, 'index_1'])->name('dashboard-1');
 Route::get('/dashboard-2', [UserController::class, 'index_2'])->name('dashboard-2');
 Route::get('/widgets', [UserController::class, 'widgets'])->name('widgets');
-Route::get('/analytics', [EnrollmentController::class, 'index'])->name('analytics');
+Route::get('/analytics', [UserController::class, 'analytics'])->name('analytics');
+Route::get('/enrollments', [EnrollmentController::class, 'index'])->name('enrollments.index');
 
 Route::post('/enrollment-applications', [EnrollmentController::class, 'store'])
     ->name('enrollment-applications.store');
@@ -49,8 +50,6 @@ Route::post('/enrollment-applications/{enrollment}/accept', [EnrollmentControlle
     ->name('enrollment-applications.accept');
 Route::get('/enrollment-applications/{enrollment}', [EnrollmentController::class, 'show'])
     ->name('enrollment-applications.show');
-Route::get('/enrollment-applications/{enrollment}/documents/{document}', [EnrollmentController::class, 'document'])
-    ->name('enrollment-applications.documents.show');
 Route::delete('/enrollment-applications/{enrollment}', [EnrollmentController::class, 'destroy'])
     ->name('enrollment-applications.destroy');
 

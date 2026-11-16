@@ -1,39 +1,83 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+namespace App\Http\Controllers;
 
-return new class extends Migration
+use App\Models\Enrollment;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
+class EnrollmentController extends Controller
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    // Lista as inscrições
+    public function index()
     {
-        Schema::create('enrollments', function (Blueprint $table) {
-            $table->id();
-            $table->string('first_name', 100);
-            $table->string('middle_name', 100)->nullable();
-            $table->string('last_name', 100);
-            $table->string('nif', 30);
-            $table->date('date_of_birth');
-            $table->string('phone', 30);
-            $table->string('email');
-            $table->string('course');
-            $table->string('identity_card_path')->nullable();
-            $table->string('secondary_certificate_path')->nullable();
-            $table->date('application_date');
-            $table->string('status')->default('pending');
-            $table->timestamps();
-        });
+        $enrollments = Enrollment::orderBy('applicationDate', 'desc')
+            ->orderBy('id', 'desc')
+            ->get();
+
+        return view('admin.dashboard.enrollments.index', compact('enrollments'));
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    // Guarda uma nova inscrição
+    public function store(Request $request)
     {
-        Schema::dropIfExists('enrollments');
+        $validated = $request->validate([
+            'fullName' => 'required|string|max:302',
+            'dateOfBirth' => 'required|date',
+            'phone' => 'required|string|max:30',
+            'email' => 'required|email|max:255',
+            'gender' => 'required|in:Masculino,Feminino,Outro',
+            'course' => 'required|in:' . implode(',', array_keys(Enrollment::COURSES)),
+        ]);
+
+        Enrollment::create([
+            'fullName' => $validated['fullName'],
+            'dateOfBirth' => $validated['dateOfBirth'],
+            'phone' => $validated['phone'],
+            'email' => $validated['email'],
+            'gender' => $validated['gender'],
+            'course' => $validated['course'],
+            'applicationDate' => today(),
+            'status' => 'pending',
+        ]);
+
+        return redirect()
+            ->route('register')
+            ->with('success', 'A sua candidatura foi submetida com sucesso.');
     }
-};
+
+    // Mostra os dados de uma inscrição
+    public function show(Enrollment $enrollment)
+    {
+        return view('admin.dashboard.enrollment-applications.show', compact('enrollment'));
+    }
+
+    // Aceita a inscrição e envia o e-mail
+    public function accept(Enrollment $enrollment)
+    {
+        $enrollment->update([
+            'status' => 'accepted',
+        ]);
+
+        Mail::send('emails.enrollment-accepted', [
+            'enrollment' => $enrollment,
+        ], function ($message) use ($enrollment) {
+            $message->to($enrollment->email)
+                ->subject('Candidatura aceite');
+        });
+
+        return redirect()
+            ->route('analytics')
+            ->with('success', 'A inscrição foi aceite com sucesso.');
+    }
+
+    // Elimina uma inscrição
+    public function destroy(Enrollment $enrollment)
+    {
+        $enrollment->delete();
+
+        return redirect()
+            ->route('analytics')
+            ->with('success', 'A candidatura foi eliminada com sucesso.');
+    }
+}

@@ -76,7 +76,7 @@
                 </button>
                 <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="{{ route('analytics') }}">Analytics</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('enrollments.index') }}">Enrollments</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Detalhes da Candidatura</li>
                     </ol>
                 </nav>
@@ -91,7 +91,7 @@
                         <h1 class="h3 mb-1 text-gray-800">Detalhes da Candidatura</h1>
                         <p class="text-muted mb-0">Informações submetidas pelo candidato.</p>
                     </div>
-                    <a href="{{ route('analytics') }}" class="btn btn-outline-secondary">
+                    <a href="{{ route('enrollments.index') }}" class="btn btn-outline-secondary">
                         <i class="bi bi-arrow-left me-1" aria-hidden="true"></i>Voltar às candidaturas
                     </a>
                 </div>
@@ -100,7 +100,7 @@
                     <div class="dashboard-card-header py-4 px-4">
                         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
                             <h2 class="h5 mb-0">
-                                {{ implode(' ', array_filter([$enrollment->first_name, $enrollment->middle_name, $enrollment->last_name])) }}
+                                {{ $enrollment->fullName }}
                             </h2>
                             @php
                                 $statusDetails = [
@@ -117,8 +117,14 @@
                     <div class="dashboard-card-body p-4">
                         <div class="row g-4">
                             <div class="col-md-6 col-xl-4">
-                                <span class="small text-muted d-block">NIF</span>
-                                <span class="fw-semibold">{{ $enrollment->nif }}</span>
+                                <span class="small text-muted d-block">Género</span>
+                                <span class="fw-semibold">{{ $enrollment->gender ?? 'Não indicado' }}</span>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <span class="small text-muted d-block">Data de nascimento</span>
+                                <span class="fw-semibold">
+                                    {{ $enrollment->dateOfBirth?->format('d/m/Y') ?? 'Não indicado' }}
+                                </span>
                             </div>
                             <div class="col-md-6 col-xl-4">
                                 <span class="small text-muted d-block">Curso pretendido</span>
@@ -128,11 +134,7 @@
                             </div>
                             <div class="col-md-6 col-xl-4">
                                 <span class="small text-muted d-block">Data da candidatura</span>
-                                <span class="fw-semibold">{{ $enrollment->application_date->format('d/m/Y') }}</span>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <span class="small text-muted d-block">Data de nascimento</span>
-                                <span class="fw-semibold">{{ $enrollment->date_of_birth->format('d/m/Y') }}</span>
+                                <span class="fw-semibold">{{ $enrollment->applicationDate->format('d/m/Y') }}</span>
                             </div>
                             <div class="col-md-6 col-xl-4">
                                 <span class="small text-muted d-block">Telefone</span>
@@ -144,37 +146,6 @@
                             </div>
                         </div>
 
-                        <hr class="my-4">
-
-                        <h3 class="h6 fw-semibold mb-3">Documentos submetidos</h3>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="border rounded p-3 h-100">
-                                    <div class="fw-semibold mb-2">Bilhete de Identidade (BI)</div>
-                                    @if ($enrollment->identity_card_path)
-                                        <a href="{{ route('enrollment-applications.documents.show', [$enrollment, 'identity-card']) }}"
-                                            class="btn btn-sm btn-outline-primary">
-                                            <i class="bi bi-download me-1" aria-hidden="true"></i>Transferir documento
-                                        </a>
-                                    @else
-                                        <span class="text-muted small">Não submetido</span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="border rounded p-3 h-100">
-                                    <div class="fw-semibold mb-2">Certificado do ensino secundário</div>
-                                    @if ($enrollment->secondary_certificate_path)
-                                        <a href="{{ route('enrollment-applications.documents.show', [$enrollment, 'secondary-certificate']) }}"
-                                            class="btn btn-sm btn-outline-primary">
-                                            <i class="bi bi-download me-1" aria-hidden="true"></i>Transferir documento
-                                        </a>
-                                    @else
-                                        <span class="text-muted small">Não submetido</span>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

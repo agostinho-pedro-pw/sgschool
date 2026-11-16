@@ -82,6 +82,17 @@
                         <li><a class="nav-link " href="{{ route('course-payment')}} ">Pagamento do Curso</a></li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"
+                        data-bs-target="#enrollmentsSubmenu" aria-expanded="false">
+                        <i class="bi bi-card-checklist"></i>
+                        <span>Inscrição</span>
+                    </a>
+                    <ul id="enrollmentsSubmenu" class="submenu collapse list-unstyled">
+                        <li><a class="nav-link " href="{{ route('register') }}">Fazer inscrição</a></li>
+                        <li><a class="nav-link " href="{{ route('enrollments.index') }}">Listar inscrições</a></li>
+                    </ul>
+                </li>
                 {{--De momento não quero lybary
                 <li class="nav-item">
                     <a class="nav-link has-submenu " href="javascript:void(0)" data-bs-toggle="collapse"

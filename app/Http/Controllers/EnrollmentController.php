@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\EnrollmentAcceptedMail;
 use App\Models\Enrollment;
-use Illuminate\Database\QueryException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 use Illuminate\View\View;
 use RuntimeException;
 use Symfony\Component\HttpFoundation\StreamedResponse;
-use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 
 class EnrollmentController extends Controller
 {
@@ -54,51 +51,27 @@ class EnrollmentController extends Controller
             'secondary_certificate' => 'certificado do ensino secundário',
         ]);
 
-        $storedPaths = [];
-        $applicationCreated = false;
+        $identityCardPath = $request->file('identity_card')?->store('enrollment-documents', 'local');
+        $secondaryCertificatePath = $request->file('secondary_certificate')?->store('enrollment-documents', 'local');
 
-        try {
-            $identityCardPath = $request->file('identity_card')?->store('enrollment-documents', 'local');
-
-            if ($identityCardPath === false) {
-                throw new RuntimeException('Unable to store the uploaded identity document.');
-            }
-
-            if ($identityCardPath !== null) {
-                $storedPaths[] = $identityCardPath;
-            }
-
-            $secondaryCertificatePath = $request->file('secondary_certificate')?->store('enrollment-documents', 'local');
-
-            if ($secondaryCertificatePath === false) {
-                throw new RuntimeException('Unable to store the uploaded school certificate.');
-            }
-
-            if ($secondaryCertificatePath !== null) {
-                $storedPaths[] = $secondaryCertificatePath;
-            }
-
-            Enrollment::create([
-                'first_name' => $validated['firstName'],
-                'middle_name' => $validated['middleName'] ?? null,
-                'last_name' => $validated['lastName'],
-                'nif' => $validated['nif'],
-                'date_of_birth' => $validated['dateOfBirth'],
-                'phone' => $validated['phone'],
-                'email' => $validated['email'],
-                'course' => $validated['course'],
-                'identity_card_path' => $identityCardPath,
-                'secondary_certificate_path' => $secondaryCertificatePath,
-                'application_date' => today(),
-                'status' => 'pending',
-            ]);
-
-            $applicationCreated = true;
-        } finally {
-            if (! $applicationCreated && $storedPaths !== [] && ! Storage::disk('local')->delete($storedPaths)) {
-                throw new RuntimeException('Unable to remove uploaded documents after the application failed.');
-            }
+        if ($identityCardPath === false || $secondaryCertificatePath === false) {
+            throw new RuntimeException('Não foi possível guardar os documentos da candidatura.');
         }
+
+        Enrollment::create([
+            'first_name' => $validated['firstName'],
+            'middle_name' => $validated['middleName'] ?? null,
+            'last_name' => $validated['lastName'],
+            'nif' => $validated['nif'],
+            'date_of_birth' => $validated['dateOfBirth'],
+            'phone' => $validated['phone'],
+            'email' => $validated['email'],
+            'course' => $validated['course'],
+            'identity_card_path' => $identityCardPath,
+            'secondary_certificate_path' => $secondaryCertificatePath,
+            'application_date' => today(),
+            'status' => 'pending',
+        ]);
 
         return redirect()
             ->route('register')
@@ -112,20 +85,16 @@ class EnrollmentController extends Controller
 
     public function accept(Enrollment $enrollment): RedirectResponse
     {
-        try {
-            // Roll back the status change if synchronous email delivery fails.
-            DB::transaction(function () use ($enrollment): void {
-                $enrollment->updateOrFail(['status' => 'accepted']);
+        $enrollment->update(['status' => 'accepted']);
 
-                Mail::to($enrollment->email)->send(new EnrollmentAcceptedMail($enrollment));
-            });
-        } catch (QueryException|TransportExceptionInterface $exception) {
-            report($exception);
-
-            return redirect()
-                ->route('analytics')
-                ->with('error', 'Não foi possível aceitar a inscrição. Tente novamente.');
-        }
+        Mail::send(
+            'emails.enrollment-accepted',
+            ['enrollment' => $enrollment],
+            function (Message $message) use ($enrollment): void {
+                $message->to($enrollment->email)
+                    ->subject('Candidatura aceite');
+            },
+        );
 
         return redirect()
             ->route('analytics')
@@ -147,12 +116,12 @@ class EnrollmentController extends Controller
 
     public function destroy(Enrollment $enrollment): RedirectResponse
     {
-        $documentPaths = array_values(array_filter([
+        $documentPaths = array_filter([
             $enrollment->identity_card_path,
             $enrollment->secondary_certificate_path,
-        ]));
+        ]);
 
-        $enrollment->deleteOrFail();
+        $enrollment->delete();
 
         if ($documentPaths !== [] && ! Storage::disk('local')->delete($documentPaths)) {
             throw new RuntimeException('The application was deleted, but its documents could not be removed.');

@@ -301,16 +301,10 @@
                     </div>
                 </div>
 
-                {{--Implementação do Alert booststrap 2--}}
                 @if (session('success'))
-                <div class="alert alert-success" role="status">
-                    {{ session('success') }}
-                </div>
-                @endif
-                @if (session('error'))
-                <div class="alert alert-danger" role="alert">
-                    {{ session('error') }}
-                </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('success') }}
+                    </div>
                 @endif
 
 

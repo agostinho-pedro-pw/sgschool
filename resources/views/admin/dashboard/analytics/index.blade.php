@@ -22,9 +22,6 @@
 
 
     <!-- Load stylesheets -->
-
-
-
     <!-- Page-specific stylesheets (set via additionalCSS in vite.config.js) -->
 
     <script type="module" crossorigin src="{{ asset('dashboard/assets/dist/assets/main-ZZRh_wak.js') }}"></script>
@@ -302,15 +299,16 @@
                 </div>
 
                 @if (session('success'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('success') }}
-                    </div>
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
                 @endif
 
 
                 <!-- Enrollment applications table: Status is intentionally omitted; other columns and actions stay unchanged. -->
                 <div class="dashboard-row">
                     <h2 class="h5 fw-semibold text-gray-800 mb-4">Candidaturas de Matrícula</h2>
+                    <a href="{{ route('register') }}" class="btn btn-primary mb-3">Nova Candidatura</a>
                     <div class="dashboard-card">
                         <div class="dashboard-card-header py-4 px-4">
                             <div class="d-flex justify-content-between align-items-center">

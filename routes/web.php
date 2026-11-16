@@ -26,7 +26,7 @@ Route::post(
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
+Route::get('/register', function () {
     return view('admin.auth.register.index');
 })->name('register');
 Route::post('/create-user', [UserController::class, 'store'])->name('create-user');

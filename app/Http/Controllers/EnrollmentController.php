@@ -2,14 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\EnrollmentAcceptedMail;
 use App\Models\Enrollment;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 use Illuminate\View\View;
 use RuntimeException;
 use Symfony\Component\HttpFoundation\StreamedResponse;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 
 class EnrollmentController extends Controller
 {
@@ -103,6 +108,28 @@ class EnrollmentController extends Controller
     public function show(Enrollment $enrollment): View
     {
         return view('admin.dashboard.enrollment-applications.show', compact('enrollment'));
+    }
+
+    public function accept(Enrollment $enrollment): RedirectResponse
+    {
+        try {
+            // Roll back the status change if synchronous email delivery fails.
+            DB::transaction(function () use ($enrollment): void {
+                $enrollment->updateOrFail(['status' => 'accepted']);
+
+                Mail::to($enrollment->email)->send(new EnrollmentAcceptedMail($enrollment));
+            });
+        } catch (QueryException|TransportExceptionInterface $exception) {
+            report($exception);
+
+            return redirect()
+                ->route('analytics')
+                ->with('error', 'Não foi possível aceitar a inscrição. Tente novamente.');
+        }
+
+        return redirect()
+            ->route('analytics')
+            ->with('success', 'A inscrição foi aceite com sucesso.');
     }
 
     public function document(Enrollment $enrollment, string $document): StreamedResponse

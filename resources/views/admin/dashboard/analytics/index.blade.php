@@ -343,8 +343,13 @@
                                                 <div class="d-flex gap-2 text-nowrap">
                                                     <a href="{{ route('enrollment-applications.show', $enrollment) }}"
                                                         class="btn btn-sm btn-primary">Ver</a>
-                                                    <button type="button"
-                                                        class="btn btn-sm btn-success">Aceitar</button>
+                                                    <form
+                                                        action="{{ route('enrollment-applications.accept', $enrollment) }}"
+                                                        method="POST">
+                                                        @csrf
+                                                        <button type="submit"
+                                                            class="btn btn-sm btn-success">Aceitar</button>
+                                                    </form>
                                                     <form
                                                         action="{{ route('enrollment-applications.destroy', $enrollment) }}"
                                                         method="POST"
@@ -662,6 +667,11 @@
                 @if (session('success'))
                 <div class="alert alert-success" role="status">
                     {{ session('success') }}
+                </div>
+                @endif
+                @if (session('error'))
+                <div class="alert alert-danger" role="alert">
+                    {{ session('error') }}
                 </div>
                 @endif
 

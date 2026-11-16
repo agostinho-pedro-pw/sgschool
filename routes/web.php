@@ -45,6 +45,8 @@ Route::get('/analytics', [EnrollmentController::class, 'index'])->name('analytic
 
 Route::post('/enrollment-applications', [EnrollmentController::class, 'store'])
     ->name('enrollment-applications.store');
+Route::post('/enrollment-applications/{enrollment}/accept', [EnrollmentController::class, 'accept'])
+    ->name('enrollment-applications.accept');
 Route::get('/enrollment-applications/{enrollment}', [EnrollmentController::class, 'show'])
     ->name('enrollment-applications.show');
 Route::get('/enrollment-applications/{enrollment}/documents/{document}', [EnrollmentController::class, 'document'])

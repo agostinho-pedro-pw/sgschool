@@ -301,6 +301,19 @@
                     </div>
                 </div>
 
+                {{--Implementação do Alert booststrap 2--}}
+                @if (session('success'))
+                <div class="alert alert-success" role="status">
+                    {{ session('success') }}
+                </div>
+                @endif
+                @if (session('error'))
+                <div class="alert alert-danger" role="alert">
+                    {{ session('error') }}
+                </div>
+                @endif
+
+
                 <!-- Enrollment applications table: Status is intentionally omitted; other columns and actions stay unchanged. -->
                 <div class="dashboard-row">
                     <h2 class="h5 fw-semibold text-gray-800 mb-4">Candidaturas de Matrícula</h2>
@@ -663,18 +676,6 @@
                         </div>
                     </div>
                 </div>
-
-                @if (session('success'))
-                <div class="alert alert-success" role="status">
-                    {{ session('success') }}
-                </div>
-                @endif
-                @if (session('error'))
-                <div class="alert alert-danger" role="alert">
-                    {{ session('error') }}
-                </div>
-                @endif
-
             </div>
         </main>
 

@@ -28,7 +28,8 @@
     <!-- Page-specific stylesheets (set via additionalCSS in vite.config.js) -->
 
     <script type="module" crossorigin src="{{ asset('dashboard/assets/dist/assets/main-ZZRh_wak.js') }}"></script>
-    <script type="module" crossorigin src="{{ asset('dashboard/assets/dist/assets/chart-runtime-BMJJQUfu.js') }}"></script>
+    <script type="module" crossorigin src="{{ asset('dashboard/assets/dist/assets/chart-runtime-BMJJQUfu.js') }}">
+    </script>
     <link rel="stylesheet" crossorigin href="{{ asset('dashboard/assets/dist/assets/main-BV-wpnXD.css') }}">
     <link rel="stylesheet" crossorigin href="{{ asset('dashboard/assets/dist/assets/main-DVYj-QCH.css') }}">
     <link rel="stylesheet" crossorigin href="{{ asset('dashboard/assets/dist/assets/charts-layout-C732DjRu.css') }}">
@@ -131,8 +132,8 @@
                 <div class="d-flex align-items-center gap-2">
                     <!-- Search -->
                     <div class="search-container">
-                        <button type="button" class="btn btn-light btn-icon" id="searchToggle" aria-label="Abrir pesquisa"
-                            aria-controls="searchForm">
+                        <button type="button" class="btn btn-light btn-icon" id="searchToggle"
+                            aria-label="Abrir pesquisa" aria-controls="searchForm">
                             <i class="bi bi-search"></i>
                         </button>
 
@@ -214,7 +215,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="fw-semibold">Alerta do Sistema</div>
-                                            <div class="text-muted small">Cópia de segurança da base de dados concluída</div>
+                                            <div class="text-muted small">Cópia de segurança da base de dados concluída
+                                            </div>
                                             <div class="text-muted small">Ontem</div>
                                         </div>
                                     </div>
@@ -240,13 +242,15 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="add-student.html"><i
                                         class="bi bi-person-plus me-2"></i>Adicionar Estudante</a></li>
-                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar Curso</a></li>
+                            <li><a class="dropdown-item" href="add-course.html"><i class="bi bi-book me-2"></i>Adicionar
+                                    Curso</a></li>
                             <li><a class="dropdown-item" href="add-professor.html"><i
                                         class="bi bi-person-badge me-2"></i>Adicionar Professor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar Evento</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-calendar-plus me-2"></i>Agendar
+                                    Evento</a></li>
                         </ul>
                     </div>
 
@@ -268,7 +272,8 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar Sessão</a>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Terminar
+                                    Sessão</a>
                             </li>
                         </ul>
                     </div>
@@ -284,7 +289,8 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h1 class="h3 mb-0 text-gray-800">Painel de Análise</h1>
-                            <p class="text-muted mb-0">Acompanhe os indicadores de desempenho da sua instituição de ensino</p>
+                            <p class="text-muted mb-0">Acompanhe os indicadores de desempenho da sua instituição de
+                                ensino</p>
                         </div>
                         <div class="btn-group" role="group">
                             <button type="button" class="btn btn-outline-secondary btn-sm">Dia</button>
@@ -302,7 +308,9 @@
                         <div class="dashboard-card-header py-4 px-4">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="mb-0">Candidaturas submetidas</h6>
-                                <span class="badge bg-primary-subtle text-primary">{{ $enrollments->count() }}</span>
+                                <span class="badge bg-primary-subtle text-primary">
+                                    {{--Usado para se ter em conta os numero de cantidados--}}
+                                    {{ $enrollments->count() }}</span>
                             </div>
                         </div>
                         <div class="dashboard-card-body p-0">
@@ -319,42 +327,48 @@
                                     </thead>
                                     <tbody>
                                         @forelse ($enrollments as $enrollment)
-                                            <tr>
-                                                <td class="px-4">
-                                                    <div class="fw-semibold">
-                                                        {{ implode(' ', array_filter([$enrollment->first_name, $enrollment->middle_name, $enrollment->last_name])) }}
-                                                    </div>
-                                                </td>
-                                                <td class="text-nowrap">{{ $enrollment->nif }}</td>
-                                                <td>{{ \App\Models\Enrollment::COURSES[$enrollment->course] ?? $enrollment->course }}</td>
-                                                <td class="text-nowrap">{{ $enrollment->application_date->format('d/m/Y') }}</td>
-                                                <td class="pe-4">
-                                                    <div class="d-flex gap-2 text-nowrap">
-                                                        <a href="{{ route('enrollment-applications.show', $enrollment) }}"
-                                                            class="btn btn-sm btn-primary">Ver</a>
-                                                        <button type="button" class="btn btn-sm btn-success">Aceitar</button>
-                                                        <button type="button" class="btn btn-sm btn-warning">Recusar</button>
-                                                        <form action="{{ route('enrollment-applications.destroy', $enrollment) }}"
-                                                            method="POST"
-                                                            onsubmit="return confirm('Tem a certeza de que pretende eliminar esta candidatura?');">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
-                                                        </form>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td class="px-4">
+                                                <div class="fw-semibold">
+                                                    {{ implode(' ', array_filter([$enrollment->first_name,
+                                                    $enrollment->middle_name, $enrollment->last_name])) }}
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap">{{ $enrollment->nif }}</td>
+                                            <td>{{ \App\Models\Enrollment::COURSES[$enrollment->course] ??
+                                                $enrollment->course }}</td>
+                                            <td class="text-nowrap">{{ $enrollment->application_date->format('d/m/Y') }}
+                                            </td>
+                                            <td class="pe-4">
+                                                <div class="d-flex gap-2 text-nowrap">
+                                                    <a href="{{ route('enrollment-applications.show', $enrollment) }}"
+                                                        class="btn btn-sm btn-primary">Ver</a>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-success">Aceitar</button>
+                                                    <form
+                                                        action="{{ route('enrollment-applications.destroy', $enrollment) }}"
+                                                        method="POST"
+                                                        onsubmit="return confirm('Tem a certeza de que pretende eliminar esta candidatura?');">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit"
+                                                            class="btn btn-sm btn-danger">Eliminar</button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         @empty
-                                            <tr>
-                                                {{-- Empty state spans the five remaining table columns. --}}
-                                                <td colspan="5" class="px-4 py-5 text-center">
-                                                    <div class="text-muted">
-                                                        <i class="bi bi-inbox fs-2 d-block mb-2" aria-hidden="true"></i>
-                                                        <p class="fw-semibold mb-1">Ainda não existem candidaturas.</p>
-                                                        <p class="small mb-0">As candidaturas submetidas aparecerão aqui.</p>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            {{-- Empty state spans the five remaining table columns. --}}
+                                            <td colspan="5" class="px-4 py-5 text-center">
+                                                <div class="text-muted">
+                                                    <i class="bi bi-inbox fs-2 d-block mb-2" aria-hidden="true"></i>
+                                                    <p class="fw-semibold mb-1">Ainda não existem candidaturas.</p>
+                                                    <p class="small mb-0">As candidaturas submetidas aparecerão aqui.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         @endforelse
                                     </tbody>
                                 </table>
@@ -599,7 +613,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1 small">Nova Matrícula de Estudantes</h6>
-                                            <p class="text-muted small mb-0">15 novos estudantes matricularam-se hoje</p>
+                                            <p class="text-muted small mb-0">15 novos estudantes matricularam-se hoje
+                                            </p>
                                             <span class="text-muted" style="font-size: 0.75rem;">há 2 horas</span>
                                         </div>
                                     </div>
@@ -610,7 +625,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1 small">Curso Concluído</h6>
-                                            <p class="text-muted small mb-0">O curso de Matemática Avançada foi concluído</p>
+                                            <p class="text-muted small mb-0">O curso de Matemática Avançada foi
+                                                concluído</p>
                                             <span class="text-muted" style="font-size: 0.75rem;">H? 5 horas</span>
                                         </div>
                                     </div>
@@ -621,7 +637,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1 small">Conquista Desbloqueada</h6>
-                                            <p class="text-muted small mb-0">Distintivo de melhor desempenho atribuído</p>
+                                            <p class="text-muted small mb-0">Distintivo de melhor desempenho atribuído
+                                            </p>
                                             <span class="text-muted" style="font-size: 0.75rem;">Há 1 dia</span>
                                         </div>
                                     </div>
@@ -643,9 +660,9 @@
                 </div>
 
                 @if (session('success'))
-                    <div class="alert alert-success" role="status">
-                        {{ session('success') }}
-                    </div>
+                <div class="alert alert-success" role="status">
+                    {{ session('success') }}
+                </div>
                 @endif
 
             </div>

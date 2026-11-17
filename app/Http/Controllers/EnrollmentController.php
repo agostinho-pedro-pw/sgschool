@@ -26,7 +26,7 @@ class EnrollmentController extends Controller
             'phone' => 'required|string|max:30',
             'email' => 'required|email|max:255',
             'gender' => 'required|in:Masculino,Feminino,Outro',
-            'course' => 'required|in:'.implode(',', array_keys(Enrollment::COURSES)),
+            'course' => 'required|in:' . implode(',', array_keys(Enrollment::COURSES)),
         ]);
 
         Enrollment::create([
@@ -69,7 +69,7 @@ class EnrollmentController extends Controller
         $enrollment->delete();
 
         return redirect()
-            ->route('analytics')
+            ->route('enrollments.index')
             ->with('success', 'A candidatura foi eliminada com sucesso.');
     }
 }

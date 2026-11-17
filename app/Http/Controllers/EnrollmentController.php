@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Enrollment;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 class EnrollmentController extends Controller
 {
@@ -27,7 +26,7 @@ class EnrollmentController extends Controller
             'phone' => 'required|string|max:30',
             'email' => 'required|email|max:255',
             'gender' => 'required|in:Masculino,Feminino,Outro',
-            'course' => 'required|in:' . implode(',', array_keys(Enrollment::COURSES)),
+            'course' => 'required|in:'.implode(',', array_keys(Enrollment::COURSES)),
         ]);
 
         Enrollment::create([
@@ -42,7 +41,7 @@ class EnrollmentController extends Controller
         ]);
 
         return redirect()
-            ->route('register')
+            ->route('enrollments.index')
             ->with('success', 'A sua candidatura foi submetida com sucesso.');
     }
 
@@ -52,22 +51,15 @@ class EnrollmentController extends Controller
         return view('admin.dashboard.enrollment-applications.show', compact('enrollment'));
     }
 
-    // Aceita a inscrição e envia o e-mail
+    // Aceita a inscrição
     public function accept(Enrollment $enrollment)
     {
         $enrollment->update([
             'status' => 'accepted',
         ]);
 
-        Mail::send('emails.enrollment-accepted', [
-            'enrollment' => $enrollment,
-        ], function ($message) use ($enrollment) {
-            $message->to($enrollment->email)
-                ->subject('Candidatura aceite');
-        });
-
         return redirect()
-            ->route('analytics')
+            ->route('enrollments.index')
             ->with('success', 'A inscrição foi aceite com sucesso.');
     }
 

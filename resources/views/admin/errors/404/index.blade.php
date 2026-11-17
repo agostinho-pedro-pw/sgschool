@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.admin')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
+@section('title', '404 - Painel sgSchool')
+
+@section('language', 'en')
+
+@section('head')
+<meta name="description" content="sgSchool - Plataforma moderna de gestão escolar para universidades">
     <meta name="keywords" content="education, dashboard, university, management, admin">
     <meta name="author" content="Agostinho Pedro">
 
@@ -13,7 +14,7 @@
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>404 - Painel sgSchool</title>
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -260,9 +261,10 @@
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif
         }
     </style>
-</head>
+@endsection
 
-<body>
+@section('content')
+
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
@@ -362,6 +364,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-</body>
-
-</html>
+@endsection

@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+@extends('layouts.admin')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
+@section('title', 'Perfil do Professor - Painel sgSchool')
+
+@section('language', 'pt-PT')
+
+@section('head')
+<meta name="description" content="sgSchool - Painel moderno de gestão escolar para universidades">
     <meta name="keywords" content="educação, painel, universidade, gestão, administração">
     <meta name="author" content="Agostinho Pedro">
 
@@ -13,7 +14,7 @@
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
 
-    <title>Perfil do Professor - Painel sgSchool</title>
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -139,9 +140,10 @@
             max-height: 100%
         }
     </style>
-</head>
+@endsection
 
-<body>
+@section('content')
+
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
@@ -1679,6 +1681,4 @@
 
 
 
-</body>
-
-</html>
+@endsection

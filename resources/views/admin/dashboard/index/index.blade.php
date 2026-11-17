@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+@extends('layouts.admin')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="sgSchool - Painel moderno de gestão educacional para universidades">
+@section('title', 'Dashboard Principal')
+
+@section('language', 'pt-PT')
+
+@section('head')
+<meta name="description" content="sgSchool - Painel moderno de gestão educacional para universidades">
     <meta name="keywords" content="educação, painel, universidade, gestão, administração">
     <meta name="author" content="Agostinho Pedro">
 
@@ -13,7 +14,7 @@
     <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
     <link rel="dns-prefetch" href="https://flagcdn.com">
     {{--Usei o include, para dinamizar a nomeação de nomes nas páginas--}}
-    @include('layouts._include.dashboard.header', ['title' => 'Dashboard Principal'])
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
@@ -24,9 +25,10 @@
 
     <!-- Estilos específicos da página -->
     <link rel="stylesheet" href="{{ asset('dashboard/assets/css/dashboard.css') }}">
-</head>
+@endsection
 
-<body>
+@section('content')
+
     <!-- Saltar para o conteúdo principal (acessibilidade) -->
     <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 
@@ -440,6 +442,4 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
     <script src="{{ asset('dashboard/assets/js/main.js') }}"></script>
 
-</body>
-
-</html>
+@endsection

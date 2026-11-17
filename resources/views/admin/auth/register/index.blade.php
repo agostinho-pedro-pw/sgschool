@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+@extends('layouts.admin')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição - sgSchool</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
+@section('title', 'Inscrição - sgSchool')
+
+@section('language', 'pt-PT')
+
+@section('head')
+<link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 
     <style>
         * {
@@ -108,9 +108,10 @@
         }
     </style>
     <link rel="stylesheet" crossorigin href="{{ asset('dashboard/assets/dist/assets/main-DVYj-QCH.css') }}">
-</head>
+@endsection
 
-<body>
+@section('content')
+
     <div class="auth-container">
         <div class="auth-card">
             <div class="auth-header">
@@ -246,6 +247,4 @@
         </div>
     </div>
 
-</body>
-
-</html>
+@endsection

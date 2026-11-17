@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+@extends('layouts.admin')
 
-<head>
-    <meta name="description" content="sgSchool - Gestão de candidaturas de matrícula">
+@section('title', 'Candidaturas de Matrícula')
+
+@section('language', 'pt-PT')
+
+@section('head')
+<meta name="description" content="sgSchool - Gestão de candidaturas de matrícula">
     <meta name="keywords" content="educação, candidaturas, matrícula, gestão">
     <meta name="author" content="Agostinho Pedro">
 
-    @section('title', 'Candidaturas de Matrícula')
-    @include('layouts._include.dashboard.header')
+
 
     <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
     <script type="module" crossorigin src="{{ asset('dashboard/assets/dist/assets/main-ZZRh_wak.js') }}"></script>
@@ -62,9 +64,10 @@
             }
         }
     </style>
-</head>
+@endsection
 
-<body>
+@section('content')
+
     <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
     <div class="search-backdrop" id="searchBackdrop"></div>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
@@ -253,6 +256,4 @@
             </div>
         </footer>
     </div>
-</body>
-
-</html>
+@endsection

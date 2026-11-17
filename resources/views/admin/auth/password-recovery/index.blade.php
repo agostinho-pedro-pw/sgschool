@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+@extends('layouts.admin')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperação da Palavra-passe - sgSchool</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
+@section('title', 'Recuperação da Palavra-passe - sgSchool')
+
+@section('language', 'pt-PT')
+
+@section('head')
+<link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 
     <style>
         * {
@@ -74,9 +74,10 @@
         }
     </style>
     <link rel="stylesheet" crossorigin href="{{ asset('dashboard/assets/dist/assets/main-DVYj-QCH.css') }}">
-</head>
+@endsection
 
-<body>
+@section('content')
+
     <div class="auth-container">
         <!-- Initial Password Recovery Form -->
         <div class="auth-card" id="recoveryForm">
@@ -359,6 +360,4 @@
         document.getElementById('email').value = '';
     }
     </script>
-</body>
-
-</html>
+@endsection

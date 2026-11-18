@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\EnrollmentController;
-use App\Http\Controllers\UserController;
+use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Rota inicial: redireciona para o dashboard
@@ -19,8 +20,18 @@ Route::get('/register', function () {
     return view('admin.auth.register.index');
 })->name('register');
 
-Route::post('/create-user', [UserController::class, 'store'])
-    ->name('create-user');
+Route::post('/create-user', function (Request $request) {
+    try {
+        User::create([
+            'username' => $request->username,
+            'password' => $request->password,
+        ]);
+
+        return redirect()->route('dashboard');
+    } catch (Exception $e) {
+        return back()->withInput();
+    }
+})->name('create-user');
 
 /*
 |--------------------------------------------------------------------------
@@ -28,20 +39,25 @@ Route::post('/create-user', [UserController::class, 'store'])
 |--------------------------------------------------------------------------
 */
 
-Route::get('/dashboard', [UserController::class, 'index'])
-    ->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('admin.dashboard.index.index');
+})->name('dashboard');
 
-Route::get('/dashboard-1', [UserController::class, 'index_1'])
-    ->name('dashboard-1');
+Route::get('/dashboard-1', function () {
+    return view('admin.dashboard.index-1.index');
+})->name('dashboard-1');
 
-Route::get('/dashboard-2', [UserController::class, 'index_2'])
-    ->name('dashboard-2');
+Route::get('/dashboard-2', function () {
+    return view('admin.dashboard.index-2.index');
+})->name('dashboard-2');
 
-Route::get('/widgets', [UserController::class, 'widgets'])
-    ->name('widgets');
+Route::get('/widgets', function () {
+    return view('admin.dashboard.widgets.index');
+})->name('widgets');
 
-Route::get('/analytics', [UserController::class, 'analytics'])
-    ->name('analytics');
+Route::get('/analytics', function () {
+    return view('admin.dashboard.analytics.index');
+})->name('analytics');
 
 Route::get('/enrollments', [EnrollmentController::class, 'index'])
     ->name('enrollments.index');
@@ -64,8 +80,9 @@ Route::delete('/enrollment-applications/{enrollment}', [EnrollmentController::cl
 |--------------------------------------------------------------------------
 */
 
-Route::get('/events', [UserController::class, 'events'])
-    ->name('eventos');
+Route::get('/events', function () {
+    return view('admin.auth.events.index');
+})->name('eventos');
 
 /*
 |--------------------------------------------------------------------------
@@ -73,17 +90,21 @@ Route::get('/events', [UserController::class, 'events'])
 |--------------------------------------------------------------------------
 */
 
-Route::get('/all-professors', [UserController::class, 'all_professors'])
-    ->name('all-professors');
+Route::get('/all-professors', function () {
+    return view('admin.professors.all-professors.index');
+})->name('all-professors');
 
-Route::get('/add-professors', [UserController::class, 'add_professors'])
-    ->name('add-professors');
+Route::get('/add-professors', function () {
+    return view('admin.professors.add-professor.index');
+})->name('add-professors');
 
-Route::get('/edit-professors', [UserController::class, 'edit_professors'])
-    ->name('edit-professors');
+Route::get('/edit-professors', function () {
+    return view('admin.professors.edit-professor.index');
+})->name('edit-professors');
 
-Route::get('/profile-professors', [UserController::class, 'profile_professors'])
-    ->name('profile-professors');
+Route::get('/profile-professors', function () {
+    return view('admin.professors.professor-profile.index');
+})->name('profile-professors');
 
 /*
 |--------------------------------------------------------------------------
@@ -91,17 +112,21 @@ Route::get('/profile-professors', [UserController::class, 'profile_professors'])
 |--------------------------------------------------------------------------
 */
 
-Route::get('/all-students', [UserController::class, 'all_students'])
-    ->name('all-students');
+Route::get('/all-students', function () {
+    return view('admin.students.all-students.index');
+})->name('all-students');
 
-Route::get('/add-students', [UserController::class, 'add_students'])
-    ->name('add-students');
+Route::get('/add-students', function () {
+    return view('admin.students.add-student.index');
+})->name('add-students');
 
-Route::get('/edit-students', [UserController::class, 'edit_students'])
-    ->name('edit-students');
+Route::get('/edit-students', function () {
+    return view('admin.students.edit-student.index');
+})->name('edit-students');
 
-Route::get('/profile-students', [UserController::class, 'profile_students'])
-    ->name('profile-students');
+Route::get('/profile-students', function () {
+    return view('admin.students.student-profile.index');
+})->name('profile-students');
 
 /*
 |--------------------------------------------------------------------------
@@ -109,20 +134,25 @@ Route::get('/profile-students', [UserController::class, 'profile_students'])
 |--------------------------------------------------------------------------
 */
 
-Route::get('/all-course', [UserController::class, 'all_courses'])
-    ->name('all-course');
+Route::get('/all-course', function () {
+    return view('admin.courses.all-courses.index');
+})->name('all-course');
 
-Route::get('/add-courses', [UserController::class, 'add_course'])
-    ->name('add-courses');
+Route::get('/add-courses', function () {
+    return view('admin.courses.add-course.index');
+})->name('add-courses');
 
-Route::get('/edit-course', [UserController::class, 'edit_course'])
-    ->name('edit-course');
+Route::get('/edit-course', function () {
+    return view('admin.courses.edit-course.index');
+})->name('edit-course');
 
-Route::get('/course-info', [UserController::class, 'course_info'])
-    ->name('course-info');
+Route::get('/course-info', function () {
+    return view('admin.courses.course-info.index');
+})->name('course-info');
 
-Route::get('/course-payment', [UserController::class, 'course_payment'])
-    ->name('course-payment');
+Route::get('/course-payment', function () {
+    return view('admin.courses.course-payment.index');
+})->name('course-payment');
 
 /*
 |--------------------------------------------------------------------------
@@ -130,14 +160,17 @@ Route::get('/course-payment', [UserController::class, 'course_payment'])
 |--------------------------------------------------------------------------
 */
 
-Route::get('/mailbox-compose', [UserController::class, 'mailbox_compose'])
-    ->name('mailbox-compose');
+Route::get('/mailbox-compose', function () {
+    return view('admin.mailbox.mailbox-compose.index');
+})->name('mailbox-compose');
 
-Route::get('/mailbox-view', [UserController::class, 'mailbox_view'])
-    ->name('mailbox-view');
+Route::get('/mailbox-view', function () {
+    return view('admin.mailbox.mailbox-view.index');
+})->name('mailbox-view');
 
-Route::get('/mailbox', [UserController::class, 'mailbox'])
-    ->name('mailbox');
+Route::get('/mailbox', function () {
+    return view('admin.mailbox.mailbox.index');
+})->name('mailbox');
 
 /*
 |--------------------------------------------------------------------------
@@ -145,11 +178,14 @@ Route::get('/mailbox', [UserController::class, 'mailbox'])
 |--------------------------------------------------------------------------
 */
 
-Route::get('/add-department', [UserController::class, 'add_department'])
-    ->name('add-department');
+Route::get('/add-department', function () {
+    return view('admin.departments.add-department.index');
+})->name('add-department');
 
-Route::get('/edit-department', [UserController::class, 'edit_department'])
-    ->name('edit-department');
+Route::get('/edit-department', function () {
+    return view('admin.departments.edit-department.index');
+})->name('edit-department');
 
-Route::get('/department', [UserController::class, 'department'])
-    ->name('department');
+Route::get('/department', function () {
+    return view('admin.departments.departments.index');
+})->name('department');

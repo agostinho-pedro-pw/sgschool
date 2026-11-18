@@ -1,15 +1,13 @@
 @extends('layouts.admin')
 
-@section('title', 'Candidaturas de Matrícula')
+@section('title', 'Inscrição - sgSchool')
 
 @section('language', 'pt-PT')
 
 @section('head')
-<meta name="description" content="sgSchool - Candidaturas de matrícula">
+<meta name="description" content="sgSchool - Inscrição de estudante">
 <meta name="keywords" content="educação, candidatura, matrícula, estudante">
 <meta name="author" content="Agostinho Pedro">
-
-
 
 <link rel="icon" type="image/x-icon" href="{{ asset('dashboard/assets/dist/assets/favicon-9EIT7vLh.ico') }}">
 <script type="module" crossorigin src="{{ asset('dashboard/assets/dist/assets/main-ZZRh_wak.js') }}"></script>
@@ -53,17 +51,11 @@
     .dashboard-content {
         padding: 24px
     }
-
-    @media (max-width: 575.98px) {
-        .dashboard-content {
-            padding: 16px
-        }
-    }
 </style>
 @endsection
 
 @section('content')
-
+{{-- Formulário para submeter uma candidatura --}}
 <a href="#main-content" class="visually-hidden-focusable">Saltar para o conteúdo principal</a>
 <div class="search-backdrop" id="searchBackdrop"></div>
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
@@ -73,14 +65,14 @@
 <div class="main-wrapper" id="mainWrapper">
     <header class="navbar top-navbar">
         <div class="container-fluid d-flex align-items-center h-100">
-            <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Alternar barra lateral"
+            <button type="button" class="hamburger-menu" id="sidebarToggle" aria-label="Mostrar/ocultar menu lateral"
                 aria-controls="sidebar">
                 <i class="bi bi-list"></i>
             </button>
-            <nav aria-label="Navegação estrutural do cabeçalho" class="d-none d-lg-block ms-3">
+            <nav aria-label="Trilho de navegação" class="d-none d-lg-block ms-3">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Início</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Enrollments</li>
+                    <li class="breadcrumb-item active" aria-current="page">Inscrição de estudante</li>
                 </ol>
             </nav>
             <div class="navbar-brand d-lg-none fw-bold me-auto">sgSchool</div>
@@ -89,84 +81,182 @@
 
     <main class="dashboard-content" id="main-content">
         <div class="container-fluid">
-
-            <!--Usado para notificar, ou mandar um Later Boostrap 5 no usuario!-->
-            @if (session('success'))
-            <div class="alert alert-success" role="alert">
-                {{ session('success') }}
-            </div>
-            @endif
             <div class="dashboard-row">
-                <h2 class="h5 fw-semibold text-gray-800 mb-4">Candidaturas de Matrícula</h2>
-                <a href="{{ route('register') }}" class="btn btn-primary mb-3">Nova Candidatura</a>
-                <div class="dashboard-card">
-                    <div class="dashboard-card-header py-4 px-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="mb-0">Candidaturas submetidas</h6>
-                            <span class="badge bg-primary-subtle text-primary">
-                                {{ $enrollments->count() }}</span>
-                        </div>
-                    </div>
-                    <div class="dashboard-card-body p-0">
-                        <div class="table-responsive">
-                            <table class="table table-hover align-middle mb-0">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="px-4 py-3">Nome completo</th>
-                                        <th scope="col" class="py-3">Telefone</th>
-                                        <th scope="col" class="py-3">Curso pretendido</th>
-                                        <th scope="col" class="py-3">Data da candidatura</th>
-                                        <th scope="col" class="py-3 pe-4">Ações</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @forelse ($enrollments as $enrollment)
-                                    <tr>
-                                        <td class="px-4">
-                                            <div class="fw-semibold">
-                                                {{ $enrollment->fullName }}
+                <div class="dashboard-grid grid-cols-1">
+                    <h4 class="page-title">Inscrição de estudante</h4>
+                    <p class="text-muted">Preencha os campos abaixo para submeter a sua candidatura.</p>
+                </div>
+            </div>
+
+            <div class="dashboard-row">
+                <div class="dashboard-grid grid-cols-1">
+                    <div class="dashboard-card">
+                        <div class="dashboard-card-body">
+                            @if (session('success'))
+                            <div class="alert alert-success" role="status">
+                                {{ session('success') }}
+                            </div>
+                            @endif
+
+                            @if ($errors->any())
+                            <div class="alert alert-danger" role="alert">
+                                <p class="fw-semibold mb-2">Não foi possível submeter a candidatura:</p>
+                                <ul class="mb-0">
+                                    @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+
+                            <ul class="nav nav-tabs mb-4" id="enrollmentFormTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="basic-tab" data-bs-toggle="tab"
+                                        data-bs-target="#basic" type="button" role="tab" aria-controls="basic"
+                                        aria-selected="true">
+                                        <i class="bi bi-person-circle me-2"></i>Informações básicas
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="enrollmentFormTabContent">
+                                <div class="tab-pane fade show active" id="basic" role="tabpanel"
+                                    aria-labelledby="basic-tab">
+                                    <form id="registerForm" action="{{ route('enrollment-applications.store') }}"
+                                        method="POST">
+                                        @csrf
+                                        <div class="row gx-4 gy-3">
+                                            <div class="col-md-6 px-2">
+                                                <div class="mb-4">
+                                                    <label for="fullName" class="form-label">Nome <span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text"
+                                                        class="form-control @error('fullName') is-invalid @enderror"
+                                                        id="fullName" name="fullName" value="{{ old('fullName') }}"
+                                                        placeholder="Introduza o nome completo" required>
+                                                    @error('fullName')
+                                                    <div class="invalid-feedback">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
                                             </div>
-                                        </td>
-                                        <td class="text-nowrap">{{ $enrollment->phone }}</td>
-                                        <td>{{ \App\Models\Enrollment::COURSES[$enrollment->course] ??
-                                            $enrollment->course }}</td>
-                                        <td class="text-nowrap">{{ $enrollment->applicationDate->format('d/m/Y') }}</td>
-                                        <td class="pe-4">
-                                            <div class="d-flex gap-2 text-nowrap">
-                                                <a href="{{ route('enrollment-applications.show', $enrollment) }}"
-                                                    class="btn btn-sm btn-primary">Ver</a>
-                                                <form
-                                                    action="{{ route('enrollment-applications.accept', $enrollment) }}"
-                                                    method="POST">
-                                                    @csrf
-                                                    <button type="submit"
-                                                        class="btn btn-sm btn-success">Aceitar</button>
-                                                </form>
-                                                <form
-                                                    action="{{ route('enrollment-applications.destroy', $enrollment) }}"
-                                                    method="POST"
-                                                    onsubmit="return confirm('Tem a certeza de que pretende eliminar esta candidatura?');">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit"
-                                                        class="btn btn-sm btn-danger">Eliminar</button>
-                                                </form>
+
+                                            <div class="col-md-6 px-2">
+                                                <div class="mb-4">
+                                                    <label for="dateOfBirth" class="form-label">Data de nascimento
+                                                        <span class="text-danger">*</span></label>
+                                                    <input type="date"
+                                                        class="form-control @error('dateOfBirth') is-invalid @enderror"
+                                                        id="dateOfBirth" name="dateOfBirth"
+                                                        value="{{ old('dateOfBirth') }}" required>
+                                                    @error('dateOfBirth')
+                                                    <div class="invalid-feedback">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    @empty
-                                    <tr>
-                                        <td colspan="5" class="px-4 py-5 text-center">
-                                            <div class="text-muted">
-                                                <i class="bi bi-inbox fs-2 d-block mb-2" aria-hidden="true"></i>
-                                                <p class="fw-semibold mb-1">Ainda não existem candidaturas.</p>
-                                                <p class="small mb-0">As candidaturas submetidas aparecerão aqui.</p>
+
+                                            <div class="col-md-6 px-2">
+                                                <div class="mb-4">
+                                                    <label for="phone" class="form-label">Número de telefone <span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="tel"
+                                                        class="form-control @error('phone') is-invalid @enderror"
+                                                        id="phone" name="phone" value="{{ old('phone') }}"
+                                                        placeholder="Introduza o número de telefone" required>
+                                                    @error('phone')
+                                                    <div class="invalid-feedback">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    @endforelse
-                                </tbody>
-                            </table>
+
+                                            <div class="col-md-6 px-2">
+                                                <div class="mb-4">
+                                                    <label for="email" class="form-label">Endereço de email <span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="email"
+                                                        class="form-control @error('email') is-invalid @enderror"
+                                                        id="email" name="email" value="{{ old('email') }}"
+                                                        placeholder="exemplo@sgschool.edu">
+                                                    @error('email')
+                                                    <div class="invalid-feedback">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 px-2">
+                                                <fieldset class="mb-4 border-0 p-0">
+                                                    <legend class="form-label">Género <span class="text-danger">*</span>
+                                                    </legend>
+                                                    @foreach (['Masculino', 'Feminino'] as $genderOption)
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input @error('gender') is-invalid @enderror"
+                                                            type="radio" id="gender-{{ $loop->index }}" name="gender"
+                                                            value="{{ $genderOption }}"
+                                                            @checked(old('gender')===$genderOption) required>
+                                                        <label class="form-check-label" for="gender-{{ $loop->index }}">
+                                                            {{ $genderOption }}
+                                                        </label>
+                                                    </div>
+                                                    @endforeach
+                                                    @error('gender')
+                                                    <div class="invalid-feedback d-block">{{ $message }}</div>
+                                                    @enderror
+                                                </fieldset>
+                                            </div>
+
+                                            <div class="col-md-6 px-2">
+                                                <fieldset class="mb-4 border-0 p-0">
+                                                    <legend class="form-label">Curso <span class="text-danger">*</span>
+                                                    </legend>
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input @error('course') is-invalid @enderror"
+                                                            type="radio" id="course-0" name="course"
+                                                            value="informatica-gestao"
+                                                            @checked(old('course')==='informatica-gestao') required>
+                                                        <label class="form-check-label" for="course-0">
+                                                            Informática de Gestão
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input @error('course') is-invalid @enderror"
+                                                            type="radio" id="course-1" name="course"
+                                                            value="informatica-sistemas-multimedia"
+                                                            @checked(old('course')==='informatica-sistemas-multimedia')
+                                                            required>
+                                                        <label class="form-check-label" for="course-1">
+                                                            Informática e Sistemas Multimédia
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input @error('course') is-invalid @enderror"
+                                                            type="radio" id="course-2" name="course"
+                                                            value="eletronica-telecomunicacoes"
+                                                            @checked(old('course')==='eletronica-telecomunicacoes')
+                                                            required>
+                                                        <label class="form-check-label" for="course-2">
+                                                            Eletrónica e Telecomunicações
+                                                        </label>
+                                                    </div>
+                                                    @error('course')
+                                                    <div class="invalid-feedback d-block">{{ $message }}</div>
+                                                    @enderror
+                                                </fieldset>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <div class="col-12 px-2">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="bi bi-check-circle me-2"></i>Enviar a inscrição
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,7 +271,7 @@
                     <p class="mb-0">&copy; 2026 sgSchool. Todos os direitos reservados.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Criado com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
+                    <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> para a educação</p>
                 </div>
             </div>
         </div>

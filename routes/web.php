@@ -17,7 +17,7 @@ Route::get('/', function () {
 */
 
 Route::get('/register', function () {
-    return view('admin.auth.register.index');
+    return view('admin.dashboard.enrollments.index');
 })->name('register');
 
 Route::post('/create-user', function (Request $request) {

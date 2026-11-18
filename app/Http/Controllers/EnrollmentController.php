@@ -14,7 +14,7 @@ class EnrollmentController extends Controller
             ->orderBy('id', 'desc')
             ->get();
 
-        return view('admin.dashboard.enrollments.index', compact('enrollments'));
+        return view('admin.dashboard.enrollment-applications.index', compact('enrollments'));
     }
 
     // Guarda uma nova inscrição

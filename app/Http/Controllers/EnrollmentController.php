@@ -24,9 +24,8 @@ class EnrollmentController extends Controller
             'fullName' => 'required|string|max:302',
             'dateOfBirth' => 'required|date',
             'phone' => 'required|string|max:30',
-            'email' => 'required|email|max:255',
             'gender' => 'required|in:Masculino,Feminino,Outro',
-            'course' => 'required|in:' . implode(',', array_keys(Enrollment::COURSES)),
+            'course' => 'required|in:informatica-gestao,informatica-sistemas-multimedia,eletronica-telecomunicacoes',
         ]);
 
         Enrollment::create([
